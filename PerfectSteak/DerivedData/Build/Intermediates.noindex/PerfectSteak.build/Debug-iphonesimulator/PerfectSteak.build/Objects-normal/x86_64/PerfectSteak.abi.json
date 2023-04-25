@@ -1,0 +1,4359 @@
+{
+  "kind": "Root",
+  "name": "TopLevel",
+  "printedName": "TopLevel",
+  "children": [
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "PerfectSteak",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "CoreData",
+      "printedName": "CoreData",
+      "declKind": "Import",
+      "moduleName": "PerfectSteak"
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "Recipes",
+      "printedName": "Recipes",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "context",
+          "printedName": "context",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "NSManagedObjectContext",
+              "printedName": "CoreData.NSManagedObjectContext",
+              "usr": "c:objc(cs)NSManagedObjectContext"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:12PerfectSteak7RecipesC7context33_2AD7934332BB858868BEA9F238FB5464LLSo22NSManagedObjectContextCvp",
+          "mangledName": "$s12PerfectSteak7RecipesC7context33_2AD7934332BB858868BEA9F238FB5464LLSo22NSManagedObjectContextCvp",
+          "moduleName": "PerfectSteak",
+          "isInternal": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "Final",
+            "HasStorage",
+            "AccessControl"
+          ],
+          "fixedbinaryorder": 0,
+          "isLet": true,
+          "hasStorage": true
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Recipes",
+              "printedName": "PerfectSteak.Recipes",
+              "usr": "s:12PerfectSteak7RecipesC"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:12PerfectSteak7RecipesCACycfc",
+          "mangledName": "$s12PerfectSteak7RecipesCACycfc",
+          "moduleName": "PerfectSteak",
+          "init_kind": "Designated"
+        },
+        {
+          "kind": "Var",
+          "name": "steakRecipes",
+          "printedName": "steakRecipes",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Array",
+              "printedName": "[PerfectSteak.SteakRecipe]",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "SteakRecipe",
+                  "printedName": "PerfectSteak.SteakRecipe",
+                  "usr": "s:12PerfectSteak0B6RecipeC"
+                }
+              ],
+              "usr": "s:Sa"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:12PerfectSteak7RecipesC05steakC0SayAA0B6RecipeCGvp",
+          "mangledName": "$s12PerfectSteak7RecipesC05steakC0SayAA0B6RecipeCGvp",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Array",
+                  "printedName": "[PerfectSteak.SteakRecipe]",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "SteakRecipe",
+                      "printedName": "PerfectSteak.SteakRecipe",
+                      "usr": "s:12PerfectSteak0B6RecipeC"
+                    }
+                  ],
+                  "usr": "s:Sa"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak7RecipesC05steakC0SayAA0B6RecipeCGvg",
+              "mangledName": "$s12PerfectSteak7RecipesC05steakC0SayAA0B6RecipeCGvg",
+              "moduleName": "PerfectSteak",
+              "isOpen": true,
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Function",
+          "name": "createDefaultRecipeIfNeeded",
+          "printedName": "createDefaultRecipeIfNeeded()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:12PerfectSteak7RecipesC27createDefaultRecipeIfNeededyyF",
+          "mangledName": "$s12PerfectSteak7RecipesC27createDefaultRecipeIfNeededyyF",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "declAttributes": [
+            "RawDocComment"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "fetchRecipe",
+          "printedName": "fetchRecipe(with:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "PerfectSteak.SteakRecipe?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "SteakRecipe",
+                  "printedName": "PerfectSteak.SteakRecipe",
+                  "usr": "s:12PerfectSteak0B6RecipeC"
+                }
+              ],
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "UUID",
+              "printedName": "Foundation.UUID",
+              "usr": "s:10Foundation4UUIDV"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:12PerfectSteak7RecipesC11fetchRecipe4withAA0bE0CSg10Foundation4UUIDV_tF",
+          "mangledName": "$s12PerfectSteak7RecipesC11fetchRecipe4withAA0bE0CSg10Foundation4UUIDV_tF",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "declAttributes": [
+            "RawDocComment"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "fetchAllRecipes",
+          "printedName": "fetchAllRecipes()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Array",
+              "printedName": "[PerfectSteak.SteakRecipe]",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "SteakRecipe",
+                  "printedName": "PerfectSteak.SteakRecipe",
+                  "usr": "s:12PerfectSteak0B6RecipeC"
+                }
+              ],
+              "usr": "s:Sa"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:12PerfectSteak7RecipesC08fetchAllC0SayAA0B6RecipeCGyF",
+          "mangledName": "$s12PerfectSteak7RecipesC08fetchAllC0SayAA0B6RecipeCGyF",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "declAttributes": [
+            "RawDocComment"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "addSteakRecipe",
+          "printedName": "addSteakRecipe(_:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "SteakRecipe",
+              "printedName": "PerfectSteak.SteakRecipe",
+              "usr": "s:12PerfectSteak0B6RecipeC"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:12PerfectSteak7RecipesC03addB6RecipeyyAA0bE0CF",
+          "mangledName": "$s12PerfectSteak7RecipesC03addB6RecipeyyAA0bE0CF",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "declAttributes": [
+            "RawDocComment"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "deleteSteakRecipe",
+          "printedName": "deleteSteakRecipe(with:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "UUID",
+              "printedName": "Foundation.UUID",
+              "usr": "s:10Foundation4UUIDV"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:12PerfectSteak7RecipesC06deleteB6Recipe4withy10Foundation4UUIDV_tF",
+          "mangledName": "$s12PerfectSteak7RecipesC06deleteB6Recipe4withy10Foundation4UUIDV_tF",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "declAttributes": [
+            "RawDocComment"
+          ],
+          "funcSelfKind": "NonMutating"
+        }
+      ],
+      "declKind": "Class",
+      "usr": "s:12PerfectSteak7RecipesC",
+      "mangledName": "$s12PerfectSteak7RecipesC",
+      "moduleName": "PerfectSteak",
+      "isOpen": true
+    },
+    {
+      "kind": "Import",
+      "name": "UIKit",
+      "printedName": "UIKit",
+      "declKind": "Import",
+      "moduleName": "PerfectSteak",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "CoreData",
+      "printedName": "CoreData",
+      "declKind": "Import",
+      "moduleName": "PerfectSteak"
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "AppDelegate",
+      "printedName": "AppDelegate",
+      "children": [
+        {
+          "kind": "Function",
+          "name": "application",
+          "printedName": "application(_:didFinishLaunchingWithOptions:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "UIApplication",
+              "printedName": "UIKit.UIApplication",
+              "usr": "c:objc(cs)UIApplication"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "[UIKit.UIApplication.LaunchOptionsKey : Any]?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Dictionary",
+                  "printedName": "[UIKit.UIApplication.LaunchOptionsKey : Any]",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "LaunchOptionsKey",
+                      "printedName": "UIKit.UIApplication.LaunchOptionsKey",
+                      "usr": "c:@T@UIApplicationLaunchOptionsKey"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "ProtocolComposition",
+                      "printedName": "Any"
+                    }
+                  ],
+                  "usr": "s:SD"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@PerfectSteak@objc(cs)AppDelegate(im)application:didFinishLaunchingWithOptions:",
+          "mangledName": "$s12PerfectSteak11AppDelegateC11application_29didFinishLaunchingWithOptionsSbSo13UIApplicationC_SDySo0k6LaunchJ3KeyaypGSgtF",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "objc_name": "application:didFinishLaunchingWithOptions:",
+          "declAttributes": [
+            "ObjC",
+            "Custom"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "application",
+          "printedName": "application(_:configurationForConnecting:options:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "UISceneConfiguration",
+              "printedName": "UIKit.UISceneConfiguration",
+              "usr": "c:objc(cs)UISceneConfiguration"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "UIApplication",
+              "printedName": "UIKit.UIApplication",
+              "usr": "c:objc(cs)UIApplication"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "UISceneSession",
+              "printedName": "UIKit.UISceneSession",
+              "usr": "c:objc(cs)UISceneSession"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "ConnectionOptions",
+              "printedName": "UIKit.UIScene.ConnectionOptions",
+              "usr": "c:objc(cs)UISceneConnectionOptions"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@PerfectSteak@objc(cs)AppDelegate(im)application:configurationForConnectingSceneSession:options:",
+          "mangledName": "$s12PerfectSteak11AppDelegateC11application_26configurationForConnecting7optionsSo20UISceneConfigurationCSo13UIApplicationC_So0J7SessionCSo0J17ConnectionOptionsCtF",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "objc_name": "application:configurationForConnectingSceneSession:options:",
+          "declAttributes": [
+            "ObjC",
+            "Custom",
+            "RawDocComment"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "application",
+          "printedName": "application(_:didDiscardSceneSessions:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "UIApplication",
+              "printedName": "UIKit.UIApplication",
+              "usr": "c:objc(cs)UIApplication"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Set",
+              "printedName": "Swift.Set<UIKit.UISceneSession>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "UISceneSession",
+                  "printedName": "UIKit.UISceneSession",
+                  "usr": "c:objc(cs)UISceneSession"
+                }
+              ],
+              "usr": "s:Sh"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@PerfectSteak@objc(cs)AppDelegate(im)application:didDiscardSceneSessions:",
+          "mangledName": "$s12PerfectSteak11AppDelegateC11application_23didDiscardSceneSessionsySo13UIApplicationC_ShySo14UISceneSessionCGtF",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "objc_name": "application:didDiscardSceneSessions:",
+          "declAttributes": [
+            "ObjC",
+            "Custom"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Var",
+          "name": "persistentContainer",
+          "printedName": "persistentContainer",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "NSPersistentContainer",
+              "printedName": "CoreData.NSPersistentContainer",
+              "usr": "c:objc(cs)NSPersistentContainer"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:12PerfectSteak11AppDelegateC19persistentContainerSo012NSPersistentF0Cvp",
+          "mangledName": "$s12PerfectSteak11AppDelegateC19persistentContainerSo012NSPersistentF0Cvp",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "declAttributes": [
+            "Custom",
+            "Lazy",
+            "RawDocComment"
+          ],
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "NSPersistentContainer",
+                  "printedName": "CoreData.NSPersistentContainer",
+                  "usr": "c:objc(cs)NSPersistentContainer"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak11AppDelegateC19persistentContainerSo012NSPersistentF0Cvg",
+              "mangledName": "$s12PerfectSteak11AppDelegateC19persistentContainerSo012NSPersistentF0Cvg",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "NSPersistentContainer",
+                  "printedName": "CoreData.NSPersistentContainer",
+                  "usr": "c:objc(cs)NSPersistentContainer"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak11AppDelegateC19persistentContainerSo012NSPersistentF0Cvs",
+              "mangledName": "$s12PerfectSteak11AppDelegateC19persistentContainerSo012NSPersistentF0Cvs",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak11AppDelegateC19persistentContainerSo012NSPersistentF0CvM",
+              "mangledName": "$s12PerfectSteak11AppDelegateC19persistentContainerSo012NSPersistentF0CvM",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "$__lazy_storage_$_persistentContainer",
+          "printedName": "$__lazy_storage_$_persistentContainer",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "CoreData.NSPersistentContainer?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "NSPersistentContainer",
+                  "printedName": "CoreData.NSPersistentContainer",
+                  "usr": "c:objc(cs)NSPersistentContainer"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:12PerfectSteak11AppDelegateC37$__lazy_storage_$_persistentContainer33_C6207694B2642500D06994EDF73D80C5LLSo012NSPersistentH0CSgvp",
+          "mangledName": "$s12PerfectSteak11AppDelegateC37$__lazy_storage_$_persistentContainer33_C6207694B2642500D06994EDF73D80C5LLSo012NSPersistentH0CSgvp",
+          "moduleName": "PerfectSteak",
+          "implicit": true,
+          "isInternal": true,
+          "declAttributes": [
+            "Custom",
+            "HasInitialValue",
+            "HasStorage",
+            "Final"
+          ],
+          "fixedbinaryorder": 0,
+          "hasStorage": true
+        },
+        {
+          "kind": "Function",
+          "name": "saveContext",
+          "printedName": "saveContext()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:12PerfectSteak11AppDelegateC11saveContextyyF",
+          "mangledName": "$s12PerfectSteak11AppDelegateC11saveContextyyF",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "declAttributes": [
+            "Custom",
+            "RawDocComment"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "$main",
+          "printedName": "$main()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:12PerfectSteak11AppDelegateC5$mainyyFZ",
+          "mangledName": "$s12PerfectSteak11AppDelegateC5$mainyyFZ",
+          "moduleName": "PerfectSteak",
+          "static": true,
+          "implicit": true,
+          "declAttributes": [
+            "Final"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "AppDelegate",
+              "printedName": "PerfectSteak.AppDelegate",
+              "usr": "c:@M@PerfectSteak@objc(cs)AppDelegate"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "c:@M@PerfectSteak@objc(cs)AppDelegate(im)init",
+          "mangledName": "$s12PerfectSteak11AppDelegateCACycfc",
+          "moduleName": "PerfectSteak",
+          "overriding": true,
+          "implicit": true,
+          "objc_name": "init",
+          "declAttributes": [
+            "Dynamic",
+            "ObjC",
+            "Override"
+          ],
+          "init_kind": "Designated"
+        }
+      ],
+      "declKind": "Class",
+      "usr": "c:@M@PerfectSteak@objc(cs)AppDelegate",
+      "mangledName": "$s12PerfectSteak11AppDelegateC",
+      "moduleName": "PerfectSteak",
+      "isOpen": true,
+      "declAttributes": [
+        "Custom",
+        "MainType",
+        "ObjC"
+      ],
+      "superclassUsr": "c:objc(cs)UIResponder",
+      "inheritsConvenienceInitializers": true,
+      "superclassNames": [
+        "UIKit.UIResponder",
+        "ObjectiveC.NSObject"
+      ],
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "Equatable",
+          "printedName": "Equatable",
+          "usr": "s:SQ",
+          "mangledName": "$sSQ"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Hashable",
+          "printedName": "Hashable",
+          "usr": "s:SH",
+          "mangledName": "$sSH"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CVarArg",
+          "printedName": "CVarArg",
+          "usr": "s:s7CVarArgP",
+          "mangledName": "$ss7CVarArgP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_KeyValueCodingAndObservingPublishing",
+          "printedName": "_KeyValueCodingAndObservingPublishing",
+          "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+          "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_KeyValueCodingAndObserving",
+          "printedName": "_KeyValueCodingAndObserving",
+          "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+          "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomStringConvertible",
+          "printedName": "CustomStringConvertible",
+          "usr": "s:s23CustomStringConvertibleP",
+          "mangledName": "$ss23CustomStringConvertibleP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomDebugStringConvertible",
+          "printedName": "CustomDebugStringConvertible",
+          "usr": "s:s28CustomDebugStringConvertibleP",
+          "mangledName": "$ss28CustomDebugStringConvertibleP"
+        }
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "PerfectSteak",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "SteakRecipe",
+      "printedName": "SteakRecipe",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "ID",
+          "printedName": "ID",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "UUID",
+              "printedName": "Foundation.UUID",
+              "usr": "s:10Foundation4UUIDV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:12PerfectSteak0B6RecipeC2ID10Foundation4UUIDVvp",
+          "mangledName": "$s12PerfectSteak0B6RecipeC2ID10Foundation4UUIDVvp",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 0,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "UUID",
+                  "printedName": "Foundation.UUID",
+                  "usr": "s:10Foundation4UUIDV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak0B6RecipeC2ID10Foundation4UUIDVvg",
+              "mangledName": "$s12PerfectSteak0B6RecipeC2ID10Foundation4UUIDVvg",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "UUID",
+                  "printedName": "Foundation.UUID",
+                  "usr": "s:10Foundation4UUIDV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak0B6RecipeC2ID10Foundation4UUIDVvs",
+              "mangledName": "$s12PerfectSteak0B6RecipeC2ID10Foundation4UUIDVvs",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak0B6RecipeC2ID10Foundation4UUIDVvM",
+              "mangledName": "$s12PerfectSteak0B6RecipeC2ID10Foundation4UUIDVvM",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "thickness",
+          "printedName": "thickness",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Double",
+              "printedName": "Swift.Double",
+              "usr": "s:Sd"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:12PerfectSteak0B6RecipeC9thicknessSdvp",
+          "mangledName": "$s12PerfectSteak0B6RecipeC9thicknessSdvp",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "declAttributes": [
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 1,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Double",
+                  "printedName": "Swift.Double",
+                  "usr": "s:Sd"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak0B6RecipeC9thicknessSdvg",
+              "mangledName": "$s12PerfectSteak0B6RecipeC9thicknessSdvg",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Double",
+                  "printedName": "Swift.Double",
+                  "usr": "s:Sd"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak0B6RecipeC9thicknessSdvs",
+              "mangledName": "$s12PerfectSteak0B6RecipeC9thicknessSdvs",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak0B6RecipeC9thicknessSdvM",
+              "mangledName": "$s12PerfectSteak0B6RecipeC9thicknessSdvM",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "initialTemp",
+          "printedName": "initialTemp",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Double",
+              "printedName": "Swift.Double",
+              "usr": "s:Sd"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:12PerfectSteak0B6RecipeC11initialTempSdvp",
+          "mangledName": "$s12PerfectSteak0B6RecipeC11initialTempSdvp",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "declAttributes": [
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 2,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Double",
+                  "printedName": "Swift.Double",
+                  "usr": "s:Sd"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak0B6RecipeC11initialTempSdvg",
+              "mangledName": "$s12PerfectSteak0B6RecipeC11initialTempSdvg",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Double",
+                  "printedName": "Swift.Double",
+                  "usr": "s:Sd"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak0B6RecipeC11initialTempSdvs",
+              "mangledName": "$s12PerfectSteak0B6RecipeC11initialTempSdvs",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak0B6RecipeC11initialTempSdvM",
+              "mangledName": "$s12PerfectSteak0B6RecipeC11initialTempSdvM",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "ovenTemp",
+          "printedName": "ovenTemp",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Double",
+              "printedName": "Swift.Double",
+              "usr": "s:Sd"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:12PerfectSteak0B6RecipeC8ovenTempSdvp",
+          "mangledName": "$s12PerfectSteak0B6RecipeC8ovenTempSdvp",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "declAttributes": [
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 3,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Double",
+                  "printedName": "Swift.Double",
+                  "usr": "s:Sd"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak0B6RecipeC8ovenTempSdvg",
+              "mangledName": "$s12PerfectSteak0B6RecipeC8ovenTempSdvg",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Double",
+                  "printedName": "Swift.Double",
+                  "usr": "s:Sd"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak0B6RecipeC8ovenTempSdvs",
+              "mangledName": "$s12PerfectSteak0B6RecipeC8ovenTempSdvs",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak0B6RecipeC8ovenTempSdvM",
+              "mangledName": "$s12PerfectSteak0B6RecipeC8ovenTempSdvM",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "desiredCenterTemp",
+          "printedName": "desiredCenterTemp",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Double",
+              "printedName": "Swift.Double",
+              "usr": "s:Sd"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:12PerfectSteak0B6RecipeC17desiredCenterTempSdvp",
+          "mangledName": "$s12PerfectSteak0B6RecipeC17desiredCenterTempSdvp",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "declAttributes": [
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 4,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Double",
+                  "printedName": "Swift.Double",
+                  "usr": "s:Sd"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak0B6RecipeC17desiredCenterTempSdvg",
+              "mangledName": "$s12PerfectSteak0B6RecipeC17desiredCenterTempSdvg",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Double",
+                  "printedName": "Swift.Double",
+                  "usr": "s:Sd"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak0B6RecipeC17desiredCenterTempSdvs",
+              "mangledName": "$s12PerfectSteak0B6RecipeC17desiredCenterTempSdvs",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak0B6RecipeC17desiredCenterTempSdvM",
+              "mangledName": "$s12PerfectSteak0B6RecipeC17desiredCenterTempSdvM",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(ID:thickness:initialTemp:ovenTemp:desiredCenterTemp:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "SteakRecipe",
+              "printedName": "PerfectSteak.SteakRecipe",
+              "usr": "s:12PerfectSteak0B6RecipeC"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "UUID",
+              "printedName": "Foundation.UUID",
+              "usr": "s:10Foundation4UUIDV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Double",
+              "printedName": "Swift.Double",
+              "usr": "s:Sd"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Double",
+              "printedName": "Swift.Double",
+              "usr": "s:Sd"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Double",
+              "printedName": "Swift.Double",
+              "usr": "s:Sd"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Double",
+              "printedName": "Swift.Double",
+              "usr": "s:Sd"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:12PerfectSteak0B6RecipeC2ID9thickness11initialTemp04ovenG0013desiredCenterG0AC10Foundation4UUIDV_S4dtcfc",
+          "mangledName": "$s12PerfectSteak0B6RecipeC2ID9thickness11initialTemp04ovenG0013desiredCenterG0AC10Foundation4UUIDV_S4dtcfc",
+          "moduleName": "PerfectSteak",
+          "init_kind": "Designated"
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(thickness:initialTemp:ovenTemp:desiredCenterTemp:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "SteakRecipe",
+              "printedName": "PerfectSteak.SteakRecipe",
+              "usr": "s:12PerfectSteak0B6RecipeC"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Double",
+              "printedName": "Swift.Double",
+              "usr": "s:Sd"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Double",
+              "printedName": "Swift.Double",
+              "usr": "s:Sd"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Double",
+              "printedName": "Swift.Double",
+              "usr": "s:Sd"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Double",
+              "printedName": "Swift.Double",
+              "usr": "s:Sd"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:12PerfectSteak0B6RecipeC9thickness11initialTemp04ovenF0013desiredCenterF0ACSd_S3dtcfc",
+          "mangledName": "$s12PerfectSteak0B6RecipeC9thickness11initialTemp04ovenF0013desiredCenterF0ACSd_S3dtcfc",
+          "moduleName": "PerfectSteak",
+          "init_kind": "Designated"
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(cdSteakRecipe:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "SteakRecipe",
+              "printedName": "PerfectSteak.SteakRecipe",
+              "usr": "s:12PerfectSteak0B6RecipeC"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "CDSteakRecipe",
+              "printedName": "PerfectSteak.CDSteakRecipe",
+              "usr": "c:@M@PerfectSteak@objc(cs)CDSteakRecipe"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:12PerfectSteak0B6RecipeC02cdbC0AcA07CDSteakC0C_tcfc",
+          "mangledName": "$s12PerfectSteak0B6RecipeC02cdbC0AcA07CDSteakC0C_tcfc",
+          "moduleName": "PerfectSteak",
+          "init_kind": "Designated"
+        }
+      ],
+      "declKind": "Class",
+      "usr": "s:12PerfectSteak0B6RecipeC",
+      "mangledName": "$s12PerfectSteak0B6RecipeC",
+      "moduleName": "PerfectSteak",
+      "isOpen": true
+    },
+    {
+      "kind": "Import",
+      "name": "UIKit",
+      "printedName": "UIKit",
+      "declKind": "Import",
+      "moduleName": "PerfectSteak",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "SceneDelegate",
+      "printedName": "SceneDelegate",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "window",
+          "printedName": "window",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "UIKit.UIWindow?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "UIWindow",
+                  "printedName": "UIKit.UIWindow",
+                  "usr": "c:objc(cs)UIWindow"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "c:@M@PerfectSteak@objc(cs)SceneDelegate(py)window",
+          "mangledName": "$s12PerfectSteak13SceneDelegateC6windowSo8UIWindowCSgvp",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "objc_name": "window",
+          "declAttributes": [
+            "HasInitialValue",
+            "ObjC",
+            "Custom",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 0,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "UIKit.UIWindow?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "UIWindow",
+                      "printedName": "UIKit.UIWindow",
+                      "usr": "c:objc(cs)UIWindow"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@M@PerfectSteak@objc(cs)SceneDelegate(im)window",
+              "mangledName": "$s12PerfectSteak13SceneDelegateC6windowSo8UIWindowCSgvg",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "objc_name": "window",
+              "declAttributes": [
+                "ObjC"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "UIKit.UIWindow?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "UIWindow",
+                      "printedName": "UIKit.UIWindow",
+                      "usr": "c:objc(cs)UIWindow"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@M@PerfectSteak@objc(cs)SceneDelegate(im)setWindow:",
+              "mangledName": "$s12PerfectSteak13SceneDelegateC6windowSo8UIWindowCSgvs",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "objc_name": "setWindow:",
+              "declAttributes": [
+                "ObjC"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak13SceneDelegateC6windowSo8UIWindowCSgvM",
+              "mangledName": "$s12PerfectSteak13SceneDelegateC6windowSo8UIWindowCSgvM",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Function",
+          "name": "scene",
+          "printedName": "scene(_:willConnectTo:options:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "UIScene",
+              "printedName": "UIKit.UIScene",
+              "usr": "c:objc(cs)UIScene"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "UISceneSession",
+              "printedName": "UIKit.UISceneSession",
+              "usr": "c:objc(cs)UISceneSession"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "ConnectionOptions",
+              "printedName": "UIKit.UIScene.ConnectionOptions",
+              "usr": "c:objc(cs)UISceneConnectionOptions"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@PerfectSteak@objc(cs)SceneDelegate(im)scene:willConnectToSession:options:",
+          "mangledName": "$s12PerfectSteak13SceneDelegateC5scene_13willConnectTo7optionsySo7UISceneC_So0J7SessionCSo0J17ConnectionOptionsCtF",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "objc_name": "scene:willConnectToSession:options:",
+          "declAttributes": [
+            "ObjC",
+            "Custom"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "sceneDidDisconnect",
+          "printedName": "sceneDidDisconnect(_:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "UIScene",
+              "printedName": "UIKit.UIScene",
+              "usr": "c:objc(cs)UIScene"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@PerfectSteak@objc(cs)SceneDelegate(im)sceneDidDisconnect:",
+          "mangledName": "$s12PerfectSteak13SceneDelegateC18sceneDidDisconnectyySo7UISceneCF",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "objc_name": "sceneDidDisconnect:",
+          "declAttributes": [
+            "ObjC",
+            "Custom"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "sceneDidBecomeActive",
+          "printedName": "sceneDidBecomeActive(_:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "UIScene",
+              "printedName": "UIKit.UIScene",
+              "usr": "c:objc(cs)UIScene"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@PerfectSteak@objc(cs)SceneDelegate(im)sceneDidBecomeActive:",
+          "mangledName": "$s12PerfectSteak13SceneDelegateC20sceneDidBecomeActiveyySo7UISceneCF",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "objc_name": "sceneDidBecomeActive:",
+          "declAttributes": [
+            "ObjC",
+            "Custom"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "sceneWillResignActive",
+          "printedName": "sceneWillResignActive(_:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "UIScene",
+              "printedName": "UIKit.UIScene",
+              "usr": "c:objc(cs)UIScene"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@PerfectSteak@objc(cs)SceneDelegate(im)sceneWillResignActive:",
+          "mangledName": "$s12PerfectSteak13SceneDelegateC21sceneWillResignActiveyySo7UISceneCF",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "objc_name": "sceneWillResignActive:",
+          "declAttributes": [
+            "ObjC",
+            "Custom"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "sceneWillEnterForeground",
+          "printedName": "sceneWillEnterForeground(_:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "UIScene",
+              "printedName": "UIKit.UIScene",
+              "usr": "c:objc(cs)UIScene"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@PerfectSteak@objc(cs)SceneDelegate(im)sceneWillEnterForeground:",
+          "mangledName": "$s12PerfectSteak13SceneDelegateC24sceneWillEnterForegroundyySo7UISceneCF",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "objc_name": "sceneWillEnterForeground:",
+          "declAttributes": [
+            "ObjC",
+            "Custom"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "sceneDidEnterBackground",
+          "printedName": "sceneDidEnterBackground(_:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "UIScene",
+              "printedName": "UIKit.UIScene",
+              "usr": "c:objc(cs)UIScene"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@PerfectSteak@objc(cs)SceneDelegate(im)sceneDidEnterBackground:",
+          "mangledName": "$s12PerfectSteak13SceneDelegateC23sceneDidEnterBackgroundyySo7UISceneCF",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "objc_name": "sceneDidEnterBackground:",
+          "declAttributes": [
+            "ObjC",
+            "Custom"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "SceneDelegate",
+              "printedName": "PerfectSteak.SceneDelegate",
+              "usr": "c:@M@PerfectSteak@objc(cs)SceneDelegate"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "c:@M@PerfectSteak@objc(cs)SceneDelegate(im)init",
+          "mangledName": "$s12PerfectSteak13SceneDelegateCACycfc",
+          "moduleName": "PerfectSteak",
+          "overriding": true,
+          "implicit": true,
+          "objc_name": "init",
+          "declAttributes": [
+            "Dynamic",
+            "ObjC",
+            "Override"
+          ],
+          "init_kind": "Designated"
+        }
+      ],
+      "declKind": "Class",
+      "usr": "c:@M@PerfectSteak@objc(cs)SceneDelegate",
+      "mangledName": "$s12PerfectSteak13SceneDelegateC",
+      "moduleName": "PerfectSteak",
+      "isOpen": true,
+      "declAttributes": [
+        "Custom",
+        "ObjC"
+      ],
+      "superclassUsr": "c:objc(cs)UIResponder",
+      "inheritsConvenienceInitializers": true,
+      "superclassNames": [
+        "UIKit.UIResponder",
+        "ObjectiveC.NSObject"
+      ],
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "Equatable",
+          "printedName": "Equatable",
+          "usr": "s:SQ",
+          "mangledName": "$sSQ"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Hashable",
+          "printedName": "Hashable",
+          "usr": "s:SH",
+          "mangledName": "$sSH"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CVarArg",
+          "printedName": "CVarArg",
+          "usr": "s:s7CVarArgP",
+          "mangledName": "$ss7CVarArgP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_KeyValueCodingAndObservingPublishing",
+          "printedName": "_KeyValueCodingAndObservingPublishing",
+          "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+          "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_KeyValueCodingAndObserving",
+          "printedName": "_KeyValueCodingAndObserving",
+          "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+          "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomStringConvertible",
+          "printedName": "CustomStringConvertible",
+          "usr": "s:s23CustomStringConvertibleP",
+          "mangledName": "$ss23CustomStringConvertibleP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomDebugStringConvertible",
+          "printedName": "CustomDebugStringConvertible",
+          "usr": "s:s28CustomDebugStringConvertibleP",
+          "mangledName": "$ss28CustomDebugStringConvertibleP"
+        }
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "UIKit",
+      "printedName": "UIKit",
+      "declKind": "Import",
+      "moduleName": "PerfectSteak",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "UIKit",
+      "printedName": "UIKit",
+      "declKind": "Import",
+      "moduleName": "PerfectSteak"
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "OnboardingViewController",
+      "printedName": "OnboardingViewController",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "collectionView",
+          "printedName": "collectionView",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "WeakStorage",
+              "printedName": "UIKit.UICollectionView?"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "c:@M@PerfectSteak@objc(cs)OnboardingViewController(py)collectionView",
+          "mangledName": "$s12PerfectSteak24OnboardingViewControllerC010collectionD0So012UICollectionD0CSgvp",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "Custom",
+            "HasStorage",
+            "ReferenceOwnership",
+            "IBOutlet",
+            "ObjC"
+          ],
+          "fixedbinaryorder": 0,
+          "ownership": 1,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "ImplicitlyUnwrappedOptional",
+                  "printedName": "UIKit.UICollectionView?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "UICollectionView",
+                      "printedName": "UIKit.UICollectionView",
+                      "usr": "c:objc(cs)UICollectionView"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@M@PerfectSteak@objc(cs)OnboardingViewController(im)collectionView",
+              "mangledName": "$s12PerfectSteak24OnboardingViewControllerC010collectionD0So012UICollectionD0CSgvg",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "ObjC"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "ImplicitlyUnwrappedOptional",
+                  "printedName": "UIKit.UICollectionView?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "UICollectionView",
+                      "printedName": "UIKit.UICollectionView",
+                      "usr": "c:objc(cs)UICollectionView"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@M@PerfectSteak@objc(cs)OnboardingViewController(im)setCollectionView:",
+              "mangledName": "$s12PerfectSteak24OnboardingViewControllerC010collectionD0So012UICollectionD0CSgvs",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "ObjC"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak24OnboardingViewControllerC010collectionD0So012UICollectionD0CSgvM",
+              "mangledName": "$s12PerfectSteak24OnboardingViewControllerC010collectionD0So012UICollectionD0CSgvM",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "nextButton",
+          "printedName": "nextButton",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "WeakStorage",
+              "printedName": "UIKit.UIButton?"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "c:@M@PerfectSteak@objc(cs)OnboardingViewController(py)nextButton",
+          "mangledName": "$s12PerfectSteak24OnboardingViewControllerC10nextButtonSo8UIButtonCSgvp",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "Custom",
+            "HasStorage",
+            "ReferenceOwnership",
+            "IBOutlet",
+            "ObjC"
+          ],
+          "fixedbinaryorder": 1,
+          "ownership": 1,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "ImplicitlyUnwrappedOptional",
+                  "printedName": "UIKit.UIButton?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "UIButton",
+                      "printedName": "UIKit.UIButton",
+                      "usr": "c:objc(cs)UIButton"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@M@PerfectSteak@objc(cs)OnboardingViewController(im)nextButton",
+              "mangledName": "$s12PerfectSteak24OnboardingViewControllerC10nextButtonSo8UIButtonCSgvg",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "ObjC"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "ImplicitlyUnwrappedOptional",
+                  "printedName": "UIKit.UIButton?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "UIButton",
+                      "printedName": "UIKit.UIButton",
+                      "usr": "c:objc(cs)UIButton"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@M@PerfectSteak@objc(cs)OnboardingViewController(im)setNextButton:",
+              "mangledName": "$s12PerfectSteak24OnboardingViewControllerC10nextButtonSo8UIButtonCSgvs",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "ObjC"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak24OnboardingViewControllerC10nextButtonSo8UIButtonCSgvM",
+              "mangledName": "$s12PerfectSteak24OnboardingViewControllerC10nextButtonSo8UIButtonCSgvM",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "pageControl",
+          "printedName": "pageControl",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "WeakStorage",
+              "printedName": "UIKit.UIPageControl?"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "c:@M@PerfectSteak@objc(cs)OnboardingViewController(py)pageControl",
+          "mangledName": "$s12PerfectSteak24OnboardingViewControllerC11pageControlSo06UIPageG0CSgvp",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "Custom",
+            "HasStorage",
+            "ReferenceOwnership",
+            "IBOutlet",
+            "ObjC"
+          ],
+          "fixedbinaryorder": 2,
+          "ownership": 1,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "ImplicitlyUnwrappedOptional",
+                  "printedName": "UIKit.UIPageControl?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "UIPageControl",
+                      "printedName": "UIKit.UIPageControl",
+                      "usr": "c:objc(cs)UIPageControl"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@M@PerfectSteak@objc(cs)OnboardingViewController(im)pageControl",
+              "mangledName": "$s12PerfectSteak24OnboardingViewControllerC11pageControlSo06UIPageG0CSgvg",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "ObjC"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "ImplicitlyUnwrappedOptional",
+                  "printedName": "UIKit.UIPageControl?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "UIPageControl",
+                      "printedName": "UIKit.UIPageControl",
+                      "usr": "c:objc(cs)UIPageControl"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@M@PerfectSteak@objc(cs)OnboardingViewController(im)setPageControl:",
+              "mangledName": "$s12PerfectSteak24OnboardingViewControllerC11pageControlSo06UIPageG0CSgvs",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "ObjC"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak24OnboardingViewControllerC11pageControlSo06UIPageG0CSgvM",
+              "mangledName": "$s12PerfectSteak24OnboardingViewControllerC11pageControlSo06UIPageG0CSgvM",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "slides",
+          "printedName": "slides",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Array",
+              "printedName": "[PerfectSteak.OnboardingSlide]",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "OnboardingSlide",
+                  "printedName": "PerfectSteak.OnboardingSlide",
+                  "usr": "s:12PerfectSteak15OnboardingSlideV"
+                }
+              ],
+              "usr": "s:Sa"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:12PerfectSteak24OnboardingViewControllerC6slidesSayAA0C5SlideVGvp",
+          "mangledName": "$s12PerfectSteak24OnboardingViewControllerC6slidesSayAA0C5SlideVGvp",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "declAttributes": [
+            "Custom",
+            "HasInitialValue",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 3,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Array",
+                  "printedName": "[PerfectSteak.OnboardingSlide]",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "OnboardingSlide",
+                      "printedName": "PerfectSteak.OnboardingSlide",
+                      "usr": "s:12PerfectSteak15OnboardingSlideV"
+                    }
+                  ],
+                  "usr": "s:Sa"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak24OnboardingViewControllerC6slidesSayAA0C5SlideVGvg",
+              "mangledName": "$s12PerfectSteak24OnboardingViewControllerC6slidesSayAA0C5SlideVGvg",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Array",
+                  "printedName": "[PerfectSteak.OnboardingSlide]",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "OnboardingSlide",
+                      "printedName": "PerfectSteak.OnboardingSlide",
+                      "usr": "s:12PerfectSteak15OnboardingSlideV"
+                    }
+                  ],
+                  "usr": "s:Sa"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak24OnboardingViewControllerC6slidesSayAA0C5SlideVGvs",
+              "mangledName": "$s12PerfectSteak24OnboardingViewControllerC6slidesSayAA0C5SlideVGvs",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak24OnboardingViewControllerC6slidesSayAA0C5SlideVGvM",
+              "mangledName": "$s12PerfectSteak24OnboardingViewControllerC6slidesSayAA0C5SlideVGvM",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "currentPage",
+          "printedName": "currentPage",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Int",
+              "printedName": "Swift.Int",
+              "usr": "s:Si"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:12PerfectSteak24OnboardingViewControllerC11currentPageSivp",
+          "mangledName": "$s12PerfectSteak24OnboardingViewControllerC11currentPageSivp",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "Custom",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 4,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Int",
+                  "printedName": "Swift.Int",
+                  "usr": "s:Si"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak24OnboardingViewControllerC11currentPageSivg",
+              "mangledName": "$s12PerfectSteak24OnboardingViewControllerC11currentPageSivg",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Int",
+                  "printedName": "Swift.Int",
+                  "usr": "s:Si"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak24OnboardingViewControllerC11currentPageSivs",
+              "mangledName": "$s12PerfectSteak24OnboardingViewControllerC11currentPageSivs",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak24OnboardingViewControllerC11currentPageSivM",
+              "mangledName": "$s12PerfectSteak24OnboardingViewControllerC11currentPageSivM",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Function",
+          "name": "viewDidLoad",
+          "printedName": "viewDidLoad()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@PerfectSteak@objc(cs)OnboardingViewController(im)viewDidLoad",
+          "mangledName": "$s12PerfectSteak24OnboardingViewControllerC11viewDidLoadyyF",
+          "moduleName": "PerfectSteak",
+          "overriding": true,
+          "isOpen": true,
+          "objc_name": "viewDidLoad",
+          "declAttributes": [
+            "Dynamic",
+            "ObjC",
+            "Custom",
+            "Override"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "nextButtonClicked",
+          "printedName": "nextButtonClicked(_:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "UIButton",
+              "printedName": "UIKit.UIButton",
+              "usr": "c:objc(cs)UIButton"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@PerfectSteak@objc(cs)OnboardingViewController(im)nextButtonClicked:",
+          "mangledName": "$s12PerfectSteak24OnboardingViewControllerC17nextButtonClickedyySo8UIButtonCF",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "declAttributes": [
+            "Custom",
+            "IBAction",
+            "ObjC"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(nibName:bundle:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "OnboardingViewController",
+              "printedName": "PerfectSteak.OnboardingViewController",
+              "usr": "c:@M@PerfectSteak@objc(cs)OnboardingViewController"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Swift.String?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Foundation.Bundle?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Bundle",
+                  "printedName": "Foundation.Bundle",
+                  "usr": "c:objc(cs)NSBundle"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "c:@M@PerfectSteak@objc(cs)OnboardingViewController(im)initWithNibName:bundle:",
+          "mangledName": "$s12PerfectSteak24OnboardingViewControllerC7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
+          "moduleName": "PerfectSteak",
+          "overriding": true,
+          "implicit": true,
+          "objc_name": "initWithNibName:bundle:",
+          "declAttributes": [
+            "Dynamic",
+            "ObjC",
+            "Custom",
+            "Override"
+          ],
+          "init_kind": "Designated"
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(coder:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "PerfectSteak.OnboardingViewController?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "OnboardingViewController",
+                  "printedName": "PerfectSteak.OnboardingViewController",
+                  "usr": "c:@M@PerfectSteak@objc(cs)OnboardingViewController"
+                }
+              ],
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "NSCoder",
+              "printedName": "Foundation.NSCoder",
+              "usr": "c:objc(cs)NSCoder"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "c:@M@PerfectSteak@objc(cs)OnboardingViewController(im)initWithCoder:",
+          "mangledName": "$s12PerfectSteak24OnboardingViewControllerC5coderACSgSo7NSCoderC_tcfc",
+          "moduleName": "PerfectSteak",
+          "overriding": true,
+          "implicit": true,
+          "objc_name": "initWithCoder:",
+          "declAttributes": [
+            "Dynamic",
+            "ObjC",
+            "Custom",
+            "Required"
+          ],
+          "init_kind": "Designated"
+        },
+        {
+          "kind": "Function",
+          "name": "collectionView",
+          "printedName": "collectionView(_:numberOfItemsInSection:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Int",
+              "printedName": "Swift.Int",
+              "usr": "s:Si"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "UICollectionView",
+              "printedName": "UIKit.UICollectionView",
+              "usr": "c:objc(cs)UICollectionView"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Int",
+              "printedName": "Swift.Int",
+              "usr": "s:Si"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@CM@PerfectSteak@objc(cs)OnboardingViewController(im)collectionView:numberOfItemsInSection:",
+          "mangledName": "$s12PerfectSteak24OnboardingViewControllerC010collectionD0_22numberOfItemsInSectionSiSo012UICollectionD0C_SitF",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "objc_name": "collectionView:numberOfItemsInSection:",
+          "declAttributes": [
+            "Dynamic",
+            "ObjC",
+            "Custom",
+            "RawDocComment"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "collectionView",
+          "printedName": "collectionView(_:cellForItemAt:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "UICollectionViewCell",
+              "printedName": "UIKit.UICollectionViewCell",
+              "usr": "c:objc(cs)UICollectionViewCell"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "UICollectionView",
+              "printedName": "UIKit.UICollectionView",
+              "usr": "c:objc(cs)UICollectionView"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "IndexPath",
+              "printedName": "Foundation.IndexPath",
+              "usr": "s:10Foundation9IndexPathV"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@CM@PerfectSteak@objc(cs)OnboardingViewController(im)collectionView:cellForItemAtIndexPath:",
+          "mangledName": "$s12PerfectSteak24OnboardingViewControllerC010collectionD0_13cellForItemAtSo012UICollectionD4CellCSo0kD0C_10Foundation9IndexPathVtF",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "objc_name": "collectionView:cellForItemAtIndexPath:",
+          "declAttributes": [
+            "Dynamic",
+            "ObjC",
+            "Custom",
+            "RawDocComment"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "collectionView",
+          "printedName": "collectionView(_:layout:sizeForItemAt:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "CGSize",
+              "printedName": "CoreGraphics.CGSize",
+              "usr": "c:@S@CGSize"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "UICollectionView",
+              "printedName": "UIKit.UICollectionView",
+              "usr": "c:objc(cs)UICollectionView"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "UICollectionViewLayout",
+              "printedName": "UIKit.UICollectionViewLayout",
+              "usr": "c:objc(cs)UICollectionViewLayout"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "IndexPath",
+              "printedName": "Foundation.IndexPath",
+              "usr": "s:10Foundation9IndexPathV"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@CM@PerfectSteak@objc(cs)OnboardingViewController(im)collectionView:layout:sizeForItemAtIndexPath:",
+          "mangledName": "$s12PerfectSteak24OnboardingViewControllerC010collectionD0_6layout13sizeForItemAtSo6CGSizeVSo012UICollectionD0C_So0mD6LayoutC10Foundation9IndexPathVtF",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "objc_name": "collectionView:layout:sizeForItemAtIndexPath:",
+          "declAttributes": [
+            "Dynamic",
+            "ObjC",
+            "Custom"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "scrollViewDidEndDecelerating",
+          "printedName": "scrollViewDidEndDecelerating(_:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "UIScrollView",
+              "printedName": "UIKit.UIScrollView",
+              "usr": "c:objc(cs)UIScrollView"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@CM@PerfectSteak@objc(cs)OnboardingViewController(im)scrollViewDidEndDecelerating:",
+          "mangledName": "$s12PerfectSteak24OnboardingViewControllerC06scrollD18DidEndDeceleratingyySo08UIScrollD0CF",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "objc_name": "scrollViewDidEndDecelerating:",
+          "declAttributes": [
+            "Dynamic",
+            "ObjC",
+            "Custom"
+          ],
+          "funcSelfKind": "NonMutating"
+        }
+      ],
+      "declKind": "Class",
+      "usr": "c:@M@PerfectSteak@objc(cs)OnboardingViewController",
+      "mangledName": "$s12PerfectSteak24OnboardingViewControllerC",
+      "moduleName": "PerfectSteak",
+      "isOpen": true,
+      "declAttributes": [
+        "Custom",
+        "ObjC"
+      ],
+      "superclassUsr": "c:objc(cs)UIViewController",
+      "inheritsConvenienceInitializers": true,
+      "superclassNames": [
+        "UIKit.UIViewController",
+        "UIKit.UIResponder",
+        "ObjectiveC.NSObject"
+      ],
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "Equatable",
+          "printedName": "Equatable",
+          "usr": "s:SQ",
+          "mangledName": "$sSQ"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Hashable",
+          "printedName": "Hashable",
+          "usr": "s:SH",
+          "mangledName": "$sSH"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CVarArg",
+          "printedName": "CVarArg",
+          "usr": "s:s7CVarArgP",
+          "mangledName": "$ss7CVarArgP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_KeyValueCodingAndObservingPublishing",
+          "printedName": "_KeyValueCodingAndObservingPublishing",
+          "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+          "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_KeyValueCodingAndObserving",
+          "printedName": "_KeyValueCodingAndObserving",
+          "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+          "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomStringConvertible",
+          "printedName": "CustomStringConvertible",
+          "usr": "s:s23CustomStringConvertibleP",
+          "mangledName": "$ss23CustomStringConvertibleP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomDebugStringConvertible",
+          "printedName": "CustomDebugStringConvertible",
+          "usr": "s:s28CustomDebugStringConvertibleP",
+          "mangledName": "$ss28CustomDebugStringConvertibleP"
+        }
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "UIKit",
+      "printedName": "UIKit",
+      "declKind": "Import",
+      "moduleName": "PerfectSteak",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "OnboardingCollectionViewCell",
+      "printedName": "OnboardingCollectionViewCell",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "identifier",
+          "printedName": "identifier",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:12PerfectSteak28OnboardingCollectionViewCellC10identifierSSvpZ",
+          "mangledName": "$s12PerfectSteak28OnboardingCollectionViewCellC10identifierSSvpZ",
+          "moduleName": "PerfectSteak",
+          "static": true,
+          "declAttributes": [
+            "Custom",
+            "HasInitialValue",
+            "Final",
+            "HasStorage"
+          ],
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak28OnboardingCollectionViewCellC10identifierSSvgZ",
+              "mangledName": "$s12PerfectSteak28OnboardingCollectionViewCellC10identifierSSvgZ",
+              "moduleName": "PerfectSteak",
+              "static": true,
+              "implicit": true,
+              "declAttributes": [
+                "Final"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "slideImageView",
+          "printedName": "slideImageView",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "WeakStorage",
+              "printedName": "UIKit.UIImageView?"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "c:@M@PerfectSteak@objc(cs)OnboardingCollectionViewCell(py)slideImageView",
+          "mangledName": "$s12PerfectSteak28OnboardingCollectionViewCellC010slideImageE0So07UIImageE0CSgvp",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "Custom",
+            "HasStorage",
+            "ReferenceOwnership",
+            "IBOutlet",
+            "ObjC"
+          ],
+          "fixedbinaryorder": 0,
+          "ownership": 1,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "ImplicitlyUnwrappedOptional",
+                  "printedName": "UIKit.UIImageView?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "UIImageView",
+                      "printedName": "UIKit.UIImageView",
+                      "usr": "c:objc(cs)UIImageView"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@M@PerfectSteak@objc(cs)OnboardingCollectionViewCell(im)slideImageView",
+              "mangledName": "$s12PerfectSteak28OnboardingCollectionViewCellC010slideImageE0So07UIImageE0CSgvg",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "ObjC"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "ImplicitlyUnwrappedOptional",
+                  "printedName": "UIKit.UIImageView?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "UIImageView",
+                      "printedName": "UIKit.UIImageView",
+                      "usr": "c:objc(cs)UIImageView"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@M@PerfectSteak@objc(cs)OnboardingCollectionViewCell(im)setSlideImageView:",
+              "mangledName": "$s12PerfectSteak28OnboardingCollectionViewCellC010slideImageE0So07UIImageE0CSgvs",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "ObjC"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak28OnboardingCollectionViewCellC010slideImageE0So07UIImageE0CSgvM",
+              "mangledName": "$s12PerfectSteak28OnboardingCollectionViewCellC010slideImageE0So07UIImageE0CSgvM",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "slideTitleLabel",
+          "printedName": "slideTitleLabel",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "WeakStorage",
+              "printedName": "UIKit.UILabel?"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "c:@M@PerfectSteak@objc(cs)OnboardingCollectionViewCell(py)slideTitleLabel",
+          "mangledName": "$s12PerfectSteak28OnboardingCollectionViewCellC15slideTitleLabelSo7UILabelCSgvp",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "Custom",
+            "HasStorage",
+            "ReferenceOwnership",
+            "IBOutlet",
+            "ObjC"
+          ],
+          "fixedbinaryorder": 1,
+          "ownership": 1,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "ImplicitlyUnwrappedOptional",
+                  "printedName": "UIKit.UILabel?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "UILabel",
+                      "printedName": "UIKit.UILabel",
+                      "usr": "c:objc(cs)UILabel"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@M@PerfectSteak@objc(cs)OnboardingCollectionViewCell(im)slideTitleLabel",
+              "mangledName": "$s12PerfectSteak28OnboardingCollectionViewCellC15slideTitleLabelSo7UILabelCSgvg",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "ObjC"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "ImplicitlyUnwrappedOptional",
+                  "printedName": "UIKit.UILabel?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "UILabel",
+                      "printedName": "UIKit.UILabel",
+                      "usr": "c:objc(cs)UILabel"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@M@PerfectSteak@objc(cs)OnboardingCollectionViewCell(im)setSlideTitleLabel:",
+              "mangledName": "$s12PerfectSteak28OnboardingCollectionViewCellC15slideTitleLabelSo7UILabelCSgvs",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "ObjC"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak28OnboardingCollectionViewCellC15slideTitleLabelSo7UILabelCSgvM",
+              "mangledName": "$s12PerfectSteak28OnboardingCollectionViewCellC15slideTitleLabelSo7UILabelCSgvM",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "slideDescriptionTitle",
+          "printedName": "slideDescriptionTitle",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "WeakStorage",
+              "printedName": "UIKit.UILabel?"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "c:@M@PerfectSteak@objc(cs)OnboardingCollectionViewCell(py)slideDescriptionTitle",
+          "mangledName": "$s12PerfectSteak28OnboardingCollectionViewCellC21slideDescriptionTitleSo7UILabelCSgvp",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "Custom",
+            "HasStorage",
+            "ReferenceOwnership",
+            "IBOutlet",
+            "ObjC"
+          ],
+          "fixedbinaryorder": 2,
+          "ownership": 1,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "ImplicitlyUnwrappedOptional",
+                  "printedName": "UIKit.UILabel?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "UILabel",
+                      "printedName": "UIKit.UILabel",
+                      "usr": "c:objc(cs)UILabel"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@M@PerfectSteak@objc(cs)OnboardingCollectionViewCell(im)slideDescriptionTitle",
+              "mangledName": "$s12PerfectSteak28OnboardingCollectionViewCellC21slideDescriptionTitleSo7UILabelCSgvg",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "ObjC"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "ImplicitlyUnwrappedOptional",
+                  "printedName": "UIKit.UILabel?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "UILabel",
+                      "printedName": "UIKit.UILabel",
+                      "usr": "c:objc(cs)UILabel"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@M@PerfectSteak@objc(cs)OnboardingCollectionViewCell(im)setSlideDescriptionTitle:",
+              "mangledName": "$s12PerfectSteak28OnboardingCollectionViewCellC21slideDescriptionTitleSo7UILabelCSgvs",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "ObjC"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak28OnboardingCollectionViewCellC21slideDescriptionTitleSo7UILabelCSgvM",
+              "mangledName": "$s12PerfectSteak28OnboardingCollectionViewCellC21slideDescriptionTitleSo7UILabelCSgvM",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Function",
+          "name": "setup",
+          "printedName": "setup(_:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "OnboardingSlide",
+              "printedName": "PerfectSteak.OnboardingSlide",
+              "usr": "s:12PerfectSteak15OnboardingSlideV"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:12PerfectSteak28OnboardingCollectionViewCellC5setupyyAA0C5SlideVF",
+          "mangledName": "$s12PerfectSteak28OnboardingCollectionViewCellC5setupyyAA0C5SlideVF",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "declAttributes": [
+            "Custom"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(frame:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "OnboardingCollectionViewCell",
+              "printedName": "PerfectSteak.OnboardingCollectionViewCell",
+              "usr": "c:@M@PerfectSteak@objc(cs)OnboardingCollectionViewCell"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "CGRect",
+              "printedName": "CoreGraphics.CGRect",
+              "usr": "c:@S@CGRect"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "c:@M@PerfectSteak@objc(cs)OnboardingCollectionViewCell(im)initWithFrame:",
+          "mangledName": "$s12PerfectSteak28OnboardingCollectionViewCellC5frameACSo6CGRectV_tcfc",
+          "moduleName": "PerfectSteak",
+          "overriding": true,
+          "implicit": true,
+          "objc_name": "initWithFrame:",
+          "declAttributes": [
+            "Dynamic",
+            "ObjC",
+            "Custom",
+            "Override"
+          ],
+          "init_kind": "Designated"
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(coder:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "PerfectSteak.OnboardingCollectionViewCell?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "OnboardingCollectionViewCell",
+                  "printedName": "PerfectSteak.OnboardingCollectionViewCell",
+                  "usr": "c:@M@PerfectSteak@objc(cs)OnboardingCollectionViewCell"
+                }
+              ],
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "NSCoder",
+              "printedName": "Foundation.NSCoder",
+              "usr": "c:objc(cs)NSCoder"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "c:@M@PerfectSteak@objc(cs)OnboardingCollectionViewCell(im)initWithCoder:",
+          "mangledName": "$s12PerfectSteak28OnboardingCollectionViewCellC5coderACSgSo7NSCoderC_tcfc",
+          "moduleName": "PerfectSteak",
+          "overriding": true,
+          "implicit": true,
+          "objc_name": "initWithCoder:",
+          "declAttributes": [
+            "Dynamic",
+            "ObjC",
+            "Custom",
+            "Required"
+          ],
+          "init_kind": "Designated"
+        }
+      ],
+      "declKind": "Class",
+      "usr": "c:@M@PerfectSteak@objc(cs)OnboardingCollectionViewCell",
+      "mangledName": "$s12PerfectSteak28OnboardingCollectionViewCellC",
+      "moduleName": "PerfectSteak",
+      "isOpen": true,
+      "declAttributes": [
+        "Custom",
+        "ObjC"
+      ],
+      "superclassUsr": "c:objc(cs)UICollectionViewCell",
+      "inheritsConvenienceInitializers": true,
+      "superclassNames": [
+        "UIKit.UICollectionViewCell",
+        "UIKit.UICollectionReusableView",
+        "UIKit.UIView",
+        "UIKit.UIResponder",
+        "ObjectiveC.NSObject"
+      ],
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "Equatable",
+          "printedName": "Equatable",
+          "usr": "s:SQ",
+          "mangledName": "$sSQ"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Hashable",
+          "printedName": "Hashable",
+          "usr": "s:SH",
+          "mangledName": "$sSH"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CVarArg",
+          "printedName": "CVarArg",
+          "usr": "s:s7CVarArgP",
+          "mangledName": "$ss7CVarArgP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_KeyValueCodingAndObservingPublishing",
+          "printedName": "_KeyValueCodingAndObservingPublishing",
+          "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+          "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_KeyValueCodingAndObserving",
+          "printedName": "_KeyValueCodingAndObserving",
+          "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+          "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomStringConvertible",
+          "printedName": "CustomStringConvertible",
+          "usr": "s:s23CustomStringConvertibleP",
+          "mangledName": "$ss23CustomStringConvertibleP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomDebugStringConvertible",
+          "printedName": "CustomDebugStringConvertible",
+          "usr": "s:s28CustomDebugStringConvertibleP",
+          "mangledName": "$ss28CustomDebugStringConvertibleP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "__DefaultCustomPlaygroundQuickLookable",
+          "printedName": "__DefaultCustomPlaygroundQuickLookable",
+          "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+          "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+        }
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "UIKit",
+      "printedName": "UIKit",
+      "declKind": "Import",
+      "moduleName": "PerfectSteak",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "OnboardingSlide",
+      "printedName": "OnboardingSlide",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "title",
+          "printedName": "title",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:12PerfectSteak15OnboardingSlideV5titleSSvp",
+          "mangledName": "$s12PerfectSteak15OnboardingSlideV5titleSSvp",
+          "moduleName": "PerfectSteak",
+          "declAttributes": [
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 0,
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak15OnboardingSlideV5titleSSvg",
+              "mangledName": "$s12PerfectSteak15OnboardingSlideV5titleSSvg",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "description",
+          "printedName": "description",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:12PerfectSteak15OnboardingSlideV11descriptionSSvp",
+          "mangledName": "$s12PerfectSteak15OnboardingSlideV11descriptionSSvp",
+          "moduleName": "PerfectSteak",
+          "declAttributes": [
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 1,
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak15OnboardingSlideV11descriptionSSvg",
+              "mangledName": "$s12PerfectSteak15OnboardingSlideV11descriptionSSvg",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "image",
+          "printedName": "image",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "UIImage",
+              "printedName": "UIKit.UIImage",
+              "usr": "c:objc(cs)UIImage"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:12PerfectSteak15OnboardingSlideV5imageSo7UIImageCvp",
+          "mangledName": "$s12PerfectSteak15OnboardingSlideV5imageSo7UIImageCvp",
+          "moduleName": "PerfectSteak",
+          "declAttributes": [
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 2,
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "UIImage",
+                  "printedName": "UIKit.UIImage",
+                  "usr": "c:objc(cs)UIImage"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak15OnboardingSlideV5imageSo7UIImageCvg",
+              "mangledName": "$s12PerfectSteak15OnboardingSlideV5imageSo7UIImageCvg",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(title:description:image:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "OnboardingSlide",
+              "printedName": "PerfectSteak.OnboardingSlide",
+              "usr": "s:12PerfectSteak15OnboardingSlideV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "UIImage",
+              "printedName": "UIKit.UIImage",
+              "usr": "c:objc(cs)UIImage"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:12PerfectSteak15OnboardingSlideV5title11description5imageACSS_SSSo7UIImageCtcfc",
+          "mangledName": "$s12PerfectSteak15OnboardingSlideV5title11description5imageACSS_SSSo7UIImageCtcfc",
+          "moduleName": "PerfectSteak",
+          "implicit": true,
+          "init_kind": "Designated"
+        }
+      ],
+      "declKind": "Struct",
+      "usr": "s:12PerfectSteak15OnboardingSlideV",
+      "mangledName": "$s12PerfectSteak15OnboardingSlideV",
+      "moduleName": "PerfectSteak",
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "Sendable",
+          "printedName": "Sendable",
+          "usr": "s:s8SendableP",
+          "mangledName": "$ss8SendableP"
+        }
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "PerfectSteak",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "CoreData",
+      "printedName": "CoreData",
+      "declKind": "Import",
+      "moduleName": "PerfectSteak"
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "CoreDataStack",
+      "printedName": "CoreDataStack",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "shared",
+          "printedName": "shared",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "CoreDataStack",
+              "printedName": "PerfectSteak.CoreDataStack",
+              "usr": "s:12PerfectSteak13CoreDataStackC"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:12PerfectSteak13CoreDataStackC6sharedACvpZ",
+          "mangledName": "$s12PerfectSteak13CoreDataStackC6sharedACvpZ",
+          "moduleName": "PerfectSteak",
+          "static": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "Final",
+            "HasStorage"
+          ],
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "CoreDataStack",
+                  "printedName": "PerfectSteak.CoreDataStack",
+                  "usr": "s:12PerfectSteak13CoreDataStackC"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak13CoreDataStackC6sharedACvgZ",
+              "mangledName": "$s12PerfectSteak13CoreDataStackC6sharedACvgZ",
+              "moduleName": "PerfectSteak",
+              "static": true,
+              "implicit": true,
+              "declAttributes": [
+                "Transparent",
+                "Final"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "persistentContainer",
+          "printedName": "persistentContainer",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "NSPersistentContainer",
+              "printedName": "CoreData.NSPersistentContainer",
+              "usr": "c:objc(cs)NSPersistentContainer"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:12PerfectSteak13CoreDataStackC19persistentContainerSo012NSPersistentG0Cvp",
+          "mangledName": "$s12PerfectSteak13CoreDataStackC19persistentContainerSo012NSPersistentG0Cvp",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "declAttributes": [
+            "Lazy"
+          ],
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "NSPersistentContainer",
+                  "printedName": "CoreData.NSPersistentContainer",
+                  "usr": "c:objc(cs)NSPersistentContainer"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak13CoreDataStackC19persistentContainerSo012NSPersistentG0Cvg",
+              "mangledName": "$s12PerfectSteak13CoreDataStackC19persistentContainerSo012NSPersistentG0Cvg",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "NSPersistentContainer",
+                  "printedName": "CoreData.NSPersistentContainer",
+                  "usr": "c:objc(cs)NSPersistentContainer"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak13CoreDataStackC19persistentContainerSo012NSPersistentG0Cvs",
+              "mangledName": "$s12PerfectSteak13CoreDataStackC19persistentContainerSo012NSPersistentG0Cvs",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak13CoreDataStackC19persistentContainerSo012NSPersistentG0CvM",
+              "mangledName": "$s12PerfectSteak13CoreDataStackC19persistentContainerSo012NSPersistentG0CvM",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "$__lazy_storage_$_persistentContainer",
+          "printedName": "$__lazy_storage_$_persistentContainer",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "CoreData.NSPersistentContainer?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "NSPersistentContainer",
+                  "printedName": "CoreData.NSPersistentContainer",
+                  "usr": "c:objc(cs)NSPersistentContainer"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:12PerfectSteak13CoreDataStackC37$__lazy_storage_$_persistentContainer33_B073F2393C12A6FA301E00F61EB1FFD2LLSo012NSPersistentI0CSgvp",
+          "mangledName": "$s12PerfectSteak13CoreDataStackC37$__lazy_storage_$_persistentContainer33_B073F2393C12A6FA301E00F61EB1FFD2LLSo012NSPersistentI0CSgvp",
+          "moduleName": "PerfectSteak",
+          "implicit": true,
+          "isInternal": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage",
+            "Final"
+          ],
+          "fixedbinaryorder": 0,
+          "hasStorage": true
+        },
+        {
+          "kind": "Function",
+          "name": "saveContext",
+          "printedName": "saveContext()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:12PerfectSteak13CoreDataStackC11saveContextyyF",
+          "mangledName": "$s12PerfectSteak13CoreDataStackC11saveContextyyF",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "funcSelfKind": "NonMutating"
+        }
+      ],
+      "declKind": "Class",
+      "usr": "s:12PerfectSteak13CoreDataStackC",
+      "mangledName": "$s12PerfectSteak13CoreDataStackC",
+      "moduleName": "PerfectSteak",
+      "isOpen": true
+    },
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "PerfectSteak",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "CoreData",
+      "printedName": "CoreData",
+      "declKind": "Import",
+      "moduleName": "PerfectSteak"
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "CDSteakRecipe",
+      "printedName": "CDSteakRecipe",
+      "children": [
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(entity:insertInto:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "CDSteakRecipe",
+              "printedName": "PerfectSteak.CDSteakRecipe",
+              "usr": "c:@M@PerfectSteak@objc(cs)CDSteakRecipe"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "NSEntityDescription",
+              "printedName": "CoreData.NSEntityDescription",
+              "usr": "c:objc(cs)NSEntityDescription"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "CoreData.NSManagedObjectContext?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "NSManagedObjectContext",
+                  "printedName": "CoreData.NSManagedObjectContext",
+                  "usr": "c:objc(cs)NSManagedObjectContext"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "c:@M@PerfectSteak@objc(cs)CDSteakRecipe(im)initWithEntity:insertIntoManagedObjectContext:",
+          "mangledName": "$s12PerfectSteak13CDSteakRecipeC6entity10insertIntoACSo19NSEntityDescriptionC_So22NSManagedObjectContextCSgtcfc",
+          "moduleName": "PerfectSteak",
+          "overriding": true,
+          "implicit": true,
+          "objc_name": "initWithEntity:insertIntoManagedObjectContext:",
+          "declAttributes": [
+            "Dynamic",
+            "ObjC",
+            "Override"
+          ],
+          "init_kind": "Designated"
+        },
+        {
+          "kind": "Function",
+          "name": "fetchRequest",
+          "printedName": "fetchRequest()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "NSFetchRequest",
+              "printedName": "CoreData.NSFetchRequest<PerfectSteak.CDSteakRecipe>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "CDSteakRecipe",
+                  "printedName": "PerfectSteak.CDSteakRecipe",
+                  "usr": "c:@M@PerfectSteak@objc(cs)CDSteakRecipe"
+                }
+              ],
+              "usr": "c:objc(cs)NSFetchRequest"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:12PerfectSteak13CDSteakRecipeC12fetchRequestSo07NSFetchF0CyACGyFZ",
+          "mangledName": "$s12PerfectSteak13CDSteakRecipeC12fetchRequestSo07NSFetchF0CyACGyFZ",
+          "moduleName": "PerfectSteak",
+          "static": true,
+          "isOpen": true,
+          "declAttributes": [
+            "AccessControl",
+            "NonObjC"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Var",
+          "name": "desiredCenterTemp",
+          "printedName": "desiredCenterTemp",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Double",
+              "printedName": "Swift.Double",
+              "usr": "s:Sd"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "c:@CM@PerfectSteak@objc(cs)CDSteakRecipe(py)desiredCenterTemp",
+          "mangledName": "$s12PerfectSteak13CDSteakRecipeC17desiredCenterTempSdvp",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "declAttributes": [
+            "Dynamic",
+            "AccessControl",
+            "NSManaged",
+            "ObjC"
+          ],
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Double",
+                  "printedName": "Swift.Double",
+                  "usr": "s:Sd"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@CM@PerfectSteak@objc(cs)CDSteakRecipe(im)desiredCenterTemp",
+              "mangledName": "$s12PerfectSteak13CDSteakRecipeC17desiredCenterTempSdvg",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "Dynamic",
+                "ObjC"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Double",
+                  "printedName": "Swift.Double",
+                  "usr": "s:Sd"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@CM@PerfectSteak@objc(cs)CDSteakRecipe(im)setDesiredCenterTemp:",
+              "mangledName": "$s12PerfectSteak13CDSteakRecipeC17desiredCenterTempSdvs",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "Dynamic",
+                "ObjC"
+              ],
+              "accessorKind": "set"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "id",
+          "printedName": "id",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Foundation.UUID?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "UUID",
+                  "printedName": "Foundation.UUID",
+                  "usr": "s:10Foundation4UUIDV"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "c:@CM@PerfectSteak@objc(cs)CDSteakRecipe(py)id",
+          "mangledName": "$s12PerfectSteak13CDSteakRecipeC2id10Foundation4UUIDVSgvp",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "declAttributes": [
+            "Dynamic",
+            "AccessControl",
+            "NSManaged",
+            "ObjC"
+          ],
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "Foundation.UUID?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "UUID",
+                      "printedName": "Foundation.UUID",
+                      "usr": "s:10Foundation4UUIDV"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@CM@PerfectSteak@objc(cs)CDSteakRecipe(im)id",
+              "mangledName": "$s12PerfectSteak13CDSteakRecipeC2id10Foundation4UUIDVSgvg",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "Dynamic",
+                "ObjC"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "Foundation.UUID?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "UUID",
+                      "printedName": "Foundation.UUID",
+                      "usr": "s:10Foundation4UUIDV"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@CM@PerfectSteak@objc(cs)CDSteakRecipe(im)setId:",
+              "mangledName": "$s12PerfectSteak13CDSteakRecipeC2id10Foundation4UUIDVSgvs",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "Dynamic",
+                "ObjC"
+              ],
+              "accessorKind": "set"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "initialTemp",
+          "printedName": "initialTemp",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Double",
+              "printedName": "Swift.Double",
+              "usr": "s:Sd"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "c:@CM@PerfectSteak@objc(cs)CDSteakRecipe(py)initialTemp",
+          "mangledName": "$s12PerfectSteak13CDSteakRecipeC11initialTempSdvp",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "declAttributes": [
+            "Dynamic",
+            "AccessControl",
+            "NSManaged",
+            "ObjC"
+          ],
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Double",
+                  "printedName": "Swift.Double",
+                  "usr": "s:Sd"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@CM@PerfectSteak@objc(cs)CDSteakRecipe(im)initialTemp",
+              "mangledName": "$s12PerfectSteak13CDSteakRecipeC11initialTempSdvg",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "Dynamic",
+                "ObjC"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Double",
+                  "printedName": "Swift.Double",
+                  "usr": "s:Sd"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@CM@PerfectSteak@objc(cs)CDSteakRecipe(im)setInitialTemp:",
+              "mangledName": "$s12PerfectSteak13CDSteakRecipeC11initialTempSdvs",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "Dynamic",
+                "ObjC"
+              ],
+              "accessorKind": "set"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "ovenTemp",
+          "printedName": "ovenTemp",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Double",
+              "printedName": "Swift.Double",
+              "usr": "s:Sd"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "c:@CM@PerfectSteak@objc(cs)CDSteakRecipe(py)ovenTemp",
+          "mangledName": "$s12PerfectSteak13CDSteakRecipeC8ovenTempSdvp",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "declAttributes": [
+            "Dynamic",
+            "AccessControl",
+            "NSManaged",
+            "ObjC"
+          ],
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Double",
+                  "printedName": "Swift.Double",
+                  "usr": "s:Sd"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@CM@PerfectSteak@objc(cs)CDSteakRecipe(im)ovenTemp",
+              "mangledName": "$s12PerfectSteak13CDSteakRecipeC8ovenTempSdvg",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "Dynamic",
+                "ObjC"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Double",
+                  "printedName": "Swift.Double",
+                  "usr": "s:Sd"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@CM@PerfectSteak@objc(cs)CDSteakRecipe(im)setOvenTemp:",
+              "mangledName": "$s12PerfectSteak13CDSteakRecipeC8ovenTempSdvs",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "Dynamic",
+                "ObjC"
+              ],
+              "accessorKind": "set"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "thickness",
+          "printedName": "thickness",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Double",
+              "printedName": "Swift.Double",
+              "usr": "s:Sd"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "c:@CM@PerfectSteak@objc(cs)CDSteakRecipe(py)thickness",
+          "mangledName": "$s12PerfectSteak13CDSteakRecipeC9thicknessSdvp",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "declAttributes": [
+            "Dynamic",
+            "AccessControl",
+            "NSManaged",
+            "ObjC"
+          ],
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Double",
+                  "printedName": "Swift.Double",
+                  "usr": "s:Sd"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@CM@PerfectSteak@objc(cs)CDSteakRecipe(im)thickness",
+              "mangledName": "$s12PerfectSteak13CDSteakRecipeC9thicknessSdvg",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "Dynamic",
+                "ObjC"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Double",
+                  "printedName": "Swift.Double",
+                  "usr": "s:Sd"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@CM@PerfectSteak@objc(cs)CDSteakRecipe(im)setThickness:",
+              "mangledName": "$s12PerfectSteak13CDSteakRecipeC9thicknessSdvs",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "Dynamic",
+                "ObjC"
+              ],
+              "accessorKind": "set"
+            }
+          ]
+        }
+      ],
+      "declKind": "Class",
+      "usr": "c:@M@PerfectSteak@objc(cs)CDSteakRecipe",
+      "mangledName": "$s12PerfectSteak13CDSteakRecipeC",
+      "moduleName": "PerfectSteak",
+      "isOpen": true,
+      "objc_name": "CDSteakRecipe",
+      "declAttributes": [
+        "AccessControl",
+        "ObjC"
+      ],
+      "superclassUsr": "c:objc(cs)NSManagedObject",
+      "inheritsConvenienceInitializers": true,
+      "superclassNames": [
+        "CoreData.NSManagedObject",
+        "ObjectiveC.NSObject"
+      ],
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "Identifiable",
+          "printedName": "Identifiable",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "ID",
+              "printedName": "ID",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "Foundation.UUID?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "UUID",
+                      "printedName": "Foundation.UUID",
+                      "usr": "s:10Foundation4UUIDV"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ]
+            }
+          ],
+          "usr": "s:s12IdentifiableP",
+          "mangledName": "$ss12IdentifiableP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Equatable",
+          "printedName": "Equatable",
+          "usr": "s:SQ",
+          "mangledName": "$sSQ"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Hashable",
+          "printedName": "Hashable",
+          "usr": "s:SH",
+          "mangledName": "$sSH"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CVarArg",
+          "printedName": "CVarArg",
+          "usr": "s:s7CVarArgP",
+          "mangledName": "$ss7CVarArgP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_KeyValueCodingAndObservingPublishing",
+          "printedName": "_KeyValueCodingAndObservingPublishing",
+          "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+          "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_KeyValueCodingAndObserving",
+          "printedName": "_KeyValueCodingAndObserving",
+          "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+          "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomStringConvertible",
+          "printedName": "CustomStringConvertible",
+          "usr": "s:s23CustomStringConvertibleP",
+          "mangledName": "$ss23CustomStringConvertibleP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomDebugStringConvertible",
+          "printedName": "CustomDebugStringConvertible",
+          "usr": "s:s28CustomDebugStringConvertibleP",
+          "mangledName": "$ss28CustomDebugStringConvertibleP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "ObservableObject",
+          "printedName": "ObservableObject",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "ObjectWillChangePublisher",
+              "printedName": "ObjectWillChangePublisher",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "ObservableObjectPublisher",
+                  "printedName": "Combine.ObservableObjectPublisher",
+                  "usr": "s:7Combine25ObservableObjectPublisherC"
+                }
+              ]
+            }
+          ],
+          "usr": "s:7Combine16ObservableObjectP",
+          "mangledName": "$s7Combine16ObservableObjectP"
+        }
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "PerfectSteak",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "CoreData",
+      "printedName": "CoreData",
+      "declKind": "Import",
+      "moduleName": "PerfectSteak"
+    },
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "PerfectSteak",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "CoreData",
+      "printedName": "CoreData",
+      "declKind": "Import",
+      "moduleName": "PerfectSteak"
+    }
+  ],
+  "json_format_version": 6
+}

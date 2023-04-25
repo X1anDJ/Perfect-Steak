@@ -1,0 +1,59 @@
+{
+  "_buildCommand2" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : true,
+    "targets" : null
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "6ce40dedab9c2689f8cdfce3e9edf3012a0132be0b7dfb7091eca3d12023a180"
+    }
+  ],
+  "containerPath" : "/Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/PerfectSteak.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "indexbuild",
+    "activeArchitecture" : "x86_64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "iphonesimulator",
+      "sdk" : "iphonesimulator15.5",
+      "sdkVariant" : "iphonesimulator",
+      "supportedArchitectures" : [
+        "x86_64"
+      ],
+      "targetArchitecture" : "x86_64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/DerivedData/PerfectSteak/Index/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/DerivedData/PerfectSteak/Index/Build/Products",
+      "derivedDataPath" : "/Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/DerivedData/PerfectSteak/Index/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/DerivedData/PerfectSteak/Index/PrecompiledHeaders",
+      "pchPath" : "/Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/DerivedData/PerfectSteak/Index/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO",
+          "INDEX_ARENA_INFO_REGULAR_BUILD_PRODUCTS_DIR" : "/Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/DerivedData/Build/Products",
+          "ONLY_ACTIVE_ARCH" : "YES"
+        }
+      }
+    }
+  },
+  "qos" : "utility",
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "launch",
+  "shouldCollectMetrics" : false,
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

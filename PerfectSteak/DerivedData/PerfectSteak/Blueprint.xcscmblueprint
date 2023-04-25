@@ -1,0 +1,23 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4342C538A7B4DF726F69D5AD08B9670970C214AE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "4342C538A7B4DF726F69D5AD08B9670970C214AE" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "5FBC3AA1-6F05-455C-A8CE-0EFB527E33C9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "4342C538A7B4DF726F69D5AD08B9670970C214AE" : "Perfect-Steak\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "PerfectSteak",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "PerfectSteak\/PerfectSteak.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/X1anDJ\/Perfect-Steak.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4342C538A7B4DF726F69D5AD08B9670970C214AE"
+    }
+  ]
+}

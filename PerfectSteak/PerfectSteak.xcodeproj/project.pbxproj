@@ -1,0 +1,462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC6B0A0629F72BC900F1A859 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6B0A0529F72BC900F1A859 /* AppDelegate.swift */; };
+		DC6B0A0829F72BC900F1A859 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6B0A0729F72BC900F1A859 /* SceneDelegate.swift */; };
+		DC6B0A0D29F72BC900F1A859 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC6B0A0B29F72BC900F1A859 /* Main.storyboard */; };
+		DC6B0A1029F72BC900F1A859 /* PerfectSteak.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC6B0A0E29F72BC900F1A859 /* PerfectSteak.xcdatamodeld */; };
+		DC6B0A1229F72BCB00F1A859 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC6B0A1129F72BCB00F1A859 /* Assets.xcassets */; };
+		DC6B0A1529F72BCB00F1A859 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC6B0A1329F72BCB00F1A859 /* LaunchScreen.storyboard */; };
+		DC6B0A2429F7471300F1A859 /* Recipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6B0A2329F7471300F1A859 /* Recipes.swift */; };
+		DC6B0A2B29F7581A00F1A859 /* SteakRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6B0A2A29F7581A00F1A859 /* SteakRecipe.swift */; };
+		DC6DDCD629F75AFE00C0DF9D /* SteakRecipeModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC6DDCD429F75AFE00C0DF9D /* SteakRecipeModel.xcdatamodeld */; };
+		DC6DDCD829F75B6C00C0DF9D /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6DDCD729F75B6C00C0DF9D /* CoreDataStack.swift */; };
+		DC6DDCDA29F7930600C0DF9D /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6DDCD929F7930600C0DF9D /* OnboardingViewController.swift */; };
+		DC6DDCDC29F7938500C0DF9D /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6DDCDB29F7938500C0DF9D /* OnboardingSlide.swift */; };
+		DC6DDCDE29F7A0CC00C0DF9D /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6DDCDD29F7A0CC00C0DF9D /* OnboardingCollectionViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DC6B0A0229F72BC900F1A859 /* PerfectSteak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PerfectSteak.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC6B0A0529F72BC900F1A859 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC6B0A0729F72BC900F1A859 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DC6B0A0C29F72BC900F1A859 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC6B0A0F29F72BC900F1A859 /* PerfectSteak.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PerfectSteak.xcdatamodel; sourceTree = "<group>"; };
+		DC6B0A1129F72BCB00F1A859 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC6B0A1429F72BCB00F1A859 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC6B0A1629F72BCB00F1A859 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC6B0A2329F7471300F1A859 /* Recipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipes.swift; sourceTree = "<group>"; };
+		DC6B0A2A29F7581A00F1A859 /* SteakRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteakRecipe.swift; sourceTree = "<group>"; };
+		DC6DDCD529F75AFE00C0DF9D /* SteakRecipeModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SteakRecipeModel.xcdatamodel; sourceTree = "<group>"; };
+		DC6DDCD729F75B6C00C0DF9D /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		DC6DDCD929F7930600C0DF9D /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		DC6DDCDB29F7938500C0DF9D /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
+		DC6DDCDD29F7A0CC00C0DF9D /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC6B09FF29F72BC900F1A859 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC6B09F929F72BC900F1A859 = {
+			isa = PBXGroup;
+			children = (
+				DC6B0A0429F72BC900F1A859 /* PerfectSteak */,
+				DC6B0A0329F72BC900F1A859 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC6B0A0329F72BC900F1A859 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC6B0A0229F72BC900F1A859 /* PerfectSteak.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC6B0A0429F72BC900F1A859 /* PerfectSteak */ = {
+			isa = PBXGroup;
+			children = (
+				DC6B0A1E29F742DD00F1A859 /* Views */,
+				DC6B0A1D29F742D000F1A859 /* Networking */,
+				DC6B0A1C29F742B700F1A859 /* Models */,
+				DC6B0A0529F72BC900F1A859 /* AppDelegate.swift */,
+				DC6B0A0729F72BC900F1A859 /* SceneDelegate.swift */,
+				DC6B0A0B29F72BC900F1A859 /* Main.storyboard */,
+				DC6B0A1129F72BCB00F1A859 /* Assets.xcassets */,
+				DC6B0A1329F72BCB00F1A859 /* LaunchScreen.storyboard */,
+				DC6B0A1629F72BCB00F1A859 /* Info.plist */,
+				DC6B0A0E29F72BC900F1A859 /* PerfectSteak.xcdatamodeld */,
+			);
+			path = PerfectSteak;
+			sourceTree = "<group>";
+		};
+		DC6B0A1C29F742B700F1A859 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DC6B0A2A29F7581A00F1A859 /* SteakRecipe.swift */,
+				DC6B0A2329F7471300F1A859 /* Recipes.swift */,
+				DC6DDCD729F75B6C00C0DF9D /* CoreDataStack.swift */,
+				DC6DDCD429F75AFE00C0DF9D /* SteakRecipeModel.xcdatamodeld */,
+				DC6DDCDB29F7938500C0DF9D /* OnboardingSlide.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DC6B0A1D29F742D000F1A859 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		DC6B0A1E29F742DD00F1A859 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DC6B0A2029F742F500F1A859 /* MainView */,
+				DC6B0A1F29F742EF00F1A859 /* Onboarding */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DC6B0A1F29F742EF00F1A859 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				DC6DDCD929F7930600C0DF9D /* OnboardingViewController.swift */,
+				DC6DDCDD29F7A0CC00C0DF9D /* OnboardingCollectionViewCell.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		DC6B0A2029F742F500F1A859 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				DC6DDCE029F8385300C0DF9D /* NavigationBar */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		DC6DDCE029F8385300C0DF9D /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NavigationBar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC6B0A0129F72BC900F1A859 /* PerfectSteak */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC6B0A1929F72BCB00F1A859 /* Build configuration list for PBXNativeTarget "PerfectSteak" */;
+			buildPhases = (
+				DC6B09FE29F72BC900F1A859 /* Sources */,
+				DC6B09FF29F72BC900F1A859 /* Frameworks */,
+				DC6B0A0029F72BC900F1A859 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PerfectSteak;
+			productName = PerfectSteak;
+			productReference = DC6B0A0229F72BC900F1A859 /* PerfectSteak.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC6B09FA29F72BC900F1A859 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					DC6B0A0129F72BC900F1A859 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = DC6B09FD29F72BC900F1A859 /* Build configuration list for PBXProject "PerfectSteak" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC6B09F929F72BC900F1A859;
+			productRefGroup = DC6B0A0329F72BC900F1A859 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC6B0A0129F72BC900F1A859 /* PerfectSteak */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC6B0A0029F72BC900F1A859 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC6B0A1529F72BCB00F1A859 /* LaunchScreen.storyboard in Resources */,
+				DC6B0A1229F72BCB00F1A859 /* Assets.xcassets in Resources */,
+				DC6B0A0D29F72BC900F1A859 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC6B09FE29F72BC900F1A859 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC6B0A2429F7471300F1A859 /* Recipes.swift in Sources */,
+				DC6B0A0629F72BC900F1A859 /* AppDelegate.swift in Sources */,
+				DC6B0A1029F72BC900F1A859 /* PerfectSteak.xcdatamodeld in Sources */,
+				DC6B0A2B29F7581A00F1A859 /* SteakRecipe.swift in Sources */,
+				DC6DDCD629F75AFE00C0DF9D /* SteakRecipeModel.xcdatamodeld in Sources */,
+				DC6B0A0829F72BC900F1A859 /* SceneDelegate.swift in Sources */,
+				DC6DDCDA29F7930600C0DF9D /* OnboardingViewController.swift in Sources */,
+				DC6DDCDE29F7A0CC00C0DF9D /* OnboardingCollectionViewCell.swift in Sources */,
+				DC6DDCDC29F7938500C0DF9D /* OnboardingSlide.swift in Sources */,
+				DC6DDCD829F75B6C00C0DF9D /* CoreDataStack.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DC6B0A0B29F72BC900F1A859 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC6B0A0C29F72BC900F1A859 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC6B0A1329F72BCB00F1A859 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC6B0A1429F72BCB00F1A859 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC6B0A1729F72BCB00F1A859 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DC6B0A1829F72BCB00F1A859 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC6B0A1A29F72BCB00F1A859 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZGPM5R49KX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PerfectSteak/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dajun.PerfectSteak;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC6B0A1B29F72BCB00F1A859 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZGPM5R49KX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PerfectSteak/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dajun.PerfectSteak;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC6B09FD29F72BC900F1A859 /* Build configuration list for PBXProject "PerfectSteak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC6B0A1729F72BCB00F1A859 /* Debug */,
+				DC6B0A1829F72BCB00F1A859 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC6B0A1929F72BCB00F1A859 /* Build configuration list for PBXNativeTarget "PerfectSteak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC6B0A1A29F72BCB00F1A859 /* Debug */,
+				DC6B0A1B29F72BCB00F1A859 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DC6B0A0E29F72BC900F1A859 /* PerfectSteak.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DC6B0A0F29F72BC900F1A859 /* PerfectSteak.xcdatamodel */,
+			);
+			currentVersion = DC6B0A0F29F72BC900F1A859 /* PerfectSteak.xcdatamodel */;
+			path = PerfectSteak.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		DC6DDCD429F75AFE00C0DF9D /* SteakRecipeModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DC6DDCD529F75AFE00C0DF9D /* SteakRecipeModel.xcdatamodel */,
+			);
+			currentVersion = DC6DDCD529F75AFE00C0DF9D /* SteakRecipeModel.xcdatamodel */;
+			path = SteakRecipeModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DC6B09FA29F72BC900F1A859 /* Project object */;
+}
