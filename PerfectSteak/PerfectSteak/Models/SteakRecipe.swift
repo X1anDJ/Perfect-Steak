@@ -11,6 +11,10 @@ class SteakRecipe {
     
     var ID = UUID()
     
+    var title: String {
+        return "Steak: \(thickness)cm, \(ovenTemp)°C"
+    }
+    
     var thickness: Double {
         didSet {
             if thickness < 0.5 {

@@ -69,6 +69,7 @@ class Recipes {
         CoreDataStack.shared.saveContext()
     }
     
+    
     //Remove a recipe from the stack
     func deleteSteakRecipe(with uuid: UUID) {
         let fetchRequest: NSFetchRequest<CDSteakRecipe> = CDSteakRecipe.fetchRequest()

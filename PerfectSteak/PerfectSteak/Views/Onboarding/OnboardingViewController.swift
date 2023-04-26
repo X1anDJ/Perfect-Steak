@@ -47,7 +47,7 @@ class OnboardingViewController: UIViewController {
             let controller = storyboard?.instantiateViewController(withIdentifier: "HomeNC") as! UINavigationController
             controller.modalPresentationStyle = .fullScreen
             controller.modalTransitionStyle = .crossDissolve
-            present(controller, animated: true)
+            present(controller, animated: true)  //!111
         } else {
             currentPage += 1
             let indexPath =  IndexPath(item: currentPage, section: 0)

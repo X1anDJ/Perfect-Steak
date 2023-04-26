@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>9F996AD4-82E8-4E2B-AED5-4ADF9AB8897A</key>
+		<key>A4AA3827-84EC-40BC-A74F-99BB92FE1DB6</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
 			<key>fileName</key>
-			<string>9F996AD4-82E8-4E2B-AED5-4ADF9AB8897A.xcactivitylog</string>
+			<string>A4AA3827-84EC-40BC-A74F-99BB92FE1DB6.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -26,13 +26,13 @@
 			<key>signature</key>
 			<string>PerfectSteak-ekfitmheembjpldjvpafdmgegfat</string>
 			<key>timeStartedRecording</key>
-			<real>704100067.82081604</real>
+			<real>704169687.439147</real>
 			<key>timeStoppedRecording</key>
-			<real>704100069.51065195</real>
+			<real>704169689.85276496</real>
 			<key>title</key>
 			<string>Build target PerfectSteak</string>
 			<key>uniqueIdentifier</key>
-			<string>9F996AD4-82E8-4E2B-AED5-4ADF9AB8897A</string>
+			<string>A4AA3827-84EC-40BC-A74F-99BB92FE1DB6</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>

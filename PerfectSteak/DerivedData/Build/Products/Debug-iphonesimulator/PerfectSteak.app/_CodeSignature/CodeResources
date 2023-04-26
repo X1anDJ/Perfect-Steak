@@ -26,11 +26,11 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/61x-ii-qhL-view-des-JU-0ev.nib</key>
 		<data>
-		Rc8azX8NVsaE7CGrMtzkd4YtTv0=
+		fgNTfzffzPeGMp1uUNZyQKQSlJw=
 		</data>
 		<key>Base.lproj/Main.storyboardc/HomeNC.nib</key>
 		<data>
-		cvg4MYDpMRtUwp7mzoQvCHVs36g=
+		i0jtm6K/RCNWp9ct5JXLtWqcXVM=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -43,6 +43,10 @@
 		<key>Base.lproj/Main.storyboardc/UIViewController-PSz-OW-Fj8.nib</key>
 		<data>
 		Bd6AaMmx15KAc1SIaLwIzfAVF9Q=
+		</data>
+		<key>CircularSlider.nib</key>
+		<data>
+		CSzbZ6f7ybIk1VonakRce56+TWM=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -114,14 +118,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DAcMX+EgFsngCCGn4jnRPc+2bCVqroP1i52mcxG+nng=
+			0ugPLtXcxLyQ5W9fwmmUneeNbf3JCqOHe1FsjonyarQ=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/HomeNC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0NfhbHhA6fu2P46gw+Fi6JbaUEPjLHwZZ2OQa9VTBto=
+			HvAUjIWv4s5+YjTnuXQAuOnWCbIScdIWEvUQD4Ihvtw=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -143,6 +147,13 @@
 			<key>hash2</key>
 			<data>
 			cKOiCNmDzuomlrMPEemT1ef32s+j1lGIABeEexql6pk=
+			</data>
+		</dict>
+		<key>CircularSlider.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fsjv4cVkny3Ln/MnaLFBxem+Cv1IxWHmYnyv50cTVeA=
 			</data>
 		</dict>
 		<key>PerfectSteak.momd/PerfectSteak.mom</key>

@@ -248,9 +248,43 @@ SWIFT_CLASS_NAMED("CDSteakRecipe")
 @property (nonatomic) double thickness;
 @end
 
-@class UIImageView;
 @class UILabel;
+@class UIButton;
 @class NSCoder;
+@class UIPanGestureRecognizer;
+
+SWIFT_CLASS("_TtC12PerfectSteak14CircularSlider")
+@interface CircularSlider : UIView
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified parameterTitle;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified parameterNumber;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified parameterUnit;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified rangeBegin;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified rangeEnd;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified circularButton;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified pointerView;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (IBAction)handleButtonDrag:(UIPanGestureRecognizer * _Nonnull)sender;
+@end
+
+@class NSString;
+@class NSBundle;
+
+SWIFT_CLASS("_TtC12PerfectSteak18MainViewController")
+@interface MainViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified titleButton;
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIPresentationController;
+
+@interface MainViewController (SWIFT_EXTENSION(PerfectSteak)) <UIPopoverPresentationControllerDelegate>
+- (UIModalPresentationStyle)adaptivePresentationStyleForPresentationController:(UIPresentationController * _Nonnull)controller SWIFT_WARN_UNUSED_RESULT;
+@end
+
+@class UIImageView;
 
 SWIFT_CLASS("_TtC12PerfectSteak28OnboardingCollectionViewCell")
 @interface OnboardingCollectionViewCell : UICollectionViewCell
@@ -262,10 +296,7 @@ SWIFT_CLASS("_TtC12PerfectSteak28OnboardingCollectionViewCell")
 @end
 
 @class UICollectionView;
-@class UIButton;
 @class UIPageControl;
-@class NSString;
-@class NSBundle;
 
 SWIFT_CLASS("_TtC12PerfectSteak24OnboardingViewController")
 @interface OnboardingViewController : UIViewController
@@ -289,6 +320,22 @@ SWIFT_CLASS("_TtC12PerfectSteak24OnboardingViewController")
 - (void)scrollViewDidEndDecelerating:(UIScrollView * _Nonnull)scrollView;
 @end
 
+@class UITableView;
+@class UITableViewCell;
+
+SWIFT_CLASS("_TtC12PerfectSteak33RecipeDropdownTableViewController")
+@interface RecipeDropdownTableViewController : UITableViewController
+- (void)viewDidLoad;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)tableView:(UITableView * _Nonnull)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIWindow;
 @class UIScene;
 
@@ -302,6 +349,11 @@ SWIFT_CLASS("_TtC12PerfectSteak13SceneDelegate")
 - (void)sceneWillEnterForeground:(UIScene * _Nonnull)scene;
 - (void)sceneDidEnterBackground:(UIScene * _Nonnull)scene;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface UIView (SWIFT_EXTENSION(PerfectSteak))
+@property (nonatomic) IBInspectable CGFloat cornerRadius;
 @end
 
 #if __has_attribute(external_source_symbol)

@@ -5,6 +5,797 @@
   "children": [
     {
       "kind": "Import",
+      "name": "UIKit",
+      "printedName": "UIKit",
+      "declKind": "Import",
+      "moduleName": "PerfectSteak",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "RecipeDropdownTableViewController",
+      "printedName": "RecipeDropdownTableViewController",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "recipesManager",
+          "printedName": "recipesManager",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Recipes",
+              "printedName": "PerfectSteak.Recipes",
+              "usr": "s:12PerfectSteak7RecipesC"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:12PerfectSteak33RecipeDropdownTableViewControllerC14recipesManagerAA7RecipesCvp",
+          "mangledName": "$s12PerfectSteak33RecipeDropdownTableViewControllerC14recipesManagerAA7RecipesCvp",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "declAttributes": [
+            "Custom",
+            "HasInitialValue",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 0,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Recipes",
+                  "printedName": "PerfectSteak.Recipes",
+                  "usr": "s:12PerfectSteak7RecipesC"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak33RecipeDropdownTableViewControllerC14recipesManagerAA7RecipesCvg",
+              "mangledName": "$s12PerfectSteak33RecipeDropdownTableViewControllerC14recipesManagerAA7RecipesCvg",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Recipes",
+                  "printedName": "PerfectSteak.Recipes",
+                  "usr": "s:12PerfectSteak7RecipesC"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak33RecipeDropdownTableViewControllerC14recipesManagerAA7RecipesCvs",
+              "mangledName": "$s12PerfectSteak33RecipeDropdownTableViewControllerC14recipesManagerAA7RecipesCvs",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak33RecipeDropdownTableViewControllerC14recipesManagerAA7RecipesCvM",
+              "mangledName": "$s12PerfectSteak33RecipeDropdownTableViewControllerC14recipesManagerAA7RecipesCvM",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "recipes",
+          "printedName": "recipes",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Array",
+              "printedName": "[PerfectSteak.SteakRecipe]",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "SteakRecipe",
+                  "printedName": "PerfectSteak.SteakRecipe",
+                  "usr": "s:12PerfectSteak0B6RecipeC"
+                }
+              ],
+              "usr": "s:Sa"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:12PerfectSteak33RecipeDropdownTableViewControllerC7recipesSayAA0bC0CGvp",
+          "mangledName": "$s12PerfectSteak33RecipeDropdownTableViewControllerC7recipesSayAA0bC0CGvp",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "declAttributes": [
+            "Custom",
+            "HasInitialValue",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 1,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Array",
+                  "printedName": "[PerfectSteak.SteakRecipe]",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "SteakRecipe",
+                      "printedName": "PerfectSteak.SteakRecipe",
+                      "usr": "s:12PerfectSteak0B6RecipeC"
+                    }
+                  ],
+                  "usr": "s:Sa"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak33RecipeDropdownTableViewControllerC7recipesSayAA0bC0CGvg",
+              "mangledName": "$s12PerfectSteak33RecipeDropdownTableViewControllerC7recipesSayAA0bC0CGvg",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Array",
+                  "printedName": "[PerfectSteak.SteakRecipe]",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "SteakRecipe",
+                      "printedName": "PerfectSteak.SteakRecipe",
+                      "usr": "s:12PerfectSteak0B6RecipeC"
+                    }
+                  ],
+                  "usr": "s:Sa"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak33RecipeDropdownTableViewControllerC7recipesSayAA0bC0CGvs",
+              "mangledName": "$s12PerfectSteak33RecipeDropdownTableViewControllerC7recipesSayAA0bC0CGvs",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak33RecipeDropdownTableViewControllerC7recipesSayAA0bC0CGvM",
+              "mangledName": "$s12PerfectSteak33RecipeDropdownTableViewControllerC7recipesSayAA0bC0CGvM",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "didSelectRecipe",
+          "printedName": "didSelectRecipe",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "((PerfectSteak.SteakRecipe) -> ())?",
+              "children": [
+                {
+                  "kind": "TypeFunc",
+                  "name": "Function",
+                  "printedName": "(PerfectSteak.SteakRecipe) -> ()",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Void",
+                      "printedName": "()"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "SteakRecipe",
+                      "printedName": "PerfectSteak.SteakRecipe",
+                      "usr": "s:12PerfectSteak0B6RecipeC"
+                    }
+                  ]
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:12PerfectSteak33RecipeDropdownTableViewControllerC09didSelectC0yAA0bC0CcSgvp",
+          "mangledName": "$s12PerfectSteak33RecipeDropdownTableViewControllerC09didSelectC0yAA0bC0CcSgvp",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "declAttributes": [
+            "Custom",
+            "HasInitialValue",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 2,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "((PerfectSteak.SteakRecipe) -> ())?",
+                  "children": [
+                    {
+                      "kind": "TypeFunc",
+                      "name": "Function",
+                      "printedName": "(PerfectSteak.SteakRecipe) -> ()",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "Void",
+                          "printedName": "()"
+                        },
+                        {
+                          "kind": "TypeNominal",
+                          "name": "SteakRecipe",
+                          "printedName": "PerfectSteak.SteakRecipe",
+                          "usr": "s:12PerfectSteak0B6RecipeC"
+                        }
+                      ]
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak33RecipeDropdownTableViewControllerC09didSelectC0yAA0bC0CcSgvg",
+              "mangledName": "$s12PerfectSteak33RecipeDropdownTableViewControllerC09didSelectC0yAA0bC0CcSgvg",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "((PerfectSteak.SteakRecipe) -> ())?",
+                  "children": [
+                    {
+                      "kind": "TypeFunc",
+                      "name": "Function",
+                      "printedName": "(PerfectSteak.SteakRecipe) -> ()",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "Void",
+                          "printedName": "()"
+                        },
+                        {
+                          "kind": "TypeNominal",
+                          "name": "SteakRecipe",
+                          "printedName": "PerfectSteak.SteakRecipe",
+                          "usr": "s:12PerfectSteak0B6RecipeC"
+                        }
+                      ]
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak33RecipeDropdownTableViewControllerC09didSelectC0yAA0bC0CcSgvs",
+              "mangledName": "$s12PerfectSteak33RecipeDropdownTableViewControllerC09didSelectC0yAA0bC0CcSgvs",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak33RecipeDropdownTableViewControllerC09didSelectC0yAA0bC0CcSgvM",
+              "mangledName": "$s12PerfectSteak33RecipeDropdownTableViewControllerC09didSelectC0yAA0bC0CcSgvM",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Function",
+          "name": "viewDidLoad",
+          "printedName": "viewDidLoad()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@PerfectSteak@objc(cs)RecipeDropdownTableViewController(im)viewDidLoad",
+          "mangledName": "$s12PerfectSteak33RecipeDropdownTableViewControllerC11viewDidLoadyyF",
+          "moduleName": "PerfectSteak",
+          "overriding": true,
+          "isOpen": true,
+          "objc_name": "viewDidLoad",
+          "declAttributes": [
+            "Dynamic",
+            "ObjC",
+            "Custom",
+            "Override"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "numberOfSections",
+          "printedName": "numberOfSections(in:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Int",
+              "printedName": "Swift.Int",
+              "usr": "s:Si"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "UITableView",
+              "printedName": "UIKit.UITableView",
+              "usr": "c:objc(cs)UITableView"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@PerfectSteak@objc(cs)RecipeDropdownTableViewController(im)numberOfSectionsInTableView:",
+          "mangledName": "$s12PerfectSteak33RecipeDropdownTableViewControllerC16numberOfSections2inSiSo07UITableF0C_tF",
+          "moduleName": "PerfectSteak",
+          "overriding": true,
+          "isOpen": true,
+          "objc_name": "numberOfSectionsInTableView:",
+          "declAttributes": [
+            "Dynamic",
+            "ObjC",
+            "Custom",
+            "Override",
+            "RawDocComment"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "tableView",
+          "printedName": "tableView(_:numberOfRowsInSection:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Int",
+              "printedName": "Swift.Int",
+              "usr": "s:Si"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "UITableView",
+              "printedName": "UIKit.UITableView",
+              "usr": "c:objc(cs)UITableView"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Int",
+              "printedName": "Swift.Int",
+              "usr": "s:Si"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@PerfectSteak@objc(cs)RecipeDropdownTableViewController(im)tableView:numberOfRowsInSection:",
+          "mangledName": "$s12PerfectSteak33RecipeDropdownTableViewControllerC05tableF0_21numberOfRowsInSectionSiSo07UITableF0C_SitF",
+          "moduleName": "PerfectSteak",
+          "overriding": true,
+          "isOpen": true,
+          "objc_name": "tableView:numberOfRowsInSection:",
+          "declAttributes": [
+            "Dynamic",
+            "ObjC",
+            "Custom",
+            "Override"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "tableView",
+          "printedName": "tableView(_:cellForRowAt:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "UITableViewCell",
+              "printedName": "UIKit.UITableViewCell",
+              "usr": "c:objc(cs)UITableViewCell"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "UITableView",
+              "printedName": "UIKit.UITableView",
+              "usr": "c:objc(cs)UITableView"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "IndexPath",
+              "printedName": "Foundation.IndexPath",
+              "usr": "s:10Foundation9IndexPathV"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@PerfectSteak@objc(cs)RecipeDropdownTableViewController(im)tableView:cellForRowAtIndexPath:",
+          "mangledName": "$s12PerfectSteak33RecipeDropdownTableViewControllerC05tableF0_12cellForRowAtSo07UITableF4CellCSo0mF0C_10Foundation9IndexPathVtF",
+          "moduleName": "PerfectSteak",
+          "overriding": true,
+          "isOpen": true,
+          "objc_name": "tableView:cellForRowAtIndexPath:",
+          "declAttributes": [
+            "Dynamic",
+            "ObjC",
+            "Custom",
+            "Override"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "tableView",
+          "printedName": "tableView(_:didSelectRowAt:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "UITableView",
+              "printedName": "UIKit.UITableView",
+              "usr": "c:objc(cs)UITableView"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "IndexPath",
+              "printedName": "Foundation.IndexPath",
+              "usr": "s:10Foundation9IndexPathV"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@PerfectSteak@objc(cs)RecipeDropdownTableViewController(im)tableView:didSelectRowAtIndexPath:",
+          "mangledName": "$s12PerfectSteak33RecipeDropdownTableViewControllerC05tableF0_14didSelectRowAtySo07UITableF0C_10Foundation9IndexPathVtF",
+          "moduleName": "PerfectSteak",
+          "overriding": true,
+          "isOpen": true,
+          "objc_name": "tableView:didSelectRowAtIndexPath:",
+          "declAttributes": [
+            "Dynamic",
+            "ObjC",
+            "Custom",
+            "Override"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "tableView",
+          "printedName": "tableView(_:commit:forRowAt:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "UITableView",
+              "printedName": "UIKit.UITableView",
+              "usr": "c:objc(cs)UITableView"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "EditingStyle",
+              "printedName": "UIKit.UITableViewCell.EditingStyle",
+              "usr": "c:@E@UITableViewCellEditingStyle"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "IndexPath",
+              "printedName": "Foundation.IndexPath",
+              "usr": "s:10Foundation9IndexPathV"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@PerfectSteak@objc(cs)RecipeDropdownTableViewController(im)tableView:commitEditingStyle:forRowAtIndexPath:",
+          "mangledName": "$s12PerfectSteak33RecipeDropdownTableViewControllerC05tableF0_6commit8forRowAtySo07UITableF0C_So0mF16CellEditingStyleV10Foundation9IndexPathVtF",
+          "moduleName": "PerfectSteak",
+          "overriding": true,
+          "isOpen": true,
+          "objc_name": "tableView:commitEditingStyle:forRowAtIndexPath:",
+          "declAttributes": [
+            "Dynamic",
+            "ObjC",
+            "Custom",
+            "Override"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(style:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "RecipeDropdownTableViewController",
+              "printedName": "PerfectSteak.RecipeDropdownTableViewController",
+              "usr": "c:@M@PerfectSteak@objc(cs)RecipeDropdownTableViewController"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Style",
+              "printedName": "UIKit.UITableView.Style",
+              "usr": "c:@E@UITableViewStyle"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "c:@M@PerfectSteak@objc(cs)RecipeDropdownTableViewController(im)initWithStyle:",
+          "mangledName": "$s12PerfectSteak33RecipeDropdownTableViewControllerC5styleACSo07UITableF5StyleV_tcfc",
+          "moduleName": "PerfectSteak",
+          "overriding": true,
+          "implicit": true,
+          "objc_name": "initWithStyle:",
+          "declAttributes": [
+            "Dynamic",
+            "ObjC",
+            "Custom",
+            "Override"
+          ],
+          "init_kind": "Designated"
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(nibName:bundle:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "RecipeDropdownTableViewController",
+              "printedName": "PerfectSteak.RecipeDropdownTableViewController",
+              "usr": "c:@M@PerfectSteak@objc(cs)RecipeDropdownTableViewController"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Swift.String?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Foundation.Bundle?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Bundle",
+                  "printedName": "Foundation.Bundle",
+                  "usr": "c:objc(cs)NSBundle"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "c:@M@PerfectSteak@objc(cs)RecipeDropdownTableViewController(im)initWithNibName:bundle:",
+          "mangledName": "$s12PerfectSteak33RecipeDropdownTableViewControllerC7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
+          "moduleName": "PerfectSteak",
+          "overriding": true,
+          "implicit": true,
+          "objc_name": "initWithNibName:bundle:",
+          "declAttributes": [
+            "Dynamic",
+            "ObjC",
+            "Custom",
+            "Override"
+          ],
+          "init_kind": "Designated"
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(coder:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "PerfectSteak.RecipeDropdownTableViewController?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "RecipeDropdownTableViewController",
+                  "printedName": "PerfectSteak.RecipeDropdownTableViewController",
+                  "usr": "c:@M@PerfectSteak@objc(cs)RecipeDropdownTableViewController"
+                }
+              ],
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "NSCoder",
+              "printedName": "Foundation.NSCoder",
+              "usr": "c:objc(cs)NSCoder"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "c:@M@PerfectSteak@objc(cs)RecipeDropdownTableViewController(im)initWithCoder:",
+          "mangledName": "$s12PerfectSteak33RecipeDropdownTableViewControllerC5coderACSgSo7NSCoderC_tcfc",
+          "moduleName": "PerfectSteak",
+          "overriding": true,
+          "implicit": true,
+          "objc_name": "initWithCoder:",
+          "declAttributes": [
+            "Dynamic",
+            "ObjC",
+            "Custom",
+            "Required"
+          ],
+          "init_kind": "Designated"
+        }
+      ],
+      "declKind": "Class",
+      "usr": "c:@M@PerfectSteak@objc(cs)RecipeDropdownTableViewController",
+      "mangledName": "$s12PerfectSteak33RecipeDropdownTableViewControllerC",
+      "moduleName": "PerfectSteak",
+      "isOpen": true,
+      "declAttributes": [
+        "Custom",
+        "ObjC"
+      ],
+      "superclassUsr": "c:objc(cs)UITableViewController",
+      "inheritsConvenienceInitializers": true,
+      "superclassNames": [
+        "UIKit.UITableViewController",
+        "UIKit.UIViewController",
+        "UIKit.UIResponder",
+        "ObjectiveC.NSObject"
+      ],
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "Equatable",
+          "printedName": "Equatable",
+          "usr": "s:SQ",
+          "mangledName": "$sSQ"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Hashable",
+          "printedName": "Hashable",
+          "usr": "s:SH",
+          "mangledName": "$sSH"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CVarArg",
+          "printedName": "CVarArg",
+          "usr": "s:s7CVarArgP",
+          "mangledName": "$ss7CVarArgP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_KeyValueCodingAndObservingPublishing",
+          "printedName": "_KeyValueCodingAndObservingPublishing",
+          "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+          "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_KeyValueCodingAndObserving",
+          "printedName": "_KeyValueCodingAndObserving",
+          "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+          "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomStringConvertible",
+          "printedName": "CustomStringConvertible",
+          "usr": "s:s23CustomStringConvertibleP",
+          "mangledName": "$ss23CustomStringConvertibleP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomDebugStringConvertible",
+          "printedName": "CustomDebugStringConvertible",
+          "usr": "s:s28CustomDebugStringConvertibleP",
+          "mangledName": "$ss28CustomDebugStringConvertibleP"
+        }
+      ]
+    },
+    {
+      "kind": "Import",
       "name": "Foundation",
       "printedName": "Foundation",
       "declKind": "Import",
@@ -703,6 +1494,1540 @@
     },
     {
       "kind": "Import",
+      "name": "UIKit",
+      "printedName": "UIKit",
+      "declKind": "Import",
+      "moduleName": "PerfectSteak",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "CircularSlider",
+      "printedName": "CircularSlider",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "parameterTitle",
+          "printedName": "parameterTitle",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "WeakStorage",
+              "printedName": "UIKit.UILabel?"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "c:@M@PerfectSteak@objc(cs)CircularSlider(py)parameterTitle",
+          "mangledName": "$s12PerfectSteak14CircularSliderC14parameterTitleSo7UILabelCSgvp",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "Custom",
+            "HasStorage",
+            "ReferenceOwnership",
+            "IBOutlet",
+            "ObjC"
+          ],
+          "fixedbinaryorder": 0,
+          "ownership": 1,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "ImplicitlyUnwrappedOptional",
+                  "printedName": "UIKit.UILabel?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "UILabel",
+                      "printedName": "UIKit.UILabel",
+                      "usr": "c:objc(cs)UILabel"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@M@PerfectSteak@objc(cs)CircularSlider(im)parameterTitle",
+              "mangledName": "$s12PerfectSteak14CircularSliderC14parameterTitleSo7UILabelCSgvg",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "ObjC"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "ImplicitlyUnwrappedOptional",
+                  "printedName": "UIKit.UILabel?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "UILabel",
+                      "printedName": "UIKit.UILabel",
+                      "usr": "c:objc(cs)UILabel"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@M@PerfectSteak@objc(cs)CircularSlider(im)setParameterTitle:",
+              "mangledName": "$s12PerfectSteak14CircularSliderC14parameterTitleSo7UILabelCSgvs",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "ObjC"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak14CircularSliderC14parameterTitleSo7UILabelCSgvM",
+              "mangledName": "$s12PerfectSteak14CircularSliderC14parameterTitleSo7UILabelCSgvM",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "parameterNumber",
+          "printedName": "parameterNumber",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "WeakStorage",
+              "printedName": "UIKit.UILabel?"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "c:@M@PerfectSteak@objc(cs)CircularSlider(py)parameterNumber",
+          "mangledName": "$s12PerfectSteak14CircularSliderC15parameterNumberSo7UILabelCSgvp",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "Custom",
+            "HasStorage",
+            "ReferenceOwnership",
+            "IBOutlet",
+            "ObjC"
+          ],
+          "fixedbinaryorder": 1,
+          "ownership": 1,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "ImplicitlyUnwrappedOptional",
+                  "printedName": "UIKit.UILabel?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "UILabel",
+                      "printedName": "UIKit.UILabel",
+                      "usr": "c:objc(cs)UILabel"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@M@PerfectSteak@objc(cs)CircularSlider(im)parameterNumber",
+              "mangledName": "$s12PerfectSteak14CircularSliderC15parameterNumberSo7UILabelCSgvg",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "ObjC"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "ImplicitlyUnwrappedOptional",
+                  "printedName": "UIKit.UILabel?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "UILabel",
+                      "printedName": "UIKit.UILabel",
+                      "usr": "c:objc(cs)UILabel"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@M@PerfectSteak@objc(cs)CircularSlider(im)setParameterNumber:",
+              "mangledName": "$s12PerfectSteak14CircularSliderC15parameterNumberSo7UILabelCSgvs",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "ObjC"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak14CircularSliderC15parameterNumberSo7UILabelCSgvM",
+              "mangledName": "$s12PerfectSteak14CircularSliderC15parameterNumberSo7UILabelCSgvM",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "parameterUnit",
+          "printedName": "parameterUnit",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "WeakStorage",
+              "printedName": "UIKit.UILabel?"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "c:@M@PerfectSteak@objc(cs)CircularSlider(py)parameterUnit",
+          "mangledName": "$s12PerfectSteak14CircularSliderC13parameterUnitSo7UILabelCSgvp",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "Custom",
+            "HasStorage",
+            "ReferenceOwnership",
+            "IBOutlet",
+            "ObjC"
+          ],
+          "fixedbinaryorder": 2,
+          "ownership": 1,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "ImplicitlyUnwrappedOptional",
+                  "printedName": "UIKit.UILabel?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "UILabel",
+                      "printedName": "UIKit.UILabel",
+                      "usr": "c:objc(cs)UILabel"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@M@PerfectSteak@objc(cs)CircularSlider(im)parameterUnit",
+              "mangledName": "$s12PerfectSteak14CircularSliderC13parameterUnitSo7UILabelCSgvg",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "ObjC"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "ImplicitlyUnwrappedOptional",
+                  "printedName": "UIKit.UILabel?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "UILabel",
+                      "printedName": "UIKit.UILabel",
+                      "usr": "c:objc(cs)UILabel"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@M@PerfectSteak@objc(cs)CircularSlider(im)setParameterUnit:",
+              "mangledName": "$s12PerfectSteak14CircularSliderC13parameterUnitSo7UILabelCSgvs",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "ObjC"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak14CircularSliderC13parameterUnitSo7UILabelCSgvM",
+              "mangledName": "$s12PerfectSteak14CircularSliderC13parameterUnitSo7UILabelCSgvM",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "rangeBegin",
+          "printedName": "rangeBegin",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "WeakStorage",
+              "printedName": "UIKit.UILabel?"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "c:@M@PerfectSteak@objc(cs)CircularSlider(py)rangeBegin",
+          "mangledName": "$s12PerfectSteak14CircularSliderC10rangeBeginSo7UILabelCSgvp",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "Custom",
+            "HasStorage",
+            "ReferenceOwnership",
+            "IBOutlet",
+            "ObjC"
+          ],
+          "fixedbinaryorder": 3,
+          "ownership": 1,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "ImplicitlyUnwrappedOptional",
+                  "printedName": "UIKit.UILabel?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "UILabel",
+                      "printedName": "UIKit.UILabel",
+                      "usr": "c:objc(cs)UILabel"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@M@PerfectSteak@objc(cs)CircularSlider(im)rangeBegin",
+              "mangledName": "$s12PerfectSteak14CircularSliderC10rangeBeginSo7UILabelCSgvg",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "ObjC"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "ImplicitlyUnwrappedOptional",
+                  "printedName": "UIKit.UILabel?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "UILabel",
+                      "printedName": "UIKit.UILabel",
+                      "usr": "c:objc(cs)UILabel"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@M@PerfectSteak@objc(cs)CircularSlider(im)setRangeBegin:",
+              "mangledName": "$s12PerfectSteak14CircularSliderC10rangeBeginSo7UILabelCSgvs",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "ObjC"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak14CircularSliderC10rangeBeginSo7UILabelCSgvM",
+              "mangledName": "$s12PerfectSteak14CircularSliderC10rangeBeginSo7UILabelCSgvM",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "rangeEnd",
+          "printedName": "rangeEnd",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "WeakStorage",
+              "printedName": "UIKit.UILabel?"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "c:@M@PerfectSteak@objc(cs)CircularSlider(py)rangeEnd",
+          "mangledName": "$s12PerfectSteak14CircularSliderC8rangeEndSo7UILabelCSgvp",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "Custom",
+            "HasStorage",
+            "ReferenceOwnership",
+            "IBOutlet",
+            "ObjC"
+          ],
+          "fixedbinaryorder": 4,
+          "ownership": 1,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "ImplicitlyUnwrappedOptional",
+                  "printedName": "UIKit.UILabel?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "UILabel",
+                      "printedName": "UIKit.UILabel",
+                      "usr": "c:objc(cs)UILabel"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@M@PerfectSteak@objc(cs)CircularSlider(im)rangeEnd",
+              "mangledName": "$s12PerfectSteak14CircularSliderC8rangeEndSo7UILabelCSgvg",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "ObjC"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "ImplicitlyUnwrappedOptional",
+                  "printedName": "UIKit.UILabel?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "UILabel",
+                      "printedName": "UIKit.UILabel",
+                      "usr": "c:objc(cs)UILabel"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@M@PerfectSteak@objc(cs)CircularSlider(im)setRangeEnd:",
+              "mangledName": "$s12PerfectSteak14CircularSliderC8rangeEndSo7UILabelCSgvs",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "ObjC"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak14CircularSliderC8rangeEndSo7UILabelCSgvM",
+              "mangledName": "$s12PerfectSteak14CircularSliderC8rangeEndSo7UILabelCSgvM",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "circularButton",
+          "printedName": "circularButton",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "WeakStorage",
+              "printedName": "UIKit.UIButton?"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "c:@M@PerfectSteak@objc(cs)CircularSlider(py)circularButton",
+          "mangledName": "$s12PerfectSteak14CircularSliderC14circularButtonSo8UIButtonCSgvp",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "Custom",
+            "HasStorage",
+            "ReferenceOwnership",
+            "IBOutlet",
+            "ObjC"
+          ],
+          "fixedbinaryorder": 5,
+          "ownership": 1,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "ImplicitlyUnwrappedOptional",
+                  "printedName": "UIKit.UIButton?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "UIButton",
+                      "printedName": "UIKit.UIButton",
+                      "usr": "c:objc(cs)UIButton"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@M@PerfectSteak@objc(cs)CircularSlider(im)circularButton",
+              "mangledName": "$s12PerfectSteak14CircularSliderC14circularButtonSo8UIButtonCSgvg",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "ObjC"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "ImplicitlyUnwrappedOptional",
+                  "printedName": "UIKit.UIButton?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "UIButton",
+                      "printedName": "UIKit.UIButton",
+                      "usr": "c:objc(cs)UIButton"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@M@PerfectSteak@objc(cs)CircularSlider(im)setCircularButton:",
+              "mangledName": "$s12PerfectSteak14CircularSliderC14circularButtonSo8UIButtonCSgvs",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "ObjC"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak14CircularSliderC14circularButtonSo8UIButtonCSgvM",
+              "mangledName": "$s12PerfectSteak14CircularSliderC14circularButtonSo8UIButtonCSgvM",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "pointerView",
+          "printedName": "pointerView",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "WeakStorage",
+              "printedName": "UIKit.UIView?"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "c:@M@PerfectSteak@objc(cs)CircularSlider(py)pointerView",
+          "mangledName": "$s12PerfectSteak14CircularSliderC11pointerViewSo6UIViewCSgvp",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "Custom",
+            "HasStorage",
+            "ReferenceOwnership",
+            "IBOutlet",
+            "ObjC"
+          ],
+          "fixedbinaryorder": 6,
+          "ownership": 1,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "ImplicitlyUnwrappedOptional",
+                  "printedName": "UIKit.UIView?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "UIView",
+                      "printedName": "UIKit.UIView",
+                      "usr": "c:objc(cs)UIView"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@M@PerfectSteak@objc(cs)CircularSlider(im)pointerView",
+              "mangledName": "$s12PerfectSteak14CircularSliderC11pointerViewSo6UIViewCSgvg",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "ObjC"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "ImplicitlyUnwrappedOptional",
+                  "printedName": "UIKit.UIView?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "UIView",
+                      "printedName": "UIKit.UIView",
+                      "usr": "c:objc(cs)UIView"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@M@PerfectSteak@objc(cs)CircularSlider(im)setPointerView:",
+              "mangledName": "$s12PerfectSteak14CircularSliderC11pointerViewSo6UIViewCSgvs",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "ObjC"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak14CircularSliderC11pointerViewSo6UIViewCSgvM",
+              "mangledName": "$s12PerfectSteak14CircularSliderC11pointerViewSo6UIViewCSgvM",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "ringIndicatorLayer",
+          "printedName": "ringIndicatorLayer",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "CAShapeLayer",
+              "printedName": "QuartzCore.CAShapeLayer",
+              "usr": "c:objc(cs)CAShapeLayer"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:12PerfectSteak14CircularSliderC18ringIndicatorLayer33_83780C058A9D1F84526E874CE4D74594LLSo07CAShapeG0Cvp",
+          "mangledName": "$s12PerfectSteak14CircularSliderC18ringIndicatorLayer33_83780C058A9D1F84526E874CE4D74594LLSo07CAShapeG0Cvp",
+          "moduleName": "PerfectSteak",
+          "isInternal": true,
+          "declAttributes": [
+            "Custom",
+            "HasInitialValue",
+            "HasStorage",
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "fixedbinaryorder": 7,
+          "hasStorage": true
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(frame:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "CircularSlider",
+              "printedName": "PerfectSteak.CircularSlider",
+              "usr": "c:@M@PerfectSteak@objc(cs)CircularSlider"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "CGRect",
+              "printedName": "CoreGraphics.CGRect",
+              "usr": "c:@S@CGRect"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "c:@M@PerfectSteak@objc(cs)CircularSlider(im)initWithFrame:",
+          "mangledName": "$s12PerfectSteak14CircularSliderC5frameACSo6CGRectV_tcfc",
+          "moduleName": "PerfectSteak",
+          "overriding": true,
+          "objc_name": "initWithFrame:",
+          "declAttributes": [
+            "Dynamic",
+            "ObjC",
+            "Custom",
+            "Override"
+          ],
+          "init_kind": "Designated"
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(coder:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "PerfectSteak.CircularSlider?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "CircularSlider",
+                  "printedName": "PerfectSteak.CircularSlider",
+                  "usr": "c:@M@PerfectSteak@objc(cs)CircularSlider"
+                }
+              ],
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "NSCoder",
+              "printedName": "Foundation.NSCoder",
+              "usr": "c:objc(cs)NSCoder"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "c:@M@PerfectSteak@objc(cs)CircularSlider(im)initWithCoder:",
+          "mangledName": "$s12PerfectSteak14CircularSliderC5coderACSgSo7NSCoderC_tcfc",
+          "moduleName": "PerfectSteak",
+          "overriding": true,
+          "objc_name": "initWithCoder:",
+          "declAttributes": [
+            "Dynamic",
+            "ObjC",
+            "Custom",
+            "Required"
+          ],
+          "init_kind": "Designated"
+        },
+        {
+          "kind": "Function",
+          "name": "handleButtonDrag",
+          "printedName": "handleButtonDrag(_:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "UIPanGestureRecognizer",
+              "printedName": "UIKit.UIPanGestureRecognizer",
+              "usr": "c:objc(cs)UIPanGestureRecognizer"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@PerfectSteak@objc(cs)CircularSlider(im)handleButtonDrag:",
+          "mangledName": "$s12PerfectSteak14CircularSliderC16handleButtonDragyySo22UIPanGestureRecognizerCF",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "declAttributes": [
+            "Custom",
+            "IBAction",
+            "ObjC"
+          ],
+          "funcSelfKind": "NonMutating"
+        }
+      ],
+      "declKind": "Class",
+      "usr": "c:@M@PerfectSteak@objc(cs)CircularSlider",
+      "mangledName": "$s12PerfectSteak14CircularSliderC",
+      "moduleName": "PerfectSteak",
+      "isOpen": true,
+      "declAttributes": [
+        "Custom",
+        "ObjC"
+      ],
+      "superclassUsr": "c:objc(cs)UIView",
+      "inheritsConvenienceInitializers": true,
+      "superclassNames": [
+        "UIKit.UIView",
+        "UIKit.UIResponder",
+        "ObjectiveC.NSObject"
+      ],
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "Equatable",
+          "printedName": "Equatable",
+          "usr": "s:SQ",
+          "mangledName": "$sSQ"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Hashable",
+          "printedName": "Hashable",
+          "usr": "s:SH",
+          "mangledName": "$sSH"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CVarArg",
+          "printedName": "CVarArg",
+          "usr": "s:s7CVarArgP",
+          "mangledName": "$ss7CVarArgP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_KeyValueCodingAndObservingPublishing",
+          "printedName": "_KeyValueCodingAndObservingPublishing",
+          "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+          "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_KeyValueCodingAndObserving",
+          "printedName": "_KeyValueCodingAndObserving",
+          "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+          "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomStringConvertible",
+          "printedName": "CustomStringConvertible",
+          "usr": "s:s23CustomStringConvertibleP",
+          "mangledName": "$ss23CustomStringConvertibleP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomDebugStringConvertible",
+          "printedName": "CustomDebugStringConvertible",
+          "usr": "s:s28CustomDebugStringConvertibleP",
+          "mangledName": "$ss28CustomDebugStringConvertibleP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "__DefaultCustomPlaygroundQuickLookable",
+          "printedName": "__DefaultCustomPlaygroundQuickLookable",
+          "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+          "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+        }
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "UIKit",
+      "printedName": "UIKit",
+      "declKind": "Import",
+      "moduleName": "PerfectSteak",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "MainViewController",
+      "printedName": "MainViewController",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "recipes",
+          "printedName": "recipes",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Recipes",
+              "printedName": "PerfectSteak.Recipes",
+              "usr": "s:12PerfectSteak7RecipesC"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:12PerfectSteak18MainViewControllerC7recipes33_31E7B8178FD3AA1C7A53FDCFE86CF059LLAA7RecipesCvp",
+          "mangledName": "$s12PerfectSteak18MainViewControllerC7recipes33_31E7B8178FD3AA1C7A53FDCFE86CF059LLAA7RecipesCvp",
+          "moduleName": "PerfectSteak",
+          "isInternal": true,
+          "declAttributes": [
+            "Custom",
+            "HasInitialValue",
+            "HasStorage",
+            "AccessControl"
+          ],
+          "fixedbinaryorder": 0,
+          "hasStorage": true
+        },
+        {
+          "kind": "Var",
+          "name": "selectedRecipe",
+          "printedName": "selectedRecipe",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "ImplicitlyUnwrappedOptional",
+              "printedName": "PerfectSteak.SteakRecipe?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "SteakRecipe",
+                  "printedName": "PerfectSteak.SteakRecipe",
+                  "usr": "s:12PerfectSteak0B6RecipeC"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:12PerfectSteak18MainViewControllerC14selectedRecipe33_31E7B8178FD3AA1C7A53FDCFE86CF059LLAA0bG0CSgvp",
+          "mangledName": "$s12PerfectSteak18MainViewControllerC14selectedRecipe33_31E7B8178FD3AA1C7A53FDCFE86CF059LLAA0bG0CSgvp",
+          "moduleName": "PerfectSteak",
+          "isInternal": true,
+          "declAttributes": [
+            "Custom",
+            "HasInitialValue",
+            "HasStorage",
+            "AccessControl"
+          ],
+          "fixedbinaryorder": 1,
+          "hasStorage": true
+        },
+        {
+          "kind": "Var",
+          "name": "recipeDropdownMenu",
+          "printedName": "recipeDropdownMenu",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "PerfectSteak.RecipeDropdownTableViewController?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "RecipeDropdownTableViewController",
+                  "printedName": "PerfectSteak.RecipeDropdownTableViewController",
+                  "usr": "c:@M@PerfectSteak@objc(cs)RecipeDropdownTableViewController"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:12PerfectSteak18MainViewControllerC18recipeDropdownMenu33_31E7B8178FD3AA1C7A53FDCFE86CF059LLAA06Recipeg5TabledE0CSgvp",
+          "mangledName": "$s12PerfectSteak18MainViewControllerC18recipeDropdownMenu33_31E7B8178FD3AA1C7A53FDCFE86CF059LLAA06Recipeg5TabledE0CSgvp",
+          "moduleName": "PerfectSteak",
+          "isInternal": true,
+          "declAttributes": [
+            "Custom",
+            "HasInitialValue",
+            "HasStorage",
+            "AccessControl"
+          ],
+          "fixedbinaryorder": 2,
+          "hasStorage": true
+        },
+        {
+          "kind": "Var",
+          "name": "popoverController",
+          "printedName": "popoverController",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "UIKit.UIPopoverPresentationController?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "UIPopoverPresentationController",
+                  "printedName": "UIKit.UIPopoverPresentationController",
+                  "usr": "c:objc(cs)UIPopoverPresentationController"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:12PerfectSteak18MainViewControllerC07popoverE033_31E7B8178FD3AA1C7A53FDCFE86CF059LLSo021UIPopoverPresentationE0CSgvp",
+          "mangledName": "$s12PerfectSteak18MainViewControllerC07popoverE033_31E7B8178FD3AA1C7A53FDCFE86CF059LLSo021UIPopoverPresentationE0CSgvp",
+          "moduleName": "PerfectSteak",
+          "isInternal": true,
+          "declAttributes": [
+            "Custom",
+            "HasInitialValue",
+            "HasStorage",
+            "AccessControl"
+          ],
+          "fixedbinaryorder": 3,
+          "hasStorage": true
+        },
+        {
+          "kind": "Var",
+          "name": "titleButton",
+          "printedName": "titleButton",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "WeakStorage",
+              "printedName": "UIKit.UIButton?"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "c:@M@PerfectSteak@objc(cs)MainViewController(py)titleButton",
+          "mangledName": "$s12PerfectSteak18MainViewControllerC11titleButtonSo8UIButtonCSgvp",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "Custom",
+            "HasStorage",
+            "ReferenceOwnership",
+            "IBOutlet",
+            "ObjC"
+          ],
+          "fixedbinaryorder": 4,
+          "ownership": 1,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "ImplicitlyUnwrappedOptional",
+                  "printedName": "UIKit.UIButton?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "UIButton",
+                      "printedName": "UIKit.UIButton",
+                      "usr": "c:objc(cs)UIButton"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@M@PerfectSteak@objc(cs)MainViewController(im)titleButton",
+              "mangledName": "$s12PerfectSteak18MainViewControllerC11titleButtonSo8UIButtonCSgvg",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "ObjC"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "ImplicitlyUnwrappedOptional",
+                  "printedName": "UIKit.UIButton?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "UIButton",
+                      "printedName": "UIKit.UIButton",
+                      "usr": "c:objc(cs)UIButton"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@M@PerfectSteak@objc(cs)MainViewController(im)setTitleButton:",
+              "mangledName": "$s12PerfectSteak18MainViewControllerC11titleButtonSo8UIButtonCSgvs",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "ObjC"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak18MainViewControllerC11titleButtonSo8UIButtonCSgvM",
+              "mangledName": "$s12PerfectSteak18MainViewControllerC11titleButtonSo8UIButtonCSgvM",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Function",
+          "name": "viewDidLoad",
+          "printedName": "viewDidLoad()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@PerfectSteak@objc(cs)MainViewController(im)viewDidLoad",
+          "mangledName": "$s12PerfectSteak18MainViewControllerC11viewDidLoadyyF",
+          "moduleName": "PerfectSteak",
+          "overriding": true,
+          "isOpen": true,
+          "objc_name": "viewDidLoad",
+          "declAttributes": [
+            "Dynamic",
+            "ObjC",
+            "Custom",
+            "Override",
+            "RawDocComment"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "createSampleRecipes",
+          "printedName": "createSampleRecipes()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:12PerfectSteak18MainViewControllerC19createSampleRecipesyyF",
+          "mangledName": "$s12PerfectSteak18MainViewControllerC19createSampleRecipesyyF",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "declAttributes": [
+            "Custom"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(nibName:bundle:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "MainViewController",
+              "printedName": "PerfectSteak.MainViewController",
+              "usr": "c:@M@PerfectSteak@objc(cs)MainViewController"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Swift.String?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Foundation.Bundle?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Bundle",
+                  "printedName": "Foundation.Bundle",
+                  "usr": "c:objc(cs)NSBundle"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "c:@M@PerfectSteak@objc(cs)MainViewController(im)initWithNibName:bundle:",
+          "mangledName": "$s12PerfectSteak18MainViewControllerC7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
+          "moduleName": "PerfectSteak",
+          "overriding": true,
+          "implicit": true,
+          "objc_name": "initWithNibName:bundle:",
+          "declAttributes": [
+            "Dynamic",
+            "ObjC",
+            "Custom",
+            "Override"
+          ],
+          "init_kind": "Designated"
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(coder:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "PerfectSteak.MainViewController?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "MainViewController",
+                  "printedName": "PerfectSteak.MainViewController",
+                  "usr": "c:@M@PerfectSteak@objc(cs)MainViewController"
+                }
+              ],
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "NSCoder",
+              "printedName": "Foundation.NSCoder",
+              "usr": "c:objc(cs)NSCoder"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "c:@M@PerfectSteak@objc(cs)MainViewController(im)initWithCoder:",
+          "mangledName": "$s12PerfectSteak18MainViewControllerC5coderACSgSo7NSCoderC_tcfc",
+          "moduleName": "PerfectSteak",
+          "overriding": true,
+          "implicit": true,
+          "objc_name": "initWithCoder:",
+          "declAttributes": [
+            "Dynamic",
+            "ObjC",
+            "Custom",
+            "Required"
+          ],
+          "init_kind": "Designated"
+        },
+        {
+          "kind": "Function",
+          "name": "adaptivePresentationStyle",
+          "printedName": "adaptivePresentationStyle(for:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "UIModalPresentationStyle",
+              "printedName": "UIKit.UIModalPresentationStyle",
+              "usr": "c:@E@UIModalPresentationStyle"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "UIPresentationController",
+              "printedName": "UIKit.UIPresentationController",
+              "usr": "c:objc(cs)UIPresentationController"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@CM@PerfectSteak@objc(cs)MainViewController(im)adaptivePresentationStyleForPresentationController:",
+          "mangledName": "$s12PerfectSteak18MainViewControllerC25adaptivePresentationStyle3forSo07UIModalgH0VSo014UIPresentationE0C_tF",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "objc_name": "adaptivePresentationStyleForPresentationController:",
+          "declAttributes": [
+            "Dynamic",
+            "ObjC",
+            "Custom"
+          ],
+          "funcSelfKind": "NonMutating"
+        }
+      ],
+      "declKind": "Class",
+      "usr": "c:@M@PerfectSteak@objc(cs)MainViewController",
+      "mangledName": "$s12PerfectSteak18MainViewControllerC",
+      "moduleName": "PerfectSteak",
+      "isOpen": true,
+      "declAttributes": [
+        "Custom",
+        "ObjC"
+      ],
+      "superclassUsr": "c:objc(cs)UIViewController",
+      "inheritsConvenienceInitializers": true,
+      "superclassNames": [
+        "UIKit.UIViewController",
+        "UIKit.UIResponder",
+        "ObjectiveC.NSObject"
+      ],
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "Equatable",
+          "printedName": "Equatable",
+          "usr": "s:SQ",
+          "mangledName": "$sSQ"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Hashable",
+          "printedName": "Hashable",
+          "usr": "s:SH",
+          "mangledName": "$sSH"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CVarArg",
+          "printedName": "CVarArg",
+          "usr": "s:s7CVarArgP",
+          "mangledName": "$ss7CVarArgP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_KeyValueCodingAndObservingPublishing",
+          "printedName": "_KeyValueCodingAndObservingPublishing",
+          "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+          "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_KeyValueCodingAndObserving",
+          "printedName": "_KeyValueCodingAndObserving",
+          "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+          "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomStringConvertible",
+          "printedName": "CustomStringConvertible",
+          "usr": "s:s23CustomStringConvertibleP",
+          "mangledName": "$ss23CustomStringConvertibleP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomDebugStringConvertible",
+          "printedName": "CustomDebugStringConvertible",
+          "usr": "s:s28CustomDebugStringConvertibleP",
+          "mangledName": "$ss28CustomDebugStringConvertibleP"
+        }
+      ]
+    },
+    {
+      "kind": "Import",
       "name": "Foundation",
       "printedName": "Foundation",
       "declKind": "Import",
@@ -812,6 +3137,45 @@
                 "Transparent"
               ],
               "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "title",
+          "printedName": "title",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:12PerfectSteak0B6RecipeC5titleSSvp",
+          "mangledName": "$s12PerfectSteak0B6RecipeC5titleSSvp",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak0B6RecipeC5titleSSvg",
+              "mangledName": "$s12PerfectSteak0B6RecipeC5titleSSvg",
+              "moduleName": "PerfectSteak",
+              "isOpen": true,
+              "accessorKind": "get"
             }
           ]
         },
@@ -1291,6 +3655,16 @@
       "mangledName": "$s12PerfectSteak0B6RecipeC",
       "moduleName": "PerfectSteak",
       "isOpen": true
+    },
+    {
+      "kind": "Import",
+      "name": "UIKit",
+      "printedName": "UIKit",
+      "declKind": "Import",
+      "moduleName": "PerfectSteak",
+      "declAttributes": [
+        "RawDocComment"
+      ]
     },
     {
       "kind": "Import",
@@ -4353,6 +6727,167 @@
       "printedName": "CoreData",
       "declKind": "Import",
       "moduleName": "PerfectSteak"
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "UIView",
+      "printedName": "UIView",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "cornerRadius",
+          "printedName": "cornerRadius",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "CGFloat",
+              "printedName": "CoreGraphics.CGFloat",
+              "usr": "s:12CoreGraphics7CGFloatV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "c:@CM@PerfectSteak@@objc(cs)UIView(py)cornerRadius",
+          "mangledName": "$sSo6UIViewC12PerfectSteakE12cornerRadius12CoreGraphics7CGFloatVvp",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "declAttributes": [
+            "Dynamic",
+            "Custom",
+            "IBInspectable",
+            "ObjC"
+          ],
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "CGFloat",
+                  "printedName": "CoreGraphics.CGFloat",
+                  "usr": "s:12CoreGraphics7CGFloatV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@CM@PerfectSteak@@objc(cs)UIView(im)cornerRadius",
+              "mangledName": "$sSo6UIViewC12PerfectSteakE12cornerRadius12CoreGraphics7CGFloatVvg",
+              "moduleName": "PerfectSteak",
+              "isOpen": true,
+              "declAttributes": [
+                "Dynamic",
+                "ObjC"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "CGFloat",
+                  "printedName": "CoreGraphics.CGFloat",
+                  "usr": "s:12CoreGraphics7CGFloatV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@CM@PerfectSteak@@objc(cs)UIView(im)setCornerRadius:",
+              "mangledName": "$sSo6UIViewC12PerfectSteakE12cornerRadius12CoreGraphics7CGFloatVvs",
+              "moduleName": "PerfectSteak",
+              "isOpen": true,
+              "declAttributes": [
+                "Dynamic",
+                "ObjC"
+              ],
+              "accessorKind": "set"
+            }
+          ]
+        }
+      ],
+      "declKind": "Class",
+      "usr": "c:objc(cs)UIView",
+      "moduleName": "UIKit",
+      "isOpen": true,
+      "intro_iOS": "2.0",
+      "objc_name": "UIView",
+      "declAttributes": [
+        "Available",
+        "ObjC",
+        "Custom",
+        "Dynamic"
+      ],
+      "superclassUsr": "c:objc(cs)UIResponder",
+      "isExternal": true,
+      "inheritsConvenienceInitializers": true,
+      "superclassNames": [
+        "UIKit.UIResponder",
+        "ObjectiveC.NSObject"
+      ],
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "Equatable",
+          "printedName": "Equatable",
+          "usr": "s:SQ",
+          "mangledName": "$sSQ"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Hashable",
+          "printedName": "Hashable",
+          "usr": "s:SH",
+          "mangledName": "$sSH"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CVarArg",
+          "printedName": "CVarArg",
+          "usr": "s:s7CVarArgP",
+          "mangledName": "$ss7CVarArgP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_KeyValueCodingAndObservingPublishing",
+          "printedName": "_KeyValueCodingAndObservingPublishing",
+          "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+          "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_KeyValueCodingAndObserving",
+          "printedName": "_KeyValueCodingAndObserving",
+          "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+          "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomStringConvertible",
+          "printedName": "CustomStringConvertible",
+          "usr": "s:s23CustomStringConvertibleP",
+          "mangledName": "$ss23CustomStringConvertibleP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomDebugStringConvertible",
+          "printedName": "CustomDebugStringConvertible",
+          "usr": "s:s28CustomDebugStringConvertibleP",
+          "mangledName": "$ss28CustomDebugStringConvertibleP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "__DefaultCustomPlaygroundQuickLookable",
+          "printedName": "__DefaultCustomPlaygroundQuickLookable",
+          "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+          "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+        }
+      ]
     }
   ],
   "json_format_version": 6
