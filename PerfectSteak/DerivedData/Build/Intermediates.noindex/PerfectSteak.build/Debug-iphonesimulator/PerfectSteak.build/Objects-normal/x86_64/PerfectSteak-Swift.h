@@ -264,7 +264,7 @@ SWIFT_CLASS("_TtC12PerfectSteak14CircularSlider")
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified pointerView;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-- (IBAction)handleButtonDrag:(UIPanGestureRecognizer * _Nonnull)sender;
+- (IBAction)handleButtonDragg:(UIPanGestureRecognizer * _Nonnull)sender;
 @end
 
 @class NSString;
@@ -273,6 +273,7 @@ SWIFT_CLASS("_TtC12PerfectSteak14CircularSlider")
 SWIFT_CLASS("_TtC12PerfectSteak18MainViewController")
 @interface MainViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified titleButton;
+@property (nonatomic, weak) IBOutlet CircularSlider * _Null_unspecified circularSliderTest;
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;

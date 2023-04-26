@@ -150,21 +150,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TYd-Ex-rFu" customClass="CircularSlider" customModule="PerfectSteak" customModuleProvider="target">
-                                <rect key="frame" x="107" y="375" width="200" height="200"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="yCv-pw-2Rl">
+                                <rect key="frame" x="27" y="402" width="360" height="360"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eN0-A7-Ell">
+                                        <rect key="frame" x="0.0" y="0.0" width="360" height="180"/>
+                                        <subviews>
+                                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="TYd-Ex-rFu" customClass="CircularSlider" customModule="PerfectSteak" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="180" id="0xh-oP-Dhx"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="O2N-Q7-9cO" customClass="CircularSlider" customModule="PerfectSteak" customModuleProvider="target">
+                                                <rect key="frame" x="180" y="0.0" width="180" height="180"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="180" id="ZS7-wy-UMz"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vqS-4w-Goj">
+                                        <rect key="frame" x="0.0" y="180" width="360" height="180"/>
+                                        <subviews>
+                                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="iKK-sb-4Ph" customClass="CircularSlider" customModule="PerfectSteak" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="180" id="VW4-JB-geY"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="BV6-JS-yQt" customClass="CircularSlider" customModule="PerfectSteak" customModuleProvider="target">
+                                                <rect key="frame" x="180" y="0.0" width="180" height="180"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="180" id="Ti0-nk-Evn"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="5FP-Zk-gv5"/>
-                                    <constraint firstAttribute="width" constant="200" id="ivL-Qc-O6W"/>
+                                    <constraint firstAttribute="width" constant="360" id="QoC-d7-Dbx"/>
+                                    <constraint firstAttribute="trailing" secondItem="eN0-A7-Ell" secondAttribute="trailing" id="V3k-7t-7ER"/>
+                                    <constraint firstItem="eN0-A7-Ell" firstAttribute="leading" secondItem="yCv-pw-2Rl" secondAttribute="leading" id="aXw-sz-70t"/>
+                                    <constraint firstAttribute="height" constant="360" id="kFP-TN-1cI"/>
+                                    <constraint firstItem="eN0-A7-Ell" firstAttribute="top" secondItem="yCv-pw-2Rl" secondAttribute="top" id="p82-7u-HCL"/>
                                 </constraints>
-                            </view>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TTA-lT-oDw"/>
                         <color key="backgroundColor" red="0.26235345397332699" green="0.26235345397332699" blue="0.26235345397332699" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.044860079880000001" green="0.044860079880000001" blue="0.044860079880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="TYd-Ex-rFu" firstAttribute="centerY" secondItem="TTA-lT-oDw" secondAttribute="centerY" id="d1t-il-GET"/>
-                            <constraint firstItem="TYd-Ex-rFu" firstAttribute="centerX" secondItem="TTA-lT-oDw" secondAttribute="centerX" id="rZl-DV-xkJ"/>
+                            <constraint firstItem="yCv-pw-2Rl" firstAttribute="centerX" secondItem="TTA-lT-oDw" secondAttribute="centerX" id="F6Z-Tv-MOE"/>
+                            <constraint firstItem="TTA-lT-oDw" firstAttribute="bottom" secondItem="yCv-pw-2Rl" secondAttribute="bottom" constant="100" id="L6X-MM-JhY"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ikm-8T-FKD">

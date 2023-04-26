@@ -15,7 +15,7 @@ class MainViewController: UIViewController {
     
     @IBOutlet weak var titleButton: UIButton!
     
-    //@IBOutlet weak var circularSliderTest: CircularSlider!
+    @IBOutlet weak var circularSliderTest: CircularSlider!
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -24,7 +24,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "3F2A2438-9B01-4FB7-BD65-F14F99E3CDA8"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PerfectSteak/Views/MainView/MainViewController.swift"
@@ -40,7 +40,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "66FD2588-B18F-4C21-A42A-8B6673696031"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PerfectSteak/Views/MainView/MainViewController.swift"
@@ -69,7 +69,7 @@
             <Locations>
                <Location
                   uuid = "C9EDA2E5-3946-473D-95EC-B90C9E0258FA - e1b52dca8a9c83c3"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "PerfectSteak.MainViewController.recipeDropdownMenu.getter : Swift.Optional&lt;PerfectSteak.RecipeDropdownTableViewController&gt;"
@@ -84,7 +84,7 @@
                </Location>
                <Location
                   uuid = "C9EDA2E5-3946-473D-95EC-B90C9E0258FA - eff6984e91b1f7f7"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "PerfectSteak.MainViewController.recipeDropdownMenu.setter : Swift.Optional&lt;PerfectSteak.RecipeDropdownTableViewController&gt;"
@@ -99,7 +99,7 @@
                </Location>
                <Location
                   uuid = "C9EDA2E5-3946-473D-95EC-B90C9E0258FA - 673a20395d862ec6"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "PerfectSteak.MainViewController.recipeDropdownMenu.modify : Swift.Optional&lt;PerfectSteak.RecipeDropdownTableViewController&gt;"
@@ -114,7 +114,7 @@
                </Location>
                <Location
                   uuid = "C9EDA2E5-3946-473D-95EC-B90C9E0258FA - 1c520c822f889a18"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "PerfectSteak.MainViewController.recipeDropdownMenu.modify : Swift.Optional&lt;PerfectSteak.RecipeDropdownTableViewController&gt; with unmangled suffix &quot;.resume.0&quot;"
@@ -129,7 +129,7 @@
                </Location>
                <Location
                   uuid = "C9EDA2E5-3946-473D-95EC-B90C9E0258FA - 164a3b987a7aac09"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "PerfectSteak.MainViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; PerfectSteak.MainViewController"
@@ -144,7 +144,7 @@
                </Location>
                <Location
                   uuid = "C9EDA2E5-3946-473D-95EC-B90C9E0258FA - 8d4a6261d2636c36"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "PerfectSteak.MainViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;PerfectSteak.MainViewController&gt;"
@@ -450,8 +450,8 @@
             filePath = "PerfectSteak/Views/CustomButton/CircularSlider.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
             landmarkName = "init?(coder:)"
             landmarkType = "7">
             <Locations>
@@ -492,14 +492,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "D3C37DD5-0790-4192-895E-3AD390ABBE2F"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PerfectSteak/Views/CustomButton/CircularSlider.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
             landmarkName = "init(frame:)"
             landmarkType = "7">
             <Locations>
@@ -540,14 +540,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "D0E9F14F-32CE-4116-A759-DF8628FCC659"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PerfectSteak/Views/CustomButton/CircularSlider.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
             landmarkName = "loadFromNib()"
             landmarkType = "7">
          </BreakpointContent>
@@ -562,8 +562,8 @@
             filePath = "PerfectSteak/Views/CustomButton/CircularSlider.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
             landmarkName = "CircularSlider"
             landmarkType = "3">
          </BreakpointContent>
@@ -572,30 +572,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "78114BE5-72E5-4455-8A23-79B226B9B88B"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PerfectSteak/Views/CustomButton/CircularSlider.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
-            landmarkName = "loadFromNib()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "EE58AE5A-E9E7-4952-B741-D26B9536360F"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PerfectSteak/Views/CustomButton/CircularSlider.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "loadFromNib()"
             landmarkType = "7">
          </BreakpointContent>

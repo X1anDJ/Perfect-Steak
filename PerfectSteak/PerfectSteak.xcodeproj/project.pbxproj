@@ -153,8 +153,10 @@
 		DCD4607829F88B340054CA23 /* CustomButton */ = {
 			isa = PBXGroup;
 			children = (
-				DCD4607929F88D090054CA23 /* CircularSlider.swift */,
-				DCD4607B29F88D490054CA23 /* CircularSlider.xib */,
+				DCDD5E1E29F9EBB1008234B5 /* SteakTemperature */,
+				DCDD5E1D29F9EBA6008234B5 /* StoveTemperature */,
+				DCDD5E2029F9EBE1008234B5 /* Thickness */,
+				DCDD5E1F29F9EBD0008234B5 /* Doneness */,
 			);
 			path = CustomButton;
 			sourceTree = "<group>";
@@ -165,6 +167,36 @@
 				DCD4607E29F8934E0054CA23 /* UIView+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DCDD5E1D29F9EBA6008234B5 /* StoveTemperature */ = {
+			isa = PBXGroup;
+			children = (
+				DCD4607929F88D090054CA23 /* CircularSlider.swift */,
+				DCD4607B29F88D490054CA23 /* CircularSlider.xib */,
+			);
+			path = StoveTemperature;
+			sourceTree = "<group>";
+		};
+		DCDD5E1E29F9EBB1008234B5 /* SteakTemperature */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SteakTemperature;
+			sourceTree = "<group>";
+		};
+		DCDD5E1F29F9EBD0008234B5 /* Doneness */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Doneness;
+			sourceTree = "<group>";
+		};
+		DCDD5E2029F9EBE1008234B5 /* Thickness */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Thickness;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

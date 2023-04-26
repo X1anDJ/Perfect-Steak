@@ -2347,6 +2347,353 @@
           "hasStorage": true
         },
         {
+          "kind": "Var",
+          "name": "trackLayer",
+          "printedName": "trackLayer",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "CAShapeLayer",
+              "printedName": "QuartzCore.CAShapeLayer",
+              "usr": "c:objc(cs)CAShapeLayer"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:12PerfectSteak14CircularSliderC10trackLayer33_83780C058A9D1F84526E874CE4D74594LLSo07CAShapeF0Cvp",
+          "mangledName": "$s12PerfectSteak14CircularSliderC10trackLayer33_83780C058A9D1F84526E874CE4D74594LLSo07CAShapeF0Cvp",
+          "moduleName": "PerfectSteak",
+          "isInternal": true,
+          "declAttributes": [
+            "Custom",
+            "HasInitialValue",
+            "Final",
+            "HasStorage",
+            "AccessControl"
+          ],
+          "fixedbinaryorder": 8,
+          "isLet": true,
+          "hasStorage": true
+        },
+        {
+          "kind": "Var",
+          "name": "progressLayer",
+          "printedName": "progressLayer",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "CAShapeLayer",
+              "printedName": "QuartzCore.CAShapeLayer",
+              "usr": "c:objc(cs)CAShapeLayer"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:12PerfectSteak14CircularSliderC13progressLayer33_83780C058A9D1F84526E874CE4D74594LLSo07CAShapeF0Cvp",
+          "mangledName": "$s12PerfectSteak14CircularSliderC13progressLayer33_83780C058A9D1F84526E874CE4D74594LLSo07CAShapeF0Cvp",
+          "moduleName": "PerfectSteak",
+          "isInternal": true,
+          "declAttributes": [
+            "Custom",
+            "HasInitialValue",
+            "Final",
+            "HasStorage",
+            "AccessControl"
+          ],
+          "fixedbinaryorder": 9,
+          "isLet": true,
+          "hasStorage": true
+        },
+        {
+          "kind": "Var",
+          "name": "currentAngle",
+          "printedName": "currentAngle",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "CGFloat",
+              "printedName": "CoreGraphics.CGFloat",
+              "usr": "s:12CoreGraphics7CGFloatV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:12PerfectSteak14CircularSliderC12currentAngle12CoreGraphics7CGFloatVvp",
+          "mangledName": "$s12PerfectSteak14CircularSliderC12currentAngle12CoreGraphics7CGFloatVvp",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "declAttributes": [
+            "Custom",
+            "HasInitialValue",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 10,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "CGFloat",
+                  "printedName": "CoreGraphics.CGFloat",
+                  "usr": "s:12CoreGraphics7CGFloatV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak14CircularSliderC12currentAngle12CoreGraphics7CGFloatVvg",
+              "mangledName": "$s12PerfectSteak14CircularSliderC12currentAngle12CoreGraphics7CGFloatVvg",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "CGFloat",
+                  "printedName": "CoreGraphics.CGFloat",
+                  "usr": "s:12CoreGraphics7CGFloatV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak14CircularSliderC12currentAngle12CoreGraphics7CGFloatVvs",
+              "mangledName": "$s12PerfectSteak14CircularSliderC12currentAngle12CoreGraphics7CGFloatVvs",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak14CircularSliderC12currentAngle12CoreGraphics7CGFloatVvM",
+              "mangledName": "$s12PerfectSteak14CircularSliderC12currentAngle12CoreGraphics7CGFloatVvM",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "minValue",
+          "printedName": "minValue",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "CGFloat",
+              "printedName": "CoreGraphics.CGFloat",
+              "usr": "s:12CoreGraphics7CGFloatV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:12PerfectSteak14CircularSliderC8minValue12CoreGraphics7CGFloatVvp",
+          "mangledName": "$s12PerfectSteak14CircularSliderC8minValue12CoreGraphics7CGFloatVvp",
+          "moduleName": "PerfectSteak",
+          "declAttributes": [
+            "Custom",
+            "HasInitialValue",
+            "Final",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 11,
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "CGFloat",
+                  "printedName": "CoreGraphics.CGFloat",
+                  "usr": "s:12CoreGraphics7CGFloatV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak14CircularSliderC8minValue12CoreGraphics7CGFloatVvg",
+              "mangledName": "$s12PerfectSteak14CircularSliderC8minValue12CoreGraphics7CGFloatVvg",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "declAttributes": [
+                "Final"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "maxValue",
+          "printedName": "maxValue",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "CGFloat",
+              "printedName": "CoreGraphics.CGFloat",
+              "usr": "s:12CoreGraphics7CGFloatV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:12PerfectSteak14CircularSliderC8maxValue12CoreGraphics7CGFloatVvp",
+          "mangledName": "$s12PerfectSteak14CircularSliderC8maxValue12CoreGraphics7CGFloatVvp",
+          "moduleName": "PerfectSteak",
+          "declAttributes": [
+            "Custom",
+            "HasInitialValue",
+            "Final",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 12,
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "CGFloat",
+                  "printedName": "CoreGraphics.CGFloat",
+                  "usr": "s:12CoreGraphics7CGFloatV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak14CircularSliderC8maxValue12CoreGraphics7CGFloatVvg",
+              "mangledName": "$s12PerfectSteak14CircularSliderC8maxValue12CoreGraphics7CGFloatVvg",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "declAttributes": [
+                "Final"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "minAngle",
+          "printedName": "minAngle",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "CGFloat",
+              "printedName": "CoreGraphics.CGFloat",
+              "usr": "s:12CoreGraphics7CGFloatV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:12PerfectSteak14CircularSliderC8minAngle12CoreGraphics7CGFloatVvp",
+          "mangledName": "$s12PerfectSteak14CircularSliderC8minAngle12CoreGraphics7CGFloatVvp",
+          "moduleName": "PerfectSteak",
+          "declAttributes": [
+            "Custom",
+            "HasInitialValue",
+            "Final",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 13,
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "CGFloat",
+                  "printedName": "CoreGraphics.CGFloat",
+                  "usr": "s:12CoreGraphics7CGFloatV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak14CircularSliderC8minAngle12CoreGraphics7CGFloatVvg",
+              "mangledName": "$s12PerfectSteak14CircularSliderC8minAngle12CoreGraphics7CGFloatVvg",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "declAttributes": [
+                "Final"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "maxAngle",
+          "printedName": "maxAngle",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "CGFloat",
+              "printedName": "CoreGraphics.CGFloat",
+              "usr": "s:12CoreGraphics7CGFloatV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:12PerfectSteak14CircularSliderC8maxAngle12CoreGraphics7CGFloatVvp",
+          "mangledName": "$s12PerfectSteak14CircularSliderC8maxAngle12CoreGraphics7CGFloatVvp",
+          "moduleName": "PerfectSteak",
+          "declAttributes": [
+            "Custom",
+            "HasInitialValue",
+            "Final",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 14,
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "CGFloat",
+                  "printedName": "CoreGraphics.CGFloat",
+                  "usr": "s:12CoreGraphics7CGFloatV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak14CircularSliderC8maxAngle12CoreGraphics7CGFloatVvg",
+              "mangledName": "$s12PerfectSteak14CircularSliderC8maxAngle12CoreGraphics7CGFloatVvg",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "declAttributes": [
+                "Final"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
           "kind": "Constructor",
           "name": "init",
           "printedName": "init(frame:)",
@@ -2420,8 +2767,8 @@
         },
         {
           "kind": "Function",
-          "name": "handleButtonDrag",
-          "printedName": "handleButtonDrag(_:)",
+          "name": "handleButtonDragg",
+          "printedName": "handleButtonDragg(_:)",
           "children": [
             {
               "kind": "TypeNominal",
@@ -2436,8 +2783,8 @@
             }
           ],
           "declKind": "Func",
-          "usr": "c:@M@PerfectSteak@objc(cs)CircularSlider(im)handleButtonDrag:",
-          "mangledName": "$s12PerfectSteak14CircularSliderC16handleButtonDragyySo22UIPanGestureRecognizerCF",
+          "usr": "c:@M@PerfectSteak@objc(cs)CircularSlider(im)handleButtonDragg:",
+          "mangledName": "$s12PerfectSteak14CircularSliderC17handleButtonDraggyySo22UIPanGestureRecognizerCF",
           "moduleName": "PerfectSteak",
           "isOpen": true,
           "declAttributes": [
@@ -2783,6 +3130,122 @@
           ]
         },
         {
+          "kind": "Var",
+          "name": "circularSliderTest",
+          "printedName": "circularSliderTest",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "WeakStorage",
+              "printedName": "PerfectSteak.CircularSlider?"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "c:@M@PerfectSteak@objc(cs)MainViewController(py)circularSliderTest",
+          "mangledName": "$s12PerfectSteak18MainViewControllerC18circularSliderTestAA08CircularG0CSgvp",
+          "moduleName": "PerfectSteak",
+          "isOpen": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "Custom",
+            "HasStorage",
+            "ReferenceOwnership",
+            "IBOutlet",
+            "ObjC"
+          ],
+          "fixedbinaryorder": 5,
+          "ownership": 1,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "ImplicitlyUnwrappedOptional",
+                  "printedName": "PerfectSteak.CircularSlider?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "CircularSlider",
+                      "printedName": "PerfectSteak.CircularSlider",
+                      "usr": "c:@M@PerfectSteak@objc(cs)CircularSlider"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@M@PerfectSteak@objc(cs)MainViewController(im)circularSliderTest",
+              "mangledName": "$s12PerfectSteak18MainViewControllerC18circularSliderTestAA08CircularG0CSgvg",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "ObjC"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "ImplicitlyUnwrappedOptional",
+                  "printedName": "PerfectSteak.CircularSlider?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "CircularSlider",
+                      "printedName": "PerfectSteak.CircularSlider",
+                      "usr": "c:@M@PerfectSteak@objc(cs)CircularSlider"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@M@PerfectSteak@objc(cs)MainViewController(im)setCircularSliderTest:",
+              "mangledName": "$s12PerfectSteak18MainViewControllerC18circularSliderTestAA08CircularG0CSgvs",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "ObjC"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:12PerfectSteak18MainViewControllerC18circularSliderTestAA08CircularG0CSgvM",
+              "mangledName": "$s12PerfectSteak18MainViewControllerC18circularSliderTestAA08CircularG0CSgvM",
+              "moduleName": "PerfectSteak",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
           "kind": "Function",
           "name": "viewDidLoad",
           "printedName": "viewDidLoad()",
@@ -2804,8 +3267,7 @@
             "Dynamic",
             "ObjC",
             "Custom",
-            "Override",
-            "RawDocComment"
+            "Override"
           ],
           "funcSelfKind": "NonMutating"
         },

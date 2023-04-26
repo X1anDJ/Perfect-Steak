@@ -47,7 +47,7 @@
       }
     }
   },
-  "qos" : "default",
+  "qos" : "utility",
   "schemeCommand" : "launch",
   "schemeCommand2" : "launch",
   "shouldCollectMetrics" : false,
