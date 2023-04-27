@@ -25,6 +25,8 @@
 		DCD4607A29F88D090054CA23 /* CircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD4607929F88D090054CA23 /* CircularSlider.swift */; };
 		DCD4607C29F88D490054CA23 /* CircularSlider.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCD4607B29F88D490054CA23 /* CircularSlider.xib */; };
 		DCD4607F29F8934E0054CA23 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD4607E29F8934E0054CA23 /* UIView+Extension.swift */; };
+		DCDD5E2229F9F0F5008234B5 /* DonenessSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDD5E2129F9F0F5008234B5 /* DonenessSlider.swift */; };
+		DCDD5E2429F9F126008234B5 /* DonenessSlider.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCDD5E2329F9F126008234B5 /* DonenessSlider.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		DCD4607929F88D090054CA23 /* CircularSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularSlider.swift; sourceTree = "<group>"; };
 		DCD4607B29F88D490054CA23 /* CircularSlider.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CircularSlider.xib; sourceTree = "<group>"; };
 		DCD4607E29F8934E0054CA23 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		DCDD5E2129F9F0F5008234B5 /* DonenessSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonenessSlider.swift; sourceTree = "<group>"; };
+		DCDD5E2329F9F126008234B5 /* DonenessSlider.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonenessSlider.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +192,8 @@
 		DCDD5E1F29F9EBD0008234B5 /* Doneness */ = {
 			isa = PBXGroup;
 			children = (
+				DCDD5E2129F9F0F5008234B5 /* DonenessSlider.swift */,
+				DCDD5E2329F9F126008234B5 /* DonenessSlider.xib */,
 			);
 			path = Doneness;
 			sourceTree = "<group>";
@@ -261,6 +267,7 @@
 				DC6B0A1229F72BCB00F1A859 /* Assets.xcassets in Resources */,
 				DC6B0A0D29F72BC900F1A859 /* Main.storyboard in Resources */,
 				DCD4607C29F88D490054CA23 /* CircularSlider.xib in Resources */,
+				DCDD5E2429F9F126008234B5 /* DonenessSlider.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +287,7 @@
 				DC6B0A2B29F7581A00F1A859 /* SteakRecipe.swift in Sources */,
 				DC6DDCD629F75AFE00C0DF9D /* SteakRecipeModel.xcdatamodeld in Sources */,
 				DCD4607F29F8934E0054CA23 /* UIView+Extension.swift in Sources */,
+				DCDD5E2229F9F0F5008234B5 /* DonenessSlider.swift in Sources */,
 				DC6B0A0829F72BC900F1A859 /* SceneDelegate.swift in Sources */,
 				DC6DDCDA29F7930600C0DF9D /* OnboardingViewController.swift in Sources */,
 				DC6DDCDE29F7A0CC00C0DF9D /* OnboardingCollectionViewCell.swift in Sources */,

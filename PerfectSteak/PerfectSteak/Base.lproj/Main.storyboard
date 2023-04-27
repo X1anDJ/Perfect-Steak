@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PSz-OW-Fj8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="72z-5f-Ba9">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -146,26 +146,53 @@
         <scene sceneID="oVS-F5-R5J">
             <objects>
                 <viewController id="61x-ii-qhL" customClass="MainViewController" customModule="PerfectSteak" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="des-JU-0ev">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="des-JU-0ev">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="yCv-pw-2Rl">
-                                <rect key="frame" x="27" y="402" width="360" height="360"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R2a-MS-3UT">
+                                <rect key="frame" x="27" y="40" width="360" height="302"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="HIGH TEMPERATURE ALERT" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tfd-Zc-vdh">
+                                        <rect key="frame" x="30" y="80" width="300" height="150"/>
+                                        <color key="backgroundColor" red="1" green="0.23144015509999999" blue="0.19163377970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="oYt-GM-aLP"/>
+                                            <constraint firstAttribute="width" constant="300" id="yx3-OE-UNC"/>
+                                        </constraints>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.30183223982706486" green="0.5378826153829035" blue="0.46613219633511005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="tfd-Zc-vdh" firstAttribute="top" secondItem="R2a-MS-3UT" secondAttribute="top" constant="80" id="8hc-fs-QQt"/>
+                                    <constraint firstItem="tfd-Zc-vdh" firstAttribute="centerX" secondItem="R2a-MS-3UT" secondAttribute="centerX" id="N9X-Fc-yxO"/>
+                                    <constraint firstItem="tfd-Zc-vdh" firstAttribute="centerY" secondItem="R2a-MS-3UT" secondAttribute="centerY" id="agg-zk-2PL"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="yCv-pw-2Rl">
+                                <rect key="frame" x="27" y="422" width="360" height="360"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eN0-A7-Ell">
                                         <rect key="frame" x="0.0" y="0.0" width="360" height="180"/>
                                         <subviews>
-                                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="TYd-Ex-rFu" customClass="CircularSlider" customModule="PerfectSteak" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oge-AL-Nzh" customClass="DonenessSlider" customModule="PerfectSteak" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="TYd-Ex-rFu" customClass="CircularSlider" customModule="PerfectSteak" customModuleProvider="target">
+                                                <rect key="frame" x="180" y="0.0" width="180" height="180"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="180" id="0xh-oP-Dhx"/>
                                                 </constraints>
-                                            </view>
-                                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="O2N-Q7-9cO" customClass="CircularSlider" customModule="PerfectSteak" customModuleProvider="target">
-                                                <rect key="frame" x="180" y="0.0" width="180" height="180"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             </view>
                                         </subviews>
                                         <constraints>
@@ -193,6 +220,7 @@
                                     </stackView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="vqS-4w-Goj" secondAttribute="bottom" id="JID-kS-4Zv"/>
                                     <constraint firstAttribute="width" constant="360" id="QoC-d7-Dbx"/>
                                     <constraint firstAttribute="trailing" secondItem="eN0-A7-Ell" secondAttribute="trailing" id="V3k-7t-7ER"/>
                                     <constraint firstItem="eN0-A7-Ell" firstAttribute="leading" secondItem="yCv-pw-2Rl" secondAttribute="leading" id="aXw-sz-70t"/>
@@ -200,13 +228,31 @@
                                     <constraint firstItem="eN0-A7-Ell" firstAttribute="top" secondItem="yCv-pw-2Rl" secondAttribute="top" id="p82-7u-HCL"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="DAJUN-3077" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PcR-0r-yBd">
+                                <rect key="frame" x="141" y="842" width="132.5" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="XXy-5b-hSP"/>
+                                    <constraint firstAttribute="height" constant="29" id="fXs-QH-Yhs"/>
+                                    <constraint firstAttribute="width" constant="132.5" id="z0l-hH-qxw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana-BoldItalic" family="Verdana" pointSize="17"/>
+                                <color key="textColor" red="0.77907779389999998" green="0.77907779389999998" blue="0.77907779389999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TTA-lT-oDw"/>
                         <color key="backgroundColor" red="0.26235345397332699" green="0.26235345397332699" blue="0.26235345397332699" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.044860079880000001" green="0.044860079880000001" blue="0.044860079880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="yCv-pw-2Rl" firstAttribute="centerX" secondItem="TTA-lT-oDw" secondAttribute="centerX" id="F6Z-Tv-MOE"/>
-                            <constraint firstItem="TTA-lT-oDw" firstAttribute="bottom" secondItem="yCv-pw-2Rl" secondAttribute="bottom" constant="100" id="L6X-MM-JhY"/>
+                            <constraint firstItem="TTA-lT-oDw" firstAttribute="bottom" secondItem="yCv-pw-2Rl" secondAttribute="bottom" constant="80" id="L6X-MM-JhY"/>
+                            <constraint firstAttribute="bottom" secondItem="PcR-0r-yBd" secondAttribute="bottom" constant="25" id="RdX-Fw-cR5"/>
+                            <constraint firstItem="R2a-MS-3UT" firstAttribute="top" secondItem="des-JU-0ev" secondAttribute="top" constant="40" id="Y60-KG-jLO"/>
+                            <constraint firstItem="TTA-lT-oDw" firstAttribute="trailing" secondItem="R2a-MS-3UT" secondAttribute="trailing" constant="27" id="cV5-8y-XC2"/>
+                            <constraint firstItem="PcR-0r-yBd" firstAttribute="centerX" secondItem="TTA-lT-oDw" secondAttribute="centerX" id="nkL-EK-2oi"/>
+                            <constraint firstItem="R2a-MS-3UT" firstAttribute="leading" secondItem="TTA-lT-oDw" secondAttribute="leading" constant="27" id="qtl-rU-MsA"/>
+                            <constraint firstItem="yCv-pw-2Rl" firstAttribute="top" secondItem="R2a-MS-3UT" secondAttribute="bottom" constant="80" id="wOT-Kk-FT7"/>
+                            <constraint firstItem="PcR-0r-yBd" firstAttribute="top" secondItem="yCv-pw-2Rl" secondAttribute="bottom" constant="60" id="z92-kc-jDk"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ikm-8T-FKD">
@@ -218,12 +264,9 @@
                             <color key="tintColor" systemColor="systemRedColor"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                             <state key="normal" title="Button">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="titleColor" red="0.26598846597015546" green="0.26598846597015546" blue="0.26598846597015546" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                         </button>
-                        <barButtonItem key="rightBarButtonItem" image="gearshape.fill" catalog="system" id="Jza-uh-cWt">
-                            <color key="tintColor" red="0.67023873329999994" green="0.29964989419999999" blue="0.29334697129999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="circularSliderTest" destination="TYd-Ex-rFu" id="4c2-tR-fUp"/>
@@ -254,7 +297,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="gearshape.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

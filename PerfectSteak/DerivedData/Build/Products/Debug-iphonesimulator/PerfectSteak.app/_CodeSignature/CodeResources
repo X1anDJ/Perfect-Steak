@@ -26,27 +26,23 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/61x-ii-qhL-view-des-JU-0ev.nib</key>
 		<data>
-		nu3N3iOSg7celH9oMOaKOxtgTlQ=
+		t9lT2YL8vhaswZBlY85g0FbUqMY=
 		</data>
 		<key>Base.lproj/Main.storyboardc/HomeNC.nib</key>
 		<data>
-		i0jtm6K/RCNWp9ct5JXLtWqcXVM=
+		s9cElNxogE1dWhChQLR+UWQBJi8=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
-		IK34kZt7j0tR0RTee5Fsog0Sud4=
-		</data>
-		<key>Base.lproj/Main.storyboardc/PSz-OW-Fj8-view-y6A-SZ-sra.nib</key>
-		<data>
-		ecwnpnbxBgCl6YyzraZYQFs3iRE=
-		</data>
-		<key>Base.lproj/Main.storyboardc/UIViewController-PSz-OW-Fj8.nib</key>
-		<data>
-		Bd6AaMmx15KAc1SIaLwIzfAVF9Q=
+		MfkbTIYmpEAe5/JOHVMWpQAMsYY=
 		</data>
 		<key>CircularSlider.nib</key>
 		<data>
-		/VyKU1zmZBk8pEYTHYkydgNFcvQ=
+		QwVZR7OqrRwJ+EKUhWIfvFpmi+k=
+		</data>
+		<key>DonenessSlider.nib</key>
+		<data>
+		Ff0rt2shwtmo3Ef6vNzRqS1MfJo=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -118,42 +114,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			epDERe9vFYt1Hhz7vQuRTqMQus2fin6Xlzk6jkfEcUo=
+			1X8yFdDZlaTSHTfEjUvitc7UHyvkI8SJ7AbMGHWASL4=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/HomeNC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HvAUjIWv4s5+YjTnuXQAuOnWCbIScdIWEvUQD4Ihvtw=
+			C9utBJ8f4KsuUWVkxt2BQ3PgNfOvXy3KLSbF7nuzUDo=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LiJlu/dpHSaFZNX2dRfYharq+/r3WIcx1FF8IXSczB8=
-			</data>
-		</dict>
-		<key>Base.lproj/Main.storyboardc/PSz-OW-Fj8-view-y6A-SZ-sra.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			JbuWWOkVB4XjTjLckb6jYlh8c43HMgJ/5TUDH4EgChA=
-			</data>
-		</dict>
-		<key>Base.lproj/Main.storyboardc/UIViewController-PSz-OW-Fj8.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			cKOiCNmDzuomlrMPEemT1ef32s+j1lGIABeEexql6pk=
+			LWcGefbKavERfh1iyKgkRyLRNY0my/KqZx4gVvlABm4=
 			</data>
 		</dict>
 		<key>CircularSlider.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tzyh0TDnzWqTowf6MumKm4Gu8YFTh0uAysAC4bnjwF8=
+			LuirJAdBH11cshFm5FScpccSXb9Stx01RRu2clK6aMM=
+			</data>
+		</dict>
+		<key>DonenessSlider.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VqoBZcnF4Yzg22EvJH9eq5KfmFEcngDLK047AyOoJlE=
 			</data>
 		</dict>
 		<key>PerfectSteak.momd/PerfectSteak.mom</key>

@@ -2,7 +2,7 @@
 //  CDSteakRecipe+CoreDataClass.swift
 //  
 //
-//  Created by Dajun Xian on 4/25/23.
+//  Created by Dajun Xian on 4/27/23.
 //
 //  This file was automatically generated and should not be edited.
 //

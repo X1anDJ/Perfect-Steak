@@ -267,6 +267,16 @@ SWIFT_CLASS("_TtC12PerfectSteak14CircularSlider")
 - (IBAction)handleButtonDragg:(UIPanGestureRecognizer * _Nonnull)sender;
 @end
 
+
+SWIFT_CLASS("_TtC12PerfectSteak14DonenessSlider")
+@interface DonenessSlider : UIView
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified steakDonenessTitle;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified pointerView;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (IBAction)handleButtonDragg:(UIPanGestureRecognizer * _Nonnull)sender;
+@end
+
 @class NSString;
 @class NSBundle;
 
