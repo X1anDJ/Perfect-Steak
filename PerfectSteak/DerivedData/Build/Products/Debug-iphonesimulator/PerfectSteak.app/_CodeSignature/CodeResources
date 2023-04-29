@@ -10,7 +10,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		C3VIQBCGdGJ5RJ2n83x7/HgXNpI=
+		GIPL1hqCRS75KTRJjrdYmpufJpw=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/61x-ii-qhL-view-des-JU-0ev.nib</key>
 		<data>
-		t9lT2YL8vhaswZBlY85g0FbUqMY=
+		pjq1T77cOGFFdEQhv7GOtIm0Iew=
 		</data>
 		<key>Base.lproj/Main.storyboardc/HomeNC.nib</key>
 		<data>
-		s9cElNxogE1dWhChQLR+UWQBJi8=
+		5r4a9vZaXAA1VvzHAvzMUVtyvDA=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -38,19 +38,31 @@
 		</data>
 		<key>CircularSlider.nib</key>
 		<data>
-		QwVZR7OqrRwJ+EKUhWIfvFpmi+k=
+		nSG1EwJ4Nz9FiKbciNDvfZRl68U=
 		</data>
 		<key>DonenessSlider.nib</key>
 		<data>
-		Ff0rt2shwtmo3Ef6vNzRqS1MfJo=
+		QfefNc/6tmrshJ00pHruzToZ7QQ=
+		</data>
+		<key>Frameworks/DevicePpi.framework/DevicePpi</key>
+		<data>
+		FTuHCWbE2TVgbLW79FOHvrH1wOk=
+		</data>
+		<key>Frameworks/DevicePpi.framework/Info.plist</key>
+		<data>
+		Yln6n78lrjZOHrPAB1L4IDXt848=
+		</data>
+		<key>Frameworks/DevicePpi.framework/_CodeSignature/CodeResources</key>
+		<data>
+		dnzQ4vA2MJmBVgznAwyuObl+g0o=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		r0haqE0z/F+LN4igK6vKudmz9gE=
+		tvWmbFS8u8Q5dLCtAxGO9VAp874=
 		</data>
 		<key>PerfectSteak.momd/PerfectSteak.mom</key>
 		<data>
-		GebCyMPgwgNkn1++NwdRCxnMG+I=
+		DYcF5ZJQ6ZH+KkoqqtTFTRSYwc4=
 		</data>
 		<key>PerfectSteak.momd/PerfectSteak.omo</key>
 		<data>
@@ -66,11 +78,15 @@
 		</data>
 		<key>SteakRecipeModel.momd/SteakRecipeModel.mom</key>
 		<data>
-		YamW547pOeRT4sdY5KGblwq1X60=
+		xFoivSSxZZRDEumgxjzM11ptdxY=
 		</data>
 		<key>SteakRecipeModel.momd/VersionInfo.plist</key>
 		<data>
 		21G92Bop1ExGZnwD4BgxLDLZjK4=
+		</data>
+		<key>SteakTemperature.nib</key>
+		<data>
+		jE8REYOHYVgVBg7ZCZ/ltqcCA6c=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -86,7 +102,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zEyI55LgPhGxPy8dtAKJ0Ch8zd2LkXvcdMkYeYDoQSA=
+			hGJYZoKPylaKOWxJwdLHwz1VoW+EQdNXwwfsjZ5/Ppk=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
@@ -114,14 +130,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1X8yFdDZlaTSHTfEjUvitc7UHyvkI8SJ7AbMGHWASL4=
+			PvhyapefF+DvjrNrsek7mYt8GZhFA7MM/kuL5vYX+T0=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/HomeNC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			C9utBJ8f4KsuUWVkxt2BQ3PgNfOvXy3KLSbF7nuzUDo=
+			w1h65SMMMYy215ak0OkLFDj6nrvuApvGIDV5jVb93bQ=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -135,21 +151,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LuirJAdBH11cshFm5FScpccSXb9Stx01RRu2clK6aMM=
+			2axbULTr4/gD3Y+M6WvDeU51hdQUpI8GkC5R2cmjX6w=
 			</data>
 		</dict>
 		<key>DonenessSlider.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VqoBZcnF4Yzg22EvJH9eq5KfmFEcngDLK047AyOoJlE=
+			eTsdJeLltCiFyWFmmVM07DtCzKH/ZggUsTcUhy1yXaE=
+			</data>
+		</dict>
+		<key>Frameworks/DevicePpi.framework/DevicePpi</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			jhltidzfVoFGf3Ot0IpMS61d+r8qCrA+XgUPMizX1Ng=
+			</data>
+		</dict>
+		<key>Frameworks/DevicePpi.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ta3z2klnl7bF8RqZH+4yf57Jny4B71Pb+xFo5xulcQM=
+			</data>
+		</dict>
+		<key>Frameworks/DevicePpi.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			hyO2NWX397ry6Q6DG/y/3SMd0+2zE/OCURXChgFpPZg=
 			</data>
 		</dict>
 		<key>PerfectSteak.momd/PerfectSteak.mom</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			e/LNxckeAwt26NYxb4Z62glp3N6bQpkKdxtMV3NsSk4=
+			wNZU/nMNj38o0kvVQvJ7AUY37ZpUeZZpAIfuiYOICXs=
 			</data>
 		</dict>
 		<key>PerfectSteak.momd/PerfectSteak.omo</key>
@@ -170,7 +207,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wbWWcONL4VuuI17jM2Vdw6b6tIrL8cMYddFsfF/HpZc=
+			cuWBg/1uOlsw2KVENmCqyUZVTXsqRvBVOoDyrGci4PQ=
 			</data>
 		</dict>
 		<key>SteakRecipeModel.momd/VersionInfo.plist</key>
@@ -178,6 +215,13 @@
 			<key>hash2</key>
 			<data>
 			MMkWseKAV+0wLk6E0PxItzSa9hClaqw94AufSniDILk=
+			</data>
+		</dict>
+		<key>SteakTemperature.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			z0smUEsIe2RGXfWJi2uJkK2+eFm9P6qtdRCmvLd8IJE=
 			</data>
 		</dict>
 	</dict>

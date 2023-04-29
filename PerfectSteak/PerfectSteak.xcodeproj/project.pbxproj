@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D9E2D71DE018080D8EF0FEB /* Pods_PerfectSteak.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C465273F91F13D209319B1E /* Pods_PerfectSteak.framework */; };
 		DC6B0A0629F72BC900F1A859 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6B0A0529F72BC900F1A859 /* AppDelegate.swift */; };
 		DC6B0A0829F72BC900F1A859 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6B0A0729F72BC900F1A859 /* SceneDelegate.swift */; };
 		DC6B0A0D29F72BC900F1A859 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC6B0A0B29F72BC900F1A859 /* Main.storyboard */; };
@@ -22,14 +23,20 @@
 		DC6DDCDE29F7A0CC00C0DF9D /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6DDCDD29F7A0CC00C0DF9D /* OnboardingCollectionViewCell.swift */; };
 		DC6DDCE229F83AB000C0DF9D /* RecipeDropdownTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6DDCE129F83AB000C0DF9D /* RecipeDropdownTableViewController.swift */; };
 		DC6DDCE429F83E2400C0DF9D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6DDCE329F83E2400C0DF9D /* MainViewController.swift */; };
+		DCAC1B5229FBDCF800CB638D /* SteakTemperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAC1B5129FBDCF800CB638D /* SteakTemperature.swift */; };
+		DCAD6D5629FBD749007CDEB4 /* SteakTemperature.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCAD6D5529FBD749007CDEB4 /* SteakTemperature.xib */; };
 		DCD4607A29F88D090054CA23 /* CircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD4607929F88D090054CA23 /* CircularSlider.swift */; };
 		DCD4607C29F88D490054CA23 /* CircularSlider.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCD4607B29F88D490054CA23 /* CircularSlider.xib */; };
 		DCD4607F29F8934E0054CA23 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD4607E29F8934E0054CA23 /* UIView+Extension.swift */; };
 		DCDD5E2229F9F0F5008234B5 /* DonenessSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDD5E2129F9F0F5008234B5 /* DonenessSlider.swift */; };
 		DCDD5E2429F9F126008234B5 /* DonenessSlider.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCDD5E2329F9F126008234B5 /* DonenessSlider.xib */; };
+		DCDD5E2629FB088E008234B5 /* RulerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDD5E2529FB088E008234B5 /* RulerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3CC1CA37E32BBB8B40268B76 /* Pods-PerfectSteak.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerfectSteak.release.xcconfig"; path = "Target Support Files/Pods-PerfectSteak/Pods-PerfectSteak.release.xcconfig"; sourceTree = "<group>"; };
+		4C465273F91F13D209319B1E /* Pods_PerfectSteak.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PerfectSteak.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55DACDBE7675BA4C12356A23 /* Pods-PerfectSteak.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerfectSteak.debug.xcconfig"; path = "Target Support Files/Pods-PerfectSteak/Pods-PerfectSteak.debug.xcconfig"; sourceTree = "<group>"; };
 		DC6B0A0229F72BC900F1A859 /* PerfectSteak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PerfectSteak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC6B0A0529F72BC900F1A859 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC6B0A0729F72BC900F1A859 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,11 +54,14 @@
 		DC6DDCDD29F7A0CC00C0DF9D /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		DC6DDCE129F83AB000C0DF9D /* RecipeDropdownTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDropdownTableViewController.swift; sourceTree = "<group>"; };
 		DC6DDCE329F83E2400C0DF9D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		DCAC1B5129FBDCF800CB638D /* SteakTemperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteakTemperature.swift; sourceTree = "<group>"; };
+		DCAD6D5529FBD749007CDEB4 /* SteakTemperature.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SteakTemperature.xib; sourceTree = "<group>"; };
 		DCD4607929F88D090054CA23 /* CircularSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularSlider.swift; sourceTree = "<group>"; };
 		DCD4607B29F88D490054CA23 /* CircularSlider.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CircularSlider.xib; sourceTree = "<group>"; };
 		DCD4607E29F8934E0054CA23 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		DCDD5E2129F9F0F5008234B5 /* DonenessSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonenessSlider.swift; sourceTree = "<group>"; };
 		DCDD5E2329F9F126008234B5 /* DonenessSlider.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonenessSlider.xib; sourceTree = "<group>"; };
+		DCDD5E2529FB088E008234B5 /* RulerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,17 +69,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D9E2D71DE018080D8EF0FEB /* Pods_PerfectSteak.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F9937F9CD54A980D65D01C4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55DACDBE7675BA4C12356A23 /* Pods-PerfectSteak.debug.xcconfig */,
+				3CC1CA37E32BBB8B40268B76 /* Pods-PerfectSteak.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		998705AC4E51E73B8572F9AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C465273F91F13D209319B1E /* Pods_PerfectSteak.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DC6B09F929F72BC900F1A859 = {
 			isa = PBXGroup;
 			children = (
 				DC6B0A0429F72BC900F1A859 /* PerfectSteak */,
 				DC6B0A0329F72BC900F1A859 /* Products */,
+				2F9937F9CD54A980D65D01C4 /* Pods */,
+				998705AC4E51E73B8572F9AA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -185,6 +215,8 @@
 		DCDD5E1E29F9EBB1008234B5 /* SteakTemperature */ = {
 			isa = PBXGroup;
 			children = (
+				DCAD6D5529FBD749007CDEB4 /* SteakTemperature.xib */,
+				DCAC1B5129FBDCF800CB638D /* SteakTemperature.swift */,
 			);
 			path = SteakTemperature;
 			sourceTree = "<group>";
@@ -201,6 +233,7 @@
 		DCDD5E2029F9EBE1008234B5 /* Thickness */ = {
 			isa = PBXGroup;
 			children = (
+				DCDD5E2529FB088E008234B5 /* RulerViewController.swift */,
 			);
 			path = Thickness;
 			sourceTree = "<group>";
@@ -212,9 +245,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC6B0A1929F72BCB00F1A859 /* Build configuration list for PBXNativeTarget "PerfectSteak" */;
 			buildPhases = (
+				4B9DD6AD548C08908073D8DC /* [CP] Check Pods Manifest.lock */,
 				DC6B09FE29F72BC900F1A859 /* Sources */,
 				DC6B09FF29F72BC900F1A859 /* Frameworks */,
 				DC6B0A0029F72BC900F1A859 /* Resources */,
+				3085734DED893A44F53FB43F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -264,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC6B0A1529F72BCB00F1A859 /* LaunchScreen.storyboard in Resources */,
+				DCAD6D5629FBD749007CDEB4 /* SteakTemperature.xib in Resources */,
 				DC6B0A1229F72BCB00F1A859 /* Assets.xcassets in Resources */,
 				DC6B0A0D29F72BC900F1A859 /* Main.storyboard in Resources */,
 				DCD4607C29F88D490054CA23 /* CircularSlider.xib in Resources */,
@@ -273,6 +309,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3085734DED893A44F53FB43F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PerfectSteak/Pods-PerfectSteak-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PerfectSteak/Pods-PerfectSteak-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PerfectSteak/Pods-PerfectSteak-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B9DD6AD548C08908073D8DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PerfectSteak-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DC6B09FE29F72BC900F1A859 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -281,6 +359,7 @@
 				DC6DDCE229F83AB000C0DF9D /* RecipeDropdownTableViewController.swift in Sources */,
 				DC6B0A2429F7471300F1A859 /* Recipes.swift in Sources */,
 				DC6B0A0629F72BC900F1A859 /* AppDelegate.swift in Sources */,
+				DCAC1B5229FBDCF800CB638D /* SteakTemperature.swift in Sources */,
 				DCD4607A29F88D090054CA23 /* CircularSlider.swift in Sources */,
 				DC6DDCE429F83E2400C0DF9D /* MainViewController.swift in Sources */,
 				DC6B0A1029F72BC900F1A859 /* PerfectSteak.xcdatamodeld in Sources */,
@@ -291,6 +370,7 @@
 				DC6B0A0829F72BC900F1A859 /* SceneDelegate.swift in Sources */,
 				DC6DDCDA29F7930600C0DF9D /* OnboardingViewController.swift in Sources */,
 				DC6DDCDE29F7A0CC00C0DF9D /* OnboardingCollectionViewCell.swift in Sources */,
+				DCDD5E2629FB088E008234B5 /* RulerViewController.swift in Sources */,
 				DC6DDCDC29F7938500C0DF9D /* OnboardingSlide.swift in Sources */,
 				DC6DDCD829F75B6C00C0DF9D /* CoreDataStack.swift in Sources */,
 			);
@@ -434,6 +514,7 @@
 		};
 		DC6B0A1A29F72BCB00F1A859 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55DACDBE7675BA4C12356A23 /* Pods-PerfectSteak.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -462,6 +543,7 @@
 		};
 		DC6B0A1B29F72BCB00F1A859 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CC1CA37E32BBB8B40268B76 /* Pods-PerfectSteak.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

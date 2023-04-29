@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SteakTemperature" customModule="PerfectSteak" customModuleProvider="target">
+            <connections>
+                <outlet property="circularButton" destination="0tF-rD-SOc" id="URC-Kf-tex"/>
+                <outlet property="parameterNumber" destination="naZ-2u-Qdp" id="Kq6-Ge-Rb2"/>
+                <outlet property="parameterTitle" destination="OeL-3s-R7u" id="q8r-eu-3vh"/>
+                <outlet property="parameterUnit" destination="bb5-ZD-3jl" id="rXn-BL-H92"/>
+                <outlet property="pointerView" destination="6T1-fG-yv5" id="W62-pc-fdx"/>
+                <outlet property="rangeBegin" destination="qRT-rh-ORY" id="y6R-XC-FWZ"/>
+                <outlet property="rangeEnd" destination="8c5-ze-EY7" id="BXh-Ou-TN8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2gQ-pc-S2V">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meat Temperature" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OeL-3s-R7u">
+                    <rect key="frame" x="50" y="0.0" width="100" height="11"/>
+                    <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="11"/>
+                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fjX-qB-tCM">
+                    <rect key="frame" x="81.333333333333329" y="13.999999999999998" width="37.666666666666671" height="26.333333333333329"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="75" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="naZ-2u-Qdp">
+                            <rect key="frame" x="0.0" y="0.0" width="25" height="26.333333333333332"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="F°" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bb5-ZD-3jl">
+                            <rect key="frame" x="25" y="0.0" width="12.666666666666664" height="26.333333333333332"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tF-rD-SOc">
+                    <rect key="frame" x="50" y="50" width="100" height="100"/>
+                    <color key="backgroundColor" red="0.26235345399999999" green="0.26235345399999999" blue="0.26235345399999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="2xc-WH-wNe"/>
+                        <constraint firstAttribute="width" constant="100" id="evt-d5-gPm"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain">
+                        <backgroundConfiguration key="background" cornerRadius="70" strokeWidth="1">
+                            <color key="strokeColor" white="0.39907048309999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </backgroundConfiguration>
+                    </buttonConfiguration>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="50"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6T1-fG-yv5">
+                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UUA-Nq-sck">
+                            <rect key="frame" x="99.666666666666671" y="50" width="1" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="Bbv-o9-r0q"/>
+                                <constraint firstAttribute="width" constant="1" id="doS-Sp-pQw"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="2Qc-A5-Uj6"/>
+                        <constraint firstAttribute="height" constant="200" id="C0c-ip-Ckp" userLabel="height = 205"/>
+                        <constraint firstAttribute="bottom" secondItem="UUA-Nq-sck" secondAttribute="bottom" constant="100" id="Z0l-U4-VrL"/>
+                        <constraint firstItem="UUA-Nq-sck" firstAttribute="centerX" secondItem="6T1-fG-yv5" secondAttribute="centerX" id="wvP-Oh-uIo"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="PnQ-EZ-ttf" appends="YES" id="kKC-zP-m7U"/>
+                    </connections>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qRT-rh-ORY">
+                    <rect key="frame" x="45" y="158" width="6.6666666666666643" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="120" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8c5-ze-EY7">
+                    <rect key="frame" x="137.66666666666666" y="158" width="17.333333333333343" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="nha-ZD-E2v"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="qRT-rh-ORY" secondAttribute="bottom" constant="30" id="3lQ-mC-t5T"/>
+                <constraint firstItem="0tF-rD-SOc" firstAttribute="centerY" secondItem="2gQ-pc-S2V" secondAttribute="centerY" id="6Tt-g4-kro"/>
+                <constraint firstItem="qRT-rh-ORY" firstAttribute="leading" secondItem="2gQ-pc-S2V" secondAttribute="leading" constant="45" id="Da7-va-qmJ"/>
+                <constraint firstAttribute="bottom" secondItem="8c5-ze-EY7" secondAttribute="bottom" constant="30" id="Drw-bw-QgA"/>
+                <constraint firstItem="fjX-qB-tCM" firstAttribute="top" secondItem="OeL-3s-R7u" secondAttribute="bottom" constant="3" id="FT6-Ci-fAh"/>
+                <constraint firstItem="OeL-3s-R7u" firstAttribute="top" secondItem="2gQ-pc-S2V" secondAttribute="top" id="NT9-Vx-AEO"/>
+                <constraint firstItem="fjX-qB-tCM" firstAttribute="centerX" secondItem="2gQ-pc-S2V" secondAttribute="centerX" id="OF2-qA-IDa"/>
+                <constraint firstItem="6T1-fG-yv5" firstAttribute="centerX" secondItem="2gQ-pc-S2V" secondAttribute="centerX" id="PE7-it-ttg"/>
+                <constraint firstItem="6T1-fG-yv5" firstAttribute="centerY" secondItem="2gQ-pc-S2V" secondAttribute="centerY" id="RMa-FN-KOS"/>
+                <constraint firstItem="OeL-3s-R7u" firstAttribute="centerX" secondItem="2gQ-pc-S2V" secondAttribute="centerX" id="cKh-ky-Vve"/>
+                <constraint firstItem="0tF-rD-SOc" firstAttribute="centerX" secondItem="2gQ-pc-S2V" secondAttribute="centerX" id="kYq-hp-RJa"/>
+                <constraint firstAttribute="trailing" secondItem="8c5-ze-EY7" secondAttribute="trailing" constant="45" id="mbn-8S-yqr"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="111.59420289855073" y="127.90178571428571"/>
+        </view>
+        <panGestureRecognizer minimumNumberOfTouches="1" id="PnQ-EZ-ttf">
+            <connections>
+                <action selector="handleButtonDragg:" destination="-1" id="Hwh-ox-lap"/>
+            </connections>
+        </panGestureRecognizer>
+    </objects>
+</document>

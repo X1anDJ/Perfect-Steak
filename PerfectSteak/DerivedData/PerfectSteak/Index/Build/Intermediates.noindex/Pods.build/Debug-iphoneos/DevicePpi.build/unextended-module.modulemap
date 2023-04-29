@@ -1,0 +1,10 @@
+framework module DevicePpi {
+  umbrella header "DevicePpi-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module DevicePpi.__Swift {
+    exclude header "DevicePpi-Swift.h"
+}

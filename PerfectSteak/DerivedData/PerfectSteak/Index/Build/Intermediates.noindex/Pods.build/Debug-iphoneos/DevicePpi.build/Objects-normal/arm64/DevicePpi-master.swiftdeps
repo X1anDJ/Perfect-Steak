@@ -1,0 +1,7 @@
+version: "Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)"
+options: "fa176ae26597a429326ae46122df1d5c23ade041360a794088ff9d9b72bd6af1"
+build_start_time: [1682645224, 64405918]
+build_end_time: [1682645228, 456122875]
+inputs:
+  "/Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/Pods/DevicePpi/Sources/DevicePpi/Ppi.swift": [1682642672, 863970518]
+  "/Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/Pods/DevicePpi/Sources/DevicePpi/SysInfo.swift": [1682642672, 864331245]

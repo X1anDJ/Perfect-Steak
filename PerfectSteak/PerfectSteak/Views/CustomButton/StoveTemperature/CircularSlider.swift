@@ -25,6 +25,15 @@ class CircularSlider: UIView {
 
     var currentAngle: CGFloat = 0.0
     
+    var currentValue: CGFloat = 0.0 {
+        didSet {
+            parameterNumber.text = String(format: "%.0f", currentValue)
+            currentAngle = angleFromValue(currentValue)
+            updatePointerViewRotation()
+            updateLayers()
+        }
+    }
+    
     let minValue: CGFloat = 200
     let maxValue: CGFloat = 500
     let minAngle: CGFloat = -150
@@ -69,6 +78,7 @@ class CircularSlider: UIView {
 
     
     private func setupRing() {
+        print("Bounds: \(bounds), Frame: \(frame)")
         let center = CGPoint(x: bounds.width / 2, y: bounds.height / 2)
         let radius = 50.0
         let startAngle = (minAngle - 90) * .pi / 180
@@ -91,34 +101,58 @@ class CircularSlider: UIView {
         
         if let parameterText = parameterNumber.text, let parameterValue = Double(parameterText) {
             currentAngle = angleFromValue(CGFloat(parameterValue))
-            updateProgressRing()
+            updateLayers()
         }
     }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        updateLayers()
+    }
+    
+    private func updateLayers() {
+        let center = CGPoint(x: bounds.width / 2, y: bounds.height / 2)
+        let radius = 50.0
+        let startAngle = (minAngle - 90) * .pi / 180
+        let endAngle = (maxAngle - 90) * .pi / 180
+
+        // Update track layer
+        let trackPath = UIBezierPath(arcCenter: center, radius: radius, startAngle: startAngle, endAngle: endAngle, clockwise: true)
+        trackLayer.path = trackPath.cgPath
+
+        // Update progress layer
+        let progressStartAngle = (minAngle - 90) * .pi / 180
+        let progressEndAngle = (currentAngle - 90) * .pi / 180
+        let progressPath = UIBezierPath(arcCenter: center, radius: radius, startAngle: progressStartAngle, endAngle: progressEndAngle, clockwise: true)
+        progressLayer.path = progressPath.cgPath
+    }
+    
     
     private func angleFromValue(_ value: CGFloat) -> CGFloat {
             let valueRange = maxValue - minValue
             let angleRange = maxAngle - minAngle
             let normalizedValue = (value - minValue) / valueRange
             return minAngle + (angleRange * normalizedValue)
-        }
-    
-    private func updateProgressRing() {
-        let center = CGPoint(x: bounds.width / 2, y: bounds.height / 2)
-        let radius = 50.0
-        let startAngle = (minAngle - 90) * .pi / 180
-        let endAngle = (currentAngle - 90) * .pi / 180
-        
-        let progressPath = UIBezierPath(arcCenter: center, radius: radius, startAngle: startAngle, endAngle: endAngle, clockwise: true)
-        progressLayer.path = progressPath.cgPath
     }
     
+    
+
+
+    private func updatePointerViewRotation() {
+        let newTransform = CGAffineTransform(rotationAngle: currentAngle * .pi / 180.0)
+        pointerView.transform = newTransform
+    }
+    
+        
+    
+    // Updated the currentValue and parameter.text( title ) with the current angle
     private func updateParameterNumber() {
         let valueRange = maxValue - minValue
         let angleRange = maxAngle - minAngle
         var value = minValue + (valueRange * (currentAngle - minAngle) / angleRange)
         
         value = round(value / 5) * 5
-        
+        currentValue = Double(value)
         parameterNumber.text = String(format: "%.0f", value)
     }
     
@@ -137,7 +171,7 @@ class CircularSlider: UIView {
         // Update the current angle and parameter number in real-time
         currentAngle += angle
         updateParameterNumber()
-        updateProgressRing()
+        updateLayers()
         // Reset the translation of the pan gesture to avoid compounding
         sender.setTranslation(.zero, in: self)
         

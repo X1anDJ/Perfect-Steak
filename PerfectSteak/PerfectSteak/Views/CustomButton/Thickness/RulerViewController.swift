@@ -1,0 +1,202 @@
+//
+//  RulerViewController.swift
+//  PerfectSteak
+//
+//  Created by Dajun Xian on 4/27/23.
+//
+
+import UIKit
+import DevicePpi
+
+protocol RulerViewControllerDelegate: AnyObject {
+    func didSelectLength(length: CGFloat)
+}
+
+class RulerViewController: UIViewController {
+    
+    weak var delegate: RulerViewControllerDelegate?
+    
+    private var rulerView: RulerView!
+    private var pointerView: UIView!
+    private var lengthLabel: UILabel!
+    //private let rulerHeight: CGFloat = 3 * pointsPerInch // Assuming pointsPerInch points per inch
+    private var topPadding: CGFloat!
+    
+    private var pointsPerInch: CGFloat!
+    private var rulerHeight: CGFloat!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = UIColor.black.withAlphaComponent(0.8)
+        setupUI()
+    }
+    
+    private func setupUI() {
+        
+        let ppi: Double = {
+            switch Ppi.get() {
+            case .success(let ppi):
+                return ppi
+            case .unknown(let bestGuessPpi, _):
+                // A bestGuessPpi value is provided but may be incorrect
+                // Treat as a non-fatal error -- e.g. log to your backend and/or display a message
+                return bestGuessPpi
+            }
+        }()
+        
+        pointsPerInch = CGFloat(ppi /  UIScreen.main.scale)
+        rulerHeight = pointsPerInch * 4
+        topPadding = view.frame.height - rulerHeight - view.safeAreaInsets.bottom - 100.0
+          
+        print("ppi: \(String(describing: pointsPerInch))")
+        print("ppi from pod: \(ppi)")
+
+        // Ruler view
+        let rulerWidth: CGFloat = 180 // Change the width of the ruler's background
+        rulerView = RulerView(frame: CGRect(x: 0, y: topPadding, width: rulerWidth, height: rulerHeight))
+        rulerView.backgroundColor = .darkGray
+        view.addSubview(rulerView)
+
+        // Arrow-shaped pointer view
+        pointerView = ArrowView(frame: CGRect(x: rulerWidth, y: topPadding, width: 120, height: 50))
+        pointerView.backgroundColor = .clear
+        view.addSubview(pointerView)
+
+        // Length label
+        lengthLabel = UILabel(frame: CGRect(x: 0, y: view.safeAreaInsets.top - 115 + topPadding, width: view.frame.width, height: 40))
+        lengthLabel.backgroundColor = .black
+        lengthLabel.textAlignment = .center
+        lengthLabel.text = "_._ inches" // Set the initial value to "0 inches"
+        view.addSubview(lengthLabel)
+
+        // Close button
+        let closeButton = UIButton(type: .system)
+        closeButton.setTitle("Save", for: .normal)
+        closeButton.addTarget(self, action: #selector(closeButtonTapped), for: .touchUpInside)
+        closeButton.frame = CGRect(x: view.frame.width/3, y: view.safeAreaInsets.top - 105 + lengthLabel.frame.height + topPadding, width: view.frame.width/3, height: 40)
+        closeButton.titleLabel?.textAlignment = .center
+        closeButton.tintColor = .white
+        closeButton.cornerRadius = 20
+        closeButton.backgroundColor = .black
+        closeButton.layer.shadowColor = UIColor.gray.cgColor
+        closeButton.layer.shadowOffset = CGSize(width: 0, height: 0)
+        closeButton.layer.shadowRadius = 4
+        closeButton.layer.shadowOpacity = 0.5
+        view.addSubview(closeButton)
+
+        // Add pan gesture recognizer
+        let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture(_:)))
+        pointerView.addGestureRecognizer(panGestureRecognizer)
+    }
+
+
+
+    
+    @objc private func handlePanGesture(_ gestureRecognizer: UIPanGestureRecognizer) {
+        
+        let translation = gestureRecognizer.translation(in: view)
+
+        pointerView.center = CGPoint(x: pointerView.center.x, y: min(max(pointerView.center.y + translation.y, topPadding), rulerHeight + topPadding))
+
+        var length = 4 - ((pointerView.center.y - topPadding) / pointsPerInch)
+        length = round(length * 10) / 10
+        lengthLabel.text = "\(length) inches"
+        lengthLabel.textColor = .white
+
+        gestureRecognizer.setTranslation(.zero, in: view)
+    }
+
+    
+    
+    @objc private func closeButtonTapped() {
+        delegate?.didSelectLength(length: 4 - ((pointerView.center.y - topPadding) / pointsPerInch))
+        dismiss(animated: true, completion: nil)
+    }
+
+}
+
+class RulerView: UIView {
+    override func draw(_ rect: CGRect) {
+        super.draw(rect)
+        
+        let ppi: Double = {
+            switch Ppi.get() {
+            case .success(let ppi):
+                return ppi
+            case .unknown(let bestGuessPpi, _):
+                // A bestGuessPpi value is provided but may be incorrect
+                // Treat as a non-fatal error -- e.g. log to your backend and/or display a message
+                return bestGuessPpi
+            }
+        }()
+        
+
+        let lineWidth: CGFloat = 1
+        let longLineLength: CGFloat = 150
+        let shortLineLength: CGFloat = 60
+        let gap: CGFloat  = ppi /  UIScreen.main.scale
+        let padding: CGFloat = 0
+
+
+
+        for i in 1...Int((4 * ppi) / (gap / 16)) {
+            let yPosition = padding + CGFloat(i) * gap / 16
+
+            let shortLinePath = UIBezierPath()
+            shortLinePath.lineWidth = lineWidth
+            shortLinePath.move(to: CGPoint(x: 0, y: yPosition))
+            shortLinePath.addLine(to: CGPoint(x: shortLineLength, y: yPosition))
+            UIColor.gray.setStroke()
+            shortLinePath.stroke()
+        }
+        
+        for i in 0...4 {
+            let yPosition = padding + CGFloat(i) * gap
+
+            // Long line for each inch
+            let longLinePath = UIBezierPath()
+            longLinePath.lineWidth = lineWidth
+            longLinePath.move(to: CGPoint(x: 0, y: yPosition))
+            longLinePath.addLine(to: CGPoint(x: longLineLength, y: yPosition))
+            UIColor.lightGray.setStroke()
+            longLinePath.stroke()
+
+            let labelText = "\(4 - i)"
+            let label = UILabel(frame: CGRect(x: longLineLength, y: yPosition - 8, width: 24, height: 16))
+            label.font = UIFont.systemFont(ofSize: 20)
+            label.text = labelText
+            label.textAlignment = .left
+            addSubview(label)
+        }
+    }
+}
+
+
+
+
+class ArrowView: UIView {
+    override func draw(_ rect: CGRect) {
+        let path = UIBezierPath()
+
+        path.move(to: CGPoint(x: 0, y: rect.height / 2))
+        path.addLine(to: CGPoint(x: rect.width, y: 0))
+        path.addLine(to: CGPoint(x: rect.width, y: rect.height))
+        path.close()
+
+        
+        let fillColor = UIColor(hex: 0xFF5D32)
+        fillColor.setFill()
+        path.fill()
+    }
+}
+
+extension UIColor {
+    convenience init(hex: Int, alpha: CGFloat = 1.0) {
+        self.init(
+            red: CGFloat((hex & 0xFF0000) >> 16) / 255.0,
+            green: CGFloat((hex & 0x00FF00) >> 8) / 255.0,
+            blue: CGFloat(hex & 0x0000FF) / 255.0,
+            alpha: alpha
+        )
+    }
+}

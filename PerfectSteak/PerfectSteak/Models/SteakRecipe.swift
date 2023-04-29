@@ -12,40 +12,16 @@ class SteakRecipe {
     var ID = UUID()
     
     var title: String {
-        return "Steak: \(thickness)cm, \(ovenTemp)°C"
+        return "Steak: \(thickness)inch, \(ovenTemp)°F, desiredCenterTemp: \(SteakDoneness.fromTemperature(ovenTemp)), ovenTemperature: \(ovenTemp)"
     }
     
-    var thickness: Double {
-        didSet {
-            if thickness < 0.5 {
-                thickness = 0.5
-            }
-        }
-    }
+    var thickness: Double
     
-    var initialTemp: Double {
-        didSet {
-            if initialTemp < 0 {
-                initialTemp = 0
-            }
-        }
-    }
+    var initialTemp: Double
     
-    var ovenTemp: Double {
-        didSet {
-            if ovenTemp < 100 {
-                ovenTemp = 100
-            }
-        }
-    }
+    var ovenTemp: Double
     
-    var desiredCenterTemp: Double {
-        didSet {
-            if desiredCenterTemp < 100 {
-                desiredCenterTemp = 100
-            }
-        }
-    }
+    var desiredCenterTemp: Double 
     
     
     init(ID: UUID, thickness: Double, initialTemp: Double, ovenTemp: Double, desiredCenterTemp: Double) {

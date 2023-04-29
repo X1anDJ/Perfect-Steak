@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21C52" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21754" systemVersion="22E261" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="CDSteakRecipe" representedClassName="CDSteakRecipe" syncable="YES" codeGenerationType="class">
         <attribute name="desiredCenterTemp" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
@@ -7,7 +7,4 @@
         <attribute name="ovenTemp" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="thickness" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
     </entity>
-    <elements>
-        <element name="CDSteakRecipe" positionX="-54" positionY="-9" width="128" height="104"/>
-    </elements>
 </model>

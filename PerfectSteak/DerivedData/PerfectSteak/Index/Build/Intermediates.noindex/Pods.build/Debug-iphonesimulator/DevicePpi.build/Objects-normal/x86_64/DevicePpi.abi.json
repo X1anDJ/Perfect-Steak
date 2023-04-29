@@ -1,0 +1,478 @@
+{
+  "kind": "Root",
+  "name": "TopLevel",
+  "printedName": "TopLevel",
+  "children": [
+    {
+      "kind": "Import",
+      "name": "UIKit",
+      "printedName": "UIKit",
+      "declKind": "Import",
+      "moduleName": "DevicePpi",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "Ppi",
+      "printedName": "Ppi",
+      "children": [
+        {
+          "kind": "TypeDecl",
+          "name": "GetPpiResult",
+          "printedName": "GetPpiResult",
+          "children": [
+            {
+              "kind": "Var",
+              "name": "success",
+              "printedName": "success",
+              "children": [
+                {
+                  "kind": "TypeFunc",
+                  "name": "Function",
+                  "printedName": "(DevicePpi.Ppi.GetPpiResult.Type) -> (Swift.Double) -> DevicePpi.Ppi.GetPpiResult",
+                  "children": [
+                    {
+                      "kind": "TypeFunc",
+                      "name": "Function",
+                      "printedName": "(Swift.Double) -> DevicePpi.Ppi.GetPpiResult",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "GetPpiResult",
+                          "printedName": "DevicePpi.Ppi.GetPpiResult",
+                          "usr": "s:9DevicePpi0B0O03GetB6ResultO"
+                        },
+                        {
+                          "kind": "TypeNominal",
+                          "name": "Tuple",
+                          "printedName": "(ppi: Swift.Double)",
+                          "children": [
+                            {
+                              "kind": "TypeNominal",
+                              "name": "Double",
+                              "printedName": "Swift.Double",
+                              "usr": "s:Sd"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Metatype",
+                      "printedName": "DevicePpi.Ppi.GetPpiResult.Type",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "GetPpiResult",
+                          "printedName": "DevicePpi.Ppi.GetPpiResult",
+                          "usr": "s:9DevicePpi0B0O03GetB6ResultO"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "declKind": "EnumElement",
+              "usr": "s:9DevicePpi0B0O03GetB6ResultO7successyAESd_tcAEmF",
+              "mangledName": "$s9DevicePpi0B0O03GetB6ResultO7successyAESd_tcAEmF",
+              "moduleName": "DevicePpi",
+              "fixedbinaryorder": 0
+            },
+            {
+              "kind": "Var",
+              "name": "unknown",
+              "printedName": "unknown",
+              "children": [
+                {
+                  "kind": "TypeFunc",
+                  "name": "Function",
+                  "printedName": "(DevicePpi.Ppi.GetPpiResult.Type) -> (Swift.Double, Swift.Error) -> DevicePpi.Ppi.GetPpiResult",
+                  "children": [
+                    {
+                      "kind": "TypeFunc",
+                      "name": "Function",
+                      "printedName": "(Swift.Double, Swift.Error) -> DevicePpi.Ppi.GetPpiResult",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "GetPpiResult",
+                          "printedName": "DevicePpi.Ppi.GetPpiResult",
+                          "usr": "s:9DevicePpi0B0O03GetB6ResultO"
+                        },
+                        {
+                          "kind": "TypeNominal",
+                          "name": "Tuple",
+                          "printedName": "(bestGuessPpi: Swift.Double, error: Swift.Error)",
+                          "children": [
+                            {
+                              "kind": "TypeNominal",
+                              "name": "Double",
+                              "printedName": "Swift.Double",
+                              "usr": "s:Sd"
+                            },
+                            {
+                              "kind": "TypeNominal",
+                              "name": "Error",
+                              "printedName": "Swift.Error",
+                              "usr": "s:s5ErrorP"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Metatype",
+                      "printedName": "DevicePpi.Ppi.GetPpiResult.Type",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "GetPpiResult",
+                          "printedName": "DevicePpi.Ppi.GetPpiResult",
+                          "usr": "s:9DevicePpi0B0O03GetB6ResultO"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "declKind": "EnumElement",
+              "usr": "s:9DevicePpi0B0O03GetB6ResultO7unknownyAESd_s5Error_ptcAEmF",
+              "mangledName": "$s9DevicePpi0B0O03GetB6ResultO7unknownyAESd_s5Error_ptcAEmF",
+              "moduleName": "DevicePpi",
+              "fixedbinaryorder": 1
+            }
+          ],
+          "declKind": "Enum",
+          "usr": "s:9DevicePpi0B0O03GetB6ResultO",
+          "mangledName": "$s9DevicePpi0B0O03GetB6ResultO",
+          "moduleName": "DevicePpi",
+          "declAttributes": [
+            "AccessControl"
+          ],
+          "isEnumExhaustive": true
+        },
+        {
+          "kind": "Function",
+          "name": "get",
+          "printedName": "get()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "GetPpiResult",
+              "printedName": "DevicePpi.Ppi.GetPpiResult",
+              "usr": "s:9DevicePpi0B0O03GetB6ResultO"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:9DevicePpi0B0O3getAC03GetB6ResultOyFZ",
+          "mangledName": "$s9DevicePpi0B0O3getAC03GetB6ResultOyFZ",
+          "moduleName": "DevicePpi",
+          "static": true,
+          "declAttributes": [
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "TypeDecl",
+          "name": "LookUpError",
+          "printedName": "LookUpError",
+          "children": [
+            {
+              "kind": "Var",
+              "name": "unknownMachineName",
+              "printedName": "unknownMachineName",
+              "children": [
+                {
+                  "kind": "TypeFunc",
+                  "name": "Function",
+                  "printedName": "(DevicePpi.Ppi.LookUpError.Type) -> (Swift.String) -> DevicePpi.Ppi.LookUpError",
+                  "children": [
+                    {
+                      "kind": "TypeFunc",
+                      "name": "Function",
+                      "printedName": "(Swift.String) -> DevicePpi.Ppi.LookUpError",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "LookUpError",
+                          "printedName": "DevicePpi.Ppi.LookUpError",
+                          "usr": "s:9DevicePpi0B0O11LookUpErrorO"
+                        },
+                        {
+                          "kind": "TypeNominal",
+                          "name": "String",
+                          "printedName": "Swift.String",
+                          "usr": "s:SS"
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Metatype",
+                      "printedName": "DevicePpi.Ppi.LookUpError.Type",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "LookUpError",
+                          "printedName": "DevicePpi.Ppi.LookUpError",
+                          "usr": "s:9DevicePpi0B0O11LookUpErrorO"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "declKind": "EnumElement",
+              "usr": "s:9DevicePpi0B0O11LookUpErrorO18unknownMachineNameyAESScAEmF",
+              "mangledName": "$s9DevicePpi0B0O11LookUpErrorO18unknownMachineNameyAESScAEmF",
+              "moduleName": "DevicePpi",
+              "fixedbinaryorder": 0
+            }
+          ],
+          "declKind": "Enum",
+          "usr": "s:9DevicePpi0B0O11LookUpErrorO",
+          "mangledName": "$s9DevicePpi0B0O11LookUpErrorO",
+          "moduleName": "DevicePpi",
+          "isEnumExhaustive": true,
+          "conformances": [
+            {
+              "kind": "Conformance",
+              "name": "Error",
+              "printedName": "Error",
+              "usr": "s:s5ErrorP",
+              "mangledName": "$ss5ErrorP"
+            },
+            {
+              "kind": "Conformance",
+              "name": "Sendable",
+              "printedName": "Sendable",
+              "usr": "s:s8SendableP",
+              "mangledName": "$ss8SendableP"
+            }
+          ]
+        },
+        {
+          "kind": "Function",
+          "name": "lookUp",
+          "printedName": "lookUp(machineName:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Double",
+              "printedName": "Swift.Double",
+              "usr": "s:Sd"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:9DevicePpi0B0O6lookUp11machineNameSdSS_tKFZ",
+          "mangledName": "$s9DevicePpi0B0O6lookUp11machineNameSdSS_tKFZ",
+          "moduleName": "DevicePpi",
+          "static": true,
+          "throwing": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "guess",
+          "printedName": "guess(idiom:screen:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Double",
+              "printedName": "Swift.Double",
+              "usr": "s:Sd"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "UIUserInterfaceIdiom",
+              "printedName": "UIKit.UIUserInterfaceIdiom",
+              "usr": "c:@E@UIUserInterfaceIdiom"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "UIScreen",
+              "printedName": "UIKit.UIScreen",
+              "usr": "c:objc(cs)UIScreen"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:9DevicePpi0B0O5guess5idiom6screenSdSo20UIUserInterfaceIdiomV_So8UIScreenCtFZ",
+          "mangledName": "$s9DevicePpi0B0O5guess5idiom6screenSdSo20UIUserInterfaceIdiomV_So8UIScreenCtFZ",
+          "moduleName": "DevicePpi",
+          "static": true,
+          "funcSelfKind": "NonMutating"
+        }
+      ],
+      "declKind": "Enum",
+      "usr": "s:9DevicePpi0B0O",
+      "mangledName": "$s9DevicePpi0B0O",
+      "moduleName": "DevicePpi",
+      "declAttributes": [
+        "AccessControl"
+      ],
+      "isEnumExhaustive": true
+    },
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "DevicePpi",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "SysInfo",
+      "printedName": "SysInfo",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "machineName",
+          "printedName": "machineName",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Swift.String?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:9DevicePpi7SysInfoO11machineNameSSSgvpZ",
+          "mangledName": "$s9DevicePpi7SysInfoO11machineNameSSSgvpZ",
+          "moduleName": "DevicePpi",
+          "static": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage",
+            "AccessControl",
+            "RawDocComment"
+          ],
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "Swift.String?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:9DevicePpi7SysInfoO11machineNameSSSgvgZ",
+              "mangledName": "$s9DevicePpi7SysInfoO11machineNameSSSgvgZ",
+              "moduleName": "DevicePpi",
+              "static": true,
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "Swift.String?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:9DevicePpi7SysInfoO11machineNameSSSgvsZ",
+              "mangledName": "$s9DevicePpi7SysInfoO11machineNameSSSgvsZ",
+              "moduleName": "DevicePpi",
+              "static": true,
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:9DevicePpi7SysInfoO11machineNameSSSgvMZ",
+              "mangledName": "$s9DevicePpi7SysInfoO11machineNameSSSgvMZ",
+              "moduleName": "DevicePpi",
+              "static": true,
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "_modify"
+            }
+          ]
+        }
+      ],
+      "declKind": "Enum",
+      "usr": "s:9DevicePpi7SysInfoO",
+      "mangledName": "$s9DevicePpi7SysInfoO",
+      "moduleName": "DevicePpi",
+      "declAttributes": [
+        "AccessControl"
+      ],
+      "isEnumExhaustive": true
+    }
+  ],
+  "json_format_version": 6
+}
