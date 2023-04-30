@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol CircularSliderDelegate: AnyObject {
+    func circularSliderValueChanged(to value: CGFloat)
+}
+
 class CircularSlider: UIView {
     
     @IBOutlet weak var parameterTitle: UILabel!
@@ -23,6 +27,8 @@ class CircularSlider: UIView {
     private let trackLayer = CAShapeLayer()
     private let progressLayer = CAShapeLayer()
 
+    var delegate: CircularSliderDelegate?
+    
     var currentAngle: CGFloat = 0.0
     
     var currentValue: CGFloat = 0.0 {
@@ -31,6 +37,7 @@ class CircularSlider: UIView {
             currentAngle = angleFromValue(currentValue)
             updatePointerViewRotation()
             updateLayers()
+            delegate?.circularSliderValueChanged(to: currentValue)
         }
     }
     
@@ -78,7 +85,7 @@ class CircularSlider: UIView {
 
     
     private func setupRing() {
-        print("Bounds: \(bounds), Frame: \(frame)")
+        //print("Bounds: \(bounds), Frame: \(frame)")
         let center = CGPoint(x: bounds.width / 2, y: bounds.height / 2)
         let radius = 50.0
         let startAngle = (minAngle - 90) * .pi / 180

@@ -26,7 +26,7 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/61x-ii-qhL-view-des-JU-0ev.nib</key>
 		<data>
-		pjq1T77cOGFFdEQhv7GOtIm0Iew=
+		P2KHojRTIyVn70ordcgekt22OPM=
 		</data>
 		<key>Base.lproj/Main.storyboardc/HomeNC.nib</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Frameworks/DevicePpi.framework/DevicePpi</key>
 		<data>
-		7OKTBndlZbPaB7UHXwigrsoMgSs=
+		T0k7JXnl1giLA4icdmlmHaGipeI=
 		</data>
 		<key>Frameworks/DevicePpi.framework/Info.plist</key>
 		<data>
@@ -58,19 +58,39 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		8z4UwJqAxn170jMkvYxNMMTP+rc=
+		pvAYORhW6L4hRfF1uzWslsbKDKs=
 		</data>
-		<key>PerfectSteak.momd/PerfectSteak.mom</key>
+		<key>LiquidCrystal-Bold.otf</key>
 		<data>
-		DYcF5ZJQ6ZH+KkoqqtTFTRSYwc4=
+		HlBVfUXTmBE3yfmDGh5bjZRnBJg=
 		</data>
-		<key>PerfectSteak.momd/PerfectSteak.omo</key>
+		<key>LiquidCrystal-BoldItalic.otf</key>
 		<data>
-		acxzJXINprFYwcy2DBxx01kTGZc=
+		6JOQLrWmH8C1wzMIN1ELYGs27Ec=
 		</data>
-		<key>PerfectSteak.momd/VersionInfo.plist</key>
+		<key>LiquidCrystal-ExBold.otf</key>
 		<data>
-		8rwnep8EHRsjwGEcIlhOTKIma50=
+		bGSRchlYgwo32X6wJp+8coAk3E4=
+		</data>
+		<key>LiquidCrystal-ExBoldItalic.otf</key>
+		<data>
+		5p3fxrNb8L5S2zXmWlFhaBSqDxM=
+		</data>
+		<key>LiquidCrystal-Light.otf</key>
+		<data>
+		iaoJWWceP70Kd+YtBsF7GmorZAk=
+		</data>
+		<key>LiquidCrystal-LightItalic.otf</key>
+		<data>
+		Dk/hEigRGdeIiKtgCNuIUFxK+7g=
+		</data>
+		<key>LiquidCrystal-Normal.otf</key>
+		<data>
+		pg2boeS4zR+RRfJ1jTeWUg62ZSU=
+		</data>
+		<key>LiquidCrystal-NormalItalic.otf</key>
+		<data>
+		CSESzrd8s9HpudqdHKWCHOxoNck=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -134,7 +154,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PvhyapefF+DvjrNrsek7mYt8GZhFA7MM/kuL5vYX+T0=
+			rBw72c9UiOquTzIpscrNg0nTI0Y8ww7MAgKRHU6+yrs=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/HomeNC.nib</key>
@@ -169,7 +189,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XfiMF/2UMRhjD4H3KDl94DyHJfd7P2079V5dfschgRM=
+			88gVEv8Xs7EN9IqkLBBYjg4Bh3nl//7VrC5j2/4E9ec=
 			</data>
 		</dict>
 		<key>Frameworks/DevicePpi.framework/Info.plist</key>
@@ -186,25 +206,60 @@
 			bhW7BindT5q0btmIu63DldW7bb7UfcbKJSdAAVeC0lQ=
 			</data>
 		</dict>
-		<key>PerfectSteak.momd/PerfectSteak.mom</key>
+		<key>LiquidCrystal-Bold.otf</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wNZU/nMNj38o0kvVQvJ7AUY37ZpUeZZpAIfuiYOICXs=
+			Hm+LRkSDV35l8ir0DFaBXC0NAtYCXAlFP/6K0HMTcvg=
 			</data>
 		</dict>
-		<key>PerfectSteak.momd/PerfectSteak.omo</key>
+		<key>LiquidCrystal-BoldItalic.otf</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			F3Dl+udfH8Ihjo0aD1CMms8lVQTUgKuhWDDTIR2HFb4=
+			PyutgqJlwCp94PgBr4NXYvCF3UKoFXBVullmIaG3vJg=
 			</data>
 		</dict>
-		<key>PerfectSteak.momd/VersionInfo.plist</key>
+		<key>LiquidCrystal-ExBold.otf</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			07TTIUXegnRU0Q62/Dr6MurgBq80kM/hmToecKaVqjE=
+			srWhWVLgJFPJEPjKWwuaeH1nJ2HZQav8AWyhNzB3OMM=
+			</data>
+		</dict>
+		<key>LiquidCrystal-ExBoldItalic.otf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YRMxB20IqNxuAMltZEP3pKondRLXh5nhCvHxUT4o1jM=
+			</data>
+		</dict>
+		<key>LiquidCrystal-Light.otf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+Nkj5VBTeyQ5sZ7mFwzNARHJxKTsVd9/8yEzLv53iLE=
+			</data>
+		</dict>
+		<key>LiquidCrystal-LightItalic.otf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			LIlrHSsvxjdkqlRrz60DgAgmvxVqVf5tEw6Z9sh5Ip4=
+			</data>
+		</dict>
+		<key>LiquidCrystal-Normal.otf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			PngieJuK8S5G937aShxYIZODr5Bq4LKr0EoauRDj8qI=
+			</data>
+		</dict>
+		<key>LiquidCrystal-NormalItalic.otf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ScLUEfNIDsS6bJVrSCWAaCGEZNfulcE/i40cvkLE0WI=
 			</data>
 		</dict>
 		<key>SteakRecipeModel.momd/SteakRecipeModel.mom</key>

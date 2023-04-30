@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol SteakTemperatureDelegate: AnyObject {
+    func steakTemperatureValueChanged(to value: CGFloat)
+}
+
 class SteakTemperature: UIView {
 
     @IBOutlet weak var parameterTitle: UILabel!
@@ -23,6 +27,8 @@ class SteakTemperature: UIView {
     private let trackLayer = CAShapeLayer()
     private let progressLayer = CAShapeLayer()
 
+    weak var delegate: SteakTemperatureDelegate?
+
     var currentAngle: CGFloat = 0.0
     
     var currentValue: CGFloat = 0.0 {
@@ -31,6 +37,7 @@ class SteakTemperature: UIView {
             currentAngle = angleFromValue(currentValue)
             updatePointerViewRotation()
             updateLayers()
+            delegate?.steakTemperatureValueChanged(to: currentValue)
         }
     }
     
@@ -79,7 +86,7 @@ class SteakTemperature: UIView {
 
     
     private func setupRing() {
-        print("Bounds: \(bounds), Frame: \(frame)")
+        //print("Bounds: \(bounds), Frame: \(frame)")
         let center = CGPoint(x: bounds.width / 2, y: bounds.height / 2)
         let radius = 50.0
         let startAngle = (minAngle - 90) * .pi / 180

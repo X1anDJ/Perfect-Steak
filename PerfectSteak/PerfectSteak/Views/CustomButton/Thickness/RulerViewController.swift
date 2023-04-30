@@ -48,8 +48,8 @@ class RulerViewController: UIViewController {
         rulerHeight = pointsPerInch * 4
         topPadding = view.frame.height - rulerHeight - view.safeAreaInsets.bottom - 100.0
           
-        print("ppi: \(String(describing: pointsPerInch))")
-        print("ppi from pod: \(ppi)")
+        //print("ppi: \(String(describing: pointsPerInch))")
+        //print("ppi from pod: \(ppi)")
 
         // Ruler view
         let rulerWidth: CGFloat = 180 // Change the width of the ruler's background

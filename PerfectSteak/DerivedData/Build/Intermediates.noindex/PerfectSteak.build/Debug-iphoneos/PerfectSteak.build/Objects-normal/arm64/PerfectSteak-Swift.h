@@ -343,6 +343,14 @@ SWIFT_CLASS("_TtC12PerfectSteak14CircularSlider")
 @end
 
 
+SWIFT_CLASS("_TtC12PerfectSteak13ConcaveButton")
+@interface ConcaveButton : UIButton
+- (void)drawRect:(CGRect)rect;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC12PerfectSteak14DonenessSlider")
 @interface DonenessSlider : UIView
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified steakDonenessTitle;
@@ -358,17 +366,28 @@ SWIFT_CLASS("_TtC12PerfectSteak14DonenessSlider")
 
 SWIFT_CLASS("_TtC12PerfectSteak18MainViewController")
 @interface MainViewController : UIViewController
+/// titleButton: The button for the drop down menue
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified titleButton;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified countDownLabel;
+/// Parameter IBs:
+/// circularSlider:                           A UIView for              stove temperature
+/// thicknessButton&lengthLabel: Button and label for   steak thickness
+/// donenessSlider:                       A UIView for              doneness
+/// steakTemperature:                   A UIView for              steak initial temperature
 @property (nonatomic, weak) IBOutlet CircularSlider * _Null_unspecified circularSliderTest;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified thicknessButton;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lengthLabel;
 @property (nonatomic, weak) IBOutlet DonenessSlider * _Null_unspecified donenessSlider;
 @property (nonatomic, weak) IBOutlet SteakTemperature * _Null_unspecified steakTemperature;
+/// Save buttons and start button: UIButton
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified saveButton;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified startButton;
 - (void)viewDidLoad;
+- (void)didEnterBackground;
+- (void)willEnterForeground;
 - (IBAction)saveRecipe:(id _Nonnull)sender;
 - (IBAction)showRuler:(UIButton * _Nonnull)sender;
+- (IBAction)startButtonTapped:(UIButton * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end

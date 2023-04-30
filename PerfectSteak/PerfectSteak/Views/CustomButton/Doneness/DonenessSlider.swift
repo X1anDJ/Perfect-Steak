@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol SteakDonenessDelegate: AnyObject {
+    func steakDonenessValueChanged(to value: SteakDoneness)
+}
+
 enum SteakDoneness: String {
     case rare = "Rare"
     case mediumRare = "Medium Rare"
@@ -70,7 +74,7 @@ class DonenessSlider: UIView {
     
     let scaleRadius: CGFloat = 50
     
-    
+    weak var delegate: SteakDonenessDelegate?
     
     var currentDoneness: SteakDoneness {
         get {
@@ -78,12 +82,14 @@ class DonenessSlider: UIView {
             return SteakDoneness.fromTemperature(temperature)
         }
         set {
+            //print("current doneness is set: \(currentDoneness.rawValue)")
             // Convert the new doneness value to angle
             currentAngle = angleFromDoneness(newValue)
             updatePointerViewRotation()
 
             // Update the steakDonenessTitle directly
             steakDonenessTitle.text = newValue.rawValue
+            delegate?.steakDonenessValueChanged(to: currentDoneness)
         }
     }
     
@@ -175,8 +181,8 @@ class DonenessSlider: UIView {
             
             updateSteakDonenessTitle()
             
-            print("doneness title: \(String(describing: steakDonenessTitle.text))")
-            print("current doneness: \(String(describing: currentDoneness))")
+            //print("doneness title: \(String(describing: steakDonenessTitle.text))")
+            //print("current doneness: \(String(describing: currentDoneness))")
         }
         
     }

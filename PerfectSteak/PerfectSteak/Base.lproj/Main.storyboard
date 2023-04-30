@@ -9,6 +9,14 @@
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="LiquidCrystal-Bold.otf">
+            <string>LiquidCrystal-Bold</string>
+        </array>
+        <array key="LiquidCrystal-BoldItalic.otf">
+            <string>LiquidCrystal-BoldItalic</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Onboarding View Controller-->
         <scene sceneID="pER-Em-UI9">
@@ -154,9 +162,9 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R2a-MS-3UT">
                                 <rect key="frame" x="27" y="50" width="360" height="240"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WARNING!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="onw-Wi-76f">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ready to deploy" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="onw-Wi-76f">
                                         <rect key="frame" x="10" y="20" width="340" height="210"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                        <fontDescription key="fontDescription" name="LiquidCrystal-BoldItalic" family="Liquid Crystal" pointSize="42"/>
                                         <color key="textColor" red="0.26051861050000003" green="0.26051861050000003" blue="0.26051861050000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="highlightedColor" red="0.26514732839999999" green="0.26514732839999999" blue="0.26514732839999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <size key="shadowOffset" width="12" height="-1"/>
@@ -166,14 +174,47 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VQz-gx-6fZ" userLabel="Upper Line">
+                                        <rect key="frame" x="8" y="40" width="344" height="4"/>
+                                        <color key="backgroundColor" red="0.26051861050000003" green="0.26051861050000003" blue="0.26051861050000003" alpha="0.5163514289971205" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="4" id="ACM-R0-eMF"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="547-65-8Jq" userLabel="Line ">
+                                        <rect key="frame" x="8" y="203" width="344" height="3"/>
+                                        <color key="backgroundColor" red="0.26051861050000003" green="0.26051861050000003" blue="0.26051861050000003" alpha="0.51635142899999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="3" id="5oR-k5-D7G"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="itc-pG-oye">
+                                        <rect key="frame" x="322" y="210" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="itc-pG-oye" secondAttribute="height" multiplier="1:1" id="G7Z-8a-Map"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="HJi-fu-Bf2"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="wrench.and.screwdriver" catalog="system">
+                                            <color key="baseForegroundColor" red="0.26051861050000003" green="0.26051861050000003" blue="0.26051861050000003" alpha="0.82942411762710067" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.38867376277312743" green="0.53850544039995452" blue="0.48798006898455576" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="547-65-8Jq" secondAttribute="trailing" constant="8" id="5pX-H5-MKE"/>
+                                    <constraint firstAttribute="bottom" secondItem="547-65-8Jq" secondAttribute="bottom" constant="34" id="MYL-wL-AbO"/>
+                                    <constraint firstAttribute="bottom" secondItem="itc-pG-oye" secondAttribute="bottom" id="NkO-0Z-8fU"/>
                                     <constraint firstAttribute="trailing" secondItem="onw-Wi-76f" secondAttribute="trailing" constant="10" id="Ovs-A8-rFw"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="240" id="UUI-l7-l7G"/>
                                     <constraint firstItem="onw-Wi-76f" firstAttribute="top" secondItem="R2a-MS-3UT" secondAttribute="top" constant="20" id="YTk-Le-8kh"/>
+                                    <constraint firstItem="547-65-8Jq" firstAttribute="leading" secondItem="R2a-MS-3UT" secondAttribute="leading" constant="8" id="c0i-2A-lw1"/>
+                                    <constraint firstAttribute="trailing" secondItem="itc-pG-oye" secondAttribute="trailing" constant="8" id="d6O-2M-xgG"/>
                                     <constraint firstItem="onw-Wi-76f" firstAttribute="leading" secondItem="R2a-MS-3UT" secondAttribute="leading" constant="10" id="eND-Yo-JIm"/>
                                     <constraint firstAttribute="bottom" secondItem="onw-Wi-76f" secondAttribute="bottom" constant="10" id="ehR-mc-HHa"/>
+                                    <constraint firstItem="VQz-gx-6fZ" firstAttribute="leading" secondItem="R2a-MS-3UT" secondAttribute="leading" constant="8" id="mk5-4o-ZQj"/>
+                                    <constraint firstAttribute="trailing" secondItem="VQz-gx-6fZ" secondAttribute="trailing" constant="8" id="pKy-ts-cUt"/>
+                                    <constraint firstItem="VQz-gx-6fZ" firstAttribute="top" secondItem="R2a-MS-3UT" secondAttribute="top" constant="40" id="v74-nf-kJd"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -278,17 +319,17 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="wmQ-YO-lX9">
-                                <rect key="frame" x="27" y="722" width="360" height="70"/>
+                                <rect key="frame" x="27" y="722" width="360" height="60"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kOq-rL-uQw">
-                                        <rect key="frame" x="0.0" y="0.0" width="72" height="70"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBz-QZ-8l3">
-                                        <rect key="frame" x="72" y="0.0" width="72" height="70"/>
+                                        <rect key="frame" x="60" y="0.0" width="60" height="60"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="archivebox" catalog="system" title="">
+                                        <buttonConfiguration key="configuration" style="plain" image="square.and.arrow.down" catalog="system" title="">
                                             <backgroundConfiguration key="background" cornerRadius="50" strokeWidth="2" strokeOutset="-4">
                                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="strokeColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -300,26 +341,35 @@
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dm4-4x-yb3">
-                                        <rect key="frame" x="144" y="0.0" width="72" height="70"/>
+                                        <rect key="frame" x="120" y="0.0" width="60" height="60"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SD5-W7-5FV">
+                                        <rect key="frame" x="180" y="0.0" width="60" height="60"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3v-gD-PiI">
-                                        <rect key="frame" x="216" y="0.0" width="72" height="70"/>
+                                        <rect key="frame" x="240" y="0.0" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="X3v-gD-PiI" secondAttribute="height" multiplier="1:1" id="8J7-3M-jhx"/>
+                                        </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="engine.combustion" catalog="system" title="">
+                                        <buttonConfiguration key="configuration" style="plain" image="stove" catalog="system" title="" imagePadding="0.0">
                                             <backgroundConfiguration key="background" cornerRadius="50">
                                                 <color key="backgroundColor" red="1" green="0.36470588235294116" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </backgroundConfiguration>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="startButtonTapped:" destination="61x-ii-qhL" eventType="touchUpInside" id="GtR-Qb-9Ek"/>
+                                        </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="84r-WP-sO5">
-                                        <rect key="frame" x="288" y="0.0" width="72" height="70"/>
+                                        <rect key="frame" x="300" y="0.0" width="60" height="60"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="Qwe-NS-V2N"/>
                                     <constraint firstAttribute="width" constant="360" id="cep-Pc-5Cn"/>
                                 </constraints>
                             </stackView>
@@ -353,17 +403,19 @@
                     <navigationItem key="navigationItem" id="Ikm-8T-FKD">
                         <nil key="title"/>
                         <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="C0I-2m-edZ">
+                            <rect key="frame" x="92" y="2" width="230" height="40"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="24"/>
+                            <fontDescription key="fontDescription" name="LiquidCrystal-Bold" family="Liquid Crystal" pointSize="24"/>
                             <color key="tintColor" systemColor="systemRedColor"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                            <state key="normal" title="Button">
+                            <state key="normal" title="Recipes">
                                 <color key="titleColor" red="0.26598846597015546" green="0.26598846597015546" blue="0.26598846597015546" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                         </button>
                     </navigationItem>
                     <connections>
                         <outlet property="circularSliderTest" destination="TYd-Ex-rFu" id="4c2-tR-fUp"/>
+                        <outlet property="countDownLabel" destination="onw-Wi-76f" id="Dsc-fu-hC2"/>
                         <outlet property="donenessSlider" destination="oge-AL-Nzh" id="4NO-Op-y6M"/>
                         <outlet property="lengthLabel" destination="haZ-Na-UgF" id="bez-QI-P9v"/>
                         <outlet property="saveButton" destination="gBz-QZ-8l3" id="PYa-ER-VnU"/>
@@ -397,8 +449,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="archivebox" catalog="system" width="128" height="107"/>
-        <image name="engine.combustion" catalog="system" width="128" height="79"/>
+        <image name="square.and.arrow.down" catalog="system" width="121" height="128"/>
+        <image name="stove" catalog="system" width="128" height="115"/>
+        <image name="wrench.and.screwdriver" catalog="system" width="128" height="119"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

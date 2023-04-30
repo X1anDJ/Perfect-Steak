@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		6D9E2D71DE018080D8EF0FEB /* Pods_PerfectSteak.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C465273F91F13D209319B1E /* Pods_PerfectSteak.framework */; };
+		DC27A5D329FDF5A900226F25 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC27A5D229FDF5A900226F25 /* NetworkService.swift */; };
 		DC6B0A0629F72BC900F1A859 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6B0A0529F72BC900F1A859 /* AppDelegate.swift */; };
 		DC6B0A0829F72BC900F1A859 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6B0A0729F72BC900F1A859 /* SceneDelegate.swift */; };
 		DC6B0A0D29F72BC900F1A859 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC6B0A0B29F72BC900F1A859 /* Main.storyboard */; };
-		DC6B0A1029F72BC900F1A859 /* PerfectSteak.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC6B0A0E29F72BC900F1A859 /* PerfectSteak.xcdatamodeld */; };
 		DC6B0A1229F72BCB00F1A859 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC6B0A1129F72BCB00F1A859 /* Assets.xcassets */; };
 		DC6B0A1529F72BCB00F1A859 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC6B0A1329F72BCB00F1A859 /* LaunchScreen.storyboard */; };
 		DC6B0A2429F7471300F1A859 /* Recipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6B0A2329F7471300F1A859 /* Recipes.swift */; };
@@ -23,7 +23,17 @@
 		DC6DDCDE29F7A0CC00C0DF9D /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6DDCDD29F7A0CC00C0DF9D /* OnboardingCollectionViewCell.swift */; };
 		DC6DDCE229F83AB000C0DF9D /* RecipeDropdownTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6DDCE129F83AB000C0DF9D /* RecipeDropdownTableViewController.swift */; };
 		DC6DDCE429F83E2400C0DF9D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6DDCE329F83E2400C0DF9D /* MainViewController.swift */; };
+		DC997A6429FCF33900CBFD10 /* LiquidCrystal-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DC997A6329FCEEFD00CBFD10 /* LiquidCrystal-Bold.otf */; };
+		DC997A6529FCF33B00CBFD10 /* LiquidCrystal-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = DC997A5C29FCEEF100CBFD10 /* LiquidCrystal-BoldItalic.otf */; };
+		DC997A6629FCF33D00CBFD10 /* LiquidCrystal-ExBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DC997A6129FCEEF900CBFD10 /* LiquidCrystal-ExBold.otf */; };
+		DC997A6729FCF33F00CBFD10 /* LiquidCrystal-ExBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = DC997A6229FCEEFB00CBFD10 /* LiquidCrystal-ExBoldItalic.otf */; };
+		DC997A6829FCF34100CBFD10 /* LiquidCrystal-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = DC997A6029FCEEF700CBFD10 /* LiquidCrystal-Light.otf */; };
+		DC997A6929FCF34300CBFD10 /* LiquidCrystal-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = DC997A5E29FCEEF400CBFD10 /* LiquidCrystal-LightItalic.otf */; };
+		DC997A6A29FCF34500CBFD10 /* LiquidCrystal-Normal.otf in Resources */ = {isa = PBXBuildFile; fileRef = DC997A5D29FCEEF200CBFD10 /* LiquidCrystal-Normal.otf */; };
+		DC997A6B29FCF34700CBFD10 /* LiquidCrystal-NormalItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = DC997A5F29FCEEF500CBFD10 /* LiquidCrystal-NormalItalic.otf */; };
+		DC997A6D29FCF66400CBFD10 /* ConcaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC997A6C29FCF66400CBFD10 /* ConcaveButton.swift */; };
 		DCAC1B5229FBDCF800CB638D /* SteakTemperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAC1B5129FBDCF800CB638D /* SteakTemperature.swift */; };
+		DCAC1B5429FCE39E00CB638D /* MainViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAC1B5329FCE39E00CB638D /* MainViewController+Extension.swift */; };
 		DCAD6D5629FBD749007CDEB4 /* SteakTemperature.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCAD6D5529FBD749007CDEB4 /* SteakTemperature.xib */; };
 		DCD4607A29F88D090054CA23 /* CircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD4607929F88D090054CA23 /* CircularSlider.swift */; };
 		DCD4607C29F88D490054CA23 /* CircularSlider.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCD4607B29F88D490054CA23 /* CircularSlider.xib */; };
@@ -37,11 +47,11 @@
 		3CC1CA37E32BBB8B40268B76 /* Pods-PerfectSteak.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerfectSteak.release.xcconfig"; path = "Target Support Files/Pods-PerfectSteak/Pods-PerfectSteak.release.xcconfig"; sourceTree = "<group>"; };
 		4C465273F91F13D209319B1E /* Pods_PerfectSteak.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PerfectSteak.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55DACDBE7675BA4C12356A23 /* Pods-PerfectSteak.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerfectSteak.debug.xcconfig"; path = "Target Support Files/Pods-PerfectSteak/Pods-PerfectSteak.debug.xcconfig"; sourceTree = "<group>"; };
+		DC27A5D229FDF5A900226F25 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		DC6B0A0229F72BC900F1A859 /* PerfectSteak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PerfectSteak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC6B0A0529F72BC900F1A859 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC6B0A0729F72BC900F1A859 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DC6B0A0C29F72BC900F1A859 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DC6B0A0F29F72BC900F1A859 /* PerfectSteak.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PerfectSteak.xcdatamodel; sourceTree = "<group>"; };
 		DC6B0A1129F72BCB00F1A859 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC6B0A1429F72BCB00F1A859 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC6B0A1629F72BCB00F1A859 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,7 +64,17 @@
 		DC6DDCDD29F7A0CC00C0DF9D /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		DC6DDCE129F83AB000C0DF9D /* RecipeDropdownTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDropdownTableViewController.swift; sourceTree = "<group>"; };
 		DC6DDCE329F83E2400C0DF9D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		DC997A5C29FCEEF100CBFD10 /* LiquidCrystal-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LiquidCrystal-BoldItalic.otf"; sourceTree = "<group>"; };
+		DC997A5D29FCEEF200CBFD10 /* LiquidCrystal-Normal.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LiquidCrystal-Normal.otf"; sourceTree = "<group>"; };
+		DC997A5E29FCEEF400CBFD10 /* LiquidCrystal-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LiquidCrystal-LightItalic.otf"; sourceTree = "<group>"; };
+		DC997A5F29FCEEF500CBFD10 /* LiquidCrystal-NormalItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LiquidCrystal-NormalItalic.otf"; sourceTree = "<group>"; };
+		DC997A6029FCEEF700CBFD10 /* LiquidCrystal-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LiquidCrystal-Light.otf"; sourceTree = "<group>"; };
+		DC997A6129FCEEF900CBFD10 /* LiquidCrystal-ExBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LiquidCrystal-ExBold.otf"; sourceTree = "<group>"; };
+		DC997A6229FCEEFB00CBFD10 /* LiquidCrystal-ExBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LiquidCrystal-ExBoldItalic.otf"; sourceTree = "<group>"; };
+		DC997A6329FCEEFD00CBFD10 /* LiquidCrystal-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LiquidCrystal-Bold.otf"; sourceTree = "<group>"; };
+		DC997A6C29FCF66400CBFD10 /* ConcaveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcaveButton.swift; sourceTree = "<group>"; };
 		DCAC1B5129FBDCF800CB638D /* SteakTemperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteakTemperature.swift; sourceTree = "<group>"; };
+		DCAC1B5329FCE39E00CB638D /* MainViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+Extension.swift"; sourceTree = "<group>"; };
 		DCAD6D5529FBD749007CDEB4 /* SteakTemperature.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SteakTemperature.xib; sourceTree = "<group>"; };
 		DCD4607929F88D090054CA23 /* CircularSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularSlider.swift; sourceTree = "<group>"; };
 		DCD4607B29F88D490054CA23 /* CircularSlider.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CircularSlider.xib; sourceTree = "<group>"; };
@@ -93,6 +113,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DC27A5D129FDF59600226F25 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DC27A5D229FDF5A900226F25 /* NetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		DC6B09F929F72BC900F1A859 = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +142,8 @@
 		DC6B0A0429F72BC900F1A859 /* PerfectSteak */ = {
 			isa = PBXGroup;
 			children = (
+				DC27A5D129FDF59600226F25 /* Services */,
+				DC997A5B29FCEEC700CBFD10 /* CustomFonts */,
 				DCD4607D29F8933A0054CA23 /* Extensions */,
 				DC6B0A1E29F742DD00F1A859 /* Views */,
 				DC6B0A1D29F742D000F1A859 /* Networking */,
@@ -124,7 +154,6 @@
 				DC6B0A1129F72BCB00F1A859 /* Assets.xcassets */,
 				DC6B0A1329F72BCB00F1A859 /* LaunchScreen.storyboard */,
 				DC6B0A1629F72BCB00F1A859 /* Info.plist */,
-				DC6B0A0E29F72BC900F1A859 /* PerfectSteak.xcdatamodeld */,
 			);
 			path = PerfectSteak;
 			sourceTree = "<group>";
@@ -184,6 +213,21 @@
 			path = NavigationBar;
 			sourceTree = "<group>";
 		};
+		DC997A5B29FCEEC700CBFD10 /* CustomFonts */ = {
+			isa = PBXGroup;
+			children = (
+				DC997A6329FCEEFD00CBFD10 /* LiquidCrystal-Bold.otf */,
+				DC997A5C29FCEEF100CBFD10 /* LiquidCrystal-BoldItalic.otf */,
+				DC997A6129FCEEF900CBFD10 /* LiquidCrystal-ExBold.otf */,
+				DC997A6229FCEEFB00CBFD10 /* LiquidCrystal-ExBoldItalic.otf */,
+				DC997A6029FCEEF700CBFD10 /* LiquidCrystal-Light.otf */,
+				DC997A5E29FCEEF400CBFD10 /* LiquidCrystal-LightItalic.otf */,
+				DC997A5D29FCEEF200CBFD10 /* LiquidCrystal-Normal.otf */,
+				DC997A5F29FCEEF500CBFD10 /* LiquidCrystal-NormalItalic.otf */,
+			);
+			path = CustomFonts;
+			sourceTree = "<group>";
+		};
 		DCD4607829F88B340054CA23 /* CustomButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				DCD4607E29F8934E0054CA23 /* UIView+Extension.swift */,
+				DCAC1B5329FCE39E00CB638D /* MainViewController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -234,6 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				DCDD5E2529FB088E008234B5 /* RulerViewController.swift */,
+				DC997A6C29FCF66400CBFD10 /* ConcaveButton.swift */,
 			);
 			path = Thickness;
 			sourceTree = "<group>";
@@ -298,11 +344,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC997A6429FCF33900CBFD10 /* LiquidCrystal-Bold.otf in Resources */,
+				DC997A6529FCF33B00CBFD10 /* LiquidCrystal-BoldItalic.otf in Resources */,
+				DC997A6629FCF33D00CBFD10 /* LiquidCrystal-ExBold.otf in Resources */,
 				DC6B0A1529F72BCB00F1A859 /* LaunchScreen.storyboard in Resources */,
 				DCAD6D5629FBD749007CDEB4 /* SteakTemperature.xib in Resources */,
 				DC6B0A1229F72BCB00F1A859 /* Assets.xcassets in Resources */,
+				DC997A6A29FCF34500CBFD10 /* LiquidCrystal-Normal.otf in Resources */,
 				DC6B0A0D29F72BC900F1A859 /* Main.storyboard in Resources */,
 				DCD4607C29F88D490054CA23 /* CircularSlider.xib in Resources */,
+				DC997A6729FCF33F00CBFD10 /* LiquidCrystal-ExBoldItalic.otf in Resources */,
+				DC997A6929FCF34300CBFD10 /* LiquidCrystal-LightItalic.otf in Resources */,
+				DC997A6B29FCF34700CBFD10 /* LiquidCrystal-NormalItalic.otf in Resources */,
+				DC997A6829FCF34100CBFD10 /* LiquidCrystal-Light.otf in Resources */,
 				DCDD5E2429F9F126008234B5 /* DonenessSlider.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,10 +413,10 @@
 				DC6DDCE229F83AB000C0DF9D /* RecipeDropdownTableViewController.swift in Sources */,
 				DC6B0A2429F7471300F1A859 /* Recipes.swift in Sources */,
 				DC6B0A0629F72BC900F1A859 /* AppDelegate.swift in Sources */,
+				DCAC1B5429FCE39E00CB638D /* MainViewController+Extension.swift in Sources */,
 				DCAC1B5229FBDCF800CB638D /* SteakTemperature.swift in Sources */,
 				DCD4607A29F88D090054CA23 /* CircularSlider.swift in Sources */,
 				DC6DDCE429F83E2400C0DF9D /* MainViewController.swift in Sources */,
-				DC6B0A1029F72BC900F1A859 /* PerfectSteak.xcdatamodeld in Sources */,
 				DC6B0A2B29F7581A00F1A859 /* SteakRecipe.swift in Sources */,
 				DC6DDCD629F75AFE00C0DF9D /* SteakRecipeModel.xcdatamodeld in Sources */,
 				DCD4607F29F8934E0054CA23 /* UIView+Extension.swift in Sources */,
@@ -371,8 +425,10 @@
 				DC6DDCDA29F7930600C0DF9D /* OnboardingViewController.swift in Sources */,
 				DC6DDCDE29F7A0CC00C0DF9D /* OnboardingCollectionViewCell.swift in Sources */,
 				DCDD5E2629FB088E008234B5 /* RulerViewController.swift in Sources */,
+				DC27A5D329FDF5A900226F25 /* NetworkService.swift in Sources */,
 				DC6DDCDC29F7938500C0DF9D /* OnboardingSlide.swift in Sources */,
 				DC6DDCD829F75B6C00C0DF9D /* CoreDataStack.swift in Sources */,
+				DC997A6D29FCF66400CBFD10 /* ConcaveButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -594,16 +650,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		DC6B0A0E29F72BC900F1A859 /* PerfectSteak.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				DC6B0A0F29F72BC900F1A859 /* PerfectSteak.xcdatamodel */,
-			);
-			currentVersion = DC6B0A0F29F72BC900F1A859 /* PerfectSteak.xcdatamodel */;
-			path = PerfectSteak.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
 		DC6DDCD429F75AFE00C0DF9D /* SteakRecipeModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (

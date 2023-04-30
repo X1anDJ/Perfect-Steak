@@ -3,6 +3,7 @@
 <plist version="1.0">
 <array>
 	<string>DevicePpi</string>
+	<string>UserNotifications</string>
 	<string>CoreData</string>
 	<string>UIKit</string>
 	<string>Foundation</string>

@@ -12,7 +12,7 @@ class SteakRecipe {
     var ID = UUID()
     
     var title: String {
-        return "Steak: \(thickness)inch, \(ovenTemp)°F, desiredCenterTemp: \(SteakDoneness.fromTemperature(ovenTemp)), ovenTemperature: \(ovenTemp)"
+        return "\(thickness) Inch \(ovenTemp)°F desiredCenterTemp: \(SteakDoneness.fromTemperature(ovenTemp)) ovenTemperature: \(ovenTemp)"
     }
     
     var thickness: Double

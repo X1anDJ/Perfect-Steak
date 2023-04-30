@@ -2,7 +2,7 @@
 //  CDSteakRecipe+CoreDataProperties.swift
 //  
 //
-//  Created by Dajun Xian on 4/28/23.
+//  Created by Dajun Xian on 4/29/23.
 //
 //  This file was automatically generated and should not be edited.
 //

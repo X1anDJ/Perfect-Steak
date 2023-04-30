@@ -1,0 +1,13 @@
+Target dependency graph (6 targets)
+DevicePpi in Pods, no dependencies
+Pods-PerfectSteak in Pods, depends on:
+DevicePpi in Pods (explicit)
+PerfectSteak in PerfectSteak, depends on:
+Pods-PerfectSteak in Pods (implicit dependency via file 'Pods_PerfectSteak.framework' in build phase 'Link Binary')
+DevicePpi in Pods (implicit dependency via options '-framework DevicePpi' in build setting 'OTHER_LDFLAGS')
+DevicePpi in Pods, no dependencies
+Pods-PerfectSteak in Pods, depends on:
+DevicePpi in Pods (explicit)
+PerfectSteak in PerfectSteak, depends on:
+Pods-PerfectSteak in Pods (implicit dependency via file 'Pods_PerfectSteak.framework' in build phase 'Link Binary')
+DevicePpi in Pods (implicit dependency via options '-framework DevicePpi' in build setting 'OTHER_LDFLAGS')
