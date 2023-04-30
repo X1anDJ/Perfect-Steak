@@ -10,7 +10,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		2gpP6clEhk38nNAOgC2JrFi+B8Q=
+		wJcnx8wtV9YK974u2o6XR9SQMHI=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/61x-ii-qhL-view-des-JU-0ev.nib</key>
 		<data>
-		pczcZ8oPpMuPf9KKeBGfar4IY+g=
+		M0HtlRAUte1zP2+auBT52/2b3mI=
 		</data>
 		<key>Base.lproj/Main.storyboardc/HomeNC.nib</key>
 		<data>
@@ -34,7 +34,15 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
-		MfkbTIYmpEAe5/JOHVMWpQAMsYY=
+		IK34kZt7j0tR0RTee5Fsog0Sud4=
+		</data>
+		<key>Base.lproj/Main.storyboardc/PSz-OW-Fj8-view-y6A-SZ-sra.nib</key>
+		<data>
+		okU5aOSlWra4ak8HSTc5BdgV20k=
+		</data>
+		<key>Base.lproj/Main.storyboardc/UIViewController-PSz-OW-Fj8.nib</key>
+		<data>
+		Bd6AaMmx15KAc1SIaLwIzfAVF9Q=
 		</data>
 		<key>CircularSlider.nib</key>
 		<data>
@@ -122,7 +130,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EEYUl/n0s2XUzQPQYDFvu0V1+MDOW2eEqzF3qUzHuig=
+			p2SHrAe9pSQQVsvsbKJiAi4/jDPaMHsaEdRTyupCxP0=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
@@ -150,7 +158,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7Y/IT8xp6ubWYo6NYK9qcIPXz7H7Sq7yNf2lPghUmks=
+			7Urwkhs74ZYMgRU4O1Y930aeCEmcrjezgubyPV7IF9k=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/HomeNC.nib</key>
@@ -164,7 +172,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LWcGefbKavERfh1iyKgkRyLRNY0my/KqZx4gVvlABm4=
+			LiJlu/dpHSaFZNX2dRfYharq+/r3WIcx1FF8IXSczB8=
+			</data>
+		</dict>
+		<key>Base.lproj/Main.storyboardc/PSz-OW-Fj8-view-y6A-SZ-sra.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			R5vmwQa147Rg+dSzgzVe70TTH9VXLd/0vOUzJytkjY0=
+			</data>
+		</dict>
+		<key>Base.lproj/Main.storyboardc/UIViewController-PSz-OW-Fj8.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			cKOiCNmDzuomlrMPEemT1ef32s+j1lGIABeEexql6pk=
 			</data>
 		</dict>
 		<key>CircularSlider.nib</key>

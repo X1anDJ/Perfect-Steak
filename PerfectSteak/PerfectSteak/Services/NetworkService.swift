@@ -10,38 +10,37 @@ import Foundation
 import UIKit
 
 class NetworkService {
-    func getSteakCookingTime(steakTemperature: Double, ovenTemperature: Double, steakThickness: Double, steakDoneness: Double, completion: @escaping (Int?) -> Void) {
-        let baseURL = "https://ezdyaanizk.execute-api.us-west-1.amazonaws.com/getSteakCookingTime"
-        
-        guard let url = URL(string: "\(baseURL)?initialTemperature=\(steakTemperature)&ovenTemperature=\(ovenTemperature)&steakThickness=\(steakThickness)&desiredCenterTemperature=\(steakDoneness)") else {
-            completion(nil)
+    func getSteakCookingTime(steakTemperature: Double, ovenTemperature: Double, steakThickness: Double, steakDoneness: Double, completion: @escaping (Result<Int, Error>) -> Void) {
+        // Convert temperatures from Fahrenheit to Celsius and round to integers
+        let steakTemperatureCelsius = Int((steakTemperature - 32) * (5 / 9))
+        let ovenTemperatureCelsius = Int((ovenTemperature - 32) * (5 / 9))
+        let steakDonenessCelsius = Int((steakDoneness - 32) * (5 / 9))
+
+        // Convert thickness from inches to millimeters and round to integer
+        let steakThicknessMillimeters = Int(steakThickness * 25.4)
+
+        let urlString = "https://ezdyaanizk.execute-api.us-west-1.amazonaws.com/getSteakCookingTime?initialTemperature=\(steakTemperatureCelsius)&ovenTemperature=\(ovenTemperatureCelsius)&steakThickness=\(steakThicknessMillimeters)&desiredCenterTemperature=\(steakDonenessCelsius)"
+
+        guard let url = URL(string: urlString) else {
+            completion(.failure(NSError(domain: "com.example.steakapp", code: -1, userInfo: [NSLocalizedDescriptionKey: "Invalid URL"])))
             return
         }
-        
-        let dataTask = URLSession.shared.dataTask(with: url) { (data, response, error) in
+
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
             if let error = error {
-                print("Error: \(error.localizedDescription)")
-                completion(nil)
-                return
-            }
-            
-            guard let data = data else {
-                completion(nil)
-                return
-            }
-            
-            do {
-                if let jsonResponse = try JSONSerialization.jsonObject(with: data, options: []) as? [String:Any],
-                   let seconds = jsonResponse["seconds"] as? Int {
-                    completion(seconds)
+                completion(.failure(error))
+            } else if let data = data {
+                // Parse the integer response
+                if let cookingTime = String(data: data, encoding: .utf8), let cookingTimeInt = Int(cookingTime) {
+                    completion(.success(cookingTimeInt))
                 } else {
-                    completion(nil)
+                    completion(.failure(NSError(domain: "com.example.steakapp", code: -1, userInfo: [NSLocalizedDescriptionKey: "Invalid response format"])))
                 }
-            } catch {
-                print("Error: (error.localizedDescription)")
-                completion(nil)
+            } else {
+                completion(.failure(NSError(domain: "com.example.steakapp", code: -1, userInfo: [NSLocalizedDescriptionKey: "Unknown error"])))
             }
-        }
-        dataTask.resume()
+        }.resume()
     }
+
+
 }

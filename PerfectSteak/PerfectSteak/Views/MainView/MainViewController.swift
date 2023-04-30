@@ -221,7 +221,7 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         let sampleRecipesCreatedKey = "sampleRecipesCreated"
         
         if !userDefaults.bool(forKey: sampleRecipesCreatedKey) {
-            let sampleRecipe1 = SteakRecipe(thickness: 3, initialTemp: 65, ovenTemp: 375, desiredCenterTemp: 144)
+            let sampleRecipe1 = SteakRecipe(thickness: 1, initialTemp: 65, ovenTemp: 375, desiredCenterTemp: 135)
             
             //let sampleRecipe2 = SteakRecipe(thickness: 4.1, initialTemp: 35, ovenTemp: 250, desiredCenterTemp: 180)
             //let sampleRecipe3 = SteakRecipe(thickness: 2, initialTemp: 50, ovenTemp: 310, desiredCenterTemp: 150)
@@ -361,53 +361,80 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: ["countdownFinished"])
     }
 
-    
     private func startCountDown() {
-        // Record the start time so when the app runs in the background and foreground, so we can update the countdown according to the start time
-        startTime = Date()
-        
         // Invalidate any existing timer
         timer?.invalidate()
 
         // Display "Calculating..." before the countdown starts
         countDownLabel.text = "Calculating..."
-        
-        sendNotification(timeInterval: TimeInterval(seconds))
-        
-        // Add a delay (e.g., 2 seconds) before starting the countdown
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [weak self] in
+
+         let newThickness = Double(lengthLabel.text?.replacingOccurrences(of: " inches", with: "") ?? "0") ?? 0
+         let newInitialTemp = steakTemperature.currentValue
+         let newOvenTemp = circularSliderTest.currentValue
+         let newDesiredCenterTemp = SteakDoneness.temperatureFromDoneness(donenessSlider.currentDoneness)
+
+        // Make the HTTP request to get the cooking time
+        networkService.getSteakCookingTime(steakTemperature: newInitialTemp, ovenTemperature: newOvenTemp, steakThickness: newThickness, steakDoneness: newDesiredCenterTemp) { [weak self] (result) in
             guard let self = self else { return }
 
-            // Start a new timer
-            self.timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [weak self] _ in
-                guard let self = self else { return }
-                
+            switch result {
+            case .success(var seconds):
+                seconds = seconds * 2
+                self.sendNotification(timeInterval: TimeInterval(seconds))
+
                 // Update the seconds
-                self.seconds -= 1
-                
-                // If the countdown reaches zero, invalidate the timer
-                if self.seconds <= 0 {
-                    self.timer?.invalidate()
-                    self.timer = nil
-                    
-                    // Update the label to show "Time's up!"
-                    self.countDownLabel.text = "Time's up!"
-                    startButtonClicked = false
-                    startButton.setImage(UIImage(systemName: "stove"), for: .normal)
-                    
-                    // Clear the label and reset the seconds value after 1 second
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                        self.countDownLabel.text = "Ready to Deploy"
-                        self.seconds = 10
-                    }
-                } else {
-                    // Update the label
-                    self.updateCountDownLabel()
+                self.seconds = seconds
+
+                // Start the countdown
+                DispatchQueue.main.async {
+                    self.startTimer()
+                }
+            case .failure(let error):
+                DispatchQueue.main.async {
+                    self.countDownLabel.text = "Error: \(error.localizedDescription)"
                 }
             }
         }
     }
 
+
+    private func startTimer() {
+        
+        if !startButtonClicked { return }
+        
+        // Invalidate any existing timer
+        timer?.invalidate()
+
+        // Start a new timer
+        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [weak self] _ in
+            guard let self = self else { return }
+
+            // Update the seconds
+            self.seconds -= 1
+
+            // If the countdown reaches zero, invalidate the timer
+            if self.seconds <= 0 {
+                self.timer?.invalidate()
+                self.timer = nil
+
+                // Update the label to show "Time's up!"
+                self.countDownLabel.text = "Time's up!"
+                startButtonClicked = false
+                startButton.setImage(UIImage(systemName: "stove"), for: .normal)
+
+                // Clear the label and reset the seconds value after 1 second
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                    self.countDownLabel.text = "Ready to Deploy"
+                    self.seconds = 10
+                }
+            } else {
+                // Update the label
+                self.updateCountDownLabel()
+            }
+        }
+    }
+
+    
     func sendNotification(timeInterval: TimeInterval) {
         //print("sendNotification called")
         
