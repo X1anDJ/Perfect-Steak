@@ -9,6 +9,7 @@ import UIKit
 
 protocol SteakTemperatureDelegate: AnyObject {
     func steakTemperatureValueChanged(to value: CGFloat)
+    func didTapButton()
 }
 
 class SteakTemperature: UIView {
@@ -19,6 +20,7 @@ class SteakTemperature: UIView {
     @IBOutlet weak var rangeBegin: UILabel!
     @IBOutlet weak var rangeEnd: UILabel!
     
+    @IBOutlet weak var informationButton: UIButton!
     @IBOutlet weak var circularButton: UIButton!
     @IBOutlet weak var pointerView: UIView!
     
@@ -29,6 +31,8 @@ class SteakTemperature: UIView {
 
     weak var delegate: SteakTemperatureDelegate?
 
+    var onButtonTap: (() -> Void)?
+    
     var currentAngle: CGFloat = 0.0
     
     var currentValue: CGFloat = 0.0 {
@@ -77,7 +81,7 @@ class SteakTemperature: UIView {
     
     private func configureViews() {
         parameterTitle.text = "Meat Temperature"
-        parameterUnit.text = "F°"
+        parameterUnit.text = "°F"
         parameterNumber.text = "75"
         rangeBegin.text = "0"
         rangeEnd.text = "120"
@@ -161,7 +165,11 @@ class SteakTemperature: UIView {
         parameterNumber.text = String(format: "%.0f", value)
     }
     
+    @IBAction func buttonTapped(_ sender: UIButton) {
+        delegate?.didTapButton()
+    }
 
+    
     
     @IBAction func handleButtonDragg(_ sender: UIPanGestureRecognizer) {
         let translation = sender.translation(in: self)

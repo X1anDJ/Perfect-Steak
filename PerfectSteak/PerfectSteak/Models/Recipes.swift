@@ -18,8 +18,7 @@ class Recipes {
     var steakRecipes: [SteakRecipe] {
         return fetchAllRecipes()
     }
-    
-    
+
     //Create a default recipe when there is no recipe.
     func createDefaultRecipeIfNeeded() {
         let defaultUUID = UUID(uuidString: "00000000-0000-0000-0000-000000000001")!

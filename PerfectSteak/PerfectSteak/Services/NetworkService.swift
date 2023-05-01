@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class NetworkService {
-    func getSteakCookingTime(steakTemperature: Double, ovenTemperature: Double, steakThickness: Double, steakDoneness: Double, completion: @escaping (Result<Int, Error>) -> Void) {
+    func getSteakCookingTime(steakTemperature: Double, ovenTemperature: Double, steakThickness: Double, steakDoneness: Double, completion: @escaping (Result<Double, Error>) -> Void) {
         // Convert temperatures from Fahrenheit to Celsius and round to integers
         let steakTemperatureCelsius = Int((steakTemperature - 32) * (5 / 9))
         let ovenTemperatureCelsius = Int((ovenTemperature - 32) * (5 / 9))
@@ -19,8 +19,16 @@ class NetworkService {
         // Convert thickness from inches to millimeters and round to integer
         let steakThicknessMillimeters = Int(steakThickness * 25.4)
 
+        print("NETWORK ___________")
+        print("Thickness: \(steakThicknessMillimeters)")
+        print("InitialTemp: \(steakTemperatureCelsius)")
+        print("OvenTemp: \(ovenTemperatureCelsius)")
+        print("DesiredCenterTemp: \(steakDonenessCelsius)")
+        print("Current Doneness: \(steakDoneness)")
+        
         let urlString = "https://ezdyaanizk.execute-api.us-west-1.amazonaws.com/getSteakCookingTime?initialTemperature=\(steakTemperatureCelsius)&ovenTemperature=\(ovenTemperatureCelsius)&steakThickness=\(steakThicknessMillimeters)&desiredCenterTemperature=\(steakDonenessCelsius)"
 
+        
         guard let url = URL(string: urlString) else {
             completion(.failure(NSError(domain: "com.example.steakapp", code: -1, userInfo: [NSLocalizedDescriptionKey: "Invalid URL"])))
             return
@@ -31,7 +39,7 @@ class NetworkService {
                 completion(.failure(error))
             } else if let data = data {
                 // Parse the integer response
-                if let cookingTime = String(data: data, encoding: .utf8), let cookingTimeInt = Int(cookingTime) {
+                if let cookingTime = String(data: data, encoding: .utf8), let cookingTimeInt = Double(cookingTime) {
                     completion(.success(cookingTimeInt))
                 } else {
                     completion(.failure(NSError(domain: "com.example.steakapp", code: -1, userInfo: [NSLocalizedDescriptionKey: "Invalid response format"])))

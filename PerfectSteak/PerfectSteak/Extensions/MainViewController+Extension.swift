@@ -26,7 +26,7 @@ extension MainViewController: RulerViewControllerDelegate {
         updateTimer?.invalidate()
 
         // Update the countDownLabel immediately
-        countDownLabel.text = "Meat thickness: \n \(lengthRounded)"
+        countDownLabel.text = "Meat thickness: \n \(lengthRounded)\""
 
         // Create a new timer to reset the countDownLabel after 1 seconds
         updateTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { [weak self] _ in

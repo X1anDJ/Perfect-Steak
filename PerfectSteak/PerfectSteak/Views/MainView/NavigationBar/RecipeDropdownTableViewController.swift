@@ -16,8 +16,11 @@ class RecipeDropdownTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "recipeCell")
-        
+        tableView.register(RecipeTableViewCell.self, forCellReuseIdentifier: "recipeCell")
+        tableView.backgroundColor = UIColor(red: 99/255, green: 137/255, blue: 124/255, alpha: 1)
+        tableView.separatorColor = .lightGray
+        //tableView.layer.borderWidth = 3
+        //tableView.layer.borderColor = UIColor.lightGray.cgColor
     }
 
     // MARK: - Table view data source
@@ -34,10 +37,11 @@ class RecipeDropdownTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "recipeCell", for: indexPath)
-            let recipe = recipes[indexPath.row]
-        cell.textLabel?.text = String(recipe.title)
-            return cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "recipeCell", for: indexPath) as! RecipeTableViewCell
+        let recipe = recipes[indexPath.row]
+        cell.configure(with: recipe)
+        cell.backgroundColor = UIColor(red: 99/255, green: 137/255, blue: 124/255, alpha: 1)
+        return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

@@ -14,8 +14,8 @@
             filePath = "PerfectSteak/Views/MainView/MainViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -30,8 +30,8 @@
             filePath = "PerfectSteak/Views/MainView/MainViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -46,8 +46,8 @@
             filePath = "PerfectSteak/Views/MainView/MainViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -264,114 +264,6 @@
                   startingLineNumber = "16"
                   endingLineNumber = "16"
                   offsetFromSymbolStart = "244">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A49C0AB3-714E-42E6-96EA-EDEEAF3F1623"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PerfectSteak/Views/MainView/MainViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
-            landmarkName = "MainViewController"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  uuid = "A49C0AB3-714E-42E6-96EA-EDEEAF3F1623 - a161f86053d29f6b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PerfectSteak.MainViewController.circularSliderTest.getter : Swift.Optional&lt;PerfectSteak.CircularSlider&gt;"
-                  moduleName = "PerfectSteak"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/PerfectSteak/Views/MainView/MainViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
-                  offsetFromSymbolStart = "85">
-               </Location>
-               <Location
-                  uuid = "A49C0AB3-714E-42E6-96EA-EDEEAF3F1623 - 97d8cedf59a5157"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PerfectSteak.MainViewController.circularSliderTest.setter : Swift.Optional&lt;PerfectSteak.CircularSlider&gt;"
-                  moduleName = "PerfectSteak"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/PerfectSteak/Views/MainView/MainViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
-                  offsetFromSymbolStart = "136">
-               </Location>
-               <Location
-                  uuid = "A49C0AB3-714E-42E6-96EA-EDEEAF3F1623 - 49c4e2fc19219ee8"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PerfectSteak.MainViewController.circularSliderTest.modify : Swift.Optional&lt;PerfectSteak.CircularSlider&gt;"
-                  moduleName = "PerfectSteak"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/PerfectSteak/Views/MainView/MainViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
-                  offsetFromSymbolStart = "0">
-               </Location>
-               <Location
-                  uuid = "A49C0AB3-714E-42E6-96EA-EDEEAF3F1623 - 9e82209011170d12"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PerfectSteak.MainViewController.circularSliderTest.modify : Swift.Optional&lt;PerfectSteak.CircularSlider&gt; with unmangled suffix &quot;.resume.0&quot;"
-                  moduleName = "PerfectSteak"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/PerfectSteak/Views/MainView/MainViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
-                  offsetFromSymbolStart = "26">
-               </Location>
-               <Location
-                  uuid = "A49C0AB3-714E-42E6-96EA-EDEEAF3F1623 - 164a3b987a7aacac"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PerfectSteak.MainViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; PerfectSteak.MainViewController"
-                  moduleName = "PerfectSteak"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/PerfectSteak/Views/MainView/MainViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
-                  offsetFromSymbolStart = "330">
-               </Location>
-               <Location
-                  uuid = "A49C0AB3-714E-42E6-96EA-EDEEAF3F1623 - 8d4a6261d2636c93"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PerfectSteak.MainViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;PerfectSteak.MainViewController&gt;"
-                  moduleName = "PerfectSteak"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/PerfectSteak/Views/MainView/MainViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
-                  offsetFromSymbolStart = "287">
                </Location>
             </Locations>
          </BreakpointContent>

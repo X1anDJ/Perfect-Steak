@@ -369,6 +369,7 @@ SWIFT_CLASS("_TtC12PerfectSteak18MainViewController")
 /// titleButton: The button for the drop down menue
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified titleButton;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified countDownLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified infoLabel;
 /// Parameter IBs:
 /// circularSlider:                           A UIView for              stove temperature
 /// thicknessButton&lengthLabel: Button and label for   steak thickness
@@ -452,6 +453,13 @@ SWIFT_CLASS("_TtC12PerfectSteak33RecipeDropdownTableViewController")
 @end
 
 
+SWIFT_CLASS("_TtC12PerfectSteak19RecipeTableViewCell")
+@interface RecipeTableViewCell : UITableViewCell
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC12PerfectSteak9RulerView")
 @interface RulerView : UIView
 - (void)drawRect:(CGRect)rect;
@@ -490,11 +498,13 @@ SWIFT_CLASS("_TtC12PerfectSteak16SteakTemperature")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified parameterUnit;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified rangeBegin;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified rangeEnd;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified informationButton;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified circularButton;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified pointerView;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (void)layoutSubviews;
+- (IBAction)buttonTapped:(UIButton * _Nonnull)sender;
 - (IBAction)handleButtonDragg:(UIPanGestureRecognizer * _Nonnull)sender;
 @end
 

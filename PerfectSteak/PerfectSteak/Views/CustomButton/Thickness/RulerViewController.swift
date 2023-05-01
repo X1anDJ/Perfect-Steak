@@ -63,7 +63,7 @@ class RulerViewController: UIViewController {
         view.addSubview(pointerView)
 
         // Length label
-        lengthLabel = UILabel(frame: CGRect(x: 0, y: view.safeAreaInsets.top - 115 + topPadding, width: view.frame.width, height: 40))
+        lengthLabel = UILabel(frame: CGRect(x: 0, y: view.safeAreaInsets.top - 125 + topPadding, width: view.frame.width, height: 45))
         lengthLabel.backgroundColor = .black
         lengthLabel.textAlignment = .center
         lengthLabel.text = "_._ inches" // Set the initial value to "0 inches"
@@ -162,9 +162,10 @@ class RulerView: UIView {
             longLinePath.stroke()
 
             let labelText = "\(4 - i)"
-            let label = UILabel(frame: CGRect(x: longLineLength, y: yPosition - 8, width: 24, height: 16))
+            let label = UILabel(frame: CGRect(x: longLineLength + 2, y: yPosition - 8, width: 24, height: 16))
             label.font = UIFont.systemFont(ofSize: 20)
             label.text = labelText
+            label.textColor = UIColor.lightGray
             label.textAlignment = .left
             addSubview(label)
         }
@@ -190,6 +191,7 @@ class ArrowView: UIView {
     }
 }
 
+//convert hex to rgb
 extension UIColor {
     convenience init(hex: Int, alpha: CGFloat = 1.0) {
         self.init(

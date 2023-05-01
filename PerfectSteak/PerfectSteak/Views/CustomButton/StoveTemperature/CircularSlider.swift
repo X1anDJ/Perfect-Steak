@@ -76,9 +76,9 @@ class CircularSlider: UIView {
     
     private func configureViews() {
         parameterTitle.text = "Stove Temperature"
-        parameterUnit.text = "F°"
+        parameterUnit.text = "°F"
         parameterNumber.text = "350"
-        rangeBegin.text = "150"
+        rangeBegin.text = "200"
         rangeEnd.text = "500"
         //currentNumber = CGFloat(Double(parameterNumber.text ?? "0.0") ?? 0.0)
     }

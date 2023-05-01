@@ -452,6 +452,13 @@ SWIFT_CLASS("_TtC12PerfectSteak33RecipeDropdownTableViewController")
 @end
 
 
+SWIFT_CLASS("_TtC12PerfectSteak19RecipeTableViewCell")
+@interface RecipeTableViewCell : UITableViewCell
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC12PerfectSteak9RulerView")
 @interface RulerView : UIView
 - (void)drawRect:(CGRect)rect;
