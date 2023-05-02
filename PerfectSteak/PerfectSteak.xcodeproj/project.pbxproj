@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6D9E2D71DE018080D8EF0FEB /* Pods_PerfectSteak.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C465273F91F13D209319B1E /* Pods_PerfectSteak.framework */; };
 		DC27A5D329FDF5A900226F25 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC27A5D229FDF5A900226F25 /* NetworkService.swift */; };
 		DC53355929FF47B800E3078C /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC53355829FF47B800E3078C /* RecipeTableViewCell.swift */; };
 		DC6B0A0629F72BC900F1A859 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6B0A0529F72BC900F1A859 /* AppDelegate.swift */; };
@@ -24,6 +23,7 @@
 		DC6DDCDE29F7A0CC00C0DF9D /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6DDCDD29F7A0CC00C0DF9D /* OnboardingCollectionViewCell.swift */; };
 		DC6DDCE229F83AB000C0DF9D /* RecipeDropdownTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6DDCE129F83AB000C0DF9D /* RecipeDropdownTableViewController.swift */; };
 		DC6DDCE429F83E2400C0DF9D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6DDCE329F83E2400C0DF9D /* MainViewController.swift */; };
+		DC8F914829FFC070007FAC47 /* Pods_PerfectSteak.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C465273F91F13D209319B1E /* Pods_PerfectSteak.framework */; };
 		DC997A6429FCF33900CBFD10 /* LiquidCrystal-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DC997A6329FCEEFD00CBFD10 /* LiquidCrystal-Bold.otf */; };
 		DC997A6529FCF33B00CBFD10 /* LiquidCrystal-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = DC997A5C29FCEEF100CBFD10 /* LiquidCrystal-BoldItalic.otf */; };
 		DC997A6629FCF33D00CBFD10 /* LiquidCrystal-ExBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DC997A6129FCEEF900CBFD10 /* LiquidCrystal-ExBold.otf */; };
@@ -91,7 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D9E2D71DE018080D8EF0FEB /* Pods_PerfectSteak.framework in Frameworks */,
+				DC8F914829FFC070007FAC47 /* Pods_PerfectSteak.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -570,6 +570,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZGPM5R49KX;
@@ -578,9 +579,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -588,6 +589,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dajun.PerfectSteak;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -603,6 +605,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZGPM5R49KX;
@@ -611,9 +614,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -621,6 +624,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dajun.PerfectSteak;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;

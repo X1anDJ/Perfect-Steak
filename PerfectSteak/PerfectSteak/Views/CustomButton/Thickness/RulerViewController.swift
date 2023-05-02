@@ -24,7 +24,9 @@ class RulerViewController: UIViewController {
     
     private var pointsPerInch: CGFloat!
     private var rulerHeight: CGFloat!
-    
+    private let rulerLengthInch: CGFloat = 3
+    private var horizontalLine: UIView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.black.withAlphaComponent(0.8)
@@ -45,20 +47,24 @@ class RulerViewController: UIViewController {
         }()
         
         pointsPerInch = CGFloat(ppi /  UIScreen.main.scale)
-        rulerHeight = pointsPerInch * 4
+        rulerHeight = pointsPerInch * rulerLengthInch
         topPadding = view.frame.height - rulerHeight - view.safeAreaInsets.bottom - 100.0
           
         //print("ppi: \(String(describing: pointsPerInch))")
         //print("ppi from pod: \(ppi)")
 
+        
         // Ruler view
         let rulerWidth: CGFloat = 180 // Change the width of the ruler's background
         rulerView = RulerView(frame: CGRect(x: 0, y: topPadding, width: rulerWidth, height: rulerHeight))
         rulerView.backgroundColor = .darkGray
         view.addSubview(rulerView)
 
+
+        
+        
         // Arrow-shaped pointer view
-        pointerView = ArrowView(frame: CGRect(x: rulerWidth, y: topPadding, width: 120, height: 50))
+        pointerView = ArrowView(frame: CGRect(x: rulerWidth, y: topPadding, width: 120, height: 80))
         pointerView.backgroundColor = .clear
         view.addSubview(pointerView)
 
@@ -68,11 +74,19 @@ class RulerViewController: UIViewController {
         lengthLabel.textAlignment = .center
         lengthLabel.text = "_._ inches" // Set the initial value to "0 inches"
         view.addSubview(lengthLabel)
+        
+        //orange indicator line
+        let horizontalLineWidth: CGFloat = 185 // Same width as the rulerView
+        let horizontalLineHeight: CGFloat = 1
+        horizontalLine = UIView(frame: CGRect(x: 0, y: pointerView.center.y, width: horizontalLineWidth, height: horizontalLineHeight))
+        horizontalLine.backgroundColor = UIColor(hex: 0xFF5D32)
+        view.addSubview(horizontalLine)
 
         // Close button
         let closeButton = UIButton(type: .system)
         closeButton.setTitle("Save", for: .normal)
         closeButton.addTarget(self, action: #selector(closeButtonTapped), for: .touchUpInside)
+       // closeButton.frame = CGRect(x: view.frame.width/3, y: view.safeAreaInsets.top - 105 + lengthLabel.frame.height + topPadding, width: view.frame.width/3, height: 40)
         closeButton.frame = CGRect(x: view.frame.width/3, y: view.safeAreaInsets.top - 105 + lengthLabel.frame.height + topPadding, width: view.frame.width/3, height: 40)
         closeButton.titleLabel?.textAlignment = .center
         closeButton.tintColor = .white
@@ -98,18 +112,18 @@ class RulerViewController: UIViewController {
 
         pointerView.center = CGPoint(x: pointerView.center.x, y: min(max(pointerView.center.y + translation.y, topPadding), rulerHeight + topPadding))
 
-        var length = 4 - ((pointerView.center.y - topPadding) / pointsPerInch)
+        var length = rulerLengthInch - ((pointerView.center.y - topPadding) / pointsPerInch)
         length = round(length * 10) / 10
         lengthLabel.text = "\(length) inches"
-        lengthLabel.textColor = .white
-
+        lengthLabel.textColor = UIColor(hex: 0xFF5D32)
+        horizontalLine.center.y = pointerView.center.y
         gestureRecognizer.setTranslation(.zero, in: view)
     }
 
     
     
     @objc private func closeButtonTapped() {
-        delegate?.didSelectLength(length: 4 - ((pointerView.center.y - topPadding) / pointsPerInch))
+        delegate?.didSelectLength(length: rulerLengthInch - ((pointerView.center.y - topPadding) / pointsPerInch))
         dismiss(animated: true, completion: nil)
     }
 
@@ -136,11 +150,11 @@ class RulerView: UIView {
         let shortLineLength: CGFloat = 60
         let gap: CGFloat  = ppi /  UIScreen.main.scale
         let padding: CGFloat = 0
+        let rulerLengthInch: CGFloat = 3
 
 
-
-        for i in 1...Int((4 * ppi) / (gap / 16)) {
-            let yPosition = padding + CGFloat(i) * gap / 16
+        for i in 1...Int((rulerLengthInch * ppi) / (gap / (rulerLengthInch * rulerLengthInch))) {
+            let yPosition = padding + CGFloat(i) * gap / (rulerLengthInch * rulerLengthInch)
 
             let shortLinePath = UIBezierPath()
             shortLinePath.lineWidth = lineWidth
@@ -150,7 +164,7 @@ class RulerView: UIView {
             shortLinePath.stroke()
         }
         
-        for i in 0...4 {
+        for i in 0...Int(rulerLengthInch) {
             let yPosition = padding + CGFloat(i) * gap
 
             // Long line for each inch
@@ -161,7 +175,7 @@ class RulerView: UIView {
             UIColor.lightGray.setStroke()
             longLinePath.stroke()
 
-            let labelText = "\(4 - i)"
+            let labelText = "\(Int(rulerLengthInch) - i)"
             let label = UILabel(frame: CGRect(x: longLineLength + 2, y: yPosition - 8, width: 24, height: 16))
             label.font = UIFont.systemFont(ofSize: 20)
             label.text = labelText
@@ -171,9 +185,6 @@ class RulerView: UIView {
         }
     }
 }
-
-
-
 
 class ArrowView: UIView {
     override func draw(_ rect: CGRect) {

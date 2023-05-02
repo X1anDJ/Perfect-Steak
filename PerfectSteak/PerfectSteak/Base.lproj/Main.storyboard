@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -235,6 +236,28 @@
                                                     <constraint firstAttribute="width" secondItem="oge-AL-Nzh" secondAttribute="height" id="e3H-du-cRs"/>
                                                 </constraints>
                                             </view>
+                                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="TYd-Ex-rFu" customClass="CircularSlider" customModule="PerfectSteak" customModuleProvider="target">
+                                                <rect key="frame" x="200" y="0.0" width="200" height="200"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="TYd-Ex-rFu" secondAttribute="height" multiplier="1:1" id="LIN-Ow-fzJ"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="vqS-4w-Goj" userLabel="Lower Stack">
+                                        <rect key="frame" x="0.0" y="200" width="400" height="200"/>
+                                        <subviews>
+                                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="OAg-Fw-ngv" customClass="SteakTemperature" customModule="PerfectSteak" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="200" id="d8b-3r-pLy"/>
+                                                    <constraint firstAttribute="width" secondItem="OAg-Fw-ngv" secondAttribute="height" multiplier="1:1" id="vd0-kY-Vss"/>
+                                                </constraints>
+                                            </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xVm-I3-Do2" userLabel="Thickness Slider ">
                                                 <rect key="frame" x="200" y="0.0" width="200" height="200"/>
                                                 <subviews>
@@ -256,13 +279,17 @@
                                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1mT-YM-dgK" userLabel="Thickness Button">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1mT-YM-dgK" userLabel="Thickness Button">
                                                         <rect key="frame" x="50" y="50" width="100" height="100"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="1mT-YM-dgK" secondAttribute="height" multiplier="1:1" id="27u-HF-ko4"/>
                                                             <constraint firstAttribute="height" constant="100" id="yCV-vI-Umo"/>
                                                         </constraints>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="ruler" catalog="system" symbolScale="large"/>
+                                                        </state>
                                                         <connections>
                                                             <action selector="showRuler:" destination="61x-ii-qhL" eventType="touchUpInside" id="zFj-M6-lb2"/>
                                                         </connections>
@@ -280,28 +307,6 @@
                                                     <constraint firstAttribute="width" secondItem="xVm-I3-Do2" secondAttribute="height" multiplier="1:1" id="pN6-df-zKB"/>
                                                     <constraint firstItem="zuW-bU-VaQ" firstAttribute="centerX" secondItem="xVm-I3-Do2" secondAttribute="centerX" id="pZK-fK-Q7C"/>
                                                     <constraint firstAttribute="trailing" secondItem="Su5-TY-5yg" secondAttribute="trailing" constant="66" id="yee-DT-Pym"/>
-                                                </constraints>
-                                            </view>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="vqS-4w-Goj" userLabel="Lower Stack">
-                                        <rect key="frame" x="0.0" y="200" width="400" height="200"/>
-                                        <subviews>
-                                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="OAg-Fw-ngv" customClass="SteakTemperature" customModule="PerfectSteak" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="200" id="d8b-3r-pLy"/>
-                                                    <constraint firstAttribute="width" secondItem="OAg-Fw-ngv" secondAttribute="height" multiplier="1:1" id="vd0-kY-Vss"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="TYd-Ex-rFu" customClass="CircularSlider" customModule="PerfectSteak" customModuleProvider="target">
-                                                <rect key="frame" x="200" y="0.0" width="200" height="200"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="TYd-Ex-rFu" secondAttribute="height" multiplier="1:1" id="LIN-Ow-fzJ"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -385,6 +390,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="iXf-cQ-Iy9"/>
                         <color key="backgroundColor" red="0.26235345397332699" green="0.26235345397332699" blue="0.26235345397332699" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -483,6 +489,7 @@
     </scenes>
     <resources>
         <image name="oven" catalog="system" width="128" height="98"/>
+        <image name="ruler" catalog="system" width="128" height="57"/>
         <image name="square.and.arrow.down" catalog="system" width="121" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

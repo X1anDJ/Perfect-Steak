@@ -167,7 +167,7 @@ class CircularSlider: UIView {
     
     @IBAction func handleButtonDragg(_ sender: UIPanGestureRecognizer) {
         let translation = sender.translation(in: self)
-        let centerY = self.bounds.height / 2 // adjust as needed
+        let centerY = self.bounds.height / 1.5 // adjust as needed
 
         var angle = translation.y / centerY * 180.0
         angle = angle * (-1)

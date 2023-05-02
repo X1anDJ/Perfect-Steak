@@ -65,7 +65,6 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         thicknessButton.layer.borderWidth = 2
         thicknessButton.layer.cornerRadius = 50
         thicknessButton.backgroundColor = UIColor(red: 66/255, green: 66/255, blue: 66/255, alpha: 1)
-        
      
         setupNavigationBar()
         
@@ -76,47 +75,42 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         steakTemperature.delegate = self
         circularSliderTest.delegate = self
         donenessSlider.delegate = self
-        /*
-        steakTemperature.onButtonTap = { [weak self] in
-            self?.displayMessageOnInfoLabel()
-        }
+    }
+    
 
-         */
-        /*
-         print("doneness: \(String(describing: donenessSlider.steakDonenessTitle.text))")
-         print("stove temperature: \(String(describing: circularSliderTest.parameterNumber.text))")
-         */
-        // Do any additional setup after loading the view.
-    }
-    
-    @objc private func handleAppWillEnterForeground() {
-        if timer == nil && startButtonClicked == false {
-            countDownLabel.text = "Time's up!"
-            self.infoLabel.text = "Rest your steak for 10 minutes"
-        }
-    }
-    
     func didTapButton() {
-        displayMessageOnInfoLabel()
-    }
-
-    
-    func displayMessageOnInfoLabel() {
-        infoLabel.text = "Defrost to room temperature"
+        infoLabel.text = "Room temperature recommened"
 
         // Clear the label after 3 seconds
         DispatchQueue.main.asyncAfter(deadline: .now() + 5) { [weak self] in
             self?.infoLabel.text = ""
         }
     }
-
     
+    private func resetTimer() {
+        self.timer?.invalidate()
+        self.timer = nil
+        
+        self.countDownLabel.text = "Time's Up"
+        self.infoLabel.text = " "
+        
+        startButton.setImage(UIImage(systemName: "oven"), for: .normal)
+
+        // Clear the label and reset the seconds value after 1 second
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.startButtonClicked = false
+            self.countDownLabel.text = "Ready to Cook"
+            self.infoLabel.text = " "
+            self.seconds = 0
+        }
+    }
+
     func steakDonenessValueChanged(to value: SteakDoneness) {
         
         guard timer == nil else { return }      //disable this function when the timer is started
         
         //print("!")
-        // Invalidate the previous timer if there's any
+        // Invalidate the previous steak status timer if there's any
         updateTimer?.invalidate()
         
         // Update the countDownLabel immediately
@@ -132,7 +126,7 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         
         guard timer == nil else { return }      //disable this function when the timer is started
         
-        // Invalidate the previous timer if there's any
+        // Invalidate the previous steak status timer if there's any
         updateTimer?.invalidate()
         
         // Update the countDownLabel immediately
@@ -148,7 +142,7 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         
         guard timer == nil else { return }      //disable this function when the timer is started
         
-        // Invalidate the previous timer if there's any
+        // Invalidate the previous steak status timer if there's any
         updateTimer?.invalidate()
         
         // Update the countDownLabel immediately
@@ -161,8 +155,8 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
     }
     
     func resetCountDownLabel() {
-        countDownLabel.text = "Ready to Deploy"
-        infoLabel.text = " "
+        countDownLabel.text = "Ready to Cook"
+       // infoLabel.text = " "
     }
     
     
@@ -191,7 +185,7 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         let donenessText = SteakDoneness.fromTemperature(selectedRecipe.desiredCenterTemp)
         let initialSteakTemperature = steakTemperature.currentValue
         
-        countDownLabel.text = "Stove: \(stoveTemperature), Thickness: \(steakThickness), Doneness: \(donenessText), Initial Temp: \(initialSteakTemperature)"
+        countDownLabel.text = "Stove: \(stoveTemperature), Thickness: \(steakThickness), \n Doneness: \(donenessText), Initial Temp: \(initialSteakTemperature)"
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             self.countDownLabel.text = ""
@@ -204,6 +198,7 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         // Invalidate the timer when the app enters the background
         timer?.invalidate()
     }
+    
     @objc func willEnterForeground() {
         print("App entered foreground")
 
@@ -222,14 +217,9 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
             if seconds > 0 {
                 startButtonTapped(startButton)
             } else {
-                // If the countdown is finished, update the label and reset the seconds value
-                countDownLabel.text = "Time's up!"
-                //startButtonClicked = false
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                    self.countDownLabel.text = ""
-                    self.seconds = 10
-                }
+                resetTimer()
             }
+                 
         }
     }
 
@@ -303,15 +293,6 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         let newInitialTemp = steakTemperature.currentValue
         let newOvenTemp = circularSliderTest.currentValue
         let newDesiredCenterTemp = SteakDoneness.temperatureFromDoneness(donenessSlider.currentDoneness)
-        /*
-        print("New recipe values:")
-        print("ID: \(newId)")
-        print("Thickness: \(newThickness) inches")
-        print("InitialTemp: \(newInitialTemp)")
-        print("OvenTemp: \(newOvenTemp)")
-        print("DesiredCenterTemp: \(newDesiredCenterTemp)")
-        print("Current Doneness: \(donenessSlider.currentDoneness)")
-        */
         
         cdSteakRecipe.id = newId
         cdSteakRecipe.thickness = newThickness
@@ -390,12 +371,13 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         timer?.invalidate()
         timer = nil
         //seconds = 10
+        //Cooking cancelled was hit
         countDownLabel.text = "Cooking cancelled"
         startButtonClicked = false
 
         // Clear the label after 1 second
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            self.countDownLabel.text = "Ready to Deploy"
+            self.countDownLabel.text = "Ready to Cook"
             self.infoLabel.text = " "
         }
 
@@ -414,14 +396,6 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
          let newInitialTemp = steakTemperature.currentValue
          let newOvenTemp = circularSliderTest.currentValue
          let newDesiredCenterTemp = SteakDoneness.temperatureFromDoneness(donenessSlider.currentDoneness)
-        /*
-        print("Thickness: \(newThickness) inches")
-        print("InitialTemp: \(newInitialTemp)")
-        print("OvenTemp: \(newOvenTemp)")
-        print("DesiredCenterTemp: \(newDesiredCenterTemp)")
-        print("Current Doneness: \(donenessSlider.currentDoneness)")
-        print("")
-         */
         
         // Make the HTTP request to get the cooking time
         networkService.getSteakCookingTime(steakTemperature: newInitialTemp, ovenTemperature: newOvenTemp, steakThickness: newThickness, steakDoneness: newDesiredCenterTemp) { [weak self] (result) in
@@ -453,12 +427,12 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
 
 
     private func startTimer() {
-        
         if !startButtonClicked { return }
         
         // Invalidate any existing timer
         timer?.invalidate()
         startTime = Date()
+        
         // Start a new timer
         timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [weak self] _ in
             guard let self = self else { return }
@@ -468,24 +442,7 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
 
             // If the countdown reaches zero, invalidate the timer
             if self.seconds <= 0  {
-                self.timer?.invalidate()
-                self.timer = nil
-
-                // Check if the timer is still nil before updating the label
-                if self.timer == nil {
-                    self.countDownLabel.text = "Time's Up"
-                    self.infoLabel.text = " "
-                }
-                
-                startButton.setImage(UIImage(systemName: "oven"), for: .normal)
-
-                // Clear the label and reset the seconds value after 1 second
-                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                    self.startButtonClicked = false
-                    self.countDownLabel.text = "Ready to Cook"
-                    self.infoLabel.text = " "
-                    self.seconds = 10
-                }
+                resetTimer()
             } else {
                 // Update the label
                 self.updateCountDownLabel()
@@ -520,6 +477,9 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
 
     deinit {
         NotificationCenter.default.removeObserver(self)
+        NotificationCenter.default.removeObserver(self, name: UIApplication.didEnterBackgroundNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIApplication.willEnterForegroundNotification, object: nil)
+
     }
 
 }
