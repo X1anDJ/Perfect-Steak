@@ -386,11 +386,11 @@ SWIFT_CLASS("_TtC12PerfectSteak18MainViewController")
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified saveButton;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified startButton;
 - (void)viewDidLoad;
-- (void)didEnterBackground;
-- (void)willEnterForeground;
 - (IBAction)saveRecipe:(id _Nonnull)sender;
 - (IBAction)showRuler:(UIButton * _Nonnull)sender;
 - (IBAction)startButtonTapped:(UIButton * _Nonnull)sender;
+- (void)didEnterBackground;
+- (void)willEnterForeground;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end

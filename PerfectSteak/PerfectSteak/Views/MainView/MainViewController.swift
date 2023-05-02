@@ -21,7 +21,8 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
     private var popoverController: UIPopoverPresentationController?
     
     private var startTime: Date?        // Fix the background countdown stop issue
-    private var seconds: Int = 10
+    private var seconds: Int = 0
+    private var totalSeconds: Int = 0
     var timer: Timer?           //timer for countdown
     var updateTimer: Timer?      //timer for reset the screen's label
     
@@ -193,35 +194,7 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         }
     }
     
-    
-    @objc func didEnterBackground() {
-        // Invalidate the timer when the app enters the background
-        timer?.invalidate()
-    }
-    
-    @objc func willEnterForeground() {
-        print("App entered foreground")
 
-        // Calculate the remaining time
-        if let startTime = startTime {
-            let elapsedTime = Date().timeIntervalSince(startTime)
-            let remainingTime = max(0, Double(seconds) - elapsedTime)
-
-            print("Elapsed time: \(elapsedTime)")
-            print("Remaining time: \(remainingTime)")
-
-            // Update the seconds value
-            seconds = Int(remainingTime)
-
-            // If the countdown is not finished, start the timer again
-            if seconds > 0 {
-                startButtonTapped(startButton)
-            } else {
-                resetTimer()
-            }
-                 
-        }
-    }
 
     
     
@@ -386,6 +359,10 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         // Remove the pending notification
         UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: ["countdownFinished"])
     }
+    
+    
+
+    
 
     private func startCountDown() {
         // Invalidate any existing timer
@@ -412,7 +389,7 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
 
                 // Update the seconds
                 self.seconds = Int(seconds)
-
+                self.totalSeconds = Int(seconds)
                 // Start the countdown
                 DispatchQueue.main.async {
                     self.startTimer()
@@ -427,7 +404,44 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         }
     }
 
+    @objc func didEnterBackground() {
+        // Invalidate the timer when the app enters the background
+        timer?.invalidate()
+    }
+    
+    @objc func willEnterForeground() {
+        print("_______")
+        print("App entered foreground")
 
+        // Calculate the remaining time
+        if let startTime = startTime {
+            let elapsedTime = Date().timeIntervalSince(startTime)
+            let remainingTime = max(0, Double(totalSeconds) - elapsedTime)   //ensure the remaining time >= 0
+            let now = Date()
+            print("Start time: \(startTime.description)")
+            print("Now time: \(now.description)")
+            print("Elapsed time: \(elapsedTime.description)")
+            print("Remaining time: \(remainingTime.description)")
+
+            // Update the total seconds value to new remaining time
+            seconds = Int(remainingTime)
+
+            // If the countdown is not finished, start the timer again
+            if seconds > 0 {
+                print("start button clicked? \(startButtonClicked)")
+                /*
+                 Bug behavior: when coming back to the foreground
+                 */
+                startTimer()
+            } else {
+                resetTimer()
+                print("reset timer is called _____________")
+            }
+                 
+        }
+    }
+
+    
     private func startTimer() {
         if !startButtonClicked { return }
         
