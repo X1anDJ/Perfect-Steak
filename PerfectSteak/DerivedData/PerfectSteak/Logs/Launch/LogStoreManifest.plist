@@ -726,6 +726,51 @@
 			<key>uniqueIdentifier</key>
 			<string>17CC0C8C-13EB-4B58-8C55-FB0762999A90</string>
 		</dict>
+		<key>17CD1057-E7EF-4920-B543-08BFE9A82449</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>B843472F-8A51-4F40-8FF3-57E2637A8985</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-PerfectSteak-2023.05.02_00-53-31--0700.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PerfectSteak project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PerfectSteak</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run PerfectSteak</string>
+			<key>timeStartedRecording</key>
+			<real>704706811.18514299</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run PerfectSteak</string>
+			<key>uniqueIdentifier</key>
+			<string>17CD1057-E7EF-4920-B543-08BFE9A82449</string>
+		</dict>
 		<key>1965CC25-080B-4A59-A185-C1596FC64811</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
@@ -995,6 +1040,51 @@
 			<string>Run PerfectSteak</string>
 			<key>uniqueIdentifier</key>
 			<string>20D5FD14-3A6B-44CD-B25C-EF10817AE362</string>
+		</dict>
+		<key>218AA920-E13D-4291-8119-48908ECD4D0B</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>6DB9A267-B4BE-472D-A267-F3D9AC526788</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-PerfectSteak-2023.05.02_00-55-20--0700.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PerfectSteak project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PerfectSteak</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run PerfectSteak</string>
+			<key>timeStartedRecording</key>
+			<real>704706920.91933894</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run PerfectSteak</string>
+			<key>uniqueIdentifier</key>
+			<string>218AA920-E13D-4291-8119-48908ECD4D0B</string>
 		</dict>
 		<key>22004A46-0791-4856-85BB-33B6026D06A8</key>
 		<dict>
@@ -4731,6 +4821,51 @@
 			<key>uniqueIdentifier</key>
 			<string>D2237CDC-72E8-4B59-AFCF-CE2347A42451</string>
 		</dict>
+		<key>D24F3927-58B0-4829-A8CC-5CE5D11B2F94</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>28CC3FFF-4686-4D4B-99C2-5B3F650A9C6C</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-PerfectSteak-2023.05.02_00-58-21--0700.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PerfectSteak project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PerfectSteak</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run PerfectSteak</string>
+			<key>timeStartedRecording</key>
+			<real>704707101.13706803</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run PerfectSteak</string>
+			<key>uniqueIdentifier</key>
+			<string>D24F3927-58B0-4829-A8CC-5CE5D11B2F94</string>
+		</dict>
 		<key>D33C0EDF-870F-4890-AB6C-3DA1DB412192</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
@@ -5136,6 +5271,51 @@
 			<key>uniqueIdentifier</key>
 			<string>E08EFA60-2F0A-4727-929D-A727689860DA</string>
 		</dict>
+		<key>E12CE6A3-5AD8-42E0-AE03-7871D6AC20FA</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>ABB0FB4D-29DB-406C-9E12-F50904FF885D</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-PerfectSteak-2023.05.02_01-03-36--0700.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PerfectSteak project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PerfectSteak</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run PerfectSteak</string>
+			<key>timeStartedRecording</key>
+			<real>704707416.44523799</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run PerfectSteak</string>
+			<key>uniqueIdentifier</key>
+			<string>E12CE6A3-5AD8-42E0-AE03-7871D6AC20FA</string>
+		</dict>
 		<key>E229A33F-FA4F-493E-AEAE-D6B002361B20</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
@@ -5225,6 +5405,51 @@
 			<string>Run PerfectSteak</string>
 			<key>uniqueIdentifier</key>
 			<string>E7DB08CF-7C11-4685-85B4-2F71491422CF</string>
+		</dict>
+		<key>E8A1C3DC-CE45-49D5-B367-BD390666187D</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>D7CD9F63-80A4-47BB-BAA4-B63C925D84EB</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-PerfectSteak-2023.05.02_01-01-46--0700.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PerfectSteak project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PerfectSteak</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run PerfectSteak</string>
+			<key>timeStartedRecording</key>
+			<real>704707306.97994196</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run PerfectSteak</string>
+			<key>uniqueIdentifier</key>
+			<string>E8A1C3DC-CE45-49D5-B367-BD390666187D</string>
 		</dict>
 		<key>EB2466A4-7C17-4FB4-BAEB-B54C413A98DD</key>
 		<dict>

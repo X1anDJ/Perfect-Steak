@@ -46,8 +46,8 @@
             filePath = "PerfectSteak/Views/MainView/MainViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "445"
-            endingLineNumber = "445"
+            startingLineNumber = "467"
+            endingLineNumber = "467"
             landmarkName = "startTimer()"
             landmarkType = "7">
          </BreakpointContent>
@@ -62,8 +62,8 @@
             filePath = "PerfectSteak/Views/MainView/MainViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "470"
-            endingLineNumber = "470"
+            startingLineNumber = "492"
+            endingLineNumber = "492"
             landmarkName = "sendNotification(timeInterval:)"
             landmarkType = "7">
          </BreakpointContent>
