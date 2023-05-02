@@ -6,6 +6,40 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
+		<key>009668DC-CF48-45FF-B257-A22E21172DC5</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>009668DC-CF48-45FF-B257-A22E21172DC5.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PerfectSteak project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PerfectSteak</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PerfectSteak</string>
+			<key>timeStartedRecording</key>
+			<real>704691244.73696005</real>
+			<key>timeStoppedRecording</key>
+			<real>704691246.50037706</real>
+			<key>title</key>
+			<string>Build PerfectSteak</string>
+			<key>uniqueIdentifier</key>
+			<string>009668DC-CF48-45FF-B257-A22E21172DC5</string>
+		</dict>
 		<key>0823A300-E49D-456A-ADF7-1E13CFC199BF</key>
 		<dict>
 			<key>className</key>
@@ -40,6 +74,108 @@
 			<key>uniqueIdentifier</key>
 			<string>0823A300-E49D-456A-ADF7-1E13CFC199BF</string>
 		</dict>
+		<key>0DB43E11-7887-4DC1-B9D9-CF711EE95E5C</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>0DB43E11-7887-4DC1-B9D9-CF711EE95E5C.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PerfectSteak project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PerfectSteak</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PerfectSteak</string>
+			<key>timeStartedRecording</key>
+			<real>704698062.70452499</real>
+			<key>timeStoppedRecording</key>
+			<real>704698063.78632605</real>
+			<key>title</key>
+			<string>Build PerfectSteak</string>
+			<key>uniqueIdentifier</key>
+			<string>0DB43E11-7887-4DC1-B9D9-CF711EE95E5C</string>
+		</dict>
+		<key>118E06CC-2164-4D74-A850-E837BF352CAA</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>118E06CC-2164-4D74-A850-E837BF352CAA.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PerfectSteak project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PerfectSteak</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PerfectSteak</string>
+			<key>timeStartedRecording</key>
+			<real>704699065.85604501</real>
+			<key>timeStoppedRecording</key>
+			<real>704699069.19581199</real>
+			<key>title</key>
+			<string>Build PerfectSteak</string>
+			<key>uniqueIdentifier</key>
+			<string>118E06CC-2164-4D74-A850-E837BF352CAA</string>
+		</dict>
+		<key>13A57990-6C89-45B3-B5B6-BC21C393F120</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>13A57990-6C89-45B3-B5B6-BC21C393F120.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PerfectSteak project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PerfectSteak</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PerfectSteak</string>
+			<key>timeStartedRecording</key>
+			<real>704700862.17708898</real>
+			<key>timeStoppedRecording</key>
+			<real>704700862.725317</real>
+			<key>title</key>
+			<string>Build PerfectSteak</string>
+			<key>uniqueIdentifier</key>
+			<string>13A57990-6C89-45B3-B5B6-BC21C393F120</string>
+		</dict>
 		<key>14EA37F3-5EDA-4C1B-A2CF-D7793B4C260D</key>
 		<dict>
 			<key>className</key>
@@ -73,6 +209,40 @@
 			<string>Build PerfectSteak</string>
 			<key>uniqueIdentifier</key>
 			<string>14EA37F3-5EDA-4C1B-A2CF-D7793B4C260D</string>
+		</dict>
+		<key>15A56E9A-8FFD-41DA-91A5-7E534FF8797A</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>15A56E9A-8FFD-41DA-91A5-7E534FF8797A.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PerfectSteak project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PerfectSteak</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PerfectSteak</string>
+			<key>timeStartedRecording</key>
+			<real>704698227.854707</real>
+			<key>timeStoppedRecording</key>
+			<real>704698228.91467905</real>
+			<key>title</key>
+			<string>Build PerfectSteak</string>
+			<key>uniqueIdentifier</key>
+			<string>15A56E9A-8FFD-41DA-91A5-7E534FF8797A</string>
 		</dict>
 		<key>16938C24-DEE2-45C6-AEC4-1A61374C950A</key>
 		<dict>
@@ -141,6 +311,40 @@
 			<string>Build PerfectSteak</string>
 			<key>uniqueIdentifier</key>
 			<string>1A231000-FF8A-4FC9-8782-69D6572E517E</string>
+		</dict>
+		<key>1AF4A0BF-5DD1-40DC-8E6C-A1B4544A3EFD</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>1AF4A0BF-5DD1-40DC-8E6C-A1B4544A3EFD.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PerfectSteak project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PerfectSteak</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PerfectSteak</string>
+			<key>timeStartedRecording</key>
+			<real>704700403.31825101</real>
+			<key>timeStoppedRecording</key>
+			<real>704700405.26566899</real>
+			<key>title</key>
+			<string>Build PerfectSteak</string>
+			<key>uniqueIdentifier</key>
+			<string>1AF4A0BF-5DD1-40DC-8E6C-A1B4544A3EFD</string>
 		</dict>
 		<key>1C5D06BC-7BE8-46B5-A11F-9984604EA842</key>
 		<dict>
@@ -244,6 +448,74 @@
 			<key>uniqueIdentifier</key>
 			<string>206C6E3E-0269-4310-AF27-15D618F0EC97</string>
 		</dict>
+		<key>2678B64B-F0BF-469E-A851-340DD5F370A8</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>2678B64B-F0BF-469E-A851-340DD5F370A8.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PerfectSteak project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PerfectSteak</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PerfectSteak</string>
+			<key>timeStartedRecording</key>
+			<real>704699516.75801694</real>
+			<key>timeStoppedRecording</key>
+			<real>704699518.25587904</real>
+			<key>title</key>
+			<string>Build PerfectSteak</string>
+			<key>uniqueIdentifier</key>
+			<string>2678B64B-F0BF-469E-A851-340DD5F370A8</string>
+		</dict>
+		<key>2697196A-5797-46B9-BA9F-66CABF88C73F</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>2697196A-5797-46B9-BA9F-66CABF88C73F.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PerfectSteak project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PerfectSteak</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PerfectSteak</string>
+			<key>timeStartedRecording</key>
+			<real>704698407.300035</real>
+			<key>timeStoppedRecording</key>
+			<real>704698408.31025898</real>
+			<key>title</key>
+			<string>Build PerfectSteak</string>
+			<key>uniqueIdentifier</key>
+			<string>2697196A-5797-46B9-BA9F-66CABF88C73F</string>
+		</dict>
 		<key>26B0AE38-06F8-41E0-AE44-8035F9E83C1D</key>
 		<dict>
 			<key>className</key>
@@ -277,6 +549,74 @@
 			<string>Build PerfectSteak</string>
 			<key>uniqueIdentifier</key>
 			<string>26B0AE38-06F8-41E0-AE44-8035F9E83C1D</string>
+		</dict>
+		<key>2893F9E9-E262-42C8-AFCF-3A787E89EC4E</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>2893F9E9-E262-42C8-AFCF-3A787E89EC4E.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PerfectSteak project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PerfectSteak</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PerfectSteak</string>
+			<key>timeStartedRecording</key>
+			<real>704698340.05128503</real>
+			<key>timeStoppedRecording</key>
+			<real>704698341.112306</real>
+			<key>title</key>
+			<string>Build PerfectSteak</string>
+			<key>uniqueIdentifier</key>
+			<string>2893F9E9-E262-42C8-AFCF-3A787E89EC4E</string>
+		</dict>
+		<key>28AA9409-D219-4322-A014-4F564E7CC63E</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>28AA9409-D219-4322-A014-4F564E7CC63E.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PerfectSteak project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PerfectSteak</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PerfectSteak</string>
+			<key>timeStartedRecording</key>
+			<real>704701042.68912697</real>
+			<key>timeStoppedRecording</key>
+			<real>704701044.63258505</real>
+			<key>title</key>
+			<string>Build PerfectSteak</string>
+			<key>uniqueIdentifier</key>
+			<string>28AA9409-D219-4322-A014-4F564E7CC63E</string>
 		</dict>
 		<key>29BF27A2-95E3-40D8-9308-1B1E27C3E400</key>
 		<dict>
@@ -448,6 +788,40 @@
 			<key>uniqueIdentifier</key>
 			<string>2DD13B06-8C36-4995-8FC0-D6AA367594DE</string>
 		</dict>
+		<key>3111382A-0D94-4D32-A29D-168DFAB79D2A</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>3111382A-0D94-4D32-A29D-168DFAB79D2A.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PerfectSteak project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PerfectSteak</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PerfectSteak</string>
+			<key>timeStartedRecording</key>
+			<real>704698814.85588396</real>
+			<key>timeStoppedRecording</key>
+			<real>704698819.05144703</real>
+			<key>title</key>
+			<string>Build PerfectSteak</string>
+			<key>uniqueIdentifier</key>
+			<string>3111382A-0D94-4D32-A29D-168DFAB79D2A</string>
+		</dict>
 		<key>35F93A98-934D-478B-A37B-3F8271053351</key>
 		<dict>
 			<key>className</key>
@@ -515,6 +889,40 @@
 			<string>Build PerfectSteak</string>
 			<key>uniqueIdentifier</key>
 			<string>38B66EBA-E5C0-4A26-9173-48446F3C7708</string>
+		</dict>
+		<key>3D14FA2A-6ED4-4B7F-9B3B-2D7433486E7E</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>3D14FA2A-6ED4-4B7F-9B3B-2D7433486E7E.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PerfectSteak project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PerfectSteak</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PerfectSteak</string>
+			<key>timeStartedRecording</key>
+			<real>704700376.291556</real>
+			<key>timeStoppedRecording</key>
+			<real>704700377.82966101</real>
+			<key>title</key>
+			<string>Build PerfectSteak</string>
+			<key>uniqueIdentifier</key>
+			<string>3D14FA2A-6ED4-4B7F-9B3B-2D7433486E7E</string>
 		</dict>
 		<key>3E9CE7B8-ADBF-4207-90B0-669985BDD6EE</key>
 		<dict>
@@ -652,6 +1060,40 @@
 			<key>uniqueIdentifier</key>
 			<string>489CFBB5-FC4C-4B58-8F81-40724A768027</string>
 		</dict>
+		<key>4B33107A-6287-4C2B-B0A1-9187D632BE3E</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>4B33107A-6287-4C2B-B0A1-9187D632BE3E.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PerfectSteak project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PerfectSteak</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PerfectSteak</string>
+			<key>timeStartedRecording</key>
+			<real>704699115.35095501</real>
+			<key>timeStoppedRecording</key>
+			<real>704699116.34866595</real>
+			<key>title</key>
+			<string>Build PerfectSteak</string>
+			<key>uniqueIdentifier</key>
+			<string>4B33107A-6287-4C2B-B0A1-9187D632BE3E</string>
+		</dict>
 		<key>4DA02BF3-6C0E-41E3-AEA6-CC66A26BFEBF</key>
 		<dict>
 			<key>className</key>
@@ -788,6 +1230,74 @@
 			<key>uniqueIdentifier</key>
 			<string>5547FA12-5361-482A-91F4-58377620AFE4</string>
 		</dict>
+		<key>56A303CD-152F-4DC4-B977-EF5ECE2578AE</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>56A303CD-152F-4DC4-B977-EF5ECE2578AE.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PerfectSteak project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PerfectSteak</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PerfectSteak</string>
+			<key>timeStartedRecording</key>
+			<real>704699576.28531396</real>
+			<key>timeStoppedRecording</key>
+			<real>704699580.12803602</real>
+			<key>title</key>
+			<string>Build PerfectSteak</string>
+			<key>uniqueIdentifier</key>
+			<string>56A303CD-152F-4DC4-B977-EF5ECE2578AE</string>
+		</dict>
+		<key>5C773F94-E77C-4CFF-BF78-C16D1D30EBBA</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>5C773F94-E77C-4CFF-BF78-C16D1D30EBBA.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PerfectSteak project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PerfectSteak</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PerfectSteak</string>
+			<key>timeStartedRecording</key>
+			<real>704700809.91083205</real>
+			<key>timeStoppedRecording</key>
+			<real>704700810.14688694</real>
+			<key>title</key>
+			<string>Build PerfectSteak</string>
+			<key>uniqueIdentifier</key>
+			<string>5C773F94-E77C-4CFF-BF78-C16D1D30EBBA</string>
+		</dict>
 		<key>5D30F605-3640-495C-A29D-3D6055FA0BAF</key>
 		<dict>
 			<key>className</key>
@@ -821,6 +1331,40 @@
 			<string>Build PerfectSteak</string>
 			<key>uniqueIdentifier</key>
 			<string>5D30F605-3640-495C-A29D-3D6055FA0BAF</string>
+		</dict>
+		<key>5D7A9CB7-3D04-4BFD-B4E8-88F4CB0C449D</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>5D7A9CB7-3D04-4BFD-B4E8-88F4CB0C449D.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PerfectSteak project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PerfectSteak</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PerfectSteak</string>
+			<key>timeStartedRecording</key>
+			<real>704700946.42955804</real>
+			<key>timeStoppedRecording</key>
+			<real>704700946.53473401</real>
+			<key>title</key>
+			<string>Build PerfectSteak</string>
+			<key>uniqueIdentifier</key>
+			<string>5D7A9CB7-3D04-4BFD-B4E8-88F4CB0C449D</string>
 		</dict>
 		<key>5EDF6A4B-A26A-418A-96F9-32889D2EA3DE</key>
 		<dict>
@@ -889,6 +1433,108 @@
 			<string>Build PerfectSteak</string>
 			<key>uniqueIdentifier</key>
 			<string>624CF979-E9C0-4BB3-9EA4-A38AB48031BE</string>
+		</dict>
+		<key>6A0D81D7-AE9C-40A8-9AEF-30B607A9F6DE</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>6A0D81D7-AE9C-40A8-9AEF-30B607A9F6DE.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PerfectSteak project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PerfectSteak</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PerfectSteak</string>
+			<key>timeStartedRecording</key>
+			<real>704698370.99955499</real>
+			<key>timeStoppedRecording</key>
+			<real>704698371.90731299</real>
+			<key>title</key>
+			<string>Build PerfectSteak</string>
+			<key>uniqueIdentifier</key>
+			<string>6A0D81D7-AE9C-40A8-9AEF-30B607A9F6DE</string>
+		</dict>
+		<key>6B39D831-A429-45E2-A9CA-F1C2C5693B89</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>6B39D831-A429-45E2-A9CA-F1C2C5693B89.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PerfectSteak project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PerfectSteak</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PerfectSteak</string>
+			<key>timeStartedRecording</key>
+			<real>704700350.93493998</real>
+			<key>timeStoppedRecording</key>
+			<real>704700353.14119601</real>
+			<key>title</key>
+			<string>Build PerfectSteak</string>
+			<key>uniqueIdentifier</key>
+			<string>6B39D831-A429-45E2-A9CA-F1C2C5693B89</string>
+		</dict>
+		<key>6CAB23B6-15DE-4C7A-90AB-3256CDC46431</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>6CAB23B6-15DE-4C7A-90AB-3256CDC46431.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PerfectSteak project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PerfectSteak</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PerfectSteak</string>
+			<key>timeStartedRecording</key>
+			<real>704698920.241027</real>
+			<key>timeStoppedRecording</key>
+			<real>704698921.40143394</real>
+			<key>title</key>
+			<string>Build PerfectSteak</string>
+			<key>uniqueIdentifier</key>
+			<string>6CAB23B6-15DE-4C7A-90AB-3256CDC46431</string>
 		</dict>
 		<key>6EEF5238-545B-4D9F-9EA2-F3194017C041</key>
 		<dict>
@@ -1060,6 +1706,74 @@
 			<key>uniqueIdentifier</key>
 			<string>7A360F41-EC6D-45C2-9328-EB8325A17E58</string>
 		</dict>
+		<key>7D73EAE4-ECC9-4C1C-8F5B-FBF22A782E03</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>7D73EAE4-ECC9-4C1C-8F5B-FBF22A782E03.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PerfectSteak project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PerfectSteak</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PerfectSteak</string>
+			<key>timeStartedRecording</key>
+			<real>704691940.28863597</real>
+			<key>timeStoppedRecording</key>
+			<real>704691944.28517306</real>
+			<key>title</key>
+			<string>Build PerfectSteak</string>
+			<key>uniqueIdentifier</key>
+			<string>7D73EAE4-ECC9-4C1C-8F5B-FBF22A782E03</string>
+		</dict>
+		<key>8036D4A9-A502-4BFF-A6A3-97E71AE1805E</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>8036D4A9-A502-4BFF-A6A3-97E71AE1805E.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PerfectSteak project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PerfectSteak</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PerfectSteak</string>
+			<key>timeStartedRecording</key>
+			<real>704700929.52194595</real>
+			<key>timeStoppedRecording</key>
+			<real>704700932.17606902</real>
+			<key>title</key>
+			<string>Build PerfectSteak</string>
+			<key>uniqueIdentifier</key>
+			<string>8036D4A9-A502-4BFF-A6A3-97E71AE1805E</string>
+		</dict>
 		<key>812CC306-0977-4E98-BB29-79BA57F93C98</key>
 		<dict>
 			<key>className</key>
@@ -1093,6 +1807,40 @@
 			<string>Build PerfectSteak</string>
 			<key>uniqueIdentifier</key>
 			<string>812CC306-0977-4E98-BB29-79BA57F93C98</string>
+		</dict>
+		<key>81A81CC5-A750-41F9-AF6C-701446CEF5C6</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>81A81CC5-A750-41F9-AF6C-701446CEF5C6.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PerfectSteak project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PerfectSteak</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PerfectSteak</string>
+			<key>timeStartedRecording</key>
+			<real>704699553.24845695</real>
+			<key>timeStoppedRecording</key>
+			<real>704699554.20235801</real>
+			<key>title</key>
+			<string>Build PerfectSteak</string>
+			<key>uniqueIdentifier</key>
+			<string>81A81CC5-A750-41F9-AF6C-701446CEF5C6</string>
 		</dict>
 		<key>83BCA253-D2B5-4AEB-B41C-E36446E6B70A</key>
 		<dict>
@@ -1230,6 +1978,74 @@
 			<key>uniqueIdentifier</key>
 			<string>86A83325-E135-4144-91ED-AF50412C8255</string>
 		</dict>
+		<key>8A981022-A195-4162-811F-05F67F45DB65</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>8A981022-A195-4162-811F-05F67F45DB65.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PerfectSteak project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PerfectSteak</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PerfectSteak</string>
+			<key>timeStartedRecording</key>
+			<real>704700791.87112403</real>
+			<key>timeStoppedRecording</key>
+			<real>704700794.21185005</real>
+			<key>title</key>
+			<string>Build PerfectSteak</string>
+			<key>uniqueIdentifier</key>
+			<string>8A981022-A195-4162-811F-05F67F45DB65</string>
+		</dict>
+		<key>8B7CF4FD-D3D8-4461-9348-05268B5C6AE9</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>8B7CF4FD-D3D8-4461-9348-05268B5C6AE9.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PerfectSteak project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PerfectSteak</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PerfectSteak</string>
+			<key>timeStartedRecording</key>
+			<real>704697955.89013803</real>
+			<key>timeStoppedRecording</key>
+			<real>704697958.98138702</real>
+			<key>title</key>
+			<string>Build PerfectSteak</string>
+			<key>uniqueIdentifier</key>
+			<string>8B7CF4FD-D3D8-4461-9348-05268B5C6AE9</string>
+		</dict>
 		<key>8F5A097C-22AE-4FBE-B4EB-A00C817D86F9</key>
 		<dict>
 			<key>className</key>
@@ -1298,6 +2114,40 @@
 			<key>uniqueIdentifier</key>
 			<string>8F800777-CCD3-480E-B0D0-F607BE08429D</string>
 		</dict>
+		<key>8F9DB078-9EF3-47C6-98E5-3335F040BE31</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>8F9DB078-9EF3-47C6-98E5-3335F040BE31.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PerfectSteak project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PerfectSteak</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PerfectSteak</string>
+			<key>timeStartedRecording</key>
+			<real>704699603.44824505</real>
+			<key>timeStoppedRecording</key>
+			<real>704699603.81268704</real>
+			<key>title</key>
+			<string>Build PerfectSteak</string>
+			<key>uniqueIdentifier</key>
+			<string>8F9DB078-9EF3-47C6-98E5-3335F040BE31</string>
+		</dict>
 		<key>9224742C-31C7-4BB3-865E-5384DCE6ADF1</key>
 		<dict>
 			<key>className</key>
@@ -1331,6 +2181,40 @@
 			<string>Clean PerfectSteak</string>
 			<key>uniqueIdentifier</key>
 			<string>9224742C-31C7-4BB3-865E-5384DCE6ADF1</string>
+		</dict>
+		<key>9355A5DF-C8D2-4874-A6C0-A3A9C79AB6CA</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>9355A5DF-C8D2-4874-A6C0-A3A9C79AB6CA.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PerfectSteak project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PerfectSteak</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PerfectSteak</string>
+			<key>timeStartedRecording</key>
+			<real>704691369.71552098</real>
+			<key>timeStoppedRecording</key>
+			<real>704691369.95799696</real>
+			<key>title</key>
+			<string>Build PerfectSteak</string>
+			<key>uniqueIdentifier</key>
+			<string>9355A5DF-C8D2-4874-A6C0-A3A9C79AB6CA</string>
 		</dict>
 		<key>941969F7-A71D-4F6A-91F3-E4F7367720CC</key>
 		<dict>
@@ -1399,6 +2283,40 @@
 			<string>Build PerfectSteak</string>
 			<key>uniqueIdentifier</key>
 			<string>9496C460-6E05-4124-919E-14A01A74EFA7</string>
+		</dict>
+		<key>965DB3AB-8D41-451A-9D63-081FFC58CF03</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>965DB3AB-8D41-451A-9D63-081FFC58CF03.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PerfectSteak project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PerfectSteak</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PerfectSteak</string>
+			<key>timeStartedRecording</key>
+			<real>704700502.76856899</real>
+			<key>timeStoppedRecording</key>
+			<real>704700504.85541499</real>
+			<key>title</key>
+			<string>Build PerfectSteak</string>
+			<key>uniqueIdentifier</key>
+			<string>965DB3AB-8D41-451A-9D63-081FFC58CF03</string>
 		</dict>
 		<key>96903B3D-D83D-414D-91D3-811F464BC722</key>
 		<dict>
@@ -1501,6 +2419,40 @@
 			<string>Build PerfectSteak</string>
 			<key>uniqueIdentifier</key>
 			<string>98A4EEB7-7D44-490C-A8AE-CEAF019E7BD9</string>
+		</dict>
+		<key>9B492952-44E6-40E5-8D7F-9CD59BBBF69D</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>9B492952-44E6-40E5-8D7F-9CD59BBBF69D.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PerfectSteak project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PerfectSteak</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PerfectSteak</string>
+			<key>timeStartedRecording</key>
+			<real>704699592.03164995</real>
+			<key>timeStoppedRecording</key>
+			<real>704699593.77684796</real>
+			<key>title</key>
+			<string>Build PerfectSteak</string>
+			<key>uniqueIdentifier</key>
+			<string>9B492952-44E6-40E5-8D7F-9CD59BBBF69D</string>
 		</dict>
 		<key>9E10131E-8271-439F-B3F3-8FD710287AF7</key>
 		<dict>
@@ -1672,6 +2624,40 @@
 			<key>uniqueIdentifier</key>
 			<string>AB55AD1A-35BD-453D-A1FB-D904175F0A7B</string>
 		</dict>
+		<key>ACC2722C-7C04-49A6-BC2A-90C4A0A39922</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>ACC2722C-7C04-49A6-BC2A-90C4A0A39922.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PerfectSteak project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PerfectSteak</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PerfectSteak</string>
+			<key>timeStartedRecording</key>
+			<real>704691484.83224297</real>
+			<key>timeStoppedRecording</key>
+			<real>704691487.04677606</real>
+			<key>title</key>
+			<string>Build PerfectSteak</string>
+			<key>uniqueIdentifier</key>
+			<string>ACC2722C-7C04-49A6-BC2A-90C4A0A39922</string>
+		</dict>
 		<key>AF872283-A181-416A-8005-B6AC670AE3D8</key>
 		<dict>
 			<key>className</key>
@@ -1739,6 +2725,40 @@
 			<string>Build PerfectSteak</string>
 			<key>uniqueIdentifier</key>
 			<string>B0730AFE-3418-4BD1-AC9A-8BEB5979F987</string>
+		</dict>
+		<key>B2190B52-6C0A-4104-9963-A125E281DFDD</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>B2190B52-6C0A-4104-9963-A125E281DFDD.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PerfectSteak project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PerfectSteak</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PerfectSteak</string>
+			<key>timeStartedRecording</key>
+			<real>704698141.60749304</real>
+			<key>timeStoppedRecording</key>
+			<real>704698142.58538103</real>
+			<key>title</key>
+			<string>Build PerfectSteak</string>
+			<key>uniqueIdentifier</key>
+			<string>B2190B52-6C0A-4104-9963-A125E281DFDD</string>
 		</dict>
 		<key>B367AE0B-4C19-4870-8B24-97AD36ED70D6</key>
 		<dict>
@@ -1842,6 +2862,40 @@
 			<key>uniqueIdentifier</key>
 			<string>B64699ED-9DE9-41D4-A9EC-EFA7FBE0AAF5</string>
 		</dict>
+		<key>C1D5D472-6DD2-4343-B619-555DB624E35E</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>C1D5D472-6DD2-4343-B619-555DB624E35E.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PerfectSteak project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PerfectSteak</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PerfectSteak</string>
+			<key>timeStartedRecording</key>
+			<real>704700531.39770103</real>
+			<key>timeStoppedRecording</key>
+			<real>704700533.25813496</real>
+			<key>title</key>
+			<string>Build PerfectSteak</string>
+			<key>uniqueIdentifier</key>
+			<string>C1D5D472-6DD2-4343-B619-555DB624E35E</string>
+		</dict>
 		<key>C71D3582-9E2E-4CF1-BA5A-29165AF6394B</key>
 		<dict>
 			<key>className</key>
@@ -1944,6 +2998,40 @@
 			<key>uniqueIdentifier</key>
 			<string>C8A8A2A4-3461-4ECA-A8E4-4EBD4B9DA5E1</string>
 		</dict>
+		<key>CD0DE16A-6BE2-4EB2-8FC2-7BF48D29AC8F</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>CD0DE16A-6BE2-4EB2-8FC2-7BF48D29AC8F.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PerfectSteak project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PerfectSteak</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PerfectSteak</string>
+			<key>timeStartedRecording</key>
+			<real>704698245.07195997</real>
+			<key>timeStoppedRecording</key>
+			<real>704698246.11613405</real>
+			<key>title</key>
+			<string>Build PerfectSteak</string>
+			<key>uniqueIdentifier</key>
+			<string>CD0DE16A-6BE2-4EB2-8FC2-7BF48D29AC8F</string>
+		</dict>
 		<key>CF07E351-0D4A-4164-9735-AC879258BA45</key>
 		<dict>
 			<key>className</key>
@@ -2011,6 +3099,40 @@
 			<string>Build PerfectSteak</string>
 			<key>uniqueIdentifier</key>
 			<string>D7BD9144-5D1A-4462-87C7-354858ACBB2C</string>
+		</dict>
+		<key>DB676D54-6F52-40A6-9D91-4634E3A35587</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>DB676D54-6F52-40A6-9D91-4634E3A35587.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PerfectSteak project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PerfectSteak</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PerfectSteak</string>
+			<key>timeStartedRecording</key>
+			<real>704699178.85009396</real>
+			<key>timeStoppedRecording</key>
+			<real>704699182.483863</real>
+			<key>title</key>
+			<string>Build PerfectSteak</string>
+			<key>uniqueIdentifier</key>
+			<string>DB676D54-6F52-40A6-9D91-4634E3A35587</string>
 		</dict>
 		<key>DC641196-4D98-430D-9A2E-D39D80C836F9</key>
 		<dict>
@@ -2114,6 +3236,40 @@
 			<key>uniqueIdentifier</key>
 			<string>DDDEA16C-C729-4E02-AD36-F146741C3D96</string>
 		</dict>
+		<key>E190DB31-88C3-441A-A3C5-8A45C709C971</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>E190DB31-88C3-441A-A3C5-8A45C709C971.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PerfectSteak project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PerfectSteak</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PerfectSteak</string>
+			<key>timeStartedRecording</key>
+			<real>704700827.13383102</real>
+			<key>timeStoppedRecording</key>
+			<real>704700837.00505602</real>
+			<key>title</key>
+			<string>Build PerfectSteak</string>
+			<key>uniqueIdentifier</key>
+			<string>E190DB31-88C3-441A-A3C5-8A45C709C971</string>
+		</dict>
 		<key>E28603BB-F69F-4277-9D33-8A6ABD26AFCC</key>
 		<dict>
 			<key>className</key>
@@ -2147,6 +3303,40 @@
 			<string>Build PerfectSteak</string>
 			<key>uniqueIdentifier</key>
 			<string>E28603BB-F69F-4277-9D33-8A6ABD26AFCC</string>
+		</dict>
+		<key>E3DF5205-EE0F-44CA-B1AA-0E7625DCA06C</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>E3DF5205-EE0F-44CA-B1AA-0E7625DCA06C.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PerfectSteak project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PerfectSteak</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PerfectSteak</string>
+			<key>timeStartedRecording</key>
+			<real>704700652.63655806</real>
+			<key>timeStoppedRecording</key>
+			<real>704700654.53734004</real>
+			<key>title</key>
+			<string>Build PerfectSteak</string>
+			<key>uniqueIdentifier</key>
+			<string>E3DF5205-EE0F-44CA-B1AA-0E7625DCA06C</string>
 		</dict>
 		<key>E83C65E4-5425-4975-B4A4-72A64A9D1902</key>
 		<dict>
@@ -2249,6 +3439,40 @@
 			<string>Build PerfectSteak</string>
 			<key>uniqueIdentifier</key>
 			<string>EC4147CA-CE4E-4094-B74D-BEA352282736</string>
+		</dict>
+		<key>ED212808-7DA8-4501-ADB1-851D813B03D6</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>ED212808-7DA8-4501-ADB1-851D813B03D6.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PerfectSteak project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PerfectSteak</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PerfectSteak</string>
+			<key>timeStartedRecording</key>
+			<real>704691523.41856396</real>
+			<key>timeStoppedRecording</key>
+			<real>704691525.77134705</real>
+			<key>title</key>
+			<string>Build PerfectSteak</string>
+			<key>uniqueIdentifier</key>
+			<string>ED212808-7DA8-4501-ADB1-851D813B03D6</string>
 		</dict>
 		<key>EF165BAF-FE44-4CBF-81B2-9E5AE542265B</key>
 		<dict>
@@ -2386,6 +3610,40 @@
 			<key>uniqueIdentifier</key>
 			<string>F35591D1-0516-4AF1-9BE8-EBB76D456EB2</string>
 		</dict>
+		<key>F3750E50-2E6F-4040-A652-9DFF3B07D0DA</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F3750E50-2E6F-4040-A652-9DFF3B07D0DA.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PerfectSteak project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PerfectSteak</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PerfectSteak</string>
+			<key>timeStartedRecording</key>
+			<real>704699078.39758301</real>
+			<key>timeStoppedRecording</key>
+			<real>704699079.32538104</real>
+			<key>title</key>
+			<string>Build PerfectSteak</string>
+			<key>uniqueIdentifier</key>
+			<string>F3750E50-2E6F-4040-A652-9DFF3B07D0DA</string>
+		</dict>
 		<key>F3E1D12F-FC0D-4139-892D-EE477ADFDA24</key>
 		<dict>
 			<key>className</key>
@@ -2419,6 +3677,40 @@
 			<string>Build PerfectSteak</string>
 			<key>uniqueIdentifier</key>
 			<string>F3E1D12F-FC0D-4139-892D-EE477ADFDA24</string>
+		</dict>
+		<key>F5673679-C918-400B-BAF4-8EB464F857DE</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F5673679-C918-400B-BAF4-8EB464F857DE.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PerfectSteak project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PerfectSteak</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build PerfectSteak</string>
+			<key>timeStartedRecording</key>
+			<real>704700981.53382301</real>
+			<key>timeStoppedRecording</key>
+			<real>704700983.54212403</real>
+			<key>title</key>
+			<string>Build PerfectSteak</string>
+			<key>uniqueIdentifier</key>
+			<string>F5673679-C918-400B-BAF4-8EB464F857DE</string>
 		</dict>
 		<key>F82EED33-A2FF-43DE-B4A3-AFC6FB343C1E</key>
 		<dict>

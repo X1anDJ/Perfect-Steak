@@ -29,8 +29,14 @@ class RulerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.black.withAlphaComponent(0.8)
+        view.backgroundColor = UIColor.black.withAlphaComponent(0.9)
         setupUI()
+        
+        self.title = "_._ inches"
+        self.navigationController?.navigationBar.titleTextAttributes = [
+            NSAttributedString.Key.foregroundColor: UIColor(hex: 0xFF5D32)
+        ]
+        self.navigationController?.navigationBar.backgroundColor = UIColor.black
     }
     
     private func setupUI() {
@@ -68,12 +74,14 @@ class RulerViewController: UIViewController {
         pointerView.backgroundColor = .clear
         view.addSubview(pointerView)
 
+        /*
         // Length label
         lengthLabel = UILabel(frame: CGRect(x: 0, y: view.safeAreaInsets.top - 125 + topPadding, width: view.frame.width, height: 45))
         lengthLabel.backgroundColor = .black
         lengthLabel.textAlignment = .center
         lengthLabel.text = "_._ inches" // Set the initial value to "0 inches"
         view.addSubview(lengthLabel)
+        */
         
         //orange indicator line
         let horizontalLineWidth: CGFloat = 185 // Same width as the rulerView
@@ -86,17 +94,13 @@ class RulerViewController: UIViewController {
         let closeButton = UIButton(type: .system)
         closeButton.setTitle("Save", for: .normal)
         closeButton.addTarget(self, action: #selector(closeButtonTapped), for: .touchUpInside)
-       // closeButton.frame = CGRect(x: view.frame.width/3, y: view.safeAreaInsets.top - 105 + lengthLabel.frame.height + topPadding, width: view.frame.width/3, height: 40)
-        closeButton.frame = CGRect(x: view.frame.width/3, y: view.safeAreaInsets.top - 105 + lengthLabel.frame.height + topPadding, width: view.frame.width/3, height: 40)
-        closeButton.titleLabel?.textAlignment = .center
-        closeButton.tintColor = .white
-        closeButton.cornerRadius = 20
-        closeButton.backgroundColor = .black
+        closeButton.tintColor = UIColor.white
         closeButton.layer.shadowColor = UIColor.gray.cgColor
         closeButton.layer.shadowOffset = CGSize(width: 0, height: 0)
         closeButton.layer.shadowRadius = 4
         closeButton.layer.shadowOpacity = 0.5
-        view.addSubview(closeButton)
+        let closeBarButtonItem = UIBarButtonItem(customView: closeButton)
+        self.navigationItem.rightBarButtonItem = closeBarButtonItem
 
         // Add pan gesture recognizer
         let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture(_:)))
@@ -107,18 +111,17 @@ class RulerViewController: UIViewController {
 
     
     @objc private func handlePanGesture(_ gestureRecognizer: UIPanGestureRecognizer) {
-        
         let translation = gestureRecognizer.translation(in: view)
 
         pointerView.center = CGPoint(x: pointerView.center.x, y: min(max(pointerView.center.y + translation.y, topPadding), rulerHeight + topPadding))
 
         var length = rulerLengthInch - ((pointerView.center.y - topPadding) / pointsPerInch)
         length = round(length * 10) / 10
-        lengthLabel.text = "\(length) inches"
-        lengthLabel.textColor = UIColor(hex: 0xFF5D32)
+        self.title = "\(length) inches"
         horizontalLine.center.y = pointerView.center.y
         gestureRecognizer.setTranslation(.zero, in: view)
     }
+
 
     
     

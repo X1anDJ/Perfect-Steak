@@ -224,7 +224,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="yCv-pw-2Rl" userLabel="Button Stack View">
-                                <rect key="frame" x="7" y="312" width="400" height="400"/>
+                                <rect key="frame" x="7" y="355" width="400" height="400"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="eN0-A7-Ell" userLabel="Upper Stack">
                                         <rect key="frame" x="0.0" y="0.0" width="400" height="200"/>
@@ -326,8 +326,8 @@
                                     <constraint firstAttribute="width" secondItem="yCv-pw-2Rl" secondAttribute="height" multiplier="1:1" id="yAm-KK-Bv7"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="wmQ-YO-lX9">
-                                <rect key="frame" x="27" y="762" width="360" height="72"/>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="wmQ-YO-lX9" userLabel="Start Button Stack View">
+                                <rect key="frame" x="27" y="765" width="360" height="72"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kOq-rL-uQw">
                                         <rect key="frame" x="0.0" y="0.0" width="72" height="72"/>
@@ -336,6 +336,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBz-QZ-8l3">
                                         <rect key="frame" x="72" y="0.0" width="72" height="72"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="gBz-QZ-8l3" secondAttribute="height" multiplier="1:1" id="rDX-Lh-R66"/>
+                                        </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="square.and.arrow.down" catalog="system" title="">
                                             <backgroundConfiguration key="background" cornerRadius="55" strokeWidth="2" strokeOutset="-4">
@@ -396,14 +399,15 @@
                         <constraints>
                             <constraint firstItem="R2a-MS-3UT" firstAttribute="top" secondItem="des-JU-0ev" secondAttribute="top" constant="50" id="Dkf-Tu-pj8"/>
                             <constraint firstItem="yCv-pw-2Rl" firstAttribute="centerX" secondItem="des-JU-0ev" secondAttribute="centerX" id="F6Z-Tv-MOE"/>
-                            <constraint firstItem="yCv-pw-2Rl" firstAttribute="top" secondItem="R2a-MS-3UT" secondAttribute="bottom" constant="22" id="OtO-gR-NVv"/>
+                            <constraint firstItem="wmQ-YO-lX9" firstAttribute="top" secondItem="yCv-pw-2Rl" secondAttribute="bottom" constant="10" id="Nkr-Dn-O12"/>
                             <constraint firstItem="wmQ-YO-lX9" firstAttribute="centerX" secondItem="des-JU-0ev" secondAttribute="centerX" id="PO0-gv-KnI"/>
                             <constraint firstItem="yCv-pw-2Rl" firstAttribute="centerX" secondItem="R2a-MS-3UT" secondAttribute="centerX" id="POR-IE-GW8"/>
                             <constraint firstAttribute="bottom" secondItem="PcR-0r-yBd" secondAttribute="bottom" constant="25" id="RdX-Fw-cR5"/>
                             <constraint firstAttribute="trailing" secondItem="R2a-MS-3UT" secondAttribute="trailing" constant="27" id="cV5-8y-XC2"/>
-                            <constraint firstItem="PcR-0r-yBd" firstAttribute="top" secondItem="wmQ-YO-lX9" secondAttribute="bottom" constant="8" symbolic="YES" id="gem-kt-atf"/>
+                            <constraint firstItem="PcR-0r-yBd" firstAttribute="top" secondItem="wmQ-YO-lX9" secondAttribute="bottom" constant="5" id="eyV-Vw-5B0"/>
                             <constraint firstItem="wmQ-YO-lX9" firstAttribute="leading" secondItem="des-JU-0ev" secondAttribute="leading" constant="27" id="mks-Yy-YpN"/>
                             <constraint firstItem="PcR-0r-yBd" firstAttribute="centerX" secondItem="des-JU-0ev" secondAttribute="centerX" id="nkL-EK-2oi"/>
+                            <constraint firstItem="yCv-pw-2Rl" firstAttribute="top" relation="greaterThanOrEqual" secondItem="R2a-MS-3UT" secondAttribute="bottom" constant="5" id="qYg-lX-GCf"/>
                             <constraint firstItem="R2a-MS-3UT" firstAttribute="leading" secondItem="des-JU-0ev" secondAttribute="leading" constant="27" id="qtl-rU-MsA"/>
                         </constraints>
                     </view>

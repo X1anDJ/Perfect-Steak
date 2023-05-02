@@ -349,9 +349,11 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
     @IBAction func showRuler(_ sender: UIButton) {
         let rulerVC = RulerViewController()
         rulerVC.delegate = self
-        rulerVC.modalPresentationStyle = .formSheet
-        present(rulerVC, animated: true, completion: nil)
+        let navigationController = UINavigationController(rootViewController: rulerVC)
+        navigationController.modalPresentationStyle = .formSheet
+        present(navigationController, animated: true, completion: nil)
     }
+
     
     @IBAction func startButtonTapped(_ sender: UIButton) {
         if !startButtonClicked {     // not cooking now

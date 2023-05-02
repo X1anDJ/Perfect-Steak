@@ -1,0 +1,23 @@
+{
+  'version': 0,
+  'use-external-names': 'false',
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/DerivedData/PerfectSteak/Index.noindex/Build/Products/Debug-iphoneos/DevicePpi/DevicePpi.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/DerivedData/PerfectSteak/Index.noindex/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/DevicePpi.build/unextended-module.modulemap",
+    }]
+    },
+    {
+    'type': 'directory',
+    'name': "/Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/DerivedData/PerfectSteak/Index.noindex/Build/Products/Debug-iphoneos/DevicePpi/DevicePpi.framework/Headers"
+    'contents': [{
+      'type': 'file',
+      'name': "DevicePpi-Swift.h",
+      'external-contents': "/Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/DerivedData/PerfectSteak/Index.noindex/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/DevicePpi.build/unextended-interface-header.h",
+    }]
+    }]
+}
