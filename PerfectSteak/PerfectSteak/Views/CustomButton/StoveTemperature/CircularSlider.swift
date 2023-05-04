@@ -153,12 +153,13 @@ class CircularSlider: UIView {
         
     
     // Updated the currentValue and parameter.text( title ) with the current angle
+    
     private func updateParameterNumber() {
         let valueRange = maxValue - minValue
         let angleRange = maxAngle - minAngle
         var value = minValue + (valueRange * (currentAngle - minAngle) / angleRange)
         
-        value = round(value / 5) * 5
+        //value = round(value / 5) * 5
         currentValue = Double(value)
         parameterNumber.text = String(format: "%.0f", value)
     }
@@ -167,7 +168,7 @@ class CircularSlider: UIView {
     
     @IBAction func handleButtonDragg(_ sender: UIPanGestureRecognizer) {
         let translation = sender.translation(in: self)
-        let centerY = self.bounds.height / 1.5 // adjust as needed
+        let centerY = self.bounds.height / 2 // adjust as needed
 
         var angle = translation.y / centerY * 180.0
         angle = angle * (-1)
@@ -178,6 +179,8 @@ class CircularSlider: UIView {
         // Update the current angle and parameter number in real-time
         currentAngle += angle
         updateParameterNumber()
+
+        
         updateLayers()
         // Reset the translation of the pan gesture to avoid compounding
         sender.setTranslation(.zero, in: self)

@@ -12,7 +12,7 @@ class SteakRecipe {
     var ID = UUID()
     
     var title: String {
-        return "My Recepies"
+        return "- - My Recepies - -"
     }
     
     var thickness: Double

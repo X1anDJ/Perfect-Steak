@@ -29,7 +29,7 @@ class RulerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.black.withAlphaComponent(0.9)
+        view.backgroundColor = UIColor.black.withAlphaComponent(0.8)
         setupUI()
         
         self.title = "_._ inches"
@@ -70,7 +70,7 @@ class RulerViewController: UIViewController {
         
         
         // Arrow-shaped pointer view
-        pointerView = ArrowView(frame: CGRect(x: rulerWidth, y: topPadding, width: 120, height: 80))
+        pointerView = ArrowView(frame: CGRect(x: rulerWidth, y: topPadding+300, width: 120, height: 80))
         pointerView.backgroundColor = .clear
         view.addSubview(pointerView)
 
@@ -84,10 +84,10 @@ class RulerViewController: UIViewController {
         */
         
         //orange indicator line
-        let horizontalLineWidth: CGFloat = 185 // Same width as the rulerView
-        let horizontalLineHeight: CGFloat = 1
-        horizontalLine = UIView(frame: CGRect(x: 0, y: pointerView.center.y, width: horizontalLineWidth, height: horizontalLineHeight))
-        horizontalLine.backgroundColor = UIColor(hex: 0xFF5D32)
+        let horizontalLineWidth: CGFloat = 180 // Same width as the rulerView
+        let horizontalLineHeight: CGFloat = pointerView.center.y - (topPadding + rulerHeight)
+        horizontalLine = UIView(frame: CGRect(x: 0, y: pointerView.center.y, width: horizontalLineWidth, height: -horizontalLineHeight))
+        horizontalLine.backgroundColor = UIColor(hex: 0xFF5D32).withAlphaComponent(0.5)
         view.addSubview(horizontalLine)
 
         // Close button
@@ -95,10 +95,6 @@ class RulerViewController: UIViewController {
         closeButton.setTitle("Save", for: .normal)
         closeButton.addTarget(self, action: #selector(closeButtonTapped), for: .touchUpInside)
         closeButton.tintColor = UIColor.white
-        closeButton.layer.shadowColor = UIColor.gray.cgColor
-        closeButton.layer.shadowOffset = CGSize(width: 0, height: 0)
-        closeButton.layer.shadowRadius = 4
-        closeButton.layer.shadowOpacity = 0.5
         let closeBarButtonItem = UIBarButtonItem(customView: closeButton)
         self.navigationItem.rightBarButtonItem = closeBarButtonItem
 
@@ -118,7 +114,8 @@ class RulerViewController: UIViewController {
         var length = rulerLengthInch - ((pointerView.center.y - topPadding) / pointsPerInch)
         length = round(length * 10) / 10
         self.title = "\(length) inches"
-        horizontalLine.center.y = pointerView.center.y
+        horizontalLine.frame = CGRect(x: 0, y: pointerView.center.y, width: horizontalLine.frame.width, height: -(pointerView.center.y - (topPadding + rulerHeight)))
+
         gestureRecognizer.setTranslation(.zero, in: view)
     }
 

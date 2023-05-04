@@ -20,7 +20,8 @@ class NetworkService {
         let steakThicknessMillimeters = Int(steakThickness * 25.4)
 
         print("NETWORK ___________")
-        print("Thickness: \(steakThicknessMillimeters)")
+        print("Thickness in mm: \(steakThicknessMillimeters)")
+        print("Thickness in inch: \(steakThickness)")
         print("InitialTemp: \(steakTemperatureCelsius)")
         print("OvenTemp: \(ovenTemperatureCelsius)")
         print("DesiredCenterTemp: \(steakDonenessCelsius)")
@@ -28,6 +29,9 @@ class NetworkService {
         
         let urlString = "https://ezdyaanizk.execute-api.us-west-1.amazonaws.com/getSteakCookingTime?initialTemperature=\(steakTemperatureCelsius)&ovenTemperature=\(ovenTemperatureCelsius)&steakThickness=\(steakThicknessMillimeters)&desiredCenterTemperature=\(steakDonenessCelsius)"
 
+        /*
+         https://ezdyaanizk.execute-api.us-west-1.amazonaws.com/getSteakCookingTime?initialTemperature=\(steakTemperatureCelsius)&ovenTemperature=\(ovenTemperatureCelsius)&steakThickness=\(steakThicknessMillimeters)&desiredCenterTemperature=\(steakDonenessCelsius)
+         */
         
         guard let url = URL(string: urlString) else {
             completion(.failure(NSError(domain: "com.example.steakapp", code: -1, userInfo: [NSLocalizedDescriptionKey: "Invalid URL"])))

@@ -25,7 +25,7 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
     private var totalSeconds: Int = 0
     var timer: Timer?           //timer for countdown
     var updateTimer: Timer?      //timer for reset the screen's label
-    
+    var task: UUID?
     
     ///titleButton: The button for the drop down menue
     @IBOutlet weak var titleButton: UIButton!
@@ -310,7 +310,7 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         updateTimer?.invalidate()
 
         // Update the countDownLabel immediately
-        countDownLabel.text = "Recipe saved"
+        countDownLabel.text = "saved to \n my recipes"
 
         // Create a new timer to reset the countDownLabel after 1 seconds
         updateTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { [weak self] _ in
@@ -345,6 +345,7 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
     func cancelCooking() {
         timer?.invalidate()
         timer = nil
+        task = nil
         //seconds = 10
         //Cooking cancelled was hit
         countDownLabel.text = "Cooking cancelled"
@@ -375,11 +376,15 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
          let newInitialTemp = steakTemperature.currentValue
          let newOvenTemp = circularSliderTest.currentValue
          let newDesiredCenterTemp = SteakDoneness.temperatureFromDoneness(donenessSlider.currentDoneness)
-        
+        let taskId = UUID()
+        task = taskId
         // Make the HTTP request to get the cooking time
         networkService.getSteakCookingTime(steakTemperature: newInitialTemp, ovenTemperature: newOvenTemp, steakThickness: newThickness, steakDoneness: newDesiredCenterTemp) { [weak self] (result) in
             guard let self = self else { return }
-            
+            print("============= Current task: \(String(describing: task))")
+            guard taskId == task else { return }
+            print("============= Current task exist: \(String(describing: task))")
+
             switch result {
             case .success(let seconds):
                 //print("seconds: \(seconds)")

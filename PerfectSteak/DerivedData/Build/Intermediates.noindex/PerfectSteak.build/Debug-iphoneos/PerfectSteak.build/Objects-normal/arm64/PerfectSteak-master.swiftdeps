@@ -1,7 +1,7 @@
 version: "Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)"
 options: "0c2c9d7a7ccf213883d4bc99a8675102fbbd7eacfe22822ad0473c38b68d74f1"
-build_start_time: [1683014623, 37872000]
-build_end_time: [1683014624, 931167000]
+build_start_time: [1683088986, 909144000]
+build_end_time: [1683088988, 526065000]
 inputs:
   ? "/Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/DerivedData/Build/Intermediates.noindex/PerfectSteak.build/Debug-iphoneos/PerfectSteak.build/DerivedSources/CoreDataGenerated/SteakRecipeModel/CDSteakRecipe+CoreDataClass.swift"
   : [1683008032, 687731849]
@@ -15,18 +15,18 @@ inputs:
   "/Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/PerfectSteak/Models/CoreDataStack.swift": [1682384587, 989120710]
   "/Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/PerfectSteak/Models/OnboardingSlide.swift": [1682401750, 28253820]
   "/Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/PerfectSteak/Models/Recipes.swift": [1682903160, 252851308]
-  "/Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/PerfectSteak/Models/SteakRecipe.swift": [1682907076, 473218974]
+  "/Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/PerfectSteak/Models/SteakRecipe.swift": [1683015588, 97447156]
   "/Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/PerfectSteak/SceneDelegate.swift": [1682906843, 994305255]
-  "/Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/PerfectSteak/Services/NetworkService.swift": [1682929301, 772629481]
+  "/Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/PerfectSteak/Services/NetworkService.swift": [1683085787, 220954039]
   "/Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/PerfectSteak/Views/CustomButton/Doneness/DonenessSlider.swift": [1682817447, 643869886]
   ? "/Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/PerfectSteak/Views/CustomButton/SteakTemperature/SteakTemperature.swift"
   : [1682925316, 462177210]
   ? "/Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/PerfectSteak/Views/CustomButton/StoveTemperature/CircularSlider.swift"
-  : [1682983071, 99036769]
+  : [1683088986, 654286095]
   "/Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/PerfectSteak/Views/CustomButton/Thickness/ConcaveButton.swift": [1682751420, 457870798]
   ? "/Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/PerfectSteak/Views/CustomButton/Thickness/RulerViewController.swift"
-  : [1683008238, 737716244]
-  "/Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/PerfectSteak/Views/MainView/MainViewController.swift": [1683014622, 680194169]
+  : [1683082686, 647512826]
+  "/Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/PerfectSteak/Views/MainView/MainViewController.swift": [1683083458, 639765308]
   ? "/Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/PerfectSteak/Views/MainView/NavigationBar/RecipeDropdownTableViewController.swift"
   : [1682929301, 774827737]
   ? "/Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/PerfectSteak/Views/MainView/NavigationBar/RecipeTableViewCell.swift"
