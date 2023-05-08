@@ -14,10 +14,42 @@
             filePath = "PerfectSteak/Views/MainView/MainViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "345"
-            endingLineNumber = "345"
+            startingLineNumber = "353"
+            endingLineNumber = "353"
             landmarkName = "cancelCooking()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "624F4D58-C84F-4934-A57E-248FD7272B64 - 68b6b959e0a31e59"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PerfectSteak.MainViewController.cancelCooking() -&gt; ()"
+                  moduleName = "PerfectSteak"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/PerfectSteak/Views/MainView/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "348"
+                  endingLineNumber = "348"
+                  offsetFromSymbolStart = "397">
+               </Location>
+               <Location
+                  uuid = "624F4D58-C84F-4934-A57E-248FD7272B64 - 68b6b959e0a31e76"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PerfectSteak.MainViewController.cancelCooking() -&gt; ()"
+                  moduleName = "PerfectSteak"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/PerfectSteak/Views/MainView/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "349"
+                  endingLineNumber = "349"
+                  offsetFromSymbolStart = "258">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -30,10 +62,42 @@
             filePath = "PerfectSteak/Views/MainView/MainViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "368"
-            endingLineNumber = "368"
+            startingLineNumber = "376"
+            endingLineNumber = "376"
             landmarkName = "startCountDown()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7FA6F3A1-1786-48C1-B8A1-962B9D4BED13 - b83d2841f2e615be"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PerfectSteak.MainViewController.startCountDown() -&gt; ()"
+                  moduleName = "PerfectSteak"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/PerfectSteak/Views/MainView/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "373"
+                  endingLineNumber = "373"
+                  offsetFromSymbolStart = "318">
+               </Location>
+               <Location
+                  uuid = "7FA6F3A1-1786-48C1-B8A1-962B9D4BED13 - b83d2841f2e615be"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PerfectSteak.MainViewController.startCountDown() -&gt; ()"
+                  moduleName = "PerfectSteak"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/PerfectSteak/Views/MainView/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "373"
+                  endingLineNumber = "373"
+                  offsetFromSymbolStart = "210">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -46,10 +110,42 @@
             filePath = "PerfectSteak/Views/MainView/MainViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "472"
-            endingLineNumber = "472"
+            startingLineNumber = "485"
+            endingLineNumber = "485"
             landmarkName = "startTimer()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0F2331A2-4985-4181-9D60-16E6EC66898B - 35085ed250ac0cc5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PerfectSteak.MainViewController.startTimer() -&gt; ()"
+                  moduleName = "PerfectSteak"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/PerfectSteak/Views/MainView/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "476"
+                  endingLineNumber = "476"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "0F2331A2-4985-4181-9D60-16E6EC66898B - 35085ed250ac0cc5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PerfectSteak.MainViewController.startTimer() -&gt; ()"
+                  moduleName = "PerfectSteak"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/PerfectSteak/Views/MainView/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "476"
+                  endingLineNumber = "476"
+                  offsetFromSymbolStart = "70">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -62,10 +158,42 @@
             filePath = "PerfectSteak/Views/MainView/MainViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "497"
-            endingLineNumber = "497"
+            startingLineNumber = "510"
+            endingLineNumber = "510"
             landmarkName = "sendNotification(timeInterval:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "058A0B32-1586-41EC-B1AB-CF05C36DB642 - 923f12b05cc976f8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PerfectSteak.MainViewController.sendNotification(timeInterval: Swift.Double) -&gt; ()"
+                  moduleName = "PerfectSteak"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/PerfectSteak/Views/MainView/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "501"
+                  endingLineNumber = "501"
+                  offsetFromSymbolStart = "87">
+               </Location>
+               <Location
+                  uuid = "058A0B32-1586-41EC-B1AB-CF05C36DB642 - 923f12b05cc9761b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PerfectSteak.MainViewController.sendNotification(timeInterval: Swift.Double) -&gt; ()"
+                  moduleName = "PerfectSteak"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/PerfectSteak/Views/MainView/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "504"
+                  endingLineNumber = "504"
+                  offsetFromSymbolStart = "87">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -46,7 +46,7 @@ class NetworkService {
                 if let cookingTime = String(data: data, encoding: .utf8), let cookingTimeInt = Double(cookingTime) {
                     completion(.success(cookingTimeInt))
                 } else {
-                    completion(.failure(NSError(domain: "com.example.steakapp", code: -1, userInfo: [NSLocalizedDescriptionKey: "Invalid response format"])))
+                    completion(.failure(NSError(domain: "com.example.steakapp", code: -1, userInfo: [NSLocalizedDescriptionKey: "Try different parameters"])))
                 }
             } else {
                 completion(.failure(NSError(domain: "com.example.steakapp", code: -1, userInfo: [NSLocalizedDescriptionKey: "Unknown error"])))

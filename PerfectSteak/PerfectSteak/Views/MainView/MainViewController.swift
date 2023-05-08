@@ -53,6 +53,7 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.isNavigationBarHidden = true
         steakTemperature.bringSubviewToFront(steakTemperature.informationButton)
 
         infoLabel.text = ""
@@ -67,7 +68,7 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         thicknessButton.layer.cornerRadius = 50
         thicknessButton.backgroundColor = UIColor(red: 66/255, green: 66/255, blue: 66/255, alpha: 1)
      
-        setupNavigationBar()
+        //setupNavigationBar()
         
         createSampleRecipes()
         
@@ -161,11 +162,11 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
     }
     
     
-    
+    /*
     private func setupNavigationBar() {
         titleButton.addTarget(self, action: #selector(showRecipeDropdownMenu), for: .touchUpInside)
     }
-    
+    */
     
     private func setupSelectedRecipe() {
         let defaultUUID = UUID(uuidString: "00000000-0000-0000-0000-000000000001")!
@@ -197,9 +198,12 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
 
 
     
+    @IBAction func recipesDropDownMenuClicked(_ sender: Any) {
+        showRecipeDropdownMenu()
+        print("Herere")
+    }
     
-    
-    @objc private func showRecipeDropdownMenu() {
+    private func showRecipeDropdownMenu() {
         let menu = RecipeDropdownTableViewController()
         menu.modalPresentationStyle = .popover
         menu.preferredContentSize = CGSize(width: 310, height: 130)
@@ -213,12 +217,13 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         
         popoverController = menu.popoverPresentationController
         popoverController?.delegate = self
-        popoverController?.sourceView = navigationItem.titleView
-        popoverController?.sourceRect = navigationItem.titleView?.bounds ?? .zero
+        popoverController?.sourceView = titleButton
+        popoverController?.sourceRect = titleButton.bounds
         popoverController?.permittedArrowDirections = .any
-        
+            
         present(menu, animated: true, completion: nil)
     }
+
     
     func createSampleRecipes() {
         let userDefaults = UserDefaults.standard
@@ -331,15 +336,18 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
     @IBAction func startButtonTapped(_ sender: UIButton) {
         if !startButtonClicked {     // not cooking now
             startButtonClicked = true
-            startButton.setImage(UIImage(systemName: "stop"), for: .normal)
+            startButton.isEnabled = false // Disable the button
             startCountDown()
         } else {                    // cooking now
-            //It's already started the countdown.
-            //cancel the timer
-            cancelCooking()
-            startButton.setImage(UIImage(systemName: "oven"), for: .normal)
+            if timer == nil { // Button tapped to start the countdown
+                startTimer()
+                startButton.setImage(UIImage(systemName: "stop"), for: .normal)
+            } else { // Button tapped to stop the countdown
+                //cancel the timer
+                cancelCooking()
+                startButton.setImage(UIImage(systemName: "oven"), for: .normal)
+            }
         }
-        
     }
     
     func cancelCooking() {
@@ -397,13 +405,18 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
                 self.totalSeconds = Int(seconds)
                 // Start the countdown
                 DispatchQueue.main.async {
-                    self.startTimer()
-                    self.infoLabel.text = " "
+                    self.startButton.isEnabled = true
+                    self.updateCountDownLabel()
+                    self.startButton.setImage(UIImage(systemName: "play"), for: .normal)
+                    self.infoLabel.text = "Ready to countdown"
                 }
             case .failure(let error):
                 DispatchQueue.main.async {
                     self.countDownLabel.text = "Error: \(error.localizedDescription)"
                     self.infoLabel.text = " "
+                    self.startButton.isEnabled = true // Enable the button in case of failure
+                    self.startButton.setImage(UIImage(systemName: "oven"), for: .normal) // Reset the button image
+                    self.startButtonClicked = false // Reset the startButtonClicked flag
                 }
             }
         }
@@ -475,7 +488,7 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         // Invalidate any existing timer
         timer?.invalidate()
         startTime = Date()
-        
+        self.infoLabel.text = " "
         // Start a new timer
         timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [weak self] _ in
             guard let self = self else { return }
@@ -522,7 +535,8 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         NotificationCenter.default.removeObserver(self)
         NotificationCenter.default.removeObserver(self, name: UIApplication.didEnterBackgroundNotification, object: nil)
         NotificationCenter.default.removeObserver(self, name: UIApplication.willEnterForegroundNotification, object: nil)
-
+        
+        print("View controller deallocated")
     }
 
 }

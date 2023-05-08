@@ -384,6 +384,7 @@ SWIFT_CLASS("_TtC12PerfectSteak18MainViewController")
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified saveButton;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified startButton;
 - (void)viewDidLoad;
+- (IBAction)recipesDropDownMenuClicked:(id _Nonnull)sender;
 - (IBAction)saveRecipe:(id _Nonnull)sender;
 - (IBAction)showRuler:(UIButton * _Nonnull)sender;
 - (IBAction)startButtonTapped:(UIButton * _Nonnull)sender;

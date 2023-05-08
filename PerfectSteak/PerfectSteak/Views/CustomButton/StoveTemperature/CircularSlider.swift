@@ -157,7 +157,7 @@ class CircularSlider: UIView {
     private func updateParameterNumber() {
         let valueRange = maxValue - minValue
         let angleRange = maxAngle - minAngle
-        var value = minValue + (valueRange * (currentAngle - minAngle) / angleRange)
+        let value = minValue + (valueRange * (currentAngle - minAngle) / angleRange)
         
         //value = round(value / 5) * 5
         currentValue = Double(value)
