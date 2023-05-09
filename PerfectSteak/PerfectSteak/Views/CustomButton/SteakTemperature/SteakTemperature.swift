@@ -12,7 +12,12 @@ protocol SteakTemperatureDelegate: AnyObject {
     func didTapButton()
 }
 
-class SteakTemperature: UIView {
+protocol SteakTemperatureNumberPadDelegate: AnyObject {
+    func showNumberPad(for steakTemperature: SteakTemperature)
+}
+
+
+class SteakTemperature: UIView, NumberPadViewDelegate {
 
     @IBOutlet weak var parameterTitle: UILabel!
     @IBOutlet weak var parameterNumber: UILabel!
@@ -28,6 +33,8 @@ class SteakTemperature: UIView {
     private var ringIndicatorLayer = CAShapeLayer()
     private let trackLayer = CAShapeLayer()
     private let progressLayer = CAShapeLayer()
+
+    weak var numberPadDelegate: SteakTemperatureNumberPadDelegate?
 
     weak var delegate: SteakTemperatureDelegate?
 
@@ -86,6 +93,9 @@ class SteakTemperature: UIView {
         rangeBegin.text = "0"
         rangeEnd.text = "120"
         //currentNumber = CGFloat(Double(parameterNumber.text ?? "0.0") ?? 0.0)
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(didTapPointerView))
+        pointerView.addGestureRecognizer(tapGestureRecognizer)
+        pointerView.isUserInteractionEnabled = true
     }
 
     
@@ -190,6 +200,23 @@ class SteakTemperature: UIView {
         
         
     }
+    
+    func numberPadValueUpdated(to value: CGFloat) {
+        let clampedValue = min(max(value, minValue), maxValue)
+        currentValue = clampedValue
+    }
 
+    
+    func didTapDoneButton() {
+        if let mainViewController = numberPadDelegate as? MainViewController {
+            mainViewController.dismissNumberPadView()
+        }
+    }
+
+    @objc private func didTapPointerView() {
+        numberPadDelegate?.showNumberPad(for: self)
+    }
+    
+    
 
 }

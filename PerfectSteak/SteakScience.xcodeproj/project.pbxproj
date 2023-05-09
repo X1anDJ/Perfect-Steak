@@ -36,6 +36,8 @@
 		DCAC1B5229FBDCF800CB638D /* SteakTemperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAC1B5129FBDCF800CB638D /* SteakTemperature.swift */; };
 		DCAC1B5429FCE39E00CB638D /* MainViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAC1B5329FCE39E00CB638D /* MainViewController+Extension.swift */; };
 		DCAD6D5629FBD749007CDEB4 /* SteakTemperature.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCAD6D5529FBD749007CDEB4 /* SteakTemperature.xib */; };
+		DCC1027B2A0A0FD1009859AC /* NumberPadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCC1027A2A0A0FD1009859AC /* NumberPadView.xib */; };
+		DCC1027D2A0A1C2B009859AC /* NumberPadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC1027C2A0A1C2B009859AC /* NumberPadView.swift */; };
 		DCD4607A29F88D090054CA23 /* CircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD4607929F88D090054CA23 /* CircularSlider.swift */; };
 		DCD4607C29F88D490054CA23 /* CircularSlider.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCD4607B29F88D490054CA23 /* CircularSlider.xib */; };
 		DCD4607F29F8934E0054CA23 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD4607E29F8934E0054CA23 /* UIView+Extension.swift */; };
@@ -78,6 +80,8 @@
 		DCAC1B5129FBDCF800CB638D /* SteakTemperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteakTemperature.swift; sourceTree = "<group>"; };
 		DCAC1B5329FCE39E00CB638D /* MainViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+Extension.swift"; sourceTree = "<group>"; };
 		DCAD6D5529FBD749007CDEB4 /* SteakTemperature.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SteakTemperature.xib; sourceTree = "<group>"; };
+		DCC1027A2A0A0FD1009859AC /* NumberPadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumberPadView.xib; sourceTree = "<group>"; };
+		DCC1027C2A0A1C2B009859AC /* NumberPadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPadView.swift; sourceTree = "<group>"; };
 		DCD4607929F88D090054CA23 /* CircularSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularSlider.swift; sourceTree = "<group>"; };
 		DCD4607B29F88D490054CA23 /* CircularSlider.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CircularSlider.xib; sourceTree = "<group>"; };
 		DCD4607E29F8934E0054CA23 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
@@ -126,6 +130,8 @@
 		DC62BCEF2A09EF2500ED933A /* NumberPad */ = {
 			isa = PBXGroup;
 			children = (
+				DCC1027A2A0A0FD1009859AC /* NumberPadView.xib */,
+				DCC1027C2A0A1C2B009859AC /* NumberPadView.swift */,
 			);
 			path = NumberPad;
 			sourceTree = "<group>";
@@ -348,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC997A6429FCF33900CBFD10 /* LiquidCrystal-Bold.otf in Resources */,
+				DCC1027B2A0A0FD1009859AC /* NumberPadView.xib in Resources */,
 				DC997A6529FCF33B00CBFD10 /* LiquidCrystal-BoldItalic.otf in Resources */,
 				DC997A6629FCF33D00CBFD10 /* LiquidCrystal-ExBold.otf in Resources */,
 				DC6B0A1529F72BCB00F1A859 /* LaunchScreen.storyboard in Resources */,
@@ -423,6 +430,7 @@
 				DC6B0A2B29F7581A00F1A859 /* SteakRecipe.swift in Sources */,
 				DC6DDCD629F75AFE00C0DF9D /* SteakRecipeModel.xcdatamodeld in Sources */,
 				DCD4607F29F8934E0054CA23 /* UIView+Extension.swift in Sources */,
+				DCC1027D2A0A1C2B009859AC /* NumberPadView.swift in Sources */,
 				DCDD5E2229F9F0F5008234B5 /* DonenessSlider.swift in Sources */,
 				DC53355929FF47B800E3078C /* RecipeTableViewCell.swift in Sources */,
 				DC6B0A0829F72BC900F1A859 /* SceneDelegate.swift in Sources */,

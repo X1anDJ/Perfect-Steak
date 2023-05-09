@@ -11,7 +11,11 @@ protocol CircularSliderDelegate: AnyObject {
     func circularSliderValueChanged(to value: CGFloat)
 }
 
-class CircularSlider: UIView {
+protocol CircularSliderNumberPadDelegate: AnyObject {
+    func showNumberPad(for circularSlider: CircularSlider)
+}
+
+class CircularSlider: UIView, NumberPadViewDelegate {
     
     @IBOutlet weak var parameterTitle: UILabel!
     @IBOutlet weak var parameterNumber: UILabel!
@@ -27,6 +31,10 @@ class CircularSlider: UIView {
     private let trackLayer = CAShapeLayer()
     private let progressLayer = CAShapeLayer()
 
+    
+    weak var numberPadDelegate: CircularSliderNumberPadDelegate?
+
+    
     var delegate: CircularSliderDelegate?
     
     var currentAngle: CGFloat = 0.0
@@ -81,6 +89,9 @@ class CircularSlider: UIView {
         rangeBegin.text = "200"
         rangeEnd.text = "500"
         //currentNumber = CGFloat(Double(parameterNumber.text ?? "0.0") ?? 0.0)
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(didTapPointerView))
+        pointerView.addGestureRecognizer(tapGestureRecognizer)
+        pointerView.isUserInteractionEnabled = true
     }
 
     
@@ -189,5 +200,22 @@ class CircularSlider: UIView {
     }
 
 
+    func numberPadValueUpdated(to value: CGFloat) {
+        let clampedValue = min(max(value, minValue), maxValue)
+        currentValue = clampedValue
+    }
+
+    
+    func didTapDoneButton() {
+        if let mainViewController = numberPadDelegate as? MainViewController {
+            mainViewController.dismissNumberPadView()
+        }
+    }
+
+    @objc private func didTapPointerView() {
+        numberPadDelegate?.showNumberPad(for: self)
+    }
+    
+    
 }
 

@@ -54,7 +54,7 @@
 		</data>
 		<key>Frameworks/DevicePpi.framework/DevicePpi</key>
 		<data>
-		+/kGcM5nEIs9+Ebo5XNPdP+f+aM=
+		f76uIV7ug/wR4d7smpt5396sMPM=
 		</data>
 		<key>Frameworks/DevicePpi.framework/Info.plist</key>
 		<data>
@@ -99,6 +99,10 @@
 		<key>LiquidCrystal-NormalItalic.otf</key>
 		<data>
 		CSESzrd8s9HpudqdHKWCHOxoNck=
+		</data>
+		<key>NumberPadView.nib</key>
+		<data>
+		NrRUEsWtKFjbpjgiIJx5pvJ79jc=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -211,7 +215,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cN0hgxk1Fms6we2fCOWCONmPe+y2NE7Mo7wCQ1GGJRI=
+			uEYhCUOPDGkMqOb5rnRPqVtBAy1rFtFavPpgTr5rbnE=
 			</data>
 		</dict>
 		<key>Frameworks/DevicePpi.framework/Info.plist</key>
@@ -282,6 +286,13 @@
 			<key>hash2</key>
 			<data>
 			ScLUEfNIDsS6bJVrSCWAaCGEZNfulcE/i40cvkLE0WI=
+			</data>
+		</dict>
+		<key>NumberPadView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			GsLBycc8Dt0kcMhYPJAz936LC2C1MFZ4dV1l1YCb7kY=
 			</data>
 		</dict>
 		<key>SteakRecipeModel.momd/SteakRecipeModel.mom</key>

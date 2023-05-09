@@ -403,6 +403,23 @@ SWIFT_CLASS("_TtC12SteakScience18MainViewController")
 - (UIModalPresentationStyle)adaptivePresentationStyleForPresentationController:(UIPresentationController * _Nonnull)controller SWIFT_WARN_UNUSED_RESULT;
 @end
 
+@class UITextField;
+
+SWIFT_CLASS("_TtC12SteakScience13NumberPadView")
+@interface NumberPadView : UIView
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified textField;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (IBAction)numberButonTapped:(UIButton * _Nonnull)sender;
+- (IBAction)backButtonTapped:(UIButton * _Nonnull)sender;
+- (IBAction)incrementBy5:(UIButton * _Nonnull)sender;
+- (IBAction)decrementBy5:(UIButton * _Nonnull)sender;
+- (IBAction)incrementBy1:(UIButton * _Nonnull)sender;
+- (IBAction)decrementBy1:(UIButton * _Nonnull)sender;
+- (IBAction)okButtonTapped:(UIButton * _Nonnull)sender;
+- (IBAction)cancelButtonTapped:(UIButton * _Nonnull)sender;
+@end
+
 @class UIImageView;
 
 SWIFT_CLASS("_TtC12SteakScience28OnboardingCollectionViewCell")

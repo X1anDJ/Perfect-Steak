@@ -10,7 +10,7 @@ import UIKit
 import CoreData
 import UserNotifications
 
-class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSliderDelegate, SteakDonenessDelegate {
+class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSliderDelegate, SteakDonenessDelegate, SteakTemperatureNumberPadDelegate, CircularSliderNumberPadDelegate {
     
     let networkService = NetworkService()
     
@@ -74,8 +74,10 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         
         setupSelectedRecipe()
         
+        steakTemperature.numberPadDelegate = self
         steakTemperature.delegate = self
         circularSliderTest.delegate = self
+        circularSliderTest.numberPadDelegate = self
         donenessSlider.delegate = self
     }
     
@@ -533,6 +535,40 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         }
     }
 
+    func showNumberPad(for steakTemperature: SteakTemperature) {
+        let numberPadView = NumberPadView(frame: CGRect(x: 0, y: self.view.bounds.height, width: self.view.bounds.width, height: self.view.bounds.height))
+        numberPadView.delegate = steakTemperature
+        numberPadView.textField.text = steakTemperature.parameterNumber.text
+        self.view.addSubview(numberPadView)
+
+        UIView.animate(withDuration: 0.3, animations: {
+            numberPadView.frame = CGRect(x: 0, y: 0, width: self.view.bounds.width, height: self.view.bounds.height)
+        })
+    }
+    
+    func showNumberPad(for circularSlider: CircularSlider) {
+        let numberPadView = NumberPadView(frame: CGRect(x: 0, y: self.view.bounds.height, width: self.view.bounds.width, height: self.view.bounds.height))
+        numberPadView.delegate = circularSlider
+        numberPadView.textField.text = circularSlider.parameterNumber.text
+        self.view.addSubview(numberPadView)
+
+        UIView.animate(withDuration: 0.3, animations: {
+            numberPadView.frame = CGRect(x: 0, y: 0, width: self.view.bounds.width, height: self.view.bounds.height)
+        })
+    }
+    
+    func dismissNumberPadView() {
+        if let numberPadView = self.view.subviews.first(where: { $0 is NumberPadView }) {
+            UIView.animate(withDuration: 0.3, animations: {
+                numberPadView.frame = CGRect(x: 0, y: self.view.bounds.height, width: self.view.bounds.width, height: self.view.bounds.height)
+            }, completion: { _ in
+                numberPadView.removeFromSuperview()
+            })
+        }
+    }
+
+
+    
     deinit {
         NotificationCenter.default.removeObserver(self)
         NotificationCenter.default.removeObserver(self, name: UIApplication.didEnterBackgroundNotification, object: nil)
