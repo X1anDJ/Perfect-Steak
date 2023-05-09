@@ -38,9 +38,9 @@ class OnboardingViewController: UIViewController {
         
         
         slides = [
-            OnboardingSlide(title: "Cook Like a Physicist", description: "Calculate steak's temperature by solving the 1D heat equation with the Crank-Nicolson method", image: #imageLiteral(resourceName: "1d")),
-            OnboardingSlide(title: "Easy to Use", description: "Enter four parameters by simply sliding up and down. \n We will do the calculation for you", image: #imageLiteral(resourceName: "Image")),
-            OnboardingSlide(title: "Super Accurate", description: "Result doesn't account for factors like convection, radiation, or uneven heating. Use it at your own risk", image: #imageLiteral(resourceName: "c"))
+            OnboardingSlide(title: "Cook Like a Physicist", description: "Calculate steak's temperature by solving the 1D heat equation with the Crank-Nicolson method in just a few steps.", image: #imageLiteral(resourceName: "1d")),
+            OnboardingSlide(title: "1. Select doneness", description: "Slide up and down to pick your favourite doneness", image: #imageLiteral(resourceName: "Image")),
+            OnboardingSlide(title: "2. Pick the right temperature", description: "Slide up and down to pick the stove temperature and ", image: #imageLiteral(resourceName: "c"))
         ]
         
         pageControl.numberOfPages = slides.count

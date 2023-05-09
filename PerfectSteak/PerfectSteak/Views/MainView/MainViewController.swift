@@ -378,7 +378,7 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         timer?.invalidate()
 
         // Display "Calculating..." before the countdown starts
-        countDownLabel.text = "Calculating"
+        countDownLabel.text = "Calculating..."
         infoLabel.text = "Thicker meat calculates longer"
          let newThickness = Double(lengthLabel.text?.replacingOccurrences(of: " inches", with: "") ?? "0") ?? 0
          let newInitialTemp = steakTemperature.currentValue
@@ -430,31 +430,33 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
     @objc func willEnterForeground() {
         print("_______")
         print("App entered foreground")
+        if startButtonClicked {
+            // Calculate the remaining time
+            let elapsedTime = Date().timeIntervalSince(startTime!)
+            let remainingTime = max(0, Double(totalSeconds) - elapsedTime)   //ensure the remaining time >= 0
+            let now = Date()
+            print("Start time: \(startTime!.description)")
+            print("Now time: \(now.description)")
+            print("Total seconds: \(totalSeconds.description)")
+            print("Elapsed time: \(elapsedTime.description)")
+            print("Remaining time: \(remainingTime.description)")
 
-        // Calculate the remaining time
-        let elapsedTime = Date().timeIntervalSince(startTime!)
-        let remainingTime = max(0, Double(totalSeconds) - elapsedTime)   //ensure the remaining time >= 0
-        let now = Date()
-        print("Start time: \(startTime!.description)")
-        print("Now time: \(now.description)")
-        print("Total seconds: \(totalSeconds.description)")
-        print("Elapsed time: \(elapsedTime.description)")
-        print("Remaining time: \(remainingTime.description)")
+            // Update the total seconds value to new remaining time
+            seconds = Int(remainingTime)
 
-        // Update the total seconds value to new remaining time
-        seconds = Int(remainingTime)
-
-        // If the countdown is not finished, start the timer again
-        if seconds > 0 {
-            print("start button clicked? \(startButtonClicked)")
-            /*
-             Bug behavior: when coming back to the foreground
-             */
-            resumeTimer()
-        } else {
-            resetTimer()
-            print("reset timer is called _____________")
+            // If the countdown is not finished, start the timer again
+            if seconds > 0 {
+                print("start button clicked? \(startButtonClicked)")
+                /*
+                 Bug behavior: when coming back to the foreground
+                 */
+                resumeTimer()
+            } else {
+                resetTimer()
+                print("reset timer is called _____________")
+            }
         }
+
     }
     
     private func resumeTimer() {
