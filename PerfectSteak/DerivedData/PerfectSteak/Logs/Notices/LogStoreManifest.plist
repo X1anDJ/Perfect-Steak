@@ -230,6 +230,34 @@
 			<key>uniqueIdentifier</key>
 			<string>11EBE02B-12E4-4006-95EF-60C9332E1728</string>
 		</dict>
+		<key>125ED3EE-8C10-45CD-BEDA-5F73231351E9</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>125ED3EE-8C10-45CD-BEDA-5F73231351E9.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>eyJ0eXBlIjp7IndvcmtzcGFjZSI6e319fQ==</string>
+			<key>timeStartedRecording</key>
+			<real>705375131.69110799</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build SteakScience</string>
+			<key>uniqueIdentifier</key>
+			<string>125ED3EE-8C10-45CD-BEDA-5F73231351E9</string>
+		</dict>
 		<key>129723E1-68AE-4C1C-B148-D6DC7D6A9856</key>
 		<dict>
 			<key>className</key>
@@ -341,6 +369,34 @@
 			<string>Build SteakScience</string>
 			<key>uniqueIdentifier</key>
 			<string>147FD907-B8A3-4B95-A4A7-9CBEAFEEE108</string>
+		</dict>
+		<key>154710DF-57D4-41D5-9B38-5A38DD6E66A2</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>154710DF-57D4-41D5-9B38-5A38DD6E66A2.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>eyJ0eXBlIjp7ImJ1aWxkU3lzdGVtVGFzayI6e319LCJidWlsZFN5c3RlbVRhc2tfYnVpbGRUYXNrIjoiUHJlcGFyZSBidWlsZCJ9</string>
+			<key>timeStartedRecording</key>
+			<real>705358629.82445097</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build SteakScience</string>
+			<key>uniqueIdentifier</key>
+			<string>154710DF-57D4-41D5-9B38-5A38DD6E66A2</string>
 		</dict>
 		<key>1A9F758A-DBE1-4EC5-84DA-87C434476697</key>
 		<dict>
@@ -510,6 +566,34 @@
 			<key>uniqueIdentifier</key>
 			<string>2228AE2D-5834-4E89-A313-116156C19F22</string>
 		</dict>
+		<key>22D18925-FAF0-4EDF-861A-63DBDEDEB4A6</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>22D18925-FAF0-4EDF-861A-63DBDEDEB4A6.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>eyJ0eXBlIjp7ImJsdWVwcmludCI6e319LCJibHVlcHJpbnRfcHJvdmlkZXJGaWxlUGF0aFN0cmluZyI6IlwvVXNlcnNcL2RhanVueGlhblwvRGV2ZWxvcGVyXC9QZXJmZWN0U3RlYWtcL1BlcmZlY3QtU3RlYWtcL1BlcmZlY3RTdGVha1wvUG9kc1wvUG9kcy54Y29kZXByb2oiLCJibHVlcHJpbnRfYmx1ZXByaW50SWRlbnRpZmllciI6IkY5QjA0QzcyRjgwOTJEMTRBNTE3RTdBNkI5OEIyNzVGIn0=</string>
+			<key>timeStartedRecording</key>
+			<real>705375572.108742</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build SteakScience</string>
+			<key>uniqueIdentifier</key>
+			<string>22D18925-FAF0-4EDF-861A-63DBDEDEB4A6</string>
+		</dict>
 		<key>2371FA3D-CA04-4881-A9F4-F4E89E37940E</key>
 		<dict>
 			<key>className</key>
@@ -594,6 +678,34 @@
 			<key>uniqueIdentifier</key>
 			<string>2701FEAD-AFFB-4B95-A006-67904BC5FE4E</string>
 		</dict>
+		<key>298CDA87-E6B9-4866-B42E-C9F804CCBF67</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>298CDA87-E6B9-4866-B42E-C9F804CCBF67.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>eyJ0eXBlIjp7ImJsdWVwcmludCI6e319LCJibHVlcHJpbnRfcHJvdmlkZXJGaWxlUGF0aFN0cmluZyI6IlwvVXNlcnNcL2RhanVueGlhblwvRGV2ZWxvcGVyXC9QZXJmZWN0U3RlYWtcL1BlcmZlY3QtU3RlYWtcL1BlcmZlY3RTdGVha1wvUG9kc1wvUG9kcy54Y29kZXByb2oiLCJibHVlcHJpbnRfYmx1ZXByaW50SWRlbnRpZmllciI6IkY5QjA0QzcyRjgwOTJEMTRBNTE3RTdBNkI5OEIyNzVGIn0=</string>
+			<key>timeStartedRecording</key>
+			<real>705358629.82445097</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build SteakScience</string>
+			<key>uniqueIdentifier</key>
+			<string>298CDA87-E6B9-4866-B42E-C9F804CCBF67</string>
+		</dict>
 		<key>2BC64A44-AA59-4813-B5F7-5F08E101465F</key>
 		<dict>
 			<key>className</key>
@@ -649,6 +761,34 @@
 			<string>Build SteakScience</string>
 			<key>uniqueIdentifier</key>
 			<string>2BFCAC6D-CE2D-49D5-BE8A-E117D2AB2733</string>
+		</dict>
+		<key>2C92F155-8C34-4B46-B62B-1CFF78006096</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>2C92F155-8C34-4B46-B62B-1CFF78006096.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>eyJ0eXBlIjp7ImJsdWVwcmludCI6e319LCJibHVlcHJpbnRfcHJvdmlkZXJGaWxlUGF0aFN0cmluZyI6IlwvVXNlcnNcL2RhanVueGlhblwvRGV2ZWxvcGVyXC9QZXJmZWN0U3RlYWtcL1BlcmZlY3QtU3RlYWtcL1BlcmZlY3RTdGVha1wvUG9kc1wvUG9kcy54Y29kZXByb2oiLCJibHVlcHJpbnRfYmx1ZXByaW50SWRlbnRpZmllciI6IkY5QjA0QzcyRjgwOTJEMTRBNTE3RTdBNkI5OEIyNzVGIn0=</string>
+			<key>timeStartedRecording</key>
+			<real>705358344.65879703</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build SteakScience</string>
+			<key>uniqueIdentifier</key>
+			<string>2C92F155-8C34-4B46-B62B-1CFF78006096</string>
 		</dict>
 		<key>2CD22D95-DB4C-44B3-A622-CF0F67BEDEBD</key>
 		<dict>
@@ -762,6 +902,34 @@
 			<key>uniqueIdentifier</key>
 			<string>31488596-6F4C-4902-8563-788F22B57F76</string>
 		</dict>
+		<key>314A7422-4ABA-439A-BB2D-FAEBB4A9E357</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>314A7422-4ABA-439A-BB2D-FAEBB4A9E357.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>eyJ0eXBlIjp7ImJsdWVwcmludCI6e319LCJibHVlcHJpbnRfcHJvdmlkZXJGaWxlUGF0aFN0cmluZyI6IlwvVXNlcnNcL2RhanVueGlhblwvRGV2ZWxvcGVyXC9QZXJmZWN0U3RlYWtcL1BlcmZlY3QtU3RlYWtcL1BlcmZlY3RTdGVha1wvU3RlYWtTY2llbmNlLnhjb2RlcHJvaiIsImJsdWVwcmludF9ibHVlcHJpbnRJZGVudGlmaWVyIjoiREM2QjBBMDEyOUY3MkJDOTAwRjFBODU5In0=</string>
+			<key>timeStartedRecording</key>
+			<real>705358333.89396203</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build SteakScience</string>
+			<key>uniqueIdentifier</key>
+			<string>314A7422-4ABA-439A-BB2D-FAEBB4A9E357</string>
+		</dict>
 		<key>315CC8DB-65A6-4728-A5FC-BA2513833772</key>
 		<dict>
 			<key>className</key>
@@ -873,6 +1041,34 @@
 			<string>Build SteakScience</string>
 			<key>uniqueIdentifier</key>
 			<string>3AC0F384-9EA0-4164-A9CD-DA51398FE02A</string>
+		</dict>
+		<key>3B0BA4CD-D676-4F55-AA74-77ECAC8A25E7</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>3B0BA4CD-D676-4F55-AA74-77ECAC8A25E7.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>signature</key>
+			<string>eyJ0eXBlIjp7ImJsdWVwcmludCI6e319LCJibHVlcHJpbnRfcHJvdmlkZXJGaWxlUGF0aFN0cmluZyI6IlwvVXNlcnNcL2RhanVueGlhblwvRGV2ZWxvcGVyXC9QZXJmZWN0U3RlYWtcL1BlcmZlY3QtU3RlYWtcL1BlcmZlY3RTdGVha1wvU3RlYWtTY2llbmNlLnhjb2RlcHJvaiIsImJsdWVwcmludF9ibHVlcHJpbnRJZGVudGlmaWVyIjoiREM2QjBBMDEyOUY3MkJDOTAwRjFBODU5In0=</string>
+			<key>timeStartedRecording</key>
+			<real>705358644.96022499</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build SteakScience</string>
+			<key>uniqueIdentifier</key>
+			<string>3B0BA4CD-D676-4F55-AA74-77ECAC8A25E7</string>
 		</dict>
 		<key>3B168C92-6025-4AAC-9A81-B2663777404C</key>
 		<dict>
@@ -1041,6 +1237,90 @@
 			<string>Build SteakScience</string>
 			<key>uniqueIdentifier</key>
 			<string>44BD144F-ADA4-4275-9804-9FC669F0D270</string>
+		</dict>
+		<key>44FB5A97-A9A8-4533-AC6D-83E38B4E6662</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>44FB5A97-A9A8-4533-AC6D-83E38B4E6662.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>eyJ0eXBlIjp7ImJsdWVwcmludCI6e319LCJibHVlcHJpbnRfcHJvdmlkZXJGaWxlUGF0aFN0cmluZyI6IlwvVXNlcnNcL2RhanVueGlhblwvRGV2ZWxvcGVyXC9QZXJmZWN0U3RlYWtcL1BlcmZlY3QtU3RlYWtcL1BlcmZlY3RTdGVha1wvUG9kc1wvUG9kcy54Y29kZXByb2oiLCJibHVlcHJpbnRfYmx1ZXByaW50SWRlbnRpZmllciI6IjI1NkY3N0NBNDRGQkNEQTI5MzFEQTk5QzAxQTRDQkZGIn0=</string>
+			<key>timeStartedRecording</key>
+			<real>705358629.82445097</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build SteakScience</string>
+			<key>uniqueIdentifier</key>
+			<string>44FB5A97-A9A8-4533-AC6D-83E38B4E6662</string>
+		</dict>
+		<key>460AB832-F1C6-4EA2-8C44-0236EC1812B6</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>460AB832-F1C6-4EA2-8C44-0236EC1812B6.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>eyJ0eXBlIjp7ImJsdWVwcmludCI6e319LCJibHVlcHJpbnRfcHJvdmlkZXJGaWxlUGF0aFN0cmluZyI6IlwvVXNlcnNcL2RhanVueGlhblwvRGV2ZWxvcGVyXC9QZXJmZWN0U3RlYWtcL1BlcmZlY3QtU3RlYWtcL1BlcmZlY3RTdGVha1wvUG9kc1wvUG9kcy54Y29kZXByb2oiLCJibHVlcHJpbnRfYmx1ZXByaW50SWRlbnRpZmllciI6IjI1NkY3N0NBNDRGQkNEQTI5MzFEQTk5QzAxQTRDQkZGIn0=</string>
+			<key>timeStartedRecording</key>
+			<real>705375131.69110799</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build SteakScience</string>
+			<key>uniqueIdentifier</key>
+			<string>460AB832-F1C6-4EA2-8C44-0236EC1812B6</string>
+		</dict>
+		<key>4644F420-ABE0-47A5-8395-8CBB23B13487</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>4644F420-ABE0-47A5-8395-8CBB23B13487.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>eyJ0eXBlIjp7IndvcmtzcGFjZSI6e319fQ==</string>
+			<key>timeStartedRecording</key>
+			<real>705358333.89396203</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build SteakScience</string>
+			<key>uniqueIdentifier</key>
+			<string>4644F420-ABE0-47A5-8395-8CBB23B13487</string>
 		</dict>
 		<key>46B39722-F6F4-4F28-816F-A5B87120C32D</key>
 		<dict>
@@ -1238,6 +1518,34 @@
 			<key>uniqueIdentifier</key>
 			<string>514A0453-6530-4674-B875-513EDA89A8C9</string>
 		</dict>
+		<key>51FF7E71-1A90-45CF-93AC-0369E1760032</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>51FF7E71-1A90-45CF-93AC-0369E1760032.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>eyJ0eXBlIjp7ImJsdWVwcmludCI6e319LCJibHVlcHJpbnRfcHJvdmlkZXJGaWxlUGF0aFN0cmluZyI6IlwvVXNlcnNcL2RhanVueGlhblwvRGV2ZWxvcGVyXC9QZXJmZWN0U3RlYWtcL1BlcmZlY3QtU3RlYWtcL1BlcmZlY3RTdGVha1wvUG9kc1wvUG9kcy54Y29kZXByb2oiLCJibHVlcHJpbnRfYmx1ZXByaW50SWRlbnRpZmllciI6IjI1NkY3N0NBNDRGQkNEQTI5MzFEQTk5QzAxQTRDQkZGIn0=</string>
+			<key>timeStartedRecording</key>
+			<real>705358344.65879703</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build SteakScience</string>
+			<key>uniqueIdentifier</key>
+			<string>51FF7E71-1A90-45CF-93AC-0369E1760032</string>
+		</dict>
 		<key>534A5FB6-0ADD-49E0-989B-80F2C569AA48</key>
 		<dict>
 			<key>className</key>
@@ -1378,6 +1686,62 @@
 			<key>uniqueIdentifier</key>
 			<string>596CF33A-86BE-4C9B-BC07-5555B1636BBB</string>
 		</dict>
+		<key>5AC6E235-F483-4AEE-9CC6-ABCA426A8FA5</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>5AC6E235-F483-4AEE-9CC6-ABCA426A8FA5.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>eyJ0eXBlIjp7ImJsdWVwcmludCI6e319LCJibHVlcHJpbnRfcHJvdmlkZXJGaWxlUGF0aFN0cmluZyI6IlwvVXNlcnNcL2RhanVueGlhblwvRGV2ZWxvcGVyXC9QZXJmZWN0U3RlYWtcL1BlcmZlY3QtU3RlYWtcL1BlcmZlY3RTdGVha1wvUG9kc1wvUG9kcy54Y29kZXByb2oiLCJibHVlcHJpbnRfYmx1ZXByaW50SWRlbnRpZmllciI6IjI1NkY3N0NBNDRGQkNEQTI5MzFEQTk5QzAxQTRDQkZGIn0=</string>
+			<key>timeStartedRecording</key>
+			<real>705375572.108742</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build SteakScience</string>
+			<key>uniqueIdentifier</key>
+			<string>5AC6E235-F483-4AEE-9CC6-ABCA426A8FA5</string>
+		</dict>
+		<key>5B67E555-AB09-4BB5-8D43-C55AE7A80A6D</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>5B67E555-AB09-4BB5-8D43-C55AE7A80A6D.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>eyJ0eXBlIjp7IndvcmtzcGFjZSI6e319fQ==</string>
+			<key>timeStartedRecording</key>
+			<real>705358644.96022499</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build SteakScience</string>
+			<key>uniqueIdentifier</key>
+			<string>5B67E555-AB09-4BB5-8D43-C55AE7A80A6D</string>
+		</dict>
 		<key>5E9D8234-8C9C-4F16-8845-0AD970474C03</key>
 		<dict>
 			<key>className</key>
@@ -1490,6 +1854,34 @@
 			<key>uniqueIdentifier</key>
 			<string>60FA3BEA-4C80-42B0-9EF0-9B6F6A96BB12</string>
 		</dict>
+		<key>61E46526-CD52-49FC-94EB-B52916F68420</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>61E46526-CD52-49FC-94EB-B52916F68420.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>eyJ0eXBlIjp7IndvcmtzcGFjZSI6e319fQ==</string>
+			<key>timeStartedRecording</key>
+			<real>705375572.108742</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build SteakScience</string>
+			<key>uniqueIdentifier</key>
+			<string>61E46526-CD52-49FC-94EB-B52916F68420</string>
+		</dict>
 		<key>620A0804-41BA-4481-B9A8-41DEA8672778</key>
 		<dict>
 			<key>className</key>
@@ -1545,6 +1937,34 @@
 			<string>Build SteakScience</string>
 			<key>uniqueIdentifier</key>
 			<string>6287B547-13FA-43B2-AC2C-656BEF5CDAF1</string>
+		</dict>
+		<key>629DE60D-0949-4E22-9EAC-B978CF4DB321</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>629DE60D-0949-4E22-9EAC-B978CF4DB321.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>signature</key>
+			<string>eyJ0eXBlIjp7ImJsdWVwcmludCI6e319LCJibHVlcHJpbnRfcHJvdmlkZXJGaWxlUGF0aFN0cmluZyI6IlwvVXNlcnNcL2RhanVueGlhblwvRGV2ZWxvcGVyXC9QZXJmZWN0U3RlYWtcL1BlcmZlY3QtU3RlYWtcL1BlcmZlY3RTdGVha1wvU3RlYWtTY2llbmNlLnhjb2RlcHJvaiIsImJsdWVwcmludF9ibHVlcHJpbnRJZGVudGlmaWVyIjoiREM2QjBBMDEyOUY3MkJDOTAwRjFBODU5In0=</string>
+			<key>timeStartedRecording</key>
+			<real>705375131.69110799</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build SteakScience</string>
+			<key>uniqueIdentifier</key>
+			<string>629DE60D-0949-4E22-9EAC-B978CF4DB321</string>
 		</dict>
 		<key>64926056-C717-4595-927A-49539B256D36</key>
 		<dict>
@@ -1630,6 +2050,62 @@
 			<key>uniqueIdentifier</key>
 			<string>67909629-959E-41C7-B394-0A9C748E6A1A</string>
 		</dict>
+		<key>68EB44D0-5609-4907-8906-D5C94AFC2A79</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>68EB44D0-5609-4907-8906-D5C94AFC2A79.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>eyJ0eXBlIjp7ImJsdWVwcmludCI6e319LCJibHVlcHJpbnRfcHJvdmlkZXJGaWxlUGF0aFN0cmluZyI6IlwvVXNlcnNcL2RhanVueGlhblwvRGV2ZWxvcGVyXC9QZXJmZWN0U3RlYWtcL1BlcmZlY3QtU3RlYWtcL1BlcmZlY3RTdGVha1wvUG9kc1wvUG9kcy54Y29kZXByb2oiLCJibHVlcHJpbnRfYmx1ZXByaW50SWRlbnRpZmllciI6IjI1NkY3N0NBNDRGQkNEQTI5MzFEQTk5QzAxQTRDQkZGIn0=</string>
+			<key>timeStartedRecording</key>
+			<real>705358333.89396203</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build SteakScience</string>
+			<key>uniqueIdentifier</key>
+			<string>68EB44D0-5609-4907-8906-D5C94AFC2A79</string>
+		</dict>
+		<key>690CC840-5C1D-4EB9-AA72-E65795A0F4E3</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>690CC840-5C1D-4EB9-AA72-E65795A0F4E3.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>signature</key>
+			<string>eyJ0eXBlIjp7ImJsdWVwcmludCI6e319LCJibHVlcHJpbnRfcHJvdmlkZXJGaWxlUGF0aFN0cmluZyI6IlwvVXNlcnNcL2RhanVueGlhblwvRGV2ZWxvcGVyXC9QZXJmZWN0U3RlYWtcL1BlcmZlY3QtU3RlYWtcL1BlcmZlY3RTdGVha1wvU3RlYWtTY2llbmNlLnhjb2RlcHJvaiIsImJsdWVwcmludF9ibHVlcHJpbnRJZGVudGlmaWVyIjoiREM2QjBBMDEyOUY3MkJDOTAwRjFBODU5In0=</string>
+			<key>timeStartedRecording</key>
+			<real>705358344.65879703</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build SteakScience</string>
+			<key>uniqueIdentifier</key>
+			<string>690CC840-5C1D-4EB9-AA72-E65795A0F4E3</string>
+		</dict>
 		<key>696B7D13-E125-47EC-8297-2A0D1B536327</key>
 		<dict>
 			<key>className</key>
@@ -1686,6 +2162,34 @@
 			<key>uniqueIdentifier</key>
 			<string>697F265F-DFCD-4A2A-A83B-72166F5A2037</string>
 		</dict>
+		<key>6BAB7D36-D015-4276-804B-2BADFA155052</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>6BAB7D36-D015-4276-804B-2BADFA155052.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>eyJ0eXBlIjp7ImJsdWVwcmludCI6e319LCJibHVlcHJpbnRfcHJvdmlkZXJGaWxlUGF0aFN0cmluZyI6IlwvVXNlcnNcL2RhanVueGlhblwvRGV2ZWxvcGVyXC9QZXJmZWN0U3RlYWtcL1BlcmZlY3QtU3RlYWtcL1BlcmZlY3RTdGVha1wvUG9kc1wvUG9kcy54Y29kZXByb2oiLCJibHVlcHJpbnRfYmx1ZXByaW50SWRlbnRpZmllciI6IkY5QjA0QzcyRjgwOTJEMTRBNTE3RTdBNkI5OEIyNzVGIn0=</string>
+			<key>timeStartedRecording</key>
+			<real>705375131.69110799</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build SteakScience</string>
+			<key>uniqueIdentifier</key>
+			<string>6BAB7D36-D015-4276-804B-2BADFA155052</string>
+		</dict>
 		<key>6D396A5E-4046-452B-9A15-CADF5A2C0B7F</key>
 		<dict>
 			<key>className</key>
@@ -1741,6 +2245,34 @@
 			<string>Build PerfectSteak</string>
 			<key>uniqueIdentifier</key>
 			<string>6D4F0883-0EAA-4C3D-BA1F-203164DB11A3</string>
+		</dict>
+		<key>6DC9D7EE-801D-49C5-B4F1-8C85B01648FE</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>6DC9D7EE-801D-49C5-B4F1-8C85B01648FE.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>eyJ0eXBlIjp7ImJ1aWxkU3lzdGVtVGFzayI6e319LCJidWlsZFN5c3RlbVRhc2tfYnVpbGRUYXNrIjoiUHJlcGFyZSBidWlsZCJ9</string>
+			<key>timeStartedRecording</key>
+			<real>705358344.65879703</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build SteakScience</string>
+			<key>uniqueIdentifier</key>
+			<string>6DC9D7EE-801D-49C5-B4F1-8C85B01648FE</string>
 		</dict>
 		<key>6DDFFF87-5FB9-4BC3-AF46-3AB8ECDF2452</key>
 		<dict>
@@ -1966,6 +2498,34 @@
 			<key>uniqueIdentifier</key>
 			<string>7D447CE8-AAFC-4FD9-A05B-56F0D4F9FAF8</string>
 		</dict>
+		<key>8006F466-B324-4529-A432-5CD594CA0B89</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>8006F466-B324-4529-A432-5CD594CA0B89.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>signature</key>
+			<string>eyJ0eXBlIjp7ImJsdWVwcmludCI6e319LCJibHVlcHJpbnRfcHJvdmlkZXJGaWxlUGF0aFN0cmluZyI6IlwvVXNlcnNcL2RhanVueGlhblwvRGV2ZWxvcGVyXC9QZXJmZWN0U3RlYWtcL1BlcmZlY3QtU3RlYWtcL1BlcmZlY3RTdGVha1wvU3RlYWtTY2llbmNlLnhjb2RlcHJvaiIsImJsdWVwcmludF9ibHVlcHJpbnRJZGVudGlmaWVyIjoiREM2QjBBMDEyOUY3MkJDOTAwRjFBODU5In0=</string>
+			<key>timeStartedRecording</key>
+			<real>705358629.82445097</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build SteakScience</string>
+			<key>uniqueIdentifier</key>
+			<string>8006F466-B324-4529-A432-5CD594CA0B89</string>
+		</dict>
 		<key>80BEB3AB-BFE9-4ADF-BE79-2AFA6941CB23</key>
 		<dict>
 			<key>className</key>
@@ -2021,6 +2581,62 @@
 			<string>Build SteakScience</string>
 			<key>uniqueIdentifier</key>
 			<string>82E15470-727C-45EA-8C2F-6E813313E132</string>
+		</dict>
+		<key>8530AF66-C1BD-4EF7-9A6F-EA4ACDCD59BD</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>8530AF66-C1BD-4EF7-9A6F-EA4ACDCD59BD.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>eyJ0eXBlIjp7ImJsdWVwcmludCI6e319LCJibHVlcHJpbnRfcHJvdmlkZXJGaWxlUGF0aFN0cmluZyI6IlwvVXNlcnNcL2RhanVueGlhblwvRGV2ZWxvcGVyXC9QZXJmZWN0U3RlYWtcL1BlcmZlY3QtU3RlYWtcL1BlcmZlY3RTdGVha1wvUG9kc1wvUG9kcy54Y29kZXByb2oiLCJibHVlcHJpbnRfYmx1ZXByaW50SWRlbnRpZmllciI6IjI1NkY3N0NBNDRGQkNEQTI5MzFEQTk5QzAxQTRDQkZGIn0=</string>
+			<key>timeStartedRecording</key>
+			<real>705375097.61722195</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build SteakScience</string>
+			<key>uniqueIdentifier</key>
+			<string>8530AF66-C1BD-4EF7-9A6F-EA4ACDCD59BD</string>
+		</dict>
+		<key>86F58E52-D177-40F2-8233-C252CEEFDA95</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>86F58E52-D177-40F2-8233-C252CEEFDA95.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>eyJ0eXBlIjp7IndvcmtzcGFjZSI6e319fQ==</string>
+			<key>timeStartedRecording</key>
+			<real>705358629.82445097</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build SteakScience</string>
+			<key>uniqueIdentifier</key>
+			<string>86F58E52-D177-40F2-8233-C252CEEFDA95</string>
 		</dict>
 		<key>87AE85A4-A630-4D30-889F-9F0D3B638111</key>
 		<dict>
@@ -2189,6 +2805,34 @@
 			<string>Build SteakScience</string>
 			<key>uniqueIdentifier</key>
 			<string>8BA6870A-2236-4413-84A0-2266BF5FAE9E</string>
+		</dict>
+		<key>8CC4B296-CB36-442F-AA6E-D9FF848CBE4E</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>8CC4B296-CB36-442F-AA6E-D9FF848CBE4E.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>eyJ0eXBlIjp7ImJsdWVwcmludCI6e319LCJibHVlcHJpbnRfcHJvdmlkZXJGaWxlUGF0aFN0cmluZyI6IlwvVXNlcnNcL2RhanVueGlhblwvRGV2ZWxvcGVyXC9QZXJmZWN0U3RlYWtcL1BlcmZlY3QtU3RlYWtcL1BlcmZlY3RTdGVha1wvUG9kc1wvUG9kcy54Y29kZXByb2oiLCJibHVlcHJpbnRfYmx1ZXByaW50SWRlbnRpZmllciI6IkY5QjA0QzcyRjgwOTJEMTRBNTE3RTdBNkI5OEIyNzVGIn0=</string>
+			<key>timeStartedRecording</key>
+			<real>705375097.61722195</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build SteakScience</string>
+			<key>uniqueIdentifier</key>
+			<string>8CC4B296-CB36-442F-AA6E-D9FF848CBE4E</string>
 		</dict>
 		<key>8CF3CBD5-593E-4E6C-9427-7C051513843C</key>
 		<dict>
@@ -2386,6 +3030,34 @@
 			<key>uniqueIdentifier</key>
 			<string>9D33E916-FAD1-4497-8E43-84C69E328292</string>
 		</dict>
+		<key>9DD25A53-BDD2-4D6D-A1F1-9E44514DADD4</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>9DD25A53-BDD2-4D6D-A1F1-9E44514DADD4.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>eyJ0eXBlIjp7IndvcmtzcGFjZSI6e319fQ==</string>
+			<key>timeStartedRecording</key>
+			<real>705375097.61722195</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build SteakScience</string>
+			<key>uniqueIdentifier</key>
+			<string>9DD25A53-BDD2-4D6D-A1F1-9E44514DADD4</string>
+		</dict>
 		<key>9E79DDA1-8076-4605-B5A8-3799632B1759</key>
 		<dict>
 			<key>className</key>
@@ -2414,6 +3086,34 @@
 			<key>uniqueIdentifier</key>
 			<string>9E79DDA1-8076-4605-B5A8-3799632B1759</string>
 		</dict>
+		<key>A194DCDD-EF04-483D-9957-CF9A15EB75FC</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>A194DCDD-EF04-483D-9957-CF9A15EB75FC.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>eyJ0eXBlIjp7ImJsdWVwcmludCI6e319LCJibHVlcHJpbnRfcHJvdmlkZXJGaWxlUGF0aFN0cmluZyI6IlwvVXNlcnNcL2RhanVueGlhblwvRGV2ZWxvcGVyXC9QZXJmZWN0U3RlYWtcL1BlcmZlY3QtU3RlYWtcL1BlcmZlY3RTdGVha1wvUG9kc1wvUG9kcy54Y29kZXByb2oiLCJibHVlcHJpbnRfYmx1ZXByaW50SWRlbnRpZmllciI6IjI1NkY3N0NBNDRGQkNEQTI5MzFEQTk5QzAxQTRDQkZGIn0=</string>
+			<key>timeStartedRecording</key>
+			<real>705358644.96022499</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build SteakScience</string>
+			<key>uniqueIdentifier</key>
+			<string>A194DCDD-EF04-483D-9957-CF9A15EB75FC</string>
+		</dict>
 		<key>A3F9BF5F-A229-45F4-8359-A741DC8682C7</key>
 		<dict>
 			<key>className</key>
@@ -2441,6 +3141,34 @@
 			<string>Build SteakScience</string>
 			<key>uniqueIdentifier</key>
 			<string>A3F9BF5F-A229-45F4-8359-A741DC8682C7</string>
+		</dict>
+		<key>A54B4FF8-2B5B-4DA5-8C8B-1BE28B530C03</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>A54B4FF8-2B5B-4DA5-8C8B-1BE28B530C03.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>eyJ0eXBlIjp7IndvcmtzcGFjZSI6e319fQ==</string>
+			<key>timeStartedRecording</key>
+			<real>705358344.65879703</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build SteakScience</string>
+			<key>uniqueIdentifier</key>
+			<string>A54B4FF8-2B5B-4DA5-8C8B-1BE28B530C03</string>
 		</dict>
 		<key>A583EC74-141C-4CCE-8F4D-1C323F2C8704</key>
 		<dict>
@@ -2834,6 +3562,34 @@
 			<key>uniqueIdentifier</key>
 			<string>B5A0A404-9CD4-4B01-A25A-5489D12310C1</string>
 		</dict>
+		<key>B5C71435-C821-437E-85B3-B6AB67D8240A</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>B5C71435-C821-437E-85B3-B6AB67D8240A.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>eyJ0eXBlIjp7ImJsdWVwcmludCI6e319LCJibHVlcHJpbnRfcHJvdmlkZXJGaWxlUGF0aFN0cmluZyI6IlwvVXNlcnNcL2RhanVueGlhblwvRGV2ZWxvcGVyXC9QZXJmZWN0U3RlYWtcL1BlcmZlY3QtU3RlYWtcL1BlcmZlY3RTdGVha1wvUG9kc1wvUG9kcy54Y29kZXByb2oiLCJibHVlcHJpbnRfYmx1ZXByaW50SWRlbnRpZmllciI6IkY5QjA0QzcyRjgwOTJEMTRBNTE3RTdBNkI5OEIyNzVGIn0=</string>
+			<key>timeStartedRecording</key>
+			<real>705358644.96022499</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build SteakScience</string>
+			<key>uniqueIdentifier</key>
+			<string>B5C71435-C821-437E-85B3-B6AB67D8240A</string>
+		</dict>
 		<key>B6316A12-89E0-4CE1-96A6-4362C5DDE324</key>
 		<dict>
 			<key>className</key>
@@ -3114,6 +3870,62 @@
 			<key>uniqueIdentifier</key>
 			<string>C67C6874-FAE5-4A35-AE7F-2E1F1162C6F0</string>
 		</dict>
+		<key>C6C72F87-A263-4961-8643-19911BFED711</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>C6C72F87-A263-4961-8643-19911BFED711.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>signature</key>
+			<string>eyJ0eXBlIjp7ImJsdWVwcmludCI6e319LCJibHVlcHJpbnRfcHJvdmlkZXJGaWxlUGF0aFN0cmluZyI6IlwvVXNlcnNcL2RhanVueGlhblwvRGV2ZWxvcGVyXC9QZXJmZWN0U3RlYWtcL1BlcmZlY3QtU3RlYWtcL1BlcmZlY3RTdGVha1wvU3RlYWtTY2llbmNlLnhjb2RlcHJvaiIsImJsdWVwcmludF9ibHVlcHJpbnRJZGVudGlmaWVyIjoiREM2QjBBMDEyOUY3MkJDOTAwRjFBODU5In0=</string>
+			<key>timeStartedRecording</key>
+			<real>705375572.108742</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build SteakScience</string>
+			<key>uniqueIdentifier</key>
+			<string>C6C72F87-A263-4961-8643-19911BFED711</string>
+		</dict>
+		<key>C8C8286E-7D73-41AF-BF8F-EDF203D2F5F1</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>C8C8286E-7D73-41AF-BF8F-EDF203D2F5F1.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>eyJ0eXBlIjp7ImJsdWVwcmludCI6e319LCJibHVlcHJpbnRfcHJvdmlkZXJGaWxlUGF0aFN0cmluZyI6IlwvVXNlcnNcL2RhanVueGlhblwvRGV2ZWxvcGVyXC9QZXJmZWN0U3RlYWtcL1BlcmZlY3QtU3RlYWtcL1BlcmZlY3RTdGVha1wvUG9kc1wvUG9kcy54Y29kZXByb2oiLCJibHVlcHJpbnRfYmx1ZXByaW50SWRlbnRpZmllciI6IkY5QjA0QzcyRjgwOTJEMTRBNTE3RTdBNkI5OEIyNzVGIn0=</string>
+			<key>timeStartedRecording</key>
+			<real>705358333.89396203</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build SteakScience</string>
+			<key>uniqueIdentifier</key>
+			<string>C8C8286E-7D73-41AF-BF8F-EDF203D2F5F1</string>
+		</dict>
 		<key>C9CDA3BB-9336-462E-9AFA-AC0B8A8E6095</key>
 		<dict>
 			<key>className</key>
@@ -3254,6 +4066,34 @@
 			<key>uniqueIdentifier</key>
 			<string>CB4B140E-3181-4BA7-B233-6359636DF83C</string>
 		</dict>
+		<key>CB9704A8-C113-402E-AE04-E33CAE8AC6A8</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>CB9704A8-C113-402E-AE04-E33CAE8AC6A8.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>eyJ0eXBlIjp7ImJ1aWxkU3lzdGVtVGFzayI6e319LCJidWlsZFN5c3RlbVRhc2tfYnVpbGRUYXNrIjoiUHJlcGFyZSBidWlsZCJ9</string>
+			<key>timeStartedRecording</key>
+			<real>705375131.69110799</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build SteakScience</string>
+			<key>uniqueIdentifier</key>
+			<string>CB9704A8-C113-402E-AE04-E33CAE8AC6A8</string>
+		</dict>
 		<key>CC0D1700-312D-4906-91F1-08C7CBFBA371</key>
 		<dict>
 			<key>className</key>
@@ -3337,6 +4177,34 @@
 			<string>Build SteakScience</string>
 			<key>uniqueIdentifier</key>
 			<string>D1484BEE-F113-4BA8-9FD3-5FAC349C8B92</string>
+		</dict>
+		<key>D3A76D48-0495-4883-9B22-8BC398024010</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>D3A76D48-0495-4883-9B22-8BC398024010.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>eyJ0eXBlIjp7ImJ1aWxkU3lzdGVtVGFzayI6e319LCJidWlsZFN5c3RlbVRhc2tfYnVpbGRUYXNrIjoiUHJlcGFyZSBidWlsZCJ9</string>
+			<key>timeStartedRecording</key>
+			<real>705358333.89396203</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build SteakScience</string>
+			<key>uniqueIdentifier</key>
+			<string>D3A76D48-0495-4883-9B22-8BC398024010</string>
 		</dict>
 		<key>D46D565C-426C-47AC-B1B6-AE61FA5F3C25</key>
 		<dict>
@@ -3646,6 +4514,34 @@
 			<key>uniqueIdentifier</key>
 			<string>E52B1D4A-6A38-42C4-9A81-A6992E0E5396</string>
 		</dict>
+		<key>E5796DEE-483E-41ED-8A8E-839460619091</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>E5796DEE-483E-41ED-8A8E-839460619091.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>signature</key>
+			<string>eyJ0eXBlIjp7ImJsdWVwcmludCI6e319LCJibHVlcHJpbnRfcHJvdmlkZXJGaWxlUGF0aFN0cmluZyI6IlwvVXNlcnNcL2RhanVueGlhblwvRGV2ZWxvcGVyXC9QZXJmZWN0U3RlYWtcL1BlcmZlY3QtU3RlYWtcL1BlcmZlY3RTdGVha1wvU3RlYWtTY2llbmNlLnhjb2RlcHJvaiIsImJsdWVwcmludF9ibHVlcHJpbnRJZGVudGlmaWVyIjoiREM2QjBBMDEyOUY3MkJDOTAwRjFBODU5In0=</string>
+			<key>timeStartedRecording</key>
+			<real>705375097.61722195</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build SteakScience</string>
+			<key>uniqueIdentifier</key>
+			<string>E5796DEE-483E-41ED-8A8E-839460619091</string>
+		</dict>
 		<key>E59927D3-8B3E-4421-84B2-A8B922412D8F</key>
 		<dict>
 			<key>className</key>
@@ -3757,6 +4653,34 @@
 			<string>Build SteakScience</string>
 			<key>uniqueIdentifier</key>
 			<string>EA2FE7AC-8AA6-4DEE-BF22-420ED564F8A9</string>
+		</dict>
+		<key>EC227088-FDF9-4F0C-B296-55E7D128E430</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>EC227088-FDF9-4F0C-B296-55E7D128E430.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>eyJ0eXBlIjp7ImJ1aWxkU3lzdGVtVGFzayI6e319LCJidWlsZFN5c3RlbVRhc2tfYnVpbGRUYXNrIjoiUHJlcGFyZSBidWlsZCJ9</string>
+			<key>timeStartedRecording</key>
+			<real>705375097.61722195</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build SteakScience</string>
+			<key>uniqueIdentifier</key>
+			<string>EC227088-FDF9-4F0C-B296-55E7D128E430</string>
 		</dict>
 		<key>EF7C40A1-0996-4986-AE84-8594E7167036</key>
 		<dict>
@@ -3898,6 +4822,34 @@
 			<key>uniqueIdentifier</key>
 			<string>F32A15EC-84FD-487A-86D7-9D496BC58BBA</string>
 		</dict>
+		<key>F4DFBF87-7ED5-477D-A3F8-8A12A31AED7D</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F4DFBF87-7ED5-477D-A3F8-8A12A31AED7D.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>eyJ0eXBlIjp7ImJ1aWxkU3lzdGVtVGFzayI6e319LCJidWlsZFN5c3RlbVRhc2tfYnVpbGRUYXNrIjoiUHJlcGFyZSBidWlsZCJ9</string>
+			<key>timeStartedRecording</key>
+			<real>705358644.96022499</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build SteakScience</string>
+			<key>uniqueIdentifier</key>
+			<string>F4DFBF87-7ED5-477D-A3F8-8A12A31AED7D</string>
+		</dict>
 		<key>F7427458-FF44-413A-9F04-0F9A472E786D</key>
 		<dict>
 			<key>className</key>
@@ -3981,6 +4933,34 @@
 			<string>Build SteakScience</string>
 			<key>uniqueIdentifier</key>
 			<string>F9E2958A-FEFA-486C-96E9-1B743EF52257</string>
+		</dict>
+		<key>FB8A9B3A-0BD5-4C08-A89F-1B8663FC26E9</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>FB8A9B3A-0BD5-4C08-A89F-1B8663FC26E9.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>eyJ0eXBlIjp7ImJ1aWxkU3lzdGVtVGFzayI6e319LCJidWlsZFN5c3RlbVRhc2tfYnVpbGRUYXNrIjoiUHJlcGFyZSBidWlsZCJ9</string>
+			<key>timeStartedRecording</key>
+			<real>705375572.108742</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build SteakScience</string>
+			<key>uniqueIdentifier</key>
+			<string>FB8A9B3A-0BD5-4C08-A89F-1B8663FC26E9</string>
 		</dict>
 		<key>FC96AFC1-F1EC-4B1C-BC9D-11387144B398</key>
 		<dict>

@@ -33,6 +33,7 @@ class NumberPadView: UIView {
 
     private func commonInit() {
         backgroundColor = UIColor.black.withAlphaComponent(0.5)
+        
         loadFromNib()
     }
 
@@ -64,7 +65,10 @@ class NumberPadView: UIView {
             firstButtonPress = false
         }
         
-        textField.text = textField.text! + numberText
+        if textField.text!.count < 3 {
+            textField.text = textField.text! + numberText
+        }
+        
     }
     
     
