@@ -1,0 +1,64 @@
+version: "Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)"
+options: "4607816fe9b4ed71ef7478f0052f203a5cfa4404a4b7d3efc0414cf5903a8ab7"
+build_start_time: [1691178558, 76611000]
+build_end_time: [1691178569, 566312000]
+inputs:
+  "/Users/dajunxian/Developer/PerfectSteak/WithUserGuide/Perfect-Steak/PerfectSteak/Pods/SnapKit/Sources/Constraint.swift": [1690477206, 0]
+  "/Users/dajunxian/Developer/PerfectSteak/WithUserGuide/Perfect-Steak/PerfectSteak/Pods/SnapKit/Sources/ConstraintAttributes.swift": [1690477206, 0]
+  "/Users/dajunxian/Developer/PerfectSteak/WithUserGuide/Perfect-Steak/PerfectSteak/Pods/SnapKit/Sources/ConstraintConfig.swift": [1690477206, 0]
+  ? "/Users/dajunxian/Developer/PerfectSteak/WithUserGuide/Perfect-Steak/PerfectSteak/Pods/SnapKit/Sources/ConstraintConstantTarget.swift"
+  : [1690477206, 0]
+  "/Users/dajunxian/Developer/PerfectSteak/WithUserGuide/Perfect-Steak/PerfectSteak/Pods/SnapKit/Sources/ConstraintDSL.swift": [1690477206, 0]
+  ? "/Users/dajunxian/Developer/PerfectSteak/WithUserGuide/Perfect-Steak/PerfectSteak/Pods/SnapKit/Sources/ConstraintDescription.swift"
+  : [1690477206, 0]
+  ? "/Users/dajunxian/Developer/PerfectSteak/WithUserGuide/Perfect-Steak/PerfectSteak/Pods/SnapKit/Sources/ConstraintDirectionalInsetTarget.swift"
+  : [1690477206, 0]
+  ? "/Users/dajunxian/Developer/PerfectSteak/WithUserGuide/Perfect-Steak/PerfectSteak/Pods/SnapKit/Sources/ConstraintDirectionalInsets.swift"
+  : [1690477206, 0]
+  ? "/Users/dajunxian/Developer/PerfectSteak/WithUserGuide/Perfect-Steak/PerfectSteak/Pods/SnapKit/Sources/ConstraintInsetTarget.swift"
+  : [1690477206, 0]
+  "/Users/dajunxian/Developer/PerfectSteak/WithUserGuide/Perfect-Steak/PerfectSteak/Pods/SnapKit/Sources/ConstraintInsets.swift": [1690477206, 0]
+  "/Users/dajunxian/Developer/PerfectSteak/WithUserGuide/Perfect-Steak/PerfectSteak/Pods/SnapKit/Sources/ConstraintItem.swift": [1690477206, 0]
+  ? "/Users/dajunxian/Developer/PerfectSteak/WithUserGuide/Perfect-Steak/PerfectSteak/Pods/SnapKit/Sources/ConstraintLayoutGuide+Extensions.swift"
+  : [1690477206, 0]
+  ? "/Users/dajunxian/Developer/PerfectSteak/WithUserGuide/Perfect-Steak/PerfectSteak/Pods/SnapKit/Sources/ConstraintLayoutGuide.swift"
+  : [1690477206, 0]
+  ? "/Users/dajunxian/Developer/PerfectSteak/WithUserGuide/Perfect-Steak/PerfectSteak/Pods/SnapKit/Sources/ConstraintLayoutGuideDSL.swift"
+  : [1690477206, 0]
+  ? "/Users/dajunxian/Developer/PerfectSteak/WithUserGuide/Perfect-Steak/PerfectSteak/Pods/SnapKit/Sources/ConstraintLayoutSupport.swift"
+  : [1690477206, 0]
+  ? "/Users/dajunxian/Developer/PerfectSteak/WithUserGuide/Perfect-Steak/PerfectSteak/Pods/SnapKit/Sources/ConstraintLayoutSupportDSL.swift"
+  : [1690477206, 0]
+  "/Users/dajunxian/Developer/PerfectSteak/WithUserGuide/Perfect-Steak/PerfectSteak/Pods/SnapKit/Sources/ConstraintMaker.swift": [1690477206, 0]
+  ? "/Users/dajunxian/Developer/PerfectSteak/WithUserGuide/Perfect-Steak/PerfectSteak/Pods/SnapKit/Sources/ConstraintMakerEditable.swift"
+  : [1690477206, 0]
+  ? "/Users/dajunxian/Developer/PerfectSteak/WithUserGuide/Perfect-Steak/PerfectSteak/Pods/SnapKit/Sources/ConstraintMakerExtendable.swift"
+  : [1690477206, 0]
+  ? "/Users/dajunxian/Developer/PerfectSteak/WithUserGuide/Perfect-Steak/PerfectSteak/Pods/SnapKit/Sources/ConstraintMakerFinalizable.swift"
+  : [1690477206, 0]
+  ? "/Users/dajunxian/Developer/PerfectSteak/WithUserGuide/Perfect-Steak/PerfectSteak/Pods/SnapKit/Sources/ConstraintMakerPrioritizable.swift"
+  : [1690477206, 0]
+  ? "/Users/dajunxian/Developer/PerfectSteak/WithUserGuide/Perfect-Steak/PerfectSteak/Pods/SnapKit/Sources/ConstraintMakerRelatable+Extensions.swift"
+  : [1690477206, 0]
+  ? "/Users/dajunxian/Developer/PerfectSteak/WithUserGuide/Perfect-Steak/PerfectSteak/Pods/SnapKit/Sources/ConstraintMakerRelatable.swift"
+  : [1690477206, 0]
+  ? "/Users/dajunxian/Developer/PerfectSteak/WithUserGuide/Perfect-Steak/PerfectSteak/Pods/SnapKit/Sources/ConstraintMultiplierTarget.swift"
+  : [1690477206, 0]
+  ? "/Users/dajunxian/Developer/PerfectSteak/WithUserGuide/Perfect-Steak/PerfectSteak/Pods/SnapKit/Sources/ConstraintOffsetTarget.swift"
+  : [1690477206, 0]
+  "/Users/dajunxian/Developer/PerfectSteak/WithUserGuide/Perfect-Steak/PerfectSteak/Pods/SnapKit/Sources/ConstraintPriority.swift": [1690477206, 0]
+  ? "/Users/dajunxian/Developer/PerfectSteak/WithUserGuide/Perfect-Steak/PerfectSteak/Pods/SnapKit/Sources/ConstraintPriorityTarget.swift"
+  : [1690477206, 0]
+  ? "/Users/dajunxian/Developer/PerfectSteak/WithUserGuide/Perfect-Steak/PerfectSteak/Pods/SnapKit/Sources/ConstraintRelatableTarget.swift"
+  : [1690477206, 0]
+  "/Users/dajunxian/Developer/PerfectSteak/WithUserGuide/Perfect-Steak/PerfectSteak/Pods/SnapKit/Sources/ConstraintRelation.swift": [1690477206, 0]
+  ? "/Users/dajunxian/Developer/PerfectSteak/WithUserGuide/Perfect-Steak/PerfectSteak/Pods/SnapKit/Sources/ConstraintView+Extensions.swift"
+  : [1690477206, 0]
+  "/Users/dajunxian/Developer/PerfectSteak/WithUserGuide/Perfect-Steak/PerfectSteak/Pods/SnapKit/Sources/ConstraintView.swift": [1690477206, 0]
+  "/Users/dajunxian/Developer/PerfectSteak/WithUserGuide/Perfect-Steak/PerfectSteak/Pods/SnapKit/Sources/ConstraintViewDSL.swift": [1690477206, 0]
+  "/Users/dajunxian/Developer/PerfectSteak/WithUserGuide/Perfect-Steak/PerfectSteak/Pods/SnapKit/Sources/Debugging.swift": [1690477206, 0]
+  "/Users/dajunxian/Developer/PerfectSteak/WithUserGuide/Perfect-Steak/PerfectSteak/Pods/SnapKit/Sources/LayoutConstraint.swift": [1690477206, 0]
+  "/Users/dajunxian/Developer/PerfectSteak/WithUserGuide/Perfect-Steak/PerfectSteak/Pods/SnapKit/Sources/LayoutConstraintItem.swift": [1690477206, 0]
+  "/Users/dajunxian/Developer/PerfectSteak/WithUserGuide/Perfect-Steak/PerfectSteak/Pods/SnapKit/Sources/Typealiases.swift": [1690477206, 0]
+  ? "/Users/dajunxian/Developer/PerfectSteak/WithUserGuide/Perfect-Steak/PerfectSteak/Pods/SnapKit/Sources/UILayoutSupport+Extensions.swift"
+  : [1690477206, 0]

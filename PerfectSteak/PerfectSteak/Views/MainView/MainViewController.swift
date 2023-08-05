@@ -46,6 +46,8 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
     @IBOutlet weak var donenessSlider: DonenessSlider!
     @IBOutlet weak var steakTemperature: SteakTemperature!
     
+    private let guideTool = FeatureGuideTool(identifier: "homeGuide", insideMargin: .zero)
+    
     ///Save buttons and start button: UIButton
     @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var startButton: UIButton!
@@ -79,6 +81,38 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         circularSliderTest.delegate = self
         circularSliderTest.numberPadDelegate = self
         donenessSlider.delegate = self
+        showGuideIfNeeded()
+    }
+    
+    private func showGuideIfNeeded() {
+        var hollowOutModels = [HollowOutModel]()
+        let taptoEnterModel = HollowOutModel(type: .view(circularSliderTest.circularButton)) { _ in
+            let style = HomeGideView.Style.taptoEnter
+            let view = HomeGideView(style)
+            view.frame = CGRect(x: 0, y: 0, width: LayoutConstants.deviceWidth, height: style.imageViewSize.height)
+            return view
+        }
+        
+        taptoEnterModel.isCircle = true
+        taptoEnterModel.cornerRadius = 50
+        taptoEnterModel.verticalMargin = 10
+        taptoEnterModel.isShowDashed = false
+        hollowOutModels.append(taptoEnterModel)
+
+        let calculateModel = HollowOutModel(type: .view(startButton)) { _ in
+            let style = HomeGideView.Style.calculate
+            let view = HomeGideView(style)
+            view.frame = CGRect(x: 0, y: 0, width: LayoutConstants.deviceWidth, height: style.imageViewSize.height)
+            return view
+        }
+        
+        calculateModel.isCircle = true
+        calculateModel.cornerRadius = 32.5
+        calculateModel.verticalMargin = 10
+        calculateModel.isShowDashed = false
+        calculateModel.isUnderRelativeView = true
+        hollowOutModels.append(calculateModel)
+        guideTool.start(hollowOutModels)
     }
     
 

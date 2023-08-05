@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>0169B46A-577F-455D-9CFB-E5A82D8017B4</key>
+		<key>6D905ED8-6A08-42C2-AE94-A744372366C3</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,211 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>0169B46A-577F-455D-9CFB-E5A82D8017B4.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705308214.763551</real>
-			<key>timeStoppedRecording</key>
-			<real>705308221.53995204</real>
-			<key>title</key>
-			<string>Build SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>0169B46A-577F-455D-9CFB-E5A82D8017B4</string>
-		</dict>
-		<key>0281A119-A19D-451B-BC64-E637D6A18F3C</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>0281A119-A19D-451B-BC64-E637D6A18F3C.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705311854.04177701</real>
-			<key>timeStoppedRecording</key>
-			<real>705311854.68923402</real>
-			<key>title</key>
-			<string>Build SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>0281A119-A19D-451B-BC64-E637D6A18F3C</string>
-		</dict>
-		<key>04EC8A19-89DE-4D88-9D1F-0391E9C3F94C</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>04EC8A19-89DE-4D88-9D1F-0391E9C3F94C.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705310616.95716095</real>
-			<key>timeStoppedRecording</key>
-			<real>705310620.02473605</real>
-			<key>title</key>
-			<string>Build SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>04EC8A19-89DE-4D88-9D1F-0391E9C3F94C</string>
-		</dict>
-		<key>05DA5CBA-DC54-4C32-82B2-F84806DCE9CB</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>05DA5CBA-DC54-4C32-82B2-F84806DCE9CB.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705310590.96997094</real>
-			<key>timeStoppedRecording</key>
-			<real>705310591.19163895</real>
-			<key>title</key>
-			<string>Build SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>05DA5CBA-DC54-4C32-82B2-F84806DCE9CB</string>
-		</dict>
-		<key>0E1E3D7E-E63C-4B5B-BDB8-C8C4DACE3C0D</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>0E1E3D7E-E63C-4B5B-BDB8-C8C4DACE3C0D.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705311710.04492605</real>
-			<key>timeStoppedRecording</key>
-			<real>705311710.80132496</real>
-			<key>title</key>
-			<string>Build SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>0E1E3D7E-E63C-4B5B-BDB8-C8C4DACE3C0D</string>
-		</dict>
-		<key>108086F6-860B-4288-AE77-49CBEDEA44C5</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>108086F6-860B-4288-AE77-49CBEDEA44C5.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705311100.74063301</real>
-			<key>timeStoppedRecording</key>
-			<real>705311103.35647404</real>
-			<key>title</key>
-			<string>Build SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>108086F6-860B-4288-AE77-49CBEDEA44C5</string>
-		</dict>
-		<key>15F7A725-4EF4-45A0-8321-438857AB246A</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>15F7A725-4EF4-45A0-8321-438857AB246A.xcactivitylog</string>
+			<string>6D905ED8-6A08-42C2-AE94-A744372366C3.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -228,143 +24,7 @@
 				<string>S</string>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705306391.57114697</real>
-			<key>timeStoppedRecording</key>
-			<real>705306395.76974905</real>
-			<key>title</key>
-			<string>Build SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>15F7A725-4EF4-45A0-8321-438857AB246A</string>
-		</dict>
-		<key>1E925362-A120-4B8C-88B9-FFE64E7C29B7</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>1E925362-A120-4B8C-88B9-FFE64E7C29B7.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705311927.28797698</real>
-			<key>timeStoppedRecording</key>
-			<real>705311927.45578504</real>
-			<key>title</key>
-			<string>Build SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>1E925362-A120-4B8C-88B9-FFE64E7C29B7</string>
-		</dict>
-		<key>21277738-59DD-42FB-A254-F1E323D23C12</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>21277738-59DD-42FB-A254-F1E323D23C12.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705310242.63235998</real>
-			<key>timeStoppedRecording</key>
-			<real>705310244.08652699</real>
-			<key>title</key>
-			<string>Build SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>21277738-59DD-42FB-A254-F1E323D23C12</string>
-		</dict>
-		<key>217FA557-7422-4DC1-8ACF-AF837B683244</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>217FA557-7422-4DC1-8ACF-AF837B683244.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705312167.04157603</real>
-			<key>timeStoppedRecording</key>
-			<real>705312170.03146696</real>
-			<key>title</key>
-			<string>Build SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>217FA557-7422-4DC1-8ACF-AF837B683244</string>
-		</dict>
-		<key>2939DC05-79CA-4D46-BE39-63B96A9A8F4C</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>2939DC05-79CA-4D46-BE39-63B96A9A8F4C.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
+			<string>PerfectSteak project</string>
 			<key>schemeIdentifier-schemeName</key>
 			<string>PerfectSteak</string>
 			<key>schemeIdentifier-sharedScheme</key>
@@ -372,15 +32,15 @@
 			<key>signature</key>
 			<string>Build PerfectSteak</string>
 			<key>timeStartedRecording</key>
-			<real>705207822.455953</real>
+			<real>712924675.28059494</real>
 			<key>timeStoppedRecording</key>
-			<real>705207826.53791404</real>
+			<real>712924679.323053</real>
 			<key>title</key>
 			<string>Build PerfectSteak</string>
 			<key>uniqueIdentifier</key>
-			<string>2939DC05-79CA-4D46-BE39-63B96A9A8F4C</string>
+			<string>6D905ED8-6A08-42C2-AE94-A744372366C3</string>
 		</dict>
-		<key>2B354CA0-1900-421E-83E8-549B754271E9</key>
+		<key>86021741-BC3F-4A9F-92E5-FA11408118A3</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -389,32 +49,32 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>2B354CA0-1900-421E-83E8-549B754271E9.xcactivitylog</string>
+			<string>86021741-BC3F-4A9F-92E5-FA11408118A3.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>W</string>
+				<string>E</string>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
+			<string>PerfectSteak project</string>
 			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
+			<string>PerfectSteak</string>
 			<key>schemeIdentifier-sharedScheme</key>
 			<integer>1</integer>
 			<key>signature</key>
-			<string>Build SteakScience</string>
+			<string>Build PerfectSteak</string>
 			<key>timeStartedRecording</key>
-			<real>705310050.29552305</real>
+			<real>712876442.33288598</real>
 			<key>timeStoppedRecording</key>
-			<real>705310052.53899896</real>
+			<real>712876447.77531898</real>
 			<key>title</key>
-			<string>Build SteakScience</string>
+			<string>Build PerfectSteak</string>
 			<key>uniqueIdentifier</key>
-			<string>2B354CA0-1900-421E-83E8-549B754271E9</string>
+			<string>86021741-BC3F-4A9F-92E5-FA11408118A3</string>
 		</dict>
-		<key>43C8E8D4-ED43-4C30-A9B5-62D0F323417A</key>
+		<key>EDDB8B2F-1675-48A7-B622-0E7626EE899B</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -423,109 +83,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>43C8E8D4-ED43-4C30-A9B5-62D0F323417A.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705311325.43153703</real>
-			<key>timeStoppedRecording</key>
-			<real>705311328.13899004</real>
-			<key>title</key>
-			<string>Build SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>43C8E8D4-ED43-4C30-A9B5-62D0F323417A</string>
-		</dict>
-		<key>497CF403-74D8-4586-A72D-82DEACADFE03</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>497CF403-74D8-4586-A72D-82DEACADFE03.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705313348.77548695</real>
-			<key>timeStoppedRecording</key>
-			<real>705313357.52683699</real>
-			<key>title</key>
-			<string>Build SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>497CF403-74D8-4586-A72D-82DEACADFE03</string>
-		</dict>
-		<key>53D8838D-A4F5-4C2B-B88C-C9A5AC227369</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>53D8838D-A4F5-4C2B-B88C-C9A5AC227369.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705311804.26473606</real>
-			<key>timeStoppedRecording</key>
-			<real>705311806.12514496</real>
-			<key>title</key>
-			<string>Build SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>53D8838D-A4F5-4C2B-B88C-C9A5AC227369</string>
-		</dict>
-		<key>584DF937-2B8C-46F6-99B1-23D0E5DE0FA6</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>584DF937-2B8C-46F6-99B1-23D0E5DE0FA6.xcactivitylog</string>
+			<string>EDDB8B2F-1675-48A7-B622-0E7626EE899B.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -534,23 +92,23 @@
 				<string>S</string>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
+			<string>PerfectSteak project</string>
 			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
+			<string>PerfectSteak</string>
 			<key>schemeIdentifier-sharedScheme</key>
 			<integer>1</integer>
 			<key>signature</key>
-			<string>Build SteakScience</string>
+			<string>Build PerfectSteak</string>
 			<key>timeStartedRecording</key>
-			<real>705306402.80980098</real>
+			<real>712924792.81509805</real>
 			<key>timeStoppedRecording</key>
-			<real>705306405.49643898</real>
+			<real>712924794.962852</real>
 			<key>title</key>
-			<string>Build SteakScience</string>
+			<string>Build PerfectSteak</string>
 			<key>uniqueIdentifier</key>
-			<string>584DF937-2B8C-46F6-99B1-23D0E5DE0FA6</string>
+			<string>EDDB8B2F-1675-48A7-B622-0E7626EE899B</string>
 		</dict>
-		<key>5B194AEE-1178-4292-B90C-3CA7A8D9F5DB</key>
+		<key>F2114117-E76F-4159-A203-B602F0ECCB6B</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -559,7 +117,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>5B194AEE-1178-4292-B90C-3CA7A8D9F5DB.xcactivitylog</string>
+			<string>F2114117-E76F-4159-A203-B602F0ECCB6B.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -568,701 +126,21 @@
 				<string>W</string>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
+			<string>PerfectSteak project</string>
 			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
+			<string>PerfectSteak</string>
 			<key>schemeIdentifier-sharedScheme</key>
 			<integer>1</integer>
 			<key>signature</key>
-			<string>Build SteakScience</string>
+			<string>Build PerfectSteak</string>
 			<key>timeStartedRecording</key>
-			<real>705312735.90622497</real>
+			<real>712871357.342875</real>
 			<key>timeStoppedRecording</key>
-			<real>705312738.42110503</real>
+			<real>712871376.58169603</real>
 			<key>title</key>
-			<string>Build SteakScience</string>
+			<string>Build PerfectSteak</string>
 			<key>uniqueIdentifier</key>
-			<string>5B194AEE-1178-4292-B90C-3CA7A8D9F5DB</string>
-		</dict>
-		<key>5B70F52E-6AC2-425E-9588-6E3435BEC70F</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>5B70F52E-6AC2-425E-9588-6E3435BEC70F.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705358644.96022499</real>
-			<key>timeStoppedRecording</key>
-			<real>705358646.68947601</real>
-			<key>title</key>
-			<string>Build SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>5B70F52E-6AC2-425E-9588-6E3435BEC70F</string>
-		</dict>
-		<key>64293AC3-A83A-4599-9CDB-475F51B7F520</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>64293AC3-A83A-4599-9CDB-475F51B7F520.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705312539.41348505</real>
-			<key>timeStoppedRecording</key>
-			<real>705312542.11578703</real>
-			<key>title</key>
-			<string>Build SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>64293AC3-A83A-4599-9CDB-475F51B7F520</string>
-		</dict>
-		<key>69188783-AE6F-47D2-8350-CBE5A9F0A307</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>69188783-AE6F-47D2-8350-CBE5A9F0A307.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705311602.39764702</real>
-			<key>timeStoppedRecording</key>
-			<real>705311605.66764796</real>
-			<key>title</key>
-			<string>Build SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>69188783-AE6F-47D2-8350-CBE5A9F0A307</string>
-		</dict>
-		<key>6A28307F-AFD5-4CC8-BC55-6A90DBF920D0</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>6A28307F-AFD5-4CC8-BC55-6A90DBF920D0.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705310123.78560305</real>
-			<key>timeStoppedRecording</key>
-			<real>705310125.32391202</real>
-			<key>title</key>
-			<string>Build SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>6A28307F-AFD5-4CC8-BC55-6A90DBF920D0</string>
-		</dict>
-		<key>76C3DBDD-B67A-42C3-9677-B5ACAE8BAAD5</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>76C3DBDD-B67A-42C3-9677-B5ACAE8BAAD5.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705310034.98195696</real>
-			<key>timeStoppedRecording</key>
-			<real>705310037.66854703</real>
-			<key>title</key>
-			<string>Build SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>76C3DBDD-B67A-42C3-9677-B5ACAE8BAAD5</string>
-		</dict>
-		<key>7C0E2D2E-6A09-4AF2-AC8F-1B6595B4FCEE</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>7C0E2D2E-6A09-4AF2-AC8F-1B6595B4FCEE.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705358344.65879703</real>
-			<key>timeStoppedRecording</key>
-			<real>705358351.00909305</real>
-			<key>title</key>
-			<string>Build SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>7C0E2D2E-6A09-4AF2-AC8F-1B6595B4FCEE</string>
-		</dict>
-		<key>8438640F-A614-4DDF-ADED-1237B6D13360</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>8438640F-A614-4DDF-ADED-1237B6D13360.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705375572.108742</real>
-			<key>timeStoppedRecording</key>
-			<real>705375580.49814498</real>
-			<key>title</key>
-			<string>Build SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>8438640F-A614-4DDF-ADED-1237B6D13360</string>
-		</dict>
-		<key>844B8EDA-52AE-4D96-B639-DB5D4C02987B</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>844B8EDA-52AE-4D96-B639-DB5D4C02987B.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705375131.69110799</real>
-			<key>timeStoppedRecording</key>
-			<real>705375132.23698103</real>
-			<key>title</key>
-			<string>Build SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>844B8EDA-52AE-4D96-B639-DB5D4C02987B</string>
-		</dict>
-		<key>9244D85A-4A4A-476F-B98F-C0D6D8C317D3</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>9244D85A-4A4A-476F-B98F-C0D6D8C317D3.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705310697.32362294</real>
-			<key>timeStoppedRecording</key>
-			<real>705310699.00295305</real>
-			<key>title</key>
-			<string>Build SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>9244D85A-4A4A-476F-B98F-C0D6D8C317D3</string>
-		</dict>
-		<key>96E7440F-B190-4A8E-B8E7-2AD6A2516D1E</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>96E7440F-B190-4A8E-B8E7-2AD6A2516D1E.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705311966.13937402</real>
-			<key>timeStoppedRecording</key>
-			<real>705311972.81516194</real>
-			<key>title</key>
-			<string>Build SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>96E7440F-B190-4A8E-B8E7-2AD6A2516D1E</string>
-		</dict>
-		<key>A03D45A5-7A2F-435D-BD35-545FEAAC3690</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>A03D45A5-7A2F-435D-BD35-545FEAAC3690.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705310525.72128797</real>
-			<key>timeStoppedRecording</key>
-			<real>705310525.85637999</real>
-			<key>title</key>
-			<string>Build SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>A03D45A5-7A2F-435D-BD35-545FEAAC3690</string>
-		</dict>
-		<key>A351FE93-1718-4085-9BDC-2E8F5555A4D9</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>A351FE93-1718-4085-9BDC-2E8F5555A4D9.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705375097.61722195</real>
-			<key>timeStoppedRecording</key>
-			<real>705375098.36251605</real>
-			<key>title</key>
-			<string>Build SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>A351FE93-1718-4085-9BDC-2E8F5555A4D9</string>
-		</dict>
-		<key>A6A9FDFF-A1E8-46AC-8A4E-4B8F1DA7A3C0</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>A6A9FDFF-A1E8-46AC-8A4E-4B8F1DA7A3C0.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705358629.82445097</real>
-			<key>timeStoppedRecording</key>
-			<real>705358632.57901096</real>
-			<key>title</key>
-			<string>Build SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>A6A9FDFF-A1E8-46AC-8A4E-4B8F1DA7A3C0</string>
-		</dict>
-		<key>CF6DA1BF-2901-4707-A227-1868493CE165</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>CF6DA1BF-2901-4707-A227-1868493CE165.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705312351.55679405</real>
-			<key>timeStoppedRecording</key>
-			<real>705312354.46530604</real>
-			<key>title</key>
-			<string>Build SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>CF6DA1BF-2901-4707-A227-1868493CE165</string>
-		</dict>
-		<key>D8FEE204-FAC3-4B2D-92ED-6C2A92F2C488</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>D8FEE204-FAC3-4B2D-92ED-6C2A92F2C488.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705309259.86167395</real>
-			<key>timeStoppedRecording</key>
-			<real>705309262.76033199</real>
-			<key>title</key>
-			<string>Build SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>D8FEE204-FAC3-4B2D-92ED-6C2A92F2C488</string>
-		</dict>
-		<key>E825BDB8-B2D6-45C8-89C0-18A060C1E38E</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>E825BDB8-B2D6-45C8-89C0-18A060C1E38E.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705358333.89396203</real>
-			<key>timeStoppedRecording</key>
-			<real>705358344.56123304</real>
-			<key>title</key>
-			<string>Build SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>E825BDB8-B2D6-45C8-89C0-18A060C1E38E</string>
-		</dict>
-		<key>F881ACF3-4247-4191-98A5-93EBD5D78A8C</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>F881ACF3-4247-4191-98A5-93EBD5D78A8C.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705310215.39428699</real>
-			<key>timeStoppedRecording</key>
-			<real>705310218.01607203</real>
-			<key>title</key>
-			<string>Build SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>F881ACF3-4247-4191-98A5-93EBD5D78A8C</string>
-		</dict>
-		<key>FA1A57F2-473C-4431-A20E-394B3EEB4DD1</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>FA1A57F2-473C-4431-A20E-394B3EEB4DD1.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705310493.75251698</real>
-			<key>timeStoppedRecording</key>
-			<real>705310501.32216406</real>
-			<key>title</key>
-			<string>Build SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>FA1A57F2-473C-4431-A20E-394B3EEB4DD1</string>
-		</dict>
-		<key>FC8EF23A-E5A5-4A0B-AECE-888E333A99DB</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>FC8EF23A-E5A5-4A0B-AECE-888E333A99DB.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Clean SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705313343.97367406</real>
-			<key>timeStoppedRecording</key>
-			<real>705313344.21161306</real>
-			<key>title</key>
-			<string>Clean SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>FC8EF23A-E5A5-4A0B-AECE-888E333A99DB</string>
-		</dict>
-		<key>FF9E4631-6CC6-48B8-882B-BB9B9F4AE1C4</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>FF9E4631-6CC6-48B8-882B-BB9B9F4AE1C4.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705310750.03434205</real>
-			<key>timeStoppedRecording</key>
-			<real>705310750.33866501</real>
-			<key>title</key>
-			<string>Build SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>FF9E4631-6CC6-48B8-882B-BB9B9F4AE1C4</string>
+			<string>F2114117-E76F-4159-A203-B602F0ECCB6B</string>
 		</dict>
 	</dict>
 </dict>

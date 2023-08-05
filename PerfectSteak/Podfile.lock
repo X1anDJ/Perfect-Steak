@@ -1,16 +1,20 @@
 PODS:
   - DevicePpi (1.2.17)
+  - SnapKit (5.6.0)
 
 DEPENDENCIES:
   - DevicePpi
+  - SnapKit
 
 SPEC REPOS:
   trunk:
     - DevicePpi
+    - SnapKit
 
 SPEC CHECKSUMS:
   DevicePpi: 7a06ac82b5fc083d1b683aef632786e695db393c
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
 
-PODFILE CHECKSUM: 2d2b4e52e12f48160cd4a77899fe9ff07c87083a
+PODFILE CHECKSUM: 1ab9dbfd652f09d10b064a414ba2862b54bac072
 
-COCOAPODS: 1.12.0
+COCOAPODS: 1.9.1

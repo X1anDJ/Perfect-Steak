@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>50E77257-704E-4580-AB42-79C31465285E</key>
+		<key>E1E0E8B4-2A36-43F9-B537-578131631FE8</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,26 +15,26 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.ProvisioningLog</string>
 			<key>fileName</key>
-			<string>50E77257-704E-4580-AB42-79C31465285E.xcactivitylog</string>
+			<string>E1E0E8B4-2A36-43F9-B537-578131631FE8.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>S</string>
+				<string>E</string>
 			</dict>
 			<key>signature</key>
 			<string>Update Signing</string>
 			<key>timeStartedRecording</key>
-			<real>704623598.72733295</real>
+			<real>712876454.78843105</real>
 			<key>timeStoppedRecording</key>
-			<real>704623600.681615</real>
+			<real>712876455.68483806</real>
 			<key>title</key>
 			<string>Update Signing</string>
 			<key>uniqueIdentifier</key>
-			<string>50E77257-704E-4580-AB42-79C31465285E</string>
+			<string>E1E0E8B4-2A36-43F9-B537-578131631FE8</string>
 		</dict>
-		<key>FB59307F-4159-4E1A-A837-C56B23AF1339</key>
+		<key>F474D6B2-213A-488F-8F1F-D83E283EF11C</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -43,24 +43,24 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.ProvisioningLog</string>
 			<key>fileName</key>
-			<string>FB59307F-4159-4E1A-A837-C56B23AF1339.xcactivitylog</string>
+			<string>F474D6B2-213A-488F-8F1F-D83E283EF11C.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>S</string>
+				<string>E</string>
 			</dict>
 			<key>signature</key>
 			<string>Update Signing</string>
 			<key>timeStartedRecording</key>
-			<real>705375913.01353598</real>
+			<real>712876306.61547899</real>
 			<key>timeStoppedRecording</key>
-			<real>705375914.11841905</real>
+			<real>712876307.58108795</real>
 			<key>title</key>
 			<string>Update Signing</string>
 			<key>uniqueIdentifier</key>
-			<string>FB59307F-4159-4E1A-A837-C56B23AF1339</string>
+			<string>F474D6B2-213A-488F-8F1F-D83E283EF11C</string>
 		</dict>
 	</dict>
 </dict>

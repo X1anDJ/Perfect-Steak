@@ -6,14 +6,14 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>06B847A4-5E9F-48CC-8BC3-05289F7CA0B4</key>
+		<key>19691AFC-F426-4B5C-9DAA-BC9BB9968513</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>64293AC3-A83A-4599-9CDB-475F51B7F520</string>
+			<string>6D905ED8-6A08-42C2-AE94-A744372366C3</string>
 			<key>auxiliaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>W</string>
+				<string>S</string>
 			</dict>
 			<key>className</key>
 			<string>IDESchemeActionsInvocationRecord</string>
@@ -22,7 +22,7 @@
 			<key>domainType</key>
 			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
 			<key>fileName</key>
-			<string>Run-SteakScience-2023.05.09_01-08-59--0700.xcresult</string>
+			<string>Run-PerfectSteak-2023.08.05_18-37-55-+0800.xcresult</string>
 			<key>hasAuxiliaryLog</key>
 			<true/>
 			<key>hasConsoleLog</key>
@@ -32,595 +32,10 @@
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>W</string>
+				<string>S</string>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705312539.41320503</real>
-			<key>timeStoppedRecording</key>
-			<real>0.0</real>
-			<key>title</key>
-			<string>Run SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>06B847A4-5E9F-48CC-8BC3-05289F7CA0B4</string>
-		</dict>
-		<key>0A600722-5920-4686-AACE-746227472335</key>
-		<dict>
-			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>04EC8A19-89DE-4D88-9D1F-0391E9C3F94C</string>
-			<key>auxiliaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>className</key>
-			<string>IDESchemeActionsInvocationRecord</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
-			<key>fileName</key>
-			<string>Run-SteakScience-2023.05.09_00-36-56--0700.xcresult</string>
-			<key>hasAuxiliaryLog</key>
-			<true/>
-			<key>hasConsoleLog</key>
-			<true/>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705310616.95686996</real>
-			<key>timeStoppedRecording</key>
-			<real>0.0</real>
-			<key>title</key>
-			<string>Run SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>0A600722-5920-4686-AACE-746227472335</string>
-		</dict>
-		<key>10B7C47E-D5FD-4288-9108-2D16A92A4FA1</key>
-		<dict>
-			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>217FA557-7422-4DC1-8ACF-AF837B683244</string>
-			<key>auxiliaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>className</key>
-			<string>IDESchemeActionsInvocationRecord</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
-			<key>fileName</key>
-			<string>Run-SteakScience-2023.05.09_01-02-47--0700.xcresult</string>
-			<key>hasAuxiliaryLog</key>
-			<true/>
-			<key>hasConsoleLog</key>
-			<true/>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705312167.04145706</real>
-			<key>timeStoppedRecording</key>
-			<real>0.0</real>
-			<key>title</key>
-			<string>Run SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>10B7C47E-D5FD-4288-9108-2D16A92A4FA1</string>
-		</dict>
-		<key>196BA8DE-82D0-4589-9CA0-11FD7A446210</key>
-		<dict>
-			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>5B194AEE-1178-4292-B90C-3CA7A8D9F5DB</string>
-			<key>auxiliaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>className</key>
-			<string>IDESchemeActionsInvocationRecord</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
-			<key>fileName</key>
-			<string>Run-SteakScience-2023.05.09_01-12-15--0700.xcresult</string>
-			<key>hasAuxiliaryLog</key>
-			<true/>
-			<key>hasConsoleLog</key>
-			<true/>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705312735.906129</real>
-			<key>timeStoppedRecording</key>
-			<real>0.0</real>
-			<key>title</key>
-			<string>Run SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>196BA8DE-82D0-4589-9CA0-11FD7A446210</string>
-		</dict>
-		<key>1BE35A4D-8FF0-4E74-8A8C-F9F9270352F0</key>
-		<dict>
-			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>F881ACF3-4247-4191-98A5-93EBD5D78A8C</string>
-			<key>auxiliaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>className</key>
-			<string>IDESchemeActionsInvocationRecord</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
-			<key>fileName</key>
-			<string>Run-SteakScience-2023.05.09_00-30-15--0700.xcresult</string>
-			<key>hasAuxiliaryLog</key>
-			<true/>
-			<key>hasConsoleLog</key>
-			<true/>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705310215.394086</real>
-			<key>timeStoppedRecording</key>
-			<real>0.0</real>
-			<key>title</key>
-			<string>Run SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>1BE35A4D-8FF0-4E74-8A8C-F9F9270352F0</string>
-		</dict>
-		<key>215D8B70-1CFA-4852-8182-E8009901B5F4</key>
-		<dict>
-			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>A03D45A5-7A2F-435D-BD35-545FEAAC3690</string>
-			<key>auxiliaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>className</key>
-			<string>IDESchemeActionsInvocationRecord</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
-			<key>fileName</key>
-			<string>Run-SteakScience-2023.05.09_00-35-25--0700.xcresult</string>
-			<key>hasAuxiliaryLog</key>
-			<true/>
-			<key>hasConsoleLog</key>
-			<true/>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705310525.72100401</real>
-			<key>timeStoppedRecording</key>
-			<real>0.0</real>
-			<key>title</key>
-			<string>Run SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>215D8B70-1CFA-4852-8182-E8009901B5F4</string>
-		</dict>
-		<key>35A0B055-2F58-4C43-AB2E-018777C5BCA1</key>
-		<dict>
-			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>D8FEE204-FAC3-4B2D-92ED-6C2A92F2C488</string>
-			<key>auxiliaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>className</key>
-			<string>IDESchemeActionsInvocationRecord</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
-			<key>fileName</key>
-			<string>Run-SteakScience-2023.05.09_00-14-19--0700.xcresult</string>
-			<key>hasAuxiliaryLog</key>
-			<true/>
-			<key>hasConsoleLog</key>
-			<true/>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705309259.86138904</real>
-			<key>timeStoppedRecording</key>
-			<real>0.0</real>
-			<key>title</key>
-			<string>Run SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>35A0B055-2F58-4C43-AB2E-018777C5BCA1</string>
-		</dict>
-		<key>3762C448-6A8F-40A8-9B0B-07355B968B28</key>
-		<dict>
-			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>108086F6-860B-4288-AE77-49CBEDEA44C5</string>
-			<key>auxiliaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>className</key>
-			<string>IDESchemeActionsInvocationRecord</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
-			<key>fileName</key>
-			<string>Run-SteakScience-2023.05.09_00-45-00--0700.xcresult</string>
-			<key>hasAuxiliaryLog</key>
-			<true/>
-			<key>hasConsoleLog</key>
-			<true/>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705311100.74037504</real>
-			<key>timeStoppedRecording</key>
-			<real>0.0</real>
-			<key>title</key>
-			<string>Run SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>3762C448-6A8F-40A8-9B0B-07355B968B28</string>
-		</dict>
-		<key>3B63EA18-36CA-4B56-B2BB-B9B2FB1DAE42</key>
-		<dict>
-			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>0E1E3D7E-E63C-4B5B-BDB8-C8C4DACE3C0D</string>
-			<key>auxiliaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>className</key>
-			<string>IDESchemeActionsInvocationRecord</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
-			<key>fileName</key>
-			<string>Run-SteakScience-2023.05.09_00-55-10--0700.xcresult</string>
-			<key>hasAuxiliaryLog</key>
-			<true/>
-			<key>hasConsoleLog</key>
-			<true/>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705311710.04442704</real>
-			<key>timeStoppedRecording</key>
-			<real>0.0</real>
-			<key>title</key>
-			<string>Run SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>3B63EA18-36CA-4B56-B2BB-B9B2FB1DAE42</string>
-		</dict>
-		<key>44ADFA35-73DA-4314-955C-06F28009D338</key>
-		<dict>
-			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>8438640F-A614-4DDF-ADED-1237B6D13360</string>
-			<key>auxiliaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>className</key>
-			<string>IDESchemeActionsInvocationRecord</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
-			<key>fileName</key>
-			<string>Run-SteakScience-2023.05.09_18-39-32--0700.xcresult</string>
-			<key>hasAuxiliaryLog</key>
-			<true/>
-			<key>hasConsoleLog</key>
-			<true/>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705375572.10848904</real>
-			<key>timeStoppedRecording</key>
-			<real>0.0</real>
-			<key>title</key>
-			<string>Run SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>44ADFA35-73DA-4314-955C-06F28009D338</string>
-		</dict>
-		<key>48F5EFC5-EB8C-498F-AE6E-0F07091A004D</key>
-		<dict>
-			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>FA1A57F2-473C-4431-A20E-394B3EEB4DD1</string>
-			<key>auxiliaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>className</key>
-			<string>IDESchemeActionsInvocationRecord</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
-			<key>fileName</key>
-			<string>Run-SteakScience-2023.05.09_00-34-53--0700.xcresult</string>
-			<key>hasAuxiliaryLog</key>
-			<true/>
-			<key>hasConsoleLog</key>
-			<true/>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705310493.75207996</real>
-			<key>timeStoppedRecording</key>
-			<real>0.0</real>
-			<key>title</key>
-			<string>Run SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>48F5EFC5-EB8C-498F-AE6E-0F07091A004D</string>
-		</dict>
-		<key>49E35296-CFBA-41BE-AF60-15944444031D</key>
-		<dict>
-			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>5B70F52E-6AC2-425E-9588-6E3435BEC70F</string>
-			<key>auxiliaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>className</key>
-			<string>IDESchemeActionsInvocationRecord</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
-			<key>fileName</key>
-			<string>Run-SteakScience-2023.05.09_13-57-24--0700.xcresult</string>
-			<key>hasAuxiliaryLog</key>
-			<true/>
-			<key>hasConsoleLog</key>
-			<true/>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705358644.96004796</real>
-			<key>timeStoppedRecording</key>
-			<real>0.0</real>
-			<key>title</key>
-			<string>Run SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>49E35296-CFBA-41BE-AF60-15944444031D</string>
-		</dict>
-		<key>4F393CD4-CB30-4EA6-99EE-093604398194</key>
-		<dict>
-			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>9244D85A-4A4A-476F-B98F-C0D6D8C317D3</string>
-			<key>auxiliaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>className</key>
-			<string>IDESchemeActionsInvocationRecord</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
-			<key>fileName</key>
-			<string>Run-SteakScience-2023.05.09_00-38-17--0700.xcresult</string>
-			<key>hasAuxiliaryLog</key>
-			<true/>
-			<key>hasConsoleLog</key>
-			<true/>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705310697.32341194</real>
-			<key>timeStoppedRecording</key>
-			<real>0.0</real>
-			<key>title</key>
-			<string>Run SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>4F393CD4-CB30-4EA6-99EE-093604398194</string>
-		</dict>
-		<key>514C72FB-57CC-4832-B037-BB1FCDFDCDF5</key>
-		<dict>
-			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>2939DC05-79CA-4D46-BE39-63B96A9A8F4C</string>
-			<key>auxiliaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>className</key>
-			<string>IDESchemeActionsInvocationRecord</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
-			<key>fileName</key>
-			<string>Run-PerfectSteak-2023.05.07_20-03-42--0700.xcresult</string>
-			<key>hasAuxiliaryLog</key>
-			<true/>
-			<key>hasConsoleLog</key>
-			<true/>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
+			<string>PerfectSteak project</string>
 			<key>schemeIdentifier-schemeName</key>
 			<string>PerfectSteak</string>
 			<key>schemeIdentifier-sharedScheme</key>
@@ -628,18 +43,18 @@
 			<key>signature</key>
 			<string>Run PerfectSteak</string>
 			<key>timeStartedRecording</key>
-			<real>705207822.45587003</real>
+			<real>712924675.28034699</real>
 			<key>timeStoppedRecording</key>
 			<real>0.0</real>
 			<key>title</key>
 			<string>Run PerfectSteak</string>
 			<key>uniqueIdentifier</key>
-			<string>514C72FB-57CC-4832-B037-BB1FCDFDCDF5</string>
+			<string>19691AFC-F426-4B5C-9DAA-BC9BB9968513</string>
 		</dict>
-		<key>5377D4FE-BE33-45A8-93EE-F133CC58CDFD</key>
+		<key>9ADE95D8-5857-40B0-AFAC-C055F8F5A733</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>05DA5CBA-DC54-4C32-82B2-F84806DCE9CB</string>
+			<string>F2114117-E76F-4159-A203-B602F0ECCB6B</string>
 			<key>auxiliaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
@@ -652,7 +67,7 @@
 			<key>domainType</key>
 			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
 			<key>fileName</key>
-			<string>Run-SteakScience-2023.05.09_00-36-30--0700.xcresult</string>
+			<string>Run-PerfectSteak-2023.08.05_03-49-17-+0800.xcresult</string>
 			<key>hasAuxiliaryLog</key>
 			<true/>
 			<key>hasConsoleLog</key>
@@ -665,30 +80,30 @@
 				<string>W</string>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
+			<string>PerfectSteak project</string>
 			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
+			<string>PerfectSteak</string>
 			<key>schemeIdentifier-sharedScheme</key>
 			<integer>1</integer>
 			<key>signature</key>
-			<string>Run SteakScience</string>
+			<string>Run PerfectSteak</string>
 			<key>timeStartedRecording</key>
-			<real>705310590.96977997</real>
+			<real>712871357.34243596</real>
 			<key>timeStoppedRecording</key>
 			<real>0.0</real>
 			<key>title</key>
-			<string>Run SteakScience</string>
+			<string>Run PerfectSteak</string>
 			<key>uniqueIdentifier</key>
-			<string>5377D4FE-BE33-45A8-93EE-F133CC58CDFD</string>
+			<string>9ADE95D8-5857-40B0-AFAC-C055F8F5A733</string>
 		</dict>
-		<key>545CF9CC-5B78-4CC9-BCFC-2B557C371719</key>
+		<key>AAD6EDBD-56CE-4F26-B201-DDB2AC1BE7C6</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>43C8E8D4-ED43-4C30-A9B5-62D0F323417A</string>
+			<string>EDDB8B2F-1675-48A7-B622-0E7626EE899B</string>
 			<key>auxiliaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>W</string>
+				<string>S</string>
 			</dict>
 			<key>className</key>
 			<string>IDESchemeActionsInvocationRecord</string>
@@ -697,7 +112,7 @@
 			<key>domainType</key>
 			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
 			<key>fileName</key>
-			<string>Run-SteakScience-2023.05.09_00-48-45--0700.xcresult</string>
+			<string>Run-PerfectSteak-2023.08.05_18-39-52-+0800.xcresult</string>
 			<key>hasAuxiliaryLog</key>
 			<true/>
 			<key>hasConsoleLog</key>
@@ -707,33 +122,33 @@
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>W</string>
+				<string>S</string>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
+			<string>PerfectSteak project</string>
 			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
+			<string>PerfectSteak</string>
 			<key>schemeIdentifier-sharedScheme</key>
 			<integer>1</integer>
 			<key>signature</key>
-			<string>Run SteakScience</string>
+			<string>Run PerfectSteak</string>
 			<key>timeStartedRecording</key>
-			<real>705311325.43134403</real>
+			<real>712924792.81472397</real>
 			<key>timeStoppedRecording</key>
 			<real>0.0</real>
 			<key>title</key>
-			<string>Run SteakScience</string>
+			<string>Run PerfectSteak</string>
 			<key>uniqueIdentifier</key>
-			<string>545CF9CC-5B78-4CC9-BCFC-2B557C371719</string>
+			<string>AAD6EDBD-56CE-4F26-B201-DDB2AC1BE7C6</string>
 		</dict>
-		<key>64D2339D-79DB-49DB-80A7-BEEA6CA0E892</key>
+		<key>F2130F3C-06F2-45C0-A957-37A809971867</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>497CF403-74D8-4586-A72D-82DEACADFE03</string>
+			<string>86021741-BC3F-4A9F-92E5-FA11408118A3</string>
 			<key>auxiliaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>W</string>
+				<string>E</string>
 			</dict>
 			<key>className</key>
 			<string>IDESchemeActionsInvocationRecord</string>
@@ -742,7 +157,7 @@
 			<key>domainType</key>
 			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
 			<key>fileName</key>
-			<string>Run-SteakScience-2023.05.09_01-22-28--0700.xcresult</string>
+			<string>Run-PerfectSteak-2023.08.05_05-14-02-+0800.xcresult</string>
 			<key>hasAuxiliaryLog</key>
 			<true/>
 			<key>hasConsoleLog</key>
@@ -755,741 +170,21 @@
 				<string>E</string>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
+			<string>PerfectSteak project</string>
 			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
+			<string>PerfectSteak</string>
 			<key>schemeIdentifier-sharedScheme</key>
 			<integer>1</integer>
 			<key>signature</key>
-			<string>Run SteakScience</string>
+			<string>Run PerfectSteak</string>
 			<key>timeStartedRecording</key>
-			<real>705313348.77539897</real>
+			<real>712876442.32988501</real>
 			<key>timeStoppedRecording</key>
 			<real>0.0</real>
 			<key>title</key>
-			<string>Run SteakScience</string>
+			<string>Run PerfectSteak</string>
 			<key>uniqueIdentifier</key>
-			<string>64D2339D-79DB-49DB-80A7-BEEA6CA0E892</string>
-		</dict>
-		<key>6BC8D50D-7972-4B9E-ADDE-AE690AD9E06F</key>
-		<dict>
-			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>69188783-AE6F-47D2-8350-CBE5A9F0A307</string>
-			<key>auxiliaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>className</key>
-			<string>IDESchemeActionsInvocationRecord</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
-			<key>fileName</key>
-			<string>Run-SteakScience-2023.05.09_00-53-22--0700.xcresult</string>
-			<key>hasAuxiliaryLog</key>
-			<true/>
-			<key>hasConsoleLog</key>
-			<true/>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705311602.397282</real>
-			<key>timeStoppedRecording</key>
-			<real>0.0</real>
-			<key>title</key>
-			<string>Run SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>6BC8D50D-7972-4B9E-ADDE-AE690AD9E06F</string>
-		</dict>
-		<key>7FFBEE02-81EE-46ED-9385-AD64955DFB9E</key>
-		<dict>
-			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>CF6DA1BF-2901-4707-A227-1868493CE165</string>
-			<key>auxiliaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>className</key>
-			<string>IDESchemeActionsInvocationRecord</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
-			<key>fileName</key>
-			<string>Run-SteakScience-2023.05.09_01-05-51--0700.xcresult</string>
-			<key>hasAuxiliaryLog</key>
-			<true/>
-			<key>hasConsoleLog</key>
-			<true/>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705312351.55656302</real>
-			<key>timeStoppedRecording</key>
-			<real>0.0</real>
-			<key>title</key>
-			<string>Run SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>7FFBEE02-81EE-46ED-9385-AD64955DFB9E</string>
-		</dict>
-		<key>8407142E-66EA-4D17-A4CE-8CD727BB5960</key>
-		<dict>
-			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>2B354CA0-1900-421E-83E8-549B754271E9</string>
-			<key>auxiliaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>className</key>
-			<string>IDESchemeActionsInvocationRecord</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
-			<key>fileName</key>
-			<string>Run-SteakScience-2023.05.09_00-27-30--0700.xcresult</string>
-			<key>hasAuxiliaryLog</key>
-			<true/>
-			<key>hasConsoleLog</key>
-			<true/>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705310050.29528105</real>
-			<key>timeStoppedRecording</key>
-			<real>0.0</real>
-			<key>title</key>
-			<string>Run SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>8407142E-66EA-4D17-A4CE-8CD727BB5960</string>
-		</dict>
-		<key>91F4E384-A0DF-431E-B48B-46A9362A2D94</key>
-		<dict>
-			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>0169B46A-577F-455D-9CFB-E5A82D8017B4</string>
-			<key>auxiliaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>className</key>
-			<string>IDESchemeActionsInvocationRecord</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
-			<key>fileName</key>
-			<string>Run-SteakScience-2023.05.08_23-56-54--0700.xcresult</string>
-			<key>hasAuxiliaryLog</key>
-			<true/>
-			<key>hasConsoleLog</key>
-			<true/>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705308214.76230395</real>
-			<key>timeStoppedRecording</key>
-			<real>0.0</real>
-			<key>title</key>
-			<string>Run SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>91F4E384-A0DF-431E-B48B-46A9362A2D94</string>
-		</dict>
-		<key>9D44F45D-4A9F-463F-8B48-0AB129C7D23D</key>
-		<dict>
-			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>0281A119-A19D-451B-BC64-E637D6A18F3C</string>
-			<key>auxiliaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>className</key>
-			<string>IDESchemeActionsInvocationRecord</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
-			<key>fileName</key>
-			<string>Run-SteakScience-2023.05.09_00-57-34--0700.xcresult</string>
-			<key>hasAuxiliaryLog</key>
-			<true/>
-			<key>hasConsoleLog</key>
-			<true/>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705311854.04151797</real>
-			<key>timeStoppedRecording</key>
-			<real>0.0</real>
-			<key>title</key>
-			<string>Run SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>9D44F45D-4A9F-463F-8B48-0AB129C7D23D</string>
-		</dict>
-		<key>B0B1D7C5-EE41-4141-A7C1-57F10565EAB3</key>
-		<dict>
-			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>53D8838D-A4F5-4C2B-B88C-C9A5AC227369</string>
-			<key>auxiliaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>className</key>
-			<string>IDESchemeActionsInvocationRecord</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
-			<key>fileName</key>
-			<string>Run-SteakScience-2023.05.09_00-56-44--0700.xcresult</string>
-			<key>hasAuxiliaryLog</key>
-			<true/>
-			<key>hasConsoleLog</key>
-			<true/>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705311804.26452899</real>
-			<key>timeStoppedRecording</key>
-			<real>0.0</real>
-			<key>title</key>
-			<string>Run SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>B0B1D7C5-EE41-4141-A7C1-57F10565EAB3</string>
-		</dict>
-		<key>B914BE78-806D-4116-8DAA-FB9B1A825C0E</key>
-		<dict>
-			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>E825BDB8-B2D6-45C8-89C0-18A060C1E38E</string>
-			<key>auxiliaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>className</key>
-			<string>IDESchemeActionsInvocationRecord</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
-			<key>fileName</key>
-			<string>Run-SteakScience-2023.05.09_13-52-13--0700.xcresult</string>
-			<key>hasAuxiliaryLog</key>
-			<true/>
-			<key>hasConsoleLog</key>
-			<true/>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705358333.89258003</real>
-			<key>timeStoppedRecording</key>
-			<real>0.0</real>
-			<key>title</key>
-			<string>Run SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>B914BE78-806D-4116-8DAA-FB9B1A825C0E</string>
-		</dict>
-		<key>BD25A379-AACC-40C8-BDC2-48339F9582A4</key>
-		<dict>
-			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>1E925362-A120-4B8C-88B9-FFE64E7C29B7</string>
-			<key>auxiliaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>className</key>
-			<string>IDESchemeActionsInvocationRecord</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
-			<key>fileName</key>
-			<string>Run-SteakScience-2023.05.09_00-58-47--0700.xcresult</string>
-			<key>hasAuxiliaryLog</key>
-			<true/>
-			<key>hasConsoleLog</key>
-			<true/>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705311927.28780198</real>
-			<key>timeStoppedRecording</key>
-			<real>0.0</real>
-			<key>title</key>
-			<string>Run SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>BD25A379-AACC-40C8-BDC2-48339F9582A4</string>
-		</dict>
-		<key>D178552C-C6B4-4C44-8B83-E944180B96C8</key>
-		<dict>
-			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>FF9E4631-6CC6-48B8-882B-BB9B9F4AE1C4</string>
-			<key>auxiliaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>className</key>
-			<string>IDESchemeActionsInvocationRecord</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
-			<key>fileName</key>
-			<string>Run-SteakScience-2023.05.09_00-39-10--0700.xcresult</string>
-			<key>hasAuxiliaryLog</key>
-			<true/>
-			<key>hasConsoleLog</key>
-			<true/>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705310750.03404605</real>
-			<key>timeStoppedRecording</key>
-			<real>0.0</real>
-			<key>title</key>
-			<string>Run SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>D178552C-C6B4-4C44-8B83-E944180B96C8</string>
-		</dict>
-		<key>D984D0DE-46E3-441D-A808-B191A0C23AE6</key>
-		<dict>
-			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>96E7440F-B190-4A8E-B8E7-2AD6A2516D1E</string>
-			<key>auxiliaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>className</key>
-			<string>IDESchemeActionsInvocationRecord</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
-			<key>fileName</key>
-			<string>Run-SteakScience-2023.05.09_00-59-26--0700.xcresult</string>
-			<key>hasAuxiliaryLog</key>
-			<true/>
-			<key>hasConsoleLog</key>
-			<true/>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705311966.13912499</real>
-			<key>timeStoppedRecording</key>
-			<real>0.0</real>
-			<key>title</key>
-			<string>Run SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>D984D0DE-46E3-441D-A808-B191A0C23AE6</string>
-		</dict>
-		<key>DA10F5D7-C122-484F-9F10-DAAE7FC0460A</key>
-		<dict>
-			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>7C0E2D2E-6A09-4AF2-AC8F-1B6595B4FCEE</string>
-			<key>auxiliaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>className</key>
-			<string>IDESchemeActionsInvocationRecord</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
-			<key>fileName</key>
-			<string>Run-SteakScience-2023.05.09_13-52-24--0700.xcresult</string>
-			<key>hasAuxiliaryLog</key>
-			<true/>
-			<key>hasConsoleLog</key>
-			<true/>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705358344.65860403</real>
-			<key>timeStoppedRecording</key>
-			<real>0.0</real>
-			<key>title</key>
-			<string>Run SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>DA10F5D7-C122-484F-9F10-DAAE7FC0460A</string>
-		</dict>
-		<key>E05FE10A-9FA5-4FD5-B0E4-99127DB5FC57</key>
-		<dict>
-			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>6A28307F-AFD5-4CC8-BC55-6A90DBF920D0</string>
-			<key>auxiliaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>className</key>
-			<string>IDESchemeActionsInvocationRecord</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
-			<key>fileName</key>
-			<string>Run-SteakScience-2023.05.09_00-28-43--0700.xcresult</string>
-			<key>hasAuxiliaryLog</key>
-			<true/>
-			<key>hasConsoleLog</key>
-			<true/>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705310123.785303</real>
-			<key>timeStoppedRecording</key>
-			<real>0.0</real>
-			<key>title</key>
-			<string>Run SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>E05FE10A-9FA5-4FD5-B0E4-99127DB5FC57</string>
-		</dict>
-		<key>E3D5D260-B296-4C21-BDEF-C33AE3BEFFDC</key>
-		<dict>
-			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>844B8EDA-52AE-4D96-B639-DB5D4C02987B</string>
-			<key>auxiliaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>className</key>
-			<string>IDESchemeActionsInvocationRecord</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
-			<key>fileName</key>
-			<string>Run-SteakScience-2023.05.09_18-32-11--0700.xcresult</string>
-			<key>hasAuxiliaryLog</key>
-			<true/>
-			<key>hasConsoleLog</key>
-			<true/>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705375131.69099498</real>
-			<key>timeStoppedRecording</key>
-			<real>0.0</real>
-			<key>title</key>
-			<string>Run SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>E3D5D260-B296-4C21-BDEF-C33AE3BEFFDC</string>
-		</dict>
-		<key>EFC544D8-8D8D-4861-8E29-D6A1D520A01C</key>
-		<dict>
-			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>21277738-59DD-42FB-A254-F1E323D23C12</string>
-			<key>auxiliaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>className</key>
-			<string>IDESchemeActionsInvocationRecord</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
-			<key>fileName</key>
-			<string>Run-SteakScience-2023.05.09_00-30-42--0700.xcresult</string>
-			<key>hasAuxiliaryLog</key>
-			<true/>
-			<key>hasConsoleLog</key>
-			<true/>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705310242.63213003</real>
-			<key>timeStoppedRecording</key>
-			<real>0.0</real>
-			<key>title</key>
-			<string>Run SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>EFC544D8-8D8D-4861-8E29-D6A1D520A01C</string>
-		</dict>
-		<key>EFE1F6AC-065A-4807-8347-69A173FBC49F</key>
-		<dict>
-			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>76C3DBDD-B67A-42C3-9677-B5ACAE8BAAD5</string>
-			<key>auxiliaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>className</key>
-			<string>IDESchemeActionsInvocationRecord</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
-			<key>fileName</key>
-			<string>Run-SteakScience-2023.05.09_00-27-14--0700.xcresult</string>
-			<key>hasAuxiliaryLog</key>
-			<true/>
-			<key>hasConsoleLog</key>
-			<true/>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705310034.98173296</real>
-			<key>timeStoppedRecording</key>
-			<real>0.0</real>
-			<key>title</key>
-			<string>Run SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>EFE1F6AC-065A-4807-8347-69A173FBC49F</string>
-		</dict>
-		<key>FDD4DA0D-48B5-4FED-A9BA-F7071E36214B</key>
-		<dict>
-			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>A351FE93-1718-4085-9BDC-2E8F5555A4D9</string>
-			<key>auxiliaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>className</key>
-			<string>IDESchemeActionsInvocationRecord</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
-			<key>fileName</key>
-			<string>Run-SteakScience-2023.05.09_18-31-37--0700.xcresult</string>
-			<key>hasAuxiliaryLog</key>
-			<true/>
-			<key>hasConsoleLog</key>
-			<true/>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SteakScience project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SteakScience</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run SteakScience</string>
-			<key>timeStartedRecording</key>
-			<real>705375097.61693299</real>
-			<key>timeStoppedRecording</key>
-			<real>0.0</real>
-			<key>title</key>
-			<string>Run SteakScience</string>
-			<key>uniqueIdentifier</key>
-			<string>FDD4DA0D-48B5-4FED-A9BA-F7071E36214B</string>
+			<string>F2130F3C-06F2-45C0-A957-37A809971867</string>
 		</dict>
 	</dict>
 </dict>
