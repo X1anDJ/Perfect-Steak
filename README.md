@@ -5,5 +5,4 @@ It uses Crank-Nicolson method https://en.wikipedia.org/wiki/Crank%E2%80%93Nicols
 
 ∂T(x, t) / ∂t = α ∇²T(x, t).
 
-<img src="https://user-images.githubusercontent.com/91763855/235425711-e763814c-cc1d-4357-aa27-8eb2e1785d3b.png" width="30%" height="30%">
-
+<img src="https://user-images.githubusercontent.com/91763855/266873548-cd8598be-e3db-4b9e-9420-2b8049fbb42c.png" width="30%" height="30%">
