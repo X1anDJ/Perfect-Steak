@@ -36,7 +36,7 @@
                                     <subviews>
                                         <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="153" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ep4-9P-sEp">
                                             <rect key="frame" x="0.0" y="0.0" width="294.66666666666669" height="59"/>
-                                            <color key="backgroundColor" red="0.38823529410000002" green="0.53725490200000003" blue="0.48798006900000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.40000000000000002" alpha="0.75417648269330628" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="textColor" red="0.24357612737329914" green="0.24307233149156546" blue="0.25187239066633593" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <fontDescription key="fontDescription" name="LiquidCrystal-Bold" family="Liquid Crystal" pointSize="24"/>
                                             <textInputTraits key="textInputTraits"/>

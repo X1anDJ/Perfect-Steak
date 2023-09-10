@@ -6,7 +6,7 @@
 
 import UIKit
 
-/// 包装挖空位置的数据模型，被挖空的视图支持继承自UIView，UITableViewCell的类型
+///  A data model for the hollow out userguide. Supporting UIView and UITableViewCell
 final class HollowOutModel {
     internal init(type: RelativeType, playHandler: @escaping (Int) -> UIView) {
         self.type = type
@@ -14,29 +14,29 @@ final class HollowOutModel {
     }
     
     enum RelativeType {
-        // 挖空的是普通view类型
+        // A UIView is hollow out
         case view(UIView)
-        // 挖空的是UITableViewCell类型
+        // A UITableViewCell is hollow out
         case tableView(UITableView, IndexPath)
-        // 没有任何挖空区域
+        // None view is hollow out
         case noneView
     }
     
-    /// 挖空视图的类型
-    let type: RelativeType
-    /// 是否为圆形
-    var isCircle = false
-    /// 内边距(挖空视图到虚线的距离)
-    var insideMargin = UIEdgeInsets.zero
-    /// 显示步骤介绍的数量
+    /// User guide steps
     var multipleStepCount = 1
-    /// 圆角
+    /// Hollow out view type
+    let type: RelativeType
+    /// Circle?
+    var isCircle = false
+    /// Distance between inner hollow out view and the dash line
+    var insideMargin = UIEdgeInsets.zero
+    /// Corner raduis
     var cornerRadius = 0.0
-    /// 显示虚线
+    /// Show dash line
     var isShowDashed = true
-    /// 虚线颜色(默认白色)
+    /// Color of dash line
     var dashedColor = UIColor.white
-    /// 虚线宽度
+    /// Width of dashline
     var dashedWidth = 1.5
     /// 在有效区域内自动滚动到合适位置（有效区域：参考NewUserGideTool的初始化方法）
     /// 仅限relativeView（挖空视图）被添加在滚动视图上
@@ -44,10 +44,10 @@ final class HollowOutModel {
     /// relativeView.top 小于 有效区域的top时 滚动到最顶部
     /// relativeView.bottom 大于 有效区域的bottom时 滚动到最底部
     var autoAppropriateLocation = false
-    /// 弹出视图与挖空视图之间的垂直距离
+    /// Vertical margin between popview and hollow out view
     var verticalMargin = 20.0
-    /// 弹出视图是否在挖空视图下面显示
+    /// If pop view is under the hollow out view
     var isUnderRelativeView = true
-    /// 播放步骤回调 返回的view宽度要等于屏幕宽度，因为有些视图并不是居中显示。
+    /// Closure of play setep. The return view width should equal to screen with because some views are not in the center.
     let playHandler: (Int) -> UIView
 }

@@ -38,9 +38,8 @@ class OnboardingViewController: UIViewController {
         
         
         slides = [
-            OnboardingSlide(title: "Cook Like a Physicist", description: "Calculate steak's temperature by solving the 1D heat equation with the Crank-Nicolson method in just a few steps.", image: #imageLiteral(resourceName: "1d")),
-            OnboardingSlide(title: "1. Select doneness", description: "Slide up and down to pick your favourite doneness", image: #imageLiteral(resourceName: "Image")),
-            OnboardingSlide(title: "2. Pick the right temperature", description: "Slide up and down to pick the stove temperature and ", image: #imageLiteral(resourceName: "c"))
+            OnboardingSlide(title: "No measurement while baking", description: "No need to open the oven again and again to measure the temperature. Bake time will be calculated before baking. ", image: #imageLiteral(resourceName: "P2")),
+            OnboardingSlide(title: "No extra tool needed", description: "Setup parameters without extra tools: Defrost the steak to room temperature, then measure the thickness with built-in ruler. ", image: #imageLiteral(resourceName: "P1"))
         ]
         
         pageControl.numberOfPages = slides.count

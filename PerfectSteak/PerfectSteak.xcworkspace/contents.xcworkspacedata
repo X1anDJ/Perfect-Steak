@@ -4,6 +4,208 @@
    <FileRef
       location = "group:PerfectSteak.xcodeproj">
    </FileRef>
+   <Group
+      location = "group:PerfectSteak"
+      name = "PerfectSteak">
+      <Group
+         location = "group:PerfectSteak/Guide"
+         name = "Guide">
+         <FileRef
+            location = "group:PerfectSteak/Guide/HomeGideView.swift">
+         </FileRef>
+         <FileRef
+            location = "group:PerfectSteak/Guide/UIWindow+Extension.swift">
+         </FileRef>
+         <FileRef
+            location = "group:PerfectSteak/Guide/FeatureGuideTool.swift">
+         </FileRef>
+         <FileRef
+            location = "group:PerfectSteak/Guide/HollowOutModel.swift">
+         </FileRef>
+         <FileRef
+            location = "group:PerfectSteak/Guide/UIExtension.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:PerfectSteak/CustomFonts"
+         name = "CustomFonts">
+         <FileRef
+            location = "group:PerfectSteak/CustomFonts/LiquidCrystal-Bold.otf">
+         </FileRef>
+         <FileRef
+            location = "group:PerfectSteak/CustomFonts/LiquidCrystal-BoldItalic.otf">
+         </FileRef>
+         <FileRef
+            location = "group:PerfectSteak/CustomFonts/LiquidCrystal-ExBold.otf">
+         </FileRef>
+         <FileRef
+            location = "group:PerfectSteak/CustomFonts/LiquidCrystal-ExBoldItalic.otf">
+         </FileRef>
+         <FileRef
+            location = "group:PerfectSteak/CustomFonts/LiquidCrystal-Light.otf">
+         </FileRef>
+         <FileRef
+            location = "group:PerfectSteak/CustomFonts/LiquidCrystal-LightItalic.otf">
+         </FileRef>
+         <FileRef
+            location = "group:PerfectSteak/CustomFonts/LiquidCrystal-Normal.otf">
+         </FileRef>
+         <FileRef
+            location = "group:PerfectSteak/CustomFonts/LiquidCrystal-NormalItalic.otf">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:PerfectSteak/Services"
+         name = "Services">
+         <FileRef
+            location = "group:PerfectSteak/Services/NetworkService.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:PerfectSteak/Extensions"
+         name = "Extensions">
+         <FileRef
+            location = "group:PerfectSteak/Extensions/UIView+Extension.swift">
+         </FileRef>
+         <FileRef
+            location = "group:PerfectSteak/Extensions/MainViewController+Extension.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:PerfectSteak/Views"
+         name = "Views">
+         <Group
+            location = "group:PerfectSteak/Views/NumberPad"
+            name = "NumberPad">
+            <FileRef
+               location = "group:PerfectSteak/Views/NumberPad/NumberPadView.xib">
+            </FileRef>
+            <FileRef
+               location = "group:PerfectSteak/Views/NumberPad/NumberPadView.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:PerfectSteak/Views/CustomButton"
+            name = "CustomButton">
+            <Group
+               location = "group:PerfectSteak/Views/CustomButton/SteakTemperature"
+               name = "SteakTemperature">
+               <FileRef
+                  location = "group:PerfectSteak/Views/CustomButton/SteakTemperature/SteakTemperature.xib">
+               </FileRef>
+               <FileRef
+                  location = "group:PerfectSteak/Views/CustomButton/SteakTemperature/SteakTemperature.swift">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:PerfectSteak/Views/CustomButton/StoveTemperature"
+               name = "StoveTemperature">
+               <FileRef
+                  location = "group:PerfectSteak/Views/CustomButton/StoveTemperature/CircularSlider.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:PerfectSteak/Views/CustomButton/StoveTemperature/CircularSlider.xib">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:PerfectSteak/Views/CustomButton/Thickness"
+               name = "Thickness">
+               <FileRef
+                  location = "group:PerfectSteak/Views/CustomButton/Thickness/RulerViewController.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:PerfectSteak/Views/CustomButton/Thickness/ConcaveButton.swift">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:PerfectSteak/Views/CustomButton/Doneness"
+               name = "Doneness">
+               <FileRef
+                  location = "group:PerfectSteak/Views/CustomButton/Doneness/DonenessSlider.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:PerfectSteak/Views/CustomButton/Doneness/DonenessSlider.xib">
+               </FileRef>
+            </Group>
+         </Group>
+         <Group
+            location = "group:PerfectSteak/Views/MainView"
+            name = "MainView">
+            <Group
+               location = "group:PerfectSteak/Views/MainView/NavigationBar"
+               name = "NavigationBar">
+               <FileRef
+                  location = "group:PerfectSteak/Views/MainView/NavigationBar/RecipeDropdownTableViewController.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:PerfectSteak/Views/MainView/NavigationBar/RecipeTableViewCell.swift">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:PerfectSteak/Views/MainView/MainViewController.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:PerfectSteak/Views/Onboarding"
+            name = "Onboarding">
+            <FileRef
+               location = "group:PerfectSteak/Views/Onboarding/OnboardingViewController.swift">
+            </FileRef>
+            <FileRef
+               location = "group:PerfectSteak/Views/Onboarding/OnboardingCollectionViewCell.swift">
+            </FileRef>
+         </Group>
+      </Group>
+      <Group
+         location = "group:PerfectSteak/Models"
+         name = "Models">
+         <FileRef
+            location = "group:PerfectSteak/Models/SteakRecipe.swift">
+         </FileRef>
+         <FileRef
+            location = "group:PerfectSteak/Models/Recipes.swift">
+         </FileRef>
+         <FileRef
+            location = "group:PerfectSteak/Models/CoreDataStack.swift">
+         </FileRef>
+         <Group
+            location = "group:PerfectSteak/Models/SteakRecipeModel.xcdatamodeld"
+            name = "SteakRecipeModel.xcdatamodeld">
+            <FileRef
+               location = "group:PerfectSteak/Models/SteakRecipeModel.xcdatamodeld/SteakRecipeModel.xcdatamodel">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:PerfectSteak/Models/OnboardingSlide.swift">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:PerfectSteak/AppDelegate.swift">
+      </FileRef>
+      <FileRef
+         location = "group:PerfectSteak/SceneDelegate.swift">
+      </FileRef>
+      <Group
+         location = "group:PerfectSteak"
+         name = "Main.storyboard">
+         <FileRef
+            location = "group:PerfectSteak/Base.lproj/Main.storyboard">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:PerfectSteak/Assets.xcassets">
+      </FileRef>
+      <Group
+         location = "group:PerfectSteak"
+         name = "LaunchScreen.storyboard">
+         <FileRef
+            location = "group:PerfectSteak/Base.lproj/LaunchScreen.storyboard">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:PerfectSteak/Info.plist">
+      </FileRef>
+   </Group>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>

@@ -6,15 +6,15 @@
 	<dict>
 		<key>AppIcon60x60@2x.png</key>
 		<data>
-		0oanTtF+kuxW764G5W7GFbaVYUs=
+		oS/3dJVv+LxS2eYmL5t51db2qXY=
 		</data>
 		<key>Assets.car</key>
 		<data>
-		8+KllGoluIverf3c+7tX4VkVASk=
+		mWvBZpa3o9zPjtzBbTiAQH4tVnk=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		FxSujZpCDjkR3xcVDvYpM9RbaM8=
+		bm9YzUo3eb2m74jUt/Tdu7u0ucU=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/61x-ii-qhL-view-des-JU-0ev.nib</key>
 		<data>
-		UCiR/u8CbgHlagIwQhsEcCdGs7c=
+		H8miyLehldFlFWHSK17/7wLhx48=
 		</data>
 		<key>Base.lproj/Main.storyboardc/HomeNC.nib</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/PSz-OW-Fj8-view-y6A-SZ-sra.nib</key>
 		<data>
-		okU5aOSlWra4ak8HSTc5BdgV20k=
+		fcSyHpvhFf2p4mA5sdPuf6pgJxk=
 		</data>
 		<key>CircularSlider.nib</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		apBJN33qN7wPNyPcNj+8OLWfSuQ=
+		YWpxPBT25wcmHue+uwoqk9Tnf0U=
 		</data>
 		<key>LiquidCrystal-Bold.otf</key>
 		<data>
@@ -114,7 +114,7 @@
 		</data>
 		<key>NumberPadView.nib</key>
 		<data>
-		wO4s4gRhPIXfMxuoea72BU8Qx1Q=
+		RWkhheXQxRSprxxrzr6SQwJ2psE=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -139,21 +139,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5iN1KWGm0e53G6dUrox5VcmvRo59ZcG77hkHHKhaVXs=
+			1HbgimNKJY1jnRc5C00Xr7KgNVjqR7c1ErTDCGma9Ro=
 			</data>
 		</dict>
 		<key>Assets.car</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XmOD7ARb7eUmynAAlosbz1g2KF6+uCajwFFoz+TtsXc=
+			TVd5YaTx5VrSIIzoKT70quzT7iMZx8HKZOrlI+BCPsU=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Zmx6p3ew5vbCYRDpEf296uDuKCF+kyz1ug1B2XsdKWc=
+			29tlcQ6J+lsh5rDd4mWsxlRXtal817dTm+0ZxFJlU1g=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -174,7 +174,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			T+sDtNYPQkIpNRdpDmUCRPhPMn+8565gLTodKrxveXI=
+			OZYs4syZ6hd95GsKKNWM51SANQqHvdfwB/sEuSszskA=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/HomeNC.nib</key>
@@ -202,7 +202,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			R5vmwQa147Rg+dSzgzVe70TTH9VXLd/0vOUzJytkjY0=
+			ReMfOW9oAoBKxcWArTFha9ZD+9l/9bEyCECeVrnSwTY=
 			</data>
 		</dict>
 		<key>CircularSlider.nib</key>
@@ -321,7 +321,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xuwboDogH/5IWVQ/WgFJBUNnVp/a3gmJiqv+g7TIC78=
+			7rRgEvq6R0njIJuad1+CfwzVsKdGuAeXKgNsgPcbWzE=
 			</data>
 		</dict>
 		<key>SteakRecipeModel.momd/SteakRecipeModel.mom</key>

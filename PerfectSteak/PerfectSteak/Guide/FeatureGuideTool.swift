@@ -5,14 +5,14 @@
 //
 
 import UIKit
-/// 向用户展示新功能的介绍工具
+/// A tool for introducing 
 final class FeatureGuideTool {
     
     enum ErrorCode {
         case noWindow
     }
     
-    /// 缓存的唯一标识符
+    /// unique identifier
     private var identifier: String
     private var insideMargin: UIEdgeInsets
     private var dataSource: [HollowOutModel] = []
@@ -20,20 +20,18 @@ final class FeatureGuideTool {
     private var currStep = 1
     private static let newUserGideKey = "new.user.gide.cache.key"
     private lazy var bgView = UIView(frame: UIScreen.main.bounds)
-    /// 用来挖空区域的View
+    /// view for hallow
     private lazy var maskView = UIView(frame: .zero)
-    /// 蒙层的背景颜色
+    /// mask's color
     private(set) var coverColor = UIColor.black.alpha(0.7)
     private var tempHollowOutLayer: CAShapeLayer?
     private var tempDashedLayer: CAShapeLayer?
-    /// 完成回调
+    /// completion
     public var completionHandler: (() -> Void)?
-    /// 发生错误回调
     public var occurErrorHandler: ((ErrorCode) -> Void)?
     
-    /// 构造函数
     /// - Parameters:
-    ///   - identifier: 用于缓存的唯一标识符
+    ///   - identifier: Unique Identifier
     init(identifier: String, insideMargin: UIEdgeInsets) {
         self.identifier = identifier
         self.insideMargin = insideMargin
@@ -43,12 +41,12 @@ final class FeatureGuideTool {
 // MARK: - Public
 extension FeatureGuideTool {
     
-    /// 调用此函数即开始执行新用户向导的逻辑显示
-    /// - Parameter model: 模型数据
+    /// Call this fuctoin to execute new user guide
+    /// - Parameter model:
     func start(_ models: [HollowOutModel]) {
         guard !FeatureGuideTool.userGideFinished(identifier) else {
             completionHandler?()
-            return print("\(identifier) 已经显示过新用户向导")
+            return print("\(identifier) New user guide is already showed")
         }
         
         guard models.count != 0 else {
@@ -78,9 +76,9 @@ extension FeatureGuideTool {
         }
     }
     
-    /// 新用户向导是否完成过
-    /// - Parameter key: 唯一标识符
-    /// - Returns: 是否完成 true:完成，反之没有
+    /// Check if the new user guide is showed
+    /// - Parameter key: unique identifier
+    /// - Returns: completed?: true
     static func userGideFinished(_ key: String) -> Bool {
         if key.count == 0 {
             return false
@@ -89,7 +87,7 @@ extension FeatureGuideTool {
         return cacheDict[key] ?? false
     }
     
-    /// 清理缓存
+    /// remove cache
     static func removeCache() {
         UserDefaults.standard.removeObject(forKey: newUserGideKey)
     }
@@ -97,7 +95,7 @@ extension FeatureGuideTool {
 
 // MARK: - Private
 extension FeatureGuideTool {
-    /// 执行下一步
+    ///  Execute next step
     private func doNext() {
         guard dataSource.count > 0 else {
             completion()
@@ -107,13 +105,13 @@ extension FeatureGuideTool {
         currHollowOutModel = hollowOutModel
         let popView = hollowOutModel.playHandler(currStep)
         hollowOutModel.multipleStepCount -= 1
-        // 移除之前的子元素
+        // Remove previous sub UI
         removeSubUI()
-        // 显示挖空区域
+        // Show hollow out area
         self.showHollowOutArea()
-        // 添加popView
+        // Add PopView
         self.addPopView(popView)
-        // 标记此区域已经显示过新用户向导
+        // Mark the user guide is showed with a tag and identifier
         saveUserGideFinishedTag(identifier)
     }
     
@@ -138,7 +136,7 @@ extension FeatureGuideTool {
         }
     }
     
-    /// 显示挖空区域
+    /// Show hollow out area
     private func showHollowOutArea() {
         guard let currModel = currHollowOutModel else { return }
         switch currModel.type {
@@ -151,7 +149,7 @@ extension FeatureGuideTool {
             let containerFrame = containerFrame(currModel)
             let hollowOutPathRadius = isCircle ? viewFrame.width / 2.0 : hollowOutModel.cornerRadius
             let dashedCornerRadius = isCircle ? containerFrame.width / 2.0 : hollowOutModel.cornerRadius
-            // 设置挖空区域
+            // Setup hollowout area
             let path = UIBezierPath(rect: UIScreen.main.bounds)
             let hollowOutPath = UIBezierPath(roundedRect: viewFrame, cornerRadius: hollowOutPathRadius)
             path.append(hollowOutPath)
@@ -161,7 +159,7 @@ extension FeatureGuideTool {
             shapeLayer.fillRule = .evenOdd
             maskView.layer.mask = shapeLayer
             
-            // 设置虚线
+            // Setup dashed layer
             guard hollowOutModel.isShowDashed else { return }
             let dashedLayer = CAShapeLayer()
             let bounds = CGRect(x: 0, y: 0, width: containerFrame.size.width, height: containerFrame.size.height)
@@ -179,8 +177,8 @@ extension FeatureGuideTool {
         }
     }
     
-    /// 添加弹出的popView
-    /// - Parameter popView: 弹出的内容
+    /// Add popView
+    /// - Parameter popView: contents that pops up
     private func addPopView(_ popView: UIView) {
         guard let currModel = currHollowOutModel else { return }
         bgView.subviews.forEach {
@@ -192,29 +190,29 @@ extension FeatureGuideTool {
         let popViewWidth = popView.bounds.size.width
         let popViewHeight = popView.bounds.size.height
         if popViewWidth == 0 || popViewHeight == 0 {
-            fatalError("popView 一定要设置宽度和高度")
+            fatalError("popView should setup wid and height")
         }
         let containerFrame = containerFrame(currModel)
         let popViewX = 0.0
         var popViewY = containerFrame.maxY + currModel.verticalMargin
-        // 默认情况下popView都是显示在挖空区域的底部，如果底部位置不能够显示下popView则显示在上面
+        // In default case, popView shows under hollowout area. If the popView is out of bound of the bottom area, it shows above.
         if currModel.isUnderRelativeView {
             let bottomArea = safeAreaBottom(currModel) - containerFrame.maxY - currModel.verticalMargin
             if bottomArea < popViewHeight {
-                // 显示不下，将弹出视图调整到挖空视图上面
+                // Out of bound. Popview moves to the top of hollowout view
                 popViewY = containerFrame.minY - popViewHeight - currModel.verticalMargin
             }
         } else {
-            // popView在挖空区域上面显示
+            // popView shows above hollow out area
             if containerFrame.minY > popViewHeight + currModel.verticalMargin {
-                // 能显示下
+                // Not out of bound
                 popViewY = containerFrame.minY - popViewHeight - currModel.verticalMargin
             }
         }
     
         switch currModel.type {
         case .noneView:
-            // 默认情况下弹窗视图在全屏模式下是垂直居中的。如需要个性化设置，业务侧可以调整popView的高度来实现Y方向上的偏移
+            // In default case, popout view shows in center.
             popViewY = (bgView.frame.height - popViewHeight) / 2.0
         default:
             break
@@ -253,7 +251,7 @@ extension FeatureGuideTool {
                 right: -model.insideMargin.right
             )
         )
-        // frame错误纠正
+        // Correct the frame error
         viewFrame.origin.x = max(10, viewFrame.origin.x)
         viewFrame.size.width = min(bgView.frame.width - 20, viewFrame.size.width)
         
@@ -263,7 +261,7 @@ extension FeatureGuideTool {
     private func containerFrame(_ model: HollowOutModel) -> CGRect {
         let viewFrame = viewFrame(model)
         var containerFrame = viewFrame.inset(by: .init(top: -5, left: -5, bottom: -5, right: -5))
-        // frame纠错
+        // Correct the frame error
         containerFrame.origin.x = max(5, containerFrame.origin.x)
         containerFrame.size.width = viewFrame.size.width + 10
         return containerFrame
@@ -277,9 +275,9 @@ extension FeatureGuideTool {
         bgView.frame.maxY - model.insideMargin.bottom
     }
     
-    /// 移除子UI元素
+    /// Remove sub UI
     private func removeSubUI() {
-        // 移除之前的layer
+        // Remove previous layer
         tempHollowOutLayer?.removeFromSuperlayer()
         tempDashedLayer?.removeFromSuperlayer()
         bgView.subviews.forEach {
@@ -289,8 +287,8 @@ extension FeatureGuideTool {
         }
     }
     
-    /// 存储新用户向导完成的标识
-    /// - Parameter key: 唯一标识符
+    /// Store unique id when user completed guide
+    /// - Parameter key: unique id
     private func saveUserGideFinishedTag(_ key: String) {
         var cacheDict = UserDefaults.standard.object(forKey: FeatureGuideTool.newUserGideKey) as? [String: Bool]
         if cacheDict == nil {
