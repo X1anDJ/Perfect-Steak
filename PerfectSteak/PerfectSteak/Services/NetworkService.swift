@@ -10,7 +10,8 @@ import Foundation
 import UIKit
 
 class NetworkService {
-    func getSteakCookingTime(steakTemperature: Double, ovenTemperature: Double, steakThickness: Double, steakDoneness: Double, completion: @escaping (Result<Double, Error>) -> Void) {
+    @discardableResult
+    func getSteakCookingTime(steakTemperature: Double, ovenTemperature: Double, steakThickness: Double, steakDoneness: Double, completion: @escaping (Result<Double, Error>) -> Void) -> URLSessionDataTask? {
         // Convert temperatures from Fahrenheit to Celsius and round to integers
         let steakTemperatureCelsius = Int((steakTemperature - 32) * (5 / 9))
         let ovenTemperatureCelsius = Int((ovenTemperature - 32) * (5 / 9))
@@ -35,12 +36,14 @@ class NetworkService {
         
         guard let url = URL(string: urlString) else {
             completion(.failure(NSError(domain: "com.example.steakapp", code: -1, userInfo: [NSLocalizedDescriptionKey: "Invalid URL"])))
-            return
+            return nil
         }
 
-        URLSession.shared.dataTask(with: url) { (data, response, error) in
+       let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
             if let error = error {
                 completion(.failure(error))
+            } else if let httpResponse = response as? HTTPURLResponse, !(200...299).contains(httpResponse.statusCode) {
+                completion(.failure(NSError(domain: "com.example.steakapp", code: httpResponse.statusCode, userInfo: [NSLocalizedDescriptionKey: "Server returned status code \(httpResponse.statusCode)"])))
             } else if let data = data {
                 // Parse the integer response
                 if let cookingTime = String(data: data, encoding: .utf8), let cookingTimeInt = Double(cookingTime) {
@@ -51,7 +54,9 @@ class NetworkService {
             } else {
                 completion(.failure(NSError(domain: "com.example.steakapp", code: -1, userInfo: [NSLocalizedDescriptionKey: "Unknown error"])))
             }
-        }.resume()
+        }
+        task.resume()
+        return task
     }
 
 

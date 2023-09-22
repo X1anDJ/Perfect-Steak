@@ -26,6 +26,8 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
     var timer: Timer?           //timer for countdown
     var updateTimer: Timer?      //timer for reset the screen's label
     var task: UUID?
+    var dataTask: URLSessionDataTask?
+
     
     ///titleButton: The button for the drop down menue
     @IBOutlet weak var titleButton: UIButton!
@@ -372,10 +374,13 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
     @IBAction func startButtonTapped(_ sender: UIButton) {
         if !startButtonClicked {     // not cooking now
             startButtonClicked = true
-            startButton.isEnabled = false // Disable the button
-            startCountDown()
-        } else {                    // cooking now
-            if timer == nil { // Button tapped to start the countdown
+            //startButton.isEnabled = false // Disable the button
+            startButton.setImage(UIImage(systemName: "xmark"), for: .normal)
+            startCalculation()
+        } else {                    // calculating or cooking now
+            if task != nil {
+                cancelCalculation()
+            } else if timer == nil { // Button tapped to start the countdown
                 startTimer()
                 startButton.setImage(UIImage(systemName: "stop"), for: .normal)
             } else { // Button tapped to stop the countdown
@@ -385,6 +390,19 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
             }
         }
     }
+    
+    func cancelCalculation() {
+        task = nil
+        dataTask?.cancel()
+        countDownLabel.text = "Calculation cancelled"
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            self.countDownLabel.text = "Ready to Cook"
+            self.infoLabel.text = " "
+        }
+        startButton.setImage(UIImage(systemName: "oven"), for: .normal)
+        startButtonClicked = false
+    }
+
     
     func cancelCooking() {
         timer?.invalidate()
@@ -409,21 +427,24 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
 
     
 
-    private func startCountDown() {
+    private func startCalculation() {
         // Invalidate any existing timer
         timer?.invalidate()
 
         // Display "Calculating..." before the countdown starts
         countDownLabel.text = "Calculating..."
         infoLabel.text = "Thicker meat calculates longer"
-         let newThickness = Double(lengthLabel.text?.replacingOccurrences(of: " inches", with: "") ?? "0") ?? 0
-         let newInitialTemp = steakTemperature.currentValue
-         let newOvenTemp = circularSliderTest.currentValue
-         let newDesiredCenterTemp = SteakDoneness.temperatureFromDoneness(donenessSlider.currentDoneness)
+        
+       // startButton.setImage(UIImage(systemName: "xmark.circle"), for: .normal)
+    
+        let newThickness = Double(lengthLabel.text?.replacingOccurrences(of: " inches", with: "") ?? "0") ?? 0
+        let newInitialTemp = steakTemperature.currentValue
+        let newOvenTemp = circularSliderTest.currentValue
+        let newDesiredCenterTemp = SteakDoneness.temperatureFromDoneness(donenessSlider.currentDoneness)
         let taskId = UUID()
         task = taskId
         // Make the HTTP request to get the cooking time
-        networkService.getSteakCookingTime(steakTemperature: newInitialTemp, ovenTemperature: newOvenTemp, steakThickness: newThickness, steakDoneness: newDesiredCenterTemp) { [weak self] (result) in
+        dataTask = networkService.getSteakCookingTime(steakTemperature: newInitialTemp, ovenTemperature: newOvenTemp, steakThickness: newThickness, steakDoneness: newDesiredCenterTemp) { [weak self] (result) in
             guard let self = self else { return }
             print("============= Current task: \(String(describing: task))")
             guard taskId == task else { return }
@@ -446,6 +467,7 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
                     self.startButton.setImage(UIImage(systemName: "play"), for: .normal)
                     self.infoLabel.text = "Ready to countdown"
                 }
+                self.task = nil
             case .failure(let error):
                 DispatchQueue.main.async {
                     self.countDownLabel.text = "Error: \(error.localizedDescription)"
@@ -454,6 +476,7 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
                     self.startButton.setImage(UIImage(systemName: "oven"), for: .normal) // Reset the button image
                     self.startButtonClicked = false // Reset the startButtonClicked flag
                 }
+                self.task = nil
             }
         }
     }
