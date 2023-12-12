@@ -21,12 +21,13 @@ class NetworkService {
         let steakThicknessMillimeters = Int(steakThickness * 25.4)
 
         print("NETWORK ___________")
+        
+        //print("Thickness in inch: \(steakThickness)")
+        print("Desired Center Temp in C: \(steakDonenessCelsius)")
+        print("Steak Temp in C: \(steakTemperatureCelsius)")
+        print("Oven Temp in C: \(ovenTemperatureCelsius)")
         print("Thickness in mm: \(steakThicknessMillimeters)")
-        print("Thickness in inch: \(steakThickness)")
-        print("InitialTemp: \(steakTemperatureCelsius)")
-        print("OvenTemp: \(ovenTemperatureCelsius)")
-        print("DesiredCenterTemp: \(steakDonenessCelsius)")
-        print("Current Doneness: \(steakDoneness)")
+        //print("Current Doneness: \(steakDoneness)")
         
         let urlString = "https://ezdyaanizk.execute-api.us-west-1.amazonaws.com/getSteakCookingTime?initialTemperature=\(steakTemperatureCelsius)&ovenTemperature=\(ovenTemperatureCelsius)&steakThickness=\(steakThicknessMillimeters)&desiredCenterTemperature=\(steakDonenessCelsius)"
 
@@ -40,10 +41,10 @@ class NetworkService {
         }
 
        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
-            if let error = error {
+            if let error = error { 
                 completion(.failure(error))
             } else if let httpResponse = response as? HTTPURLResponse, !(200...299).contains(httpResponse.statusCode) {
-                completion(.failure(NSError(domain: "com.example.steakapp", code: httpResponse.statusCode, userInfo: [NSLocalizedDescriptionKey: "Server returned status code \(httpResponse.statusCode)"])))
+                completion(.failure(NSError(domain: "com.example.steakapp", code: httpResponse.statusCode, userInfo: [NSLocalizedDescriptionKey: "\(httpResponse.statusCode): Cook something normal"])))
             } else if let data = data {
                 // Parse the integer response
                 if let cookingTime = String(data: data, encoding: .utf8), let cookingTimeInt = Double(cookingTime) {

@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  PerfectSteak
+
+  Created by Dajun Xian on 2023/11/21.
+  
+*/
+
+"Rare" = "一分熟";
+"Medium Rare" = "三分熟";
+"Medium" = "五分熟";
+"Medium Well" = "七分熟";
+"Well Done" = "熟透了";
+"Stove Temperature" = "烤箱温度";

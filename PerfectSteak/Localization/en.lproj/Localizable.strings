@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  PerfectSteak
+
+  Created by Dajun Xian on 2023/11/21.
+  
+*/
+
+"Rare" = "Rare";
+"Medium Rare" = "Medium Rare";
+"Medium" = "Medium";
+"Medium Well" = "Medium Well";
+"Well Done" = "Well Done";
+"Stove Temperature" = "Stove Temperature";

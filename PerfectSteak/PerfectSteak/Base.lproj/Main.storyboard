@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PSz-OW-Fj8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PSz-OW-Fj8">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -336,24 +336,24 @@
                                                 <rect key="frame" x="200" y="0.0" width="200" height="200"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="haZ-Na-UgF">
-                                                        <rect key="frame" x="74" y="18.5" width="52" height="26.5"/>
-                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="haZ-Na-UgF">
+                                                        <rect key="frame" x="75" y="16" width="50" height="25"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="“" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Su5-TY-5yg">
-                                                        <rect key="frame" x="131" y="18" width="10" height="27.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="″" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Su5-TY-5yg">
+                                                        <rect key="frame" x="130" y="21.5" width="7.5" height="14.5"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="10" id="AzE-Jc-UXC"/>
+                                                            <constraint firstAttribute="height" constant="14.5" id="yOv-pq-qlF"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thickness" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zuW-bU-VaQ">
-                                                        <rect key="frame" x="50" y="2" width="100" height="13.5"/>
-                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
+                                                        <rect key="frame" x="50" y="2" width="100" height="11"/>
+                                                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="11"/>
                                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -374,13 +374,12 @@
                                                     <constraint firstItem="zuW-bU-VaQ" firstAttribute="top" secondItem="xVm-I3-Do2" secondAttribute="top" constant="2" id="1pM-GL-w6Q"/>
                                                     <constraint firstItem="zuW-bU-VaQ" firstAttribute="width" secondItem="1mT-YM-dgK" secondAttribute="width" id="23a-Cy-EKm"/>
                                                     <constraint firstItem="zuW-bU-VaQ" firstAttribute="centerX" secondItem="xVm-I3-Do2" secondAttribute="centerX" id="6u8-ux-zR0"/>
-                                                    <constraint firstItem="Su5-TY-5yg" firstAttribute="height" secondItem="haZ-Na-UgF" secondAttribute="height" multiplier="1.01923" id="AxK-dt-lLF"/>
                                                     <constraint firstItem="haZ-Na-UgF" firstAttribute="centerX" secondItem="1mT-YM-dgK" secondAttribute="centerX" id="E8T-1j-hw0"/>
                                                     <constraint firstItem="haZ-Na-UgF" firstAttribute="top" secondItem="zuW-bU-VaQ" secondAttribute="bottom" constant="3" id="Kml-XS-s2M"/>
                                                     <constraint firstItem="1mT-YM-dgK" firstAttribute="centerY" secondItem="xVm-I3-Do2" secondAttribute="centerY" id="LMX-bd-pHW"/>
                                                     <constraint firstItem="1mT-YM-dgK" firstAttribute="centerX" secondItem="xVm-I3-Do2" secondAttribute="centerX" id="Oru-t0-AQz"/>
                                                     <constraint firstItem="Su5-TY-5yg" firstAttribute="leading" secondItem="haZ-Na-UgF" secondAttribute="trailing" constant="5" id="XBP-By-lYS"/>
-                                                    <constraint firstItem="1mT-YM-dgK" firstAttribute="top" secondItem="haZ-Na-UgF" secondAttribute="bottom" constant="5" id="a1I-dS-c1Z"/>
+                                                    <constraint firstItem="1mT-YM-dgK" firstAttribute="top" secondItem="haZ-Na-UgF" secondAttribute="bottom" constant="9" id="a1I-dS-c1Z"/>
                                                     <constraint firstItem="1mT-YM-dgK" firstAttribute="width" secondItem="xVm-I3-Do2" secondAttribute="width" multiplier="0.5" id="bzI-Ik-WLC"/>
                                                     <constraint firstItem="Su5-TY-5yg" firstAttribute="centerY" secondItem="haZ-Na-UgF" secondAttribute="centerY" id="r17-aV-P8l"/>
                                                     <constraint firstItem="1mT-YM-dgK" firstAttribute="height" secondItem="xVm-I3-Do2" secondAttribute="height" multiplier="0.5" id="r4W-Jq-1w3"/>
@@ -391,12 +390,24 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jTn-Cs-VDS">
+                                <rect key="frame" x="164.5" y="291" width="85" height="32"/>
+                                <segments>
+                                    <segment title="Eng"/>
+                                    <segment title="中"/>
+                                </segments>
+                                <connections>
+                                    <action selector="languageChanged:" destination="61x-ii-qhL" eventType="valueChanged" id="pXf-Jc-KWq"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7Gy-rM-jkx"/>
                         <color key="backgroundColor" red="0.26235345397332699" green="0.26235345397332699" blue="0.26235345397332699" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="jTn-Cs-VDS" firstAttribute="centerX" secondItem="7Gy-rM-jkx" secondAttribute="centerX" id="8Mj-b6-ouz"/>
                             <constraint firstItem="4pj-e8-OkN" firstAttribute="centerX" secondItem="gBz-QZ-8l3" secondAttribute="centerX" id="Btv-Uy-3Dk"/>
+                            <constraint firstItem="jTn-Cs-VDS" firstAttribute="top" secondItem="R2a-MS-3UT" secondAttribute="bottom" constant="10" id="DvV-4f-qTp"/>
                             <constraint firstItem="R2a-MS-3UT" firstAttribute="height" secondItem="des-JU-0ev" secondAttribute="height" multiplier="0.26" id="Kfd-fR-7fv"/>
                             <constraint firstItem="USv-oi-f5G" firstAttribute="width" secondItem="X3v-gD-PiI" secondAttribute="width" id="NhM-bK-u2p"/>
                             <constraint firstItem="R2a-MS-3UT" firstAttribute="top" secondItem="7Gy-rM-jkx" secondAttribute="top" id="Ogj-Bo-9gQ"/>
@@ -419,11 +430,16 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="circularSliderTest" destination="TYd-Ex-rFu" id="4c2-tR-fUp"/>
+                        <outlet property="cookLabel" destination="USv-oi-f5G" id="56E-Wm-6m2"/>
                         <outlet property="countDownLabel" destination="onw-Wi-76f" id="Dsc-fu-hC2"/>
                         <outlet property="donenessSlider" destination="oge-AL-Nzh" id="4NO-Op-y6M"/>
                         <outlet property="infoLabel" destination="Dyo-b6-t84" id="Xkr-C6-1VU"/>
+                        <outlet property="languageSegmentedControl" destination="jTn-Cs-VDS" id="XeA-Gi-MTv"/>
                         <outlet property="lengthLabel" destination="haZ-Na-UgF" id="bez-QI-P9v"/>
+                        <outlet property="lengthTitle" destination="zuW-bU-VaQ" id="Rq2-It-4l7"/>
+                        <outlet property="lengthUnit" destination="Su5-TY-5yg" id="LWG-nV-pQE"/>
                         <outlet property="saveButton" destination="gBz-QZ-8l3" id="PYa-ER-VnU"/>
+                        <outlet property="saveLabel" destination="4pj-e8-OkN" id="EKQ-cd-fgS"/>
                         <outlet property="startButton" destination="X3v-gD-PiI" id="LUD-xY-SE8"/>
                         <outlet property="steakTemperature" destination="OAg-Fw-ngv" id="muh-G5-yWQ"/>
                         <outlet property="thicknessButton" destination="1mT-YM-dgK" id="KnT-fa-D7I"/>
@@ -471,7 +487,7 @@
     <resources>
         <image name="oven" catalog="system" width="128" height="98"/>
         <image name="ruler" catalog="system" width="128" height="57"/>
-        <image name="square.and.arrow.down" catalog="system" width="121" height="128"/>
+        <image name="square.and.arrow.down" catalog="system" width="112" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

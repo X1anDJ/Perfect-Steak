@@ -18,6 +18,65 @@ enum SteakDoneness: String {
     case mediumWell = "Medium Well"
     case wellDone = "Well Done"
     
+    var localized: String {
+        /*
+        let localizedString = NSLocalizedString(self.rawValue, comment: "")
+        print("Localization Key: '\(self.rawValue)', Localized String: '\(localizedString)'")
+        return localizedString
+         */
+        
+        return self.manualLocalization(for: self.rawValue)
+    }
+    
+    private func manualLocalization(for key: String) -> String {
+           let language = UserDefaults.standard.string(forKey: "AppLanguage") ?? "en"
+        if language == "en" {
+            return self.englishLocalization(forKey: key)
+        } else {
+            return self.chineseLocalization(forKey: key)
+        }
+        
+        
+        
+
+       }
+
+    private func englishLocalization(forKey key: String) -> String {
+        switch key {
+        case "Rare":
+            return "Rare"
+        case "Medium Rare":
+            return "Medium Rare"
+        case "Medium":
+            return "Medium"
+        case "Medium Well":
+            return "Medium Well"
+        case "Well Done":
+            return "Well Done"
+        // Add other English translations here if necessary
+        default:
+            return key
+        }
+    }
+
+    private func chineseLocalization(forKey key: String) -> String {
+        switch key {
+        case "Rare":
+            return "一分熟"
+        case "Medium Rare":
+            return "三分熟"
+        case "Medium":
+            return "五分熟"
+        case "Medium Well":
+            return "七分熟"
+        case "Well Done":
+            return "熟透了"
+        // Add other Chinese translations here if necessary
+        default:
+            return key
+        }
+    }
+    
     static func temperatureFromDoneness(_ doneness: SteakDoneness) -> Double {
         switch doneness {
         case .rare:
@@ -49,17 +108,9 @@ enum SteakDoneness: String {
     }
 }
 
-enum SteakDonenessLabels: String, CaseIterable {
-    case rare = "RRR"
-    case mediumRare = "MR"
-    case medium = "M"
-    case mediumWell = "MW"
-    case wellDone = "WWWW"
-}
-
-
 class DonenessSlider: UIView {
     
+    @IBOutlet weak var parameterTitle: UILabel!
     @IBOutlet weak var steakDonenessTitle: UILabel!
     @IBOutlet weak var pointerView: UIView!
     var currentAngle: CGFloat = 0.0
@@ -88,7 +139,7 @@ class DonenessSlider: UIView {
             updatePointerViewRotation()
 
             // Update the steakDonenessTitle directly
-            steakDonenessTitle.text = newValue.rawValue
+            steakDonenessTitle.text = newValue.localized
             delegate?.steakDonenessValueChanged(to: currentDoneness)
         }
     }
@@ -120,34 +171,15 @@ class DonenessSlider: UIView {
         self.addSubview(view)
     }
     
-    private func setupScaleLabels() {
-        let centerX = bounds.width / 2
-        let centerY = bounds.height / 2
+    func updateLanguage() {
+        let appLanguage = UserDefaults.standard.string(forKey: "AppLanguage") ?? "en"
+        print("Updating language in DonenessSlider to: \(appLanguage)")
+        updateSteakDonenessTitle()
+        parameterTitle.text = appLanguage == "en" ? "Doneness" : "期望熟度"
+        steakDonenessTitle.text = currentDoneness.localized
         
-        for (index, doneness) in SteakDonenessLabels.allCases.enumerated() {
-            let angle = minAngle + CGFloat(index) * stepAngle
-            let angleInRadians = angle * .pi / 180
-            
-            let label = UILabel()
-            label.text = doneness.rawValue
-            label.font = UIFont.systemFont(ofSize: 16)
-            label.textColor = .red
-            label.sizeToFit()
-            label.isUserInteractionEnabled = false
-            // label.backgroundColor = .clear
-            
-            let labelCenterX = centerX + scaleRadius * cos(angleInRadians) - label.bounds.width / 2
-            let labelCenterY = centerY - scaleRadius * sin(angleInRadians) - label.bounds.height / 2
-            label.center = CGPoint(x: labelCenterX, y: labelCenterY)
-            
-            addSubview(label)
-            bringSubviewToFront(label)
-        }
     }
-    
-    
-    
-    
+
   
     @IBAction func handleButtonDragg(_ sender: UIPanGestureRecognizer) {
         //print("Doneness Dragged")
@@ -227,6 +259,8 @@ class DonenessSlider: UIView {
 
     
     private func updateSteakDonenessTitle() {
+        steakDonenessTitle.text = currentDoneness.localized
+        print("steak doneness: \(steakDonenessTitle.text)")
         let stepCount = Int(round((currentAngle - minAngle) / stepAngle))
         switch stepCount {
         case 0:
@@ -248,6 +282,7 @@ class DonenessSlider: UIView {
         default:
             break
         }
+        
     }
     
 }

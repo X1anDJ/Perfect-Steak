@@ -17,11 +17,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         // Request notification permissions
+        
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound]) { granted, error in
             if let error = error {
                 print("Failed to request notification permissions: \(error.localizedDescription)")
             }
         }
+        
+        object_setClass(Bundle.main, LocalizableBundle.self)
         
         return true
     }

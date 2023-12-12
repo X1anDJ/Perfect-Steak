@@ -40,6 +40,7 @@ class RecipeDropdownTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "recipeCell", for: indexPath) as! RecipeTableViewCell
         let recipe = recipes[indexPath.row]
         cell.configure(with: recipe)
+        cell.cornerRadius = 0.2
         cell.backgroundColor = UIColor(red: 255/255, green: 204/255, blue: 102/255, alpha: 1)
         return cell
     }

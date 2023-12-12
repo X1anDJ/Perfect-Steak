@@ -17,6 +17,8 @@ protocol CircularSliderNumberPadDelegate: AnyObject {
 
 class CircularSlider: UIView, NumberPadViewDelegate {
     
+    var appLanguage = UserDefaults.standard.string(forKey: "AppLanguage") ?? "en"
+    
     @IBOutlet weak var parameterTitle: UILabel!
     @IBOutlet weak var parameterNumber: UILabel!
     @IBOutlet weak var parameterUnit: UILabel!
@@ -49,8 +51,8 @@ class CircularSlider: UIView, NumberPadViewDelegate {
         }
     }
     
-    let minValue: CGFloat = 200
-    let maxValue: CGFloat = 500
+    var minValue: CGFloat = 200
+    var maxValue: CGFloat = 500
     let minAngle: CGFloat = -150
     let maxAngle: CGFloat = 150
     
@@ -66,7 +68,7 @@ class CircularSlider: UIView, NumberPadViewDelegate {
      
     
     private func loadFromNib() {
-        print("loadFromNib called")
+        //print("loadFromNib called")
         let bundle = Bundle(for: type(of: self))
         let nibName = String(describing: type(of: self))
 
@@ -75,19 +77,31 @@ class CircularSlider: UIView, NumberPadViewDelegate {
             print("Failed to instantiate view from XIB")
             return
         }
-        print("View instantiated from XIB")
+        //print("View instantiated from XIB")
         view.frame = self.bounds
         self.addSubview(view)
         configureViews()
         setupRing()
     }
     
+    func updateLanguage() {
+        appLanguage = UserDefaults.standard.string(forKey: "AppLanguage") ?? "en"
+        configureViews()
+    }
+    
+    private func toCelsius(_ temp: Int) -> Int {
+        return Int(Double(temp - 32) * 5.0 / 9.0)
+    }
+    
     private func configureViews() {
-        parameterTitle.text = "Stove Temperature"
-        parameterUnit.text = "°F"
-        parameterNumber.text = "350"
-        rangeBegin.text = "200"
-        rangeEnd.text = "500"
+        minValue = (appLanguage == "en") ? CGFloat(200) : CGFloat(toCelsius(200))
+        maxValue = (appLanguage == "en") ? CGFloat(500) : CGFloat(toCelsius(500))
+        parameterTitle.text = (appLanguage == "en") ? "Stove Temperature" : "烤箱温度"
+        //print("Stove temperature appLanguage: \(appLanguage)")
+        parameterUnit.text =  (appLanguage == "en") ? "°F" : "°C"
+        parameterNumber.text = (appLanguage == "en") ? "350" : String(toCelsius(350))
+        rangeBegin.text = (appLanguage == "en") ? "200" : String(toCelsius(200))
+        rangeEnd.text = (appLanguage == "en") ? "500" : String(toCelsius(500))
         //currentNumber = CGFloat(Double(parameterNumber.text ?? "0.0") ?? 0.0)
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(didTapPointerView))
         pointerView.addGestureRecognizer(tapGestureRecognizer)

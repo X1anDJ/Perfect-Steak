@@ -5,7 +5,7 @@
 //  Created by Dajun Xian on 4/25/23.
 //
 
-
+import StoreKit
 import UIKit
 import CoreData
 import UserNotifications
@@ -13,13 +13,14 @@ import UserNotifications
 class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSliderDelegate, SteakDonenessDelegate, SteakTemperatureNumberPadDelegate, CircularSliderNumberPadDelegate {
     
     let networkService = NetworkService()
-    
+
+    ///recipes and selected recipe
     private var recipes = Recipes()
     private var selectedRecipe: SteakRecipe!
-    
     private var recipeDropdownMenu: RecipeDropdownTableViewController?
     private var popoverController: UIPopoverPresentationController?
     
+    ///timer
     private var startTime: Date?        // Fix the background countdown stop issue
     private var seconds: Int = 0
     private var totalSeconds: Int = 0
@@ -29,13 +30,32 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
     var dataTask: URLSessionDataTask?
 
     
+
     ///titleButton: The button for the drop down menue
     @IBOutlet weak var titleButton: UIButton!
-    
     @IBOutlet weak var countDownLabel: UILabel!
-    
     @IBOutlet weak var infoLabel: UILabel!
     
+    
+    ///language selection
+    var appLanguage = UserDefaults.standard.string(forKey: "AppLanguage") ?? "en"
+    @IBOutlet weak var languageSegmentedControl: UISegmentedControl!
+    @IBAction func languageChanged(_ sender: UISegmentedControl) {
+        let newLanguage = sender.selectedSegmentIndex == 0 ? "en" : "zh"
+        UserDefaults.standard.set(newLanguage, forKey: "AppLanguage")
+        UserDefaults.standard.synchronize()
+        appLanguage = UserDefaults.standard.string(forKey: "AppLanguage") ?? "en"
+        LocalizableBundle.setLanguage(newLanguage)
+        donenessSlider.updateLanguage()
+        circularSliderTest.updateLanguage()
+        steakTemperature.updateLanguage()
+        thicknessUpdateLanguage()
+        saveCookUpdateLanguage()
+        titleButtonUpdateLanguage()
+        updateButtons()
+        
+        
+    }
     
     ///Parameter IBs:
     ///circularSlider:                           A UIView for              stove temperature
@@ -45,15 +65,50 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
     @IBOutlet weak var circularSliderTest: CircularSlider!
     @IBOutlet weak var thicknessButton: UIButton!
     @IBOutlet weak var lengthLabel: UILabel!
+    @IBOutlet weak var lengthTitle: UILabel!
+    @IBOutlet weak var lengthUnit: UILabel!
     @IBOutlet weak var donenessSlider: DonenessSlider!
     @IBOutlet weak var steakTemperature: SteakTemperature!
     
+    @IBOutlet weak var cookLabel: UILabel!
+    @IBOutlet weak var saveLabel: UILabel!
+    
+    private func thicknessUpdateLanguage() {
+        if appLanguage == "en" {
+            lengthTitle.text = "Thickness"
+            lengthUnit.text = "\""
+        } else {
+            lengthTitle.text = "牛排厚度"
+            lengthUnit.text = "cm"
+        }
+        
+    }
+    
+    private func saveCookUpdateLanguage() {
+        if appLanguage == "en" {
+            saveLabel.text = "Save"
+            cookLabel.text = "Cook"
+        } else {
+            saveLabel.text = "保存菜谱"
+            cookLabel.text = "计算时间"
+        }
+    }
+    
+    private func titleButtonUpdateLanguage() {
+        if appLanguage == "en" {
+            titleButton.titleLabel?.text = "MY RECIPES"
+        } else {
+            titleButton.titleLabel?.text = "历史菜谱"
+        }
+    }
+    ///User guide
     private let guideTool = FeatureGuideTool(identifier: "homeGuide", insideMargin: .zero)
     
     ///Save buttons and start button: UIButton
     @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var startButton: UIButton!
     private var startButtonClicked = false
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,12 +121,16 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         NotificationCenter.default.addObserver(self, selector: #selector(willEnterForeground), name: UIApplication.willEnterForegroundNotification, object: nil)
      
         view.backgroundColor = .black
+        
+
+        
         //countDownLabel.font = UIFont(name: "LiquidCrystal-Bold", size: 40)
         thicknessButton.layer.borderColor = UIColor.lightGray.cgColor
         thicknessButton.layer.borderWidth = 2
         thicknessButton.layer.cornerRadius = 50
         thicknessButton.backgroundColor = UIColor(red: 66/255, green: 66/255, blue: 66/255, alpha: 1)
-     
+        languageSegmentedControl.overrideUserInterfaceStyle = .dark
+
         //setupNavigationBar()
         
         createSampleRecipes()
@@ -84,8 +143,18 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         circularSliderTest.numberPadDelegate = self
         donenessSlider.delegate = self
         showGuideIfNeeded()
+        
+        ///language setting
+        let currentLanguage = UserDefaults.standard.string(forKey: "AppLanguage") ?? "en"
+        languageSegmentedControl.selectedSegmentIndex = (currentLanguage == "en") ? 0 : 1
+        donenessSlider.updateLanguage()
+        circularSliderTest.updateLanguage()
+        steakTemperature.updateLanguage()
+        thicknessUpdateLanguage()
+        saveCookUpdateLanguage()
+        titleButtonUpdateLanguage()
     }
-    
+   
     private func showGuideIfNeeded() {
         var hollowOutModels = [HollowOutModel]()
         let taptoEnterModel = HollowOutModel(type: .view(circularSliderTest.circularButton)) { _ in
@@ -117,12 +186,13 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         guideTool.start(hollowOutModels)
     }
     
-
+    // Information button
     func didTapButton() {
-        infoLabel.text = "Room temperature recommened"
-
+        infoLabel.text = appLanguage == "en" ? "Room temperature recommened" : "推荐使用室温" 
+        print("Information button appLanguage: \(appLanguage)")
+        
         // Clear the label after 3 seconds
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5) { [weak self] in
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) { [weak self] in
             self?.infoLabel.text = ""
         }
     }
@@ -131,7 +201,7 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         self.timer?.invalidate()
         self.timer = nil
         
-        self.countDownLabel.text = "Time's Up"
+        self.countDownLabel.text = appLanguage == "en" ? "Time's Up" : "时间到"
         self.infoLabel.text = " "
         
         startButton.setImage(UIImage(systemName: "oven"), for: .normal)
@@ -139,7 +209,7 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         // Clear the label and reset the seconds value after 1 second
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             self.startButtonClicked = false
-            self.countDownLabel.text = "Ready to Cook"
+            self.countDownLabel.text = self.appLanguage == "en" ? "Ready to Cook" : "准备开整"
             self.infoLabel.text = " "
             self.seconds = 0
         }
@@ -154,7 +224,7 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         updateTimer?.invalidate()
         
         // Update the countDownLabel immediately
-        countDownLabel.text = "Doneness: \n \(value.rawValue)"
+        countDownLabel.text = appLanguage == "en" ? "Doneness: \n \(value.localized)" : "熟度:  \n \(value.localized)"
         
         // Create a new timer to reset the countDownLabel after 3 seconds
         updateTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { [weak self] _ in
@@ -170,7 +240,10 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         updateTimer?.invalidate()
         
         // Update the countDownLabel immediately
-        countDownLabel.text = "Meat current: \n \(Int(value)) F"
+        countDownLabel.text = appLanguage == "en" ? "Meat current:\n \(Int(value)) F" : "起始中心温度:\n \(Int(value)) C "
+        
+        //Update the selected receipe
+        selectedRecipe.initialTemp = Double(appLanguage == "en" ? Int(value) : toFahrenheit(Int(value)))
         
         // Create a new timer to reset the countDownLabel after 3 seconds
         updateTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { [weak self] _ in
@@ -186,7 +259,10 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         updateTimer?.invalidate()
         
         // Update the countDownLabel immediately
-        countDownLabel.text = "Stove: \n \(Int(value)) F"
+        countDownLabel.text = appLanguage == "en" ? "Stove:\n \(Int(value)) F" : "烤箱温度:\n \(Int(value)) C"
+        
+        // Update the selected receipe
+        selectedRecipe.ovenTemp = Double(appLanguage == "en" ? Int(value) : toFahrenheit(Int(value)))
         
         // Create a new timer to reset the countDownLabel after 3 seconds
         updateTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { [weak self] _ in
@@ -195,7 +271,7 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
     }
     
     func resetCountDownLabel() {
-        countDownLabel.text = "Ready to Cook"
+        countDownLabel.text = appLanguage == "en" ? "Ready to Cook" : "准备开整"
        // infoLabel.text = " "
     }
     
@@ -217,6 +293,7 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
     private func updateTitle() {
         let button = navigationItem.titleView as? UIButton
         button?.setTitle(selectedRecipe.title, for: .normal)
+        titleButtonUpdateLanguage()
     }
     
     func updateCountDownLabelWithButtonTitles() {
@@ -238,7 +315,7 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
     
     @IBAction func recipesDropDownMenuClicked(_ sender: Any) {
         showRecipeDropdownMenu()
-        print("Herere")
+        //print("Herere")
     }
     
     private func showRecipeDropdownMenu() {
@@ -252,7 +329,7 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
             self?.updateTitle()
             self?.updateButtons()
         }
-        
+        titleButtonUpdateLanguage()
         popoverController = menu.popoverPresentationController
         popoverController?.delegate = self
         popoverController?.sourceView = titleButton
@@ -268,7 +345,7 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         let sampleRecipesCreatedKey = "sampleRecipesCreated"
         
         if !userDefaults.bool(forKey: sampleRecipesCreatedKey) {
-            let sampleRecipe1 = SteakRecipe(thickness: 1, initialTemp: 65, ovenTemp: 375, desiredCenterTemp: 135)
+            let sampleRecipe1 = SteakRecipe(thickness: 1, initialTemp: 10, ovenTemp: 350, desiredCenterTemp: 135)
             
             //let sampleRecipe2 = SteakRecipe(thickness: 4.1, initialTemp: 35, ovenTemp: 250, desiredCenterTemp: 180)
             //let sampleRecipe3 = SteakRecipe(thickness: 2, initialTemp: 50, ovenTemp: 310, desiredCenterTemp: 150)
@@ -292,8 +369,9 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
     //when a new recipe is selcted, we update new value to 4 buttons
     private func updateButtons() {
         // Implemented currenValue as get set, so angle rotation titles will also be changed
-        circularSliderTest.currentValue = selectedRecipe.ovenTemp
-        steakTemperature.currentValue = selectedRecipe.initialTemp
+        circularSliderTest.currentValue = CGFloat(appLanguage == "en" ? Int(selectedRecipe.ovenTemp) : toCelsius(Int(selectedRecipe.ovenTemp)))
+        //steakTemperature.currentValue = selectedRecipe.initialTemp
+        steakTemperature.currentValue = CGFloat(appLanguage == "en" ? Int(selectedRecipe.initialTemp) : toCelsius(Int(selectedRecipe.initialTemp)))
         lengthLabel.text = String(selectedRecipe.thickness)
         donenessSlider.currentDoneness = SteakDoneness.fromTemperature(selectedRecipe.desiredCenterTemp)
         
@@ -305,6 +383,7 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         let cdSteakRecipe = CDSteakRecipe(context: context)
         
         let newId = UUID()
+        //print("length label when save: \(lengthLabel.text)")
         let newThickness = Double(lengthLabel.text?.replacingOccurrences(of: " inches", with: "") ?? "0") ?? 0
         let newInitialTemp = steakTemperature.currentValue
         let newOvenTemp = circularSliderTest.currentValue
@@ -353,7 +432,7 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         updateTimer?.invalidate()
 
         // Update the countDownLabel immediately
-        countDownLabel.text = "saved to \n my recipes"
+        countDownLabel.text = appLanguage == "en" ? "saved to \n my recipes" : "已保存至历史菜谱"
 
         // Create a new timer to reset the countDownLabel after 1 seconds
         updateTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { [weak self] _ in
@@ -377,6 +456,11 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
             //startButton.isEnabled = false // Disable the button
             startButton.setImage(UIImage(systemName: "xmark"), for: .normal)
             startCalculation()
+            
+            if let scene = view.window?.windowScene {
+                print("Requesting App Store Review")
+                       SKStoreReviewController.requestReview(in: scene)
+            }
         } else {                    // calculating or cooking now
             if task != nil {
                 cancelCalculation()
@@ -394,9 +478,9 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
     func cancelCalculation() {
         task = nil
         dataTask?.cancel()
-        countDownLabel.text = "Calculation cancelled"
+        countDownLabel.text = appLanguage == "en" ? "Cooking cancelled" : "先不整了"
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            self.countDownLabel.text = "Ready to Cook"
+            self.countDownLabel.text = self.appLanguage == "en" ? "Ready to Cook" : "准备开整"
             self.infoLabel.text = " "
         }
         startButton.setImage(UIImage(systemName: "oven"), for: .normal)
@@ -410,12 +494,12 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         task = nil
         //seconds = 10
         //Cooking cancelled was hit
-        countDownLabel.text = "Cooking cancelled"
+        countDownLabel.text = appLanguage == "en" ? "Cooking cancelled" : "先不整了"
         startButtonClicked = false
 
         // Clear the label after 1 second
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            self.countDownLabel.text = "Ready to Cook"
+            self.countDownLabel.text = self.appLanguage == "en" ? "Ready to Cook" : "准备开整"
             self.infoLabel.text = " "
         }
 
@@ -425,26 +509,47 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
     
     
 
-    
+    private func toFahrenheit(_ temp: Int) -> Int {
+        return Int(Double(temp) * 9.0 / 5.0 + 32)
+    }
 
+
+    private func toCelsius(_ temp: Int) -> Int {
+        return Int((Double(temp) - 32) * 5.0 / 9.0)
+    }
+    
     private func startCalculation() {
         // Invalidate any existing timer
         timer?.invalidate()
 
         // Display "Calculating..." before the countdown starts
-        countDownLabel.text = "Calculating..."
-        infoLabel.text = "Thicker meat calculates longer"
+        countDownLabel.text = appLanguage == "en" ? "Calculating..." : "我算一下…"
+        infoLabel.text = appLanguage == "en" ? "Thicker meat calculates longer" : "烘培时间越长,计算时间越久！"
         
        // startButton.setImage(UIImage(systemName: "xmark.circle"), for: .normal)
     
-        let newThickness = Double(lengthLabel.text?.replacingOccurrences(of: " inches", with: "") ?? "0") ?? 0
-        let newInitialTemp = steakTemperature.currentValue
-        let newOvenTemp = circularSliderTest.currentValue
+        
+        var newThickness: Double = 0
+
+        if appLanguage == "en" {
+            // If the language is English, directly use the value assuming it's in inches
+            newThickness = Double(lengthLabel.text?.replacingOccurrences(of: " inches", with: "") ?? "0") ?? 0
+        } else {
+            // If the language is not English, convert from cm to inches
+            if let text = lengthLabel.text?.replacingOccurrences(of: " cm", with: ""),
+               let thicknessInCm = Double(text) {
+                newThickness = thicknessInCm * 0.393701
+            }
+        }
+
+        print("Selected thickness: \(selectedRecipe.thickness)")
+        let newInitialTemp = appLanguage == "en" ? Int(steakTemperature.currentValue) : toFahrenheit(Int(steakTemperature.currentValue))
+        let newOvenTemp = appLanguage == "en" ? Int(circularSliderTest.currentValue): toFahrenheit(Int(circularSliderTest.currentValue))
         let newDesiredCenterTemp = SteakDoneness.temperatureFromDoneness(donenessSlider.currentDoneness)
         let taskId = UUID()
         task = taskId
         // Make the HTTP request to get the cooking time
-        dataTask = networkService.getSteakCookingTime(steakTemperature: newInitialTemp, ovenTemperature: newOvenTemp, steakThickness: newThickness, steakDoneness: newDesiredCenterTemp) { [weak self] (result) in
+        dataTask = networkService.getSteakCookingTime(steakTemperature: Double(newInitialTemp), ovenTemperature: Double(newOvenTemp), steakThickness: newThickness, steakDoneness: newDesiredCenterTemp) { [weak self] (result) in
             guard let self = self else { return }
             print("============= Current task: \(String(describing: task))")
             guard taskId == task else { return }
@@ -465,7 +570,7 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
                     self.startButton.isEnabled = true
                     self.updateCountDownLabel()
                     self.startButton.setImage(UIImage(systemName: "play"), for: .normal)
-                    self.infoLabel.text = "Ready to countdown"
+                    self.infoLabel.text = self.appLanguage == "en" ? "Ready to countdown" : "预备倒计时"
                 }
                 self.task = nil
             case .failure(let error):
@@ -570,7 +675,9 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
     
     func sendNotification(timeInterval: TimeInterval) {
         //print("sendNotification called")
-        
+        if timeInterval < 0 {
+            return
+        }
         // Create a notification content
         let content = UNMutableNotificationContent()
         content.title = "Time's up!"

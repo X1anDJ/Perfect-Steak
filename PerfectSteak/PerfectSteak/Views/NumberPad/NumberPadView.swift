@@ -15,9 +15,14 @@ protocol NumberPadViewDelegate: AnyObject {
 
 class NumberPadView: UIView {
     
+    var appLanguage = UserDefaults.standard.string(forKey: "AppLanguage") ?? "en"
     private var firstButtonPress = true
     
     @IBOutlet weak var textField: UITextField!
+    
+    @IBOutlet weak var cancelLabel: UIButton!
+    @IBOutlet weak var enterLabel: UIButton!
+    
     
     weak var delegate: NumberPadViewDelegate?
     
@@ -49,6 +54,13 @@ class NumberPadView: UIView {
         }
         
         view.frame = self.bounds
+        if appLanguage == "en" {
+            cancelLabel.titleLabel?.text = "CANCEL"
+            enterLabel.titleLabel?.text = "ENTER"
+        } else {
+            cancelLabel.titleLabel?.text = "取消"
+            enterLabel.titleLabel?.text = "确认"
+        }
         self.addSubview(view)
     }
     

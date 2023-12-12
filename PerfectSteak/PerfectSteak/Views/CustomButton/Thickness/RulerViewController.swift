@@ -15,6 +15,7 @@ protocol RulerViewControllerDelegate: AnyObject {
 class RulerViewController: UIViewController {
     
     weak var delegate: RulerViewControllerDelegate?
+    var appLanguage = UserDefaults.standard.string(forKey: "AppLanguage") ?? "en"
     
     private var rulerView: RulerView!
     private var pointerView: UIView!
@@ -32,7 +33,7 @@ class RulerViewController: UIViewController {
         view.backgroundColor = UIColor.black.withAlphaComponent(0.8)
         setupUI()
         
-        self.title = "_._ inches"
+        self.title = appLanguage == "en" ? "_._ inches (_._ cm)" : "_._ 英寸 (_._ cm)"
         self.navigationController?.navigationBar.titleTextAttributes = [
             NSAttributedString.Key.foregroundColor: UIColor(hex: 0xFF5D32)
         ]
@@ -113,7 +114,9 @@ class RulerViewController: UIViewController {
 
         var length = rulerLengthInch - ((pointerView.center.y - topPadding) / pointsPerInch)
         length = round(length * 10) / 10
-        self.title = "\(length) inches"
+        let lengthInCm = length * 2.54
+        let lengthInCmRounded = round(lengthInCm * 10) / 10
+        self.title = appLanguage == "en" ? "\(length) inches (\(lengthInCmRounded) cm)" : "\(length) 英寸 (\(lengthInCmRounded) cm)"
         horizontalLine.frame = CGRect(x: 0, y: pointerView.center.y, width: horizontalLine.frame.width, height: -(pointerView.center.y - (topPadding + rulerHeight)))
 
         gestureRecognizer.setTranslation(.zero, in: view)

@@ -18,6 +18,8 @@ protocol SteakTemperatureNumberPadDelegate: AnyObject {
 
 
 class SteakTemperature: UIView, NumberPadViewDelegate {
+    
+    var appLanguage = UserDefaults.standard.string(forKey: "AppLanguage") ?? "en"
 
     @IBOutlet weak var parameterTitle: UILabel!
     @IBOutlet weak var parameterNumber: UILabel!
@@ -53,8 +55,8 @@ class SteakTemperature: UIView, NumberPadViewDelegate {
     }
     
     
-    let minValue: CGFloat = 0
-    let maxValue: CGFloat = 120
+    var minValue: CGFloat = 0
+    var maxValue: CGFloat = 120
     let minAngle: CGFloat = -150
     let maxAngle: CGFloat = 150
     
@@ -68,9 +70,9 @@ class SteakTemperature: UIView, NumberPadViewDelegate {
         loadFromNib()
     }
      
-    
+
     private func loadFromNib() {
-        print("loadFromNib called")
+        //print("loadFromNib called")
         let bundle = Bundle(for: type(of: self))
         let nibName = String(describing: type(of: self))
 
@@ -79,19 +81,31 @@ class SteakTemperature: UIView, NumberPadViewDelegate {
             print("Failed to instantiate view from XIB")
             return
         }
-        print("View instantiated from XIB")
+        //print("View instantiated from XIB")
         view.frame = self.bounds
         self.addSubview(view)
         configureViews()
         setupRing()
     }
     
+    func updateLanguage() {
+        appLanguage = UserDefaults.standard.string(forKey: "AppLanguage") ?? "en"
+        configureViews()
+    }
+    
+    private func toCelsius(_ temp: Int) -> Int {
+        return Int(Double(temp - 32) * 5.0 / 9.0)
+    }
+    
+    
     private func configureViews() {
-        parameterTitle.text = "Meat Temperature"
-        parameterUnit.text = "°F"
-        parameterNumber.text = "75"
-        rangeBegin.text = "0"
-        rangeEnd.text = "120"
+        minValue = (appLanguage == "en") ? CGFloat(0) : CGFloat(toCelsius(0))
+        maxValue = (appLanguage == "en") ? CGFloat(120) : CGFloat(toCelsius(120))
+        parameterTitle.text = (appLanguage == "en") ? "Meat Temperature" : "起始中心温度"
+        parameterUnit.text = (appLanguage == "en") ? "°F" : "°C"
+        parameterNumber.text =  (appLanguage == "en") ? "75" : String(toCelsius(75))
+        rangeBegin.text = (appLanguage == "en") ? "0" : String(toCelsius(0))
+        rangeEnd.text = (appLanguage == "en") ? "120" : String(toCelsius(120))
         //currentNumber = CGFloat(Double(parameterNumber.text ?? "0.0") ?? 0.0)
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(didTapPointerView))
         pointerView.addGestureRecognizer(tapGestureRecognizer)

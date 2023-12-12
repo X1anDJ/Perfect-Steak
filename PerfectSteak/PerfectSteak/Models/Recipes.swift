@@ -24,7 +24,7 @@ class Recipes {
         let defaultUUID = UUID(uuidString: "00000000-0000-0000-0000-000000000001")!
         
         if fetchRecipe(with: defaultUUID) == nil {
-            let defaultRecipe = SteakRecipe(ID: defaultUUID, thickness: 1.0, initialTemp: 60, ovenTemp: 375, desiredCenterTemp: 135)
+            let defaultRecipe = SteakRecipe(ID: defaultUUID, thickness: 1.0, initialTemp: 60, ovenTemp: 350, desiredCenterTemp: 135)
             addSteakRecipe(defaultRecipe)
         }
     }

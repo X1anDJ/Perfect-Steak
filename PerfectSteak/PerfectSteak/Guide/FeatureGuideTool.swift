@@ -46,7 +46,7 @@ extension FeatureGuideTool {
     func start(_ models: [HollowOutModel]) {
         guard !FeatureGuideTool.userGideFinished(identifier) else {
             completionHandler?()
-            return print("\(identifier) New user guide is already showed")
+            return //print("\(identifier) New user guide is already showed")
         }
         
         guard models.count != 0 else {
