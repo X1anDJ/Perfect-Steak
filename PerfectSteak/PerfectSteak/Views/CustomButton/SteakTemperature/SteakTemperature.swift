@@ -111,6 +111,8 @@ class SteakTemperature: UIView, NumberPadViewDelegate {
         parameterNumber.text = usesFahrenheit ? "75" : String(toCelsius(75))
         rangeBegin.text = usesFahrenheit ? "0" : String(toCelsius(0))
         rangeEnd.text = usesFahrenheit ? "120" : String(toCelsius(120))
+        informationButton.isHidden = true
+        informationButton.isUserInteractionEnabled = false
         //currentNumber = CGFloat(Double(parameterNumber.text ?? "0.0") ?? 0.0)
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(didTapPointerView))
         pointerView.addGestureRecognizer(tapGestureRecognizer)

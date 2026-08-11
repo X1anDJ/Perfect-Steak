@@ -20,6 +20,7 @@ extension MainViewController: RulerViewControllerDelegate {
               
         
         let lengthRounded = round(length * 10) / 10
+        updateSelectedRecipeThickness(lengthRounded)
         
         
         // Invalidate the previous timer if there's any

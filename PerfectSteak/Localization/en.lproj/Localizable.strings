@@ -11,7 +11,7 @@
 "Medium" = "Medium";
 "Medium Well" = "Medium Well";
 "Well Done" = "Well Done";
-"Stove Temperature" = "Stove Temperature";
+"Stove Temperature" = "Oven Temperature";
 "Meat Temperature" = "Meat Temperature";
 "Doneness" = "Doneness";
 "Thickness" = "Thickness";
@@ -36,8 +36,8 @@
 "Ready to Cook" = "Ready to Cook";
 "Doneness Status" = "Doneness:\n %@";
 "Meat Current Status" = "Meat current:\n %d %@";
-"Stove Status" = "Stove:\n %d %@";
-"Parameter Summary" = "Stove: %@, Thickness: %.1f,\n Doneness: %@, Initial Temp: %@";
+"Stove Status" = "Oven:\n %d %@";
+"Parameter Summary" = "Oven: %@, Thickness: %.1f,\n Doneness: %@, Initial Temp: %@";
 "Saved to My Recipes" = "saved to\n my recipes";
 "Cooking cancelled" = "Cooking cancelled";
 "Calculating..." = "Calculating...";
@@ -50,7 +50,7 @@
 "Meat Thickness Cm Status" = "Meat thickness:\n %.1f cm";
 "Ruler Title Format" = "%.1f inches (%.1f cm)";
 
-"Recipe Row Fahrenheit Format" = "%.1f\" steak, %d °F stove,\n %d °F -> %@";
+"Recipe Row Fahrenheit Format" = "%.1f\" steak, %d °F oven,\n %d °F -> %@";
 "Recipe Row Celsius Format" = "%.1f cm steak, %d °C oven,\n %d °C -> %@";
 
 "Onboarding No Measurement Title" = "No measurement while baking";
@@ -61,13 +61,13 @@
 "Instructions Title" = "Instructions";
 "Instructions Intro" = "This is a steak baking time calculator. When using the sear-then-bake method, it calculates the oven time needed to make steak with an even internal doneness.";
 "Instructions Principle Title" = "How sear-then-bake works:";
-"Instructions Principle Body" = "Sear: a fast heating process. The steak crust heats quickly without changing the internal doneness much.\n\nBake: a slow heating process. The steak center slowly rises to the target temperature (doneness), creating a more even internal doneness, similar to Sous Vide.";
+"Instructions Principle Body" = "Sear: a fast heating process. The steak crust heats quickly without changing the internal doneness much.\nBake: a slow heating process. The steak center slowly rises to the target temperature (doneness), creating a more even internal doneness, similar to Sous Vide.";
 "Instructions Principle Emphasis" = "Sear:|Bake:";
 "Instructions Steps Title" = "Steps:";
 "Instructions Steps Body" = "1. Preheat the oven to 350°F/176°C¹.\n2. Heat the pan on the highest heat², then sear the steak until browned.\n3. Remove the steak from the pan, then measure the center temperature³ and thickness.\n4. Enter target doneness, oven temperature, steak center temperature, and steak thickness in the app to calculate the required baking time.\n5. Enjoy⁴.";
 "Instructions Steps Emphasis" = "1.|2.|3.|4.|5.|350°F/176°C|target doneness|oven temperature|center temperature|steak thickness";
 "Instructions Notes Title" = "Notes:";
-"Instructions Notes Body" = "1. You can preheat the oven to a lower temperature. A lower oven temperature makes the heating process slower and the doneness more even.\n\n2. Use as much heat as possible when searing. Professional workflows may even let open flame touch the steak directly.\n\n3. If you do not have a thermometer: if the steak is not thawed, enter refrigerator temperature. If it is thawed, enter room temperature.\n\n4. This workflow does not need resting because the internal and external temperature difference is small during baking, so muscle fibers contract more gently. The final result depends heavily on oven temperature accuracy.";
+"Instructions Notes Body" = "1. You can preheat the oven to a lower temperature. A lower oven temperature makes the heating process slower and the doneness more even.\n2. Use as much heat as possible when searing. Professional workflows may even let open flame touch the steak directly.\n3. If you do not have a thermometer: if the steak is not thawed, enter refrigerator temperature. If it is thawed, enter room temperature.\n4. This workflow does not need resting because the internal and external temperature difference is small during baking, so muscle fibers contract more gently. The final result depends heavily on oven temperature accuracy.";
 "Instructions Notes Emphasis" = "1.|2.|3.|4.|do not have a thermometer|does not need resting";
 
 "Invalid URL" = "Invalid URL";
