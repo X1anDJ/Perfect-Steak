@@ -26,6 +26,7 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
     private var totalSeconds: Int = 0
     var timer: Timer?           //timer for countdown
     var updateTimer: Timer?      //timer for reset the screen's label
+    private var isUpdatingButtons = false
     var task: UUID?
     var dataTask: URLSessionDataTask?
 
@@ -37,24 +38,22 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
     @IBOutlet weak var infoLabel: UILabel!
     
     
-    ///language selection
+    ///unit selection
     var appLanguage = UserDefaults.standard.string(forKey: "AppLanguage") ?? "en"
+    private var temperatureUnit = UserDefaults.standard.string(forKey: "TemperatureUnit") ?? "F"
+    var usesFahrenheit: Bool {
+        temperatureUnit == "F"
+    }
     @IBOutlet weak var languageSegmentedControl: UISegmentedControl!
+    private let instructionsButton = UIButton(type: .system)
     @IBAction func languageChanged(_ sender: UISegmentedControl) {
-        let newLanguage = sender.selectedSegmentIndex == 0 ? "en" : "zh"
-        UserDefaults.standard.set(newLanguage, forKey: "AppLanguage")
+        temperatureUnit = sender.selectedSegmentIndex == 0 ? "F" : "C"
+        UserDefaults.standard.set(temperatureUnit, forKey: "TemperatureUnit")
         UserDefaults.standard.synchronize()
-        appLanguage = UserDefaults.standard.string(forKey: "AppLanguage") ?? "en"
-        LocalizableBundle.setLanguage(newLanguage)
-        donenessSlider.updateLanguage()
         circularSliderTest.updateLanguage()
         steakTemperature.updateLanguage()
         thicknessUpdateLanguage()
-        saveCookUpdateLanguage()
-        titleButtonUpdateLanguage()
         updateButtons()
-        
-        
     }
     
     ///Parameter IBs:
@@ -74,14 +73,8 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
     @IBOutlet weak var saveLabel: UILabel!
     
     private func thicknessUpdateLanguage() {
-        if appLanguage == "en" {
-            lengthTitle.text = "Thickness"
-            lengthUnit.text = "\""
-        } else {
-            lengthTitle.text = "牛排厚度"
-            lengthUnit.text = "cm"
-        }
-        
+        lengthTitle.text = appLanguage == "en" ? "Thickness" : "牛排厚度"
+        lengthUnit.text = usesFahrenheit ? "\"" : "cm"
     }
     
     private func saveCookUpdateLanguage() {
@@ -130,6 +123,7 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         thicknessButton.layer.cornerRadius = 50
         thicknessButton.backgroundColor = UIColor(red: 66/255, green: 66/255, blue: 66/255, alpha: 1)
         languageSegmentedControl.overrideUserInterfaceStyle = .dark
+        setupInstructionsButton()
 
         //setupNavigationBar()
         
@@ -144,15 +138,41 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         donenessSlider.delegate = self
         showGuideIfNeeded()
         
-        ///language setting
-        let currentLanguage = UserDefaults.standard.string(forKey: "AppLanguage") ?? "en"
-        languageSegmentedControl.selectedSegmentIndex = (currentLanguage == "en") ? 0 : 1
+        ///unit setting
+        languageSegmentedControl.setTitle("°F", forSegmentAt: 0)
+        languageSegmentedControl.setTitle("°C", forSegmentAt: 1)
+        temperatureUnit = UserDefaults.standard.string(forKey: "TemperatureUnit") ?? "F"
+        languageSegmentedControl.selectedSegmentIndex = usesFahrenheit ? 0 : 1
         donenessSlider.updateLanguage()
         circularSliderTest.updateLanguage()
         steakTemperature.updateLanguage()
         thicknessUpdateLanguage()
         saveCookUpdateLanguage()
         titleButtonUpdateLanguage()
+        updateButtons()
+    }
+
+    private func setupInstructionsButton() {
+        instructionsButton.translatesAutoresizingMaskIntoConstraints = false
+        instructionsButton.setImage(UIImage(systemName: "questionmark.circle"), for: .normal)
+        instructionsButton.tintColor = .white
+        instructionsButton.accessibilityLabel = "使用说明"
+        instructionsButton.addTarget(self, action: #selector(showInstructions), for: .touchUpInside)
+        view.addSubview(instructionsButton)
+
+        NSLayoutConstraint.activate([
+            instructionsButton.centerYAnchor.constraint(equalTo: languageSegmentedControl.centerYAnchor),
+            instructionsButton.leadingAnchor.constraint(equalTo: languageSegmentedControl.trailingAnchor, constant: 12),
+            instructionsButton.widthAnchor.constraint(equalToConstant: 32),
+            instructionsButton.heightAnchor.constraint(equalToConstant: 32)
+        ])
+    }
+
+    @objc private func showInstructions() {
+        let instructionsViewController = InstructionsViewController()
+        let navigationController = UINavigationController(rootViewController: instructionsViewController)
+        navigationController.modalPresentationStyle = .pageSheet
+        present(navigationController, animated: true)
     }
    
     private func showGuideIfNeeded() {
@@ -217,7 +237,7 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
 
     func steakDonenessValueChanged(to value: SteakDoneness) {
         
-        guard timer == nil else { return }      //disable this function when the timer is started
+        guard timer == nil, !isUpdatingButtons else { return }      //disable this function when the timer is started
         
         //print("!")
         // Invalidate the previous steak status timer if there's any
@@ -234,16 +254,17 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
     
     func steakTemperatureValueChanged(to value: CGFloat) {
         
-        guard timer == nil else { return }      //disable this function when the timer is started
+        guard timer == nil, !isUpdatingButtons else { return }      //disable this function when the timer is started
         
         // Invalidate the previous steak status timer if there's any
         updateTimer?.invalidate()
         
         // Update the countDownLabel immediately
-        countDownLabel.text = appLanguage == "en" ? "Meat current:\n \(Int(value)) F" : "起始中心温度:\n \(Int(value)) C "
+        let unitText = usesFahrenheit ? "F" : "C"
+        countDownLabel.text = appLanguage == "en" ? "Meat current:\n \(Int(value)) \(unitText)" : "起始中心温度:\n \(Int(value)) \(unitText)"
         
         //Update the selected receipe
-        selectedRecipe.initialTemp = Double(appLanguage == "en" ? Int(value) : toFahrenheit(Int(value)))
+        selectedRecipe.initialTemp = Double(usesFahrenheit ? Int(value) : toFahrenheit(Int(value)))
         
         // Create a new timer to reset the countDownLabel after 3 seconds
         updateTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { [weak self] _ in
@@ -253,16 +274,17 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
     
     func circularSliderValueChanged(to value: CGFloat) {
         
-        guard timer == nil else { return }      //disable this function when the timer is started
+        guard timer == nil, !isUpdatingButtons else { return }      //disable this function when the timer is started
         
         // Invalidate the previous steak status timer if there's any
         updateTimer?.invalidate()
         
         // Update the countDownLabel immediately
-        countDownLabel.text = appLanguage == "en" ? "Stove:\n \(Int(value)) F" : "烤箱温度:\n \(Int(value)) C"
+        let unitText = usesFahrenheit ? "F" : "C"
+        countDownLabel.text = appLanguage == "en" ? "Stove:\n \(Int(value)) \(unitText)" : "烤箱温度:\n \(Int(value)) \(unitText)"
         
         // Update the selected receipe
-        selectedRecipe.ovenTemp = Double(appLanguage == "en" ? Int(value) : toFahrenheit(Int(value)))
+        selectedRecipe.ovenTemp = Double(usesFahrenheit ? Int(value) : toFahrenheit(Int(value)))
         
         // Create a new timer to reset the countDownLabel after 3 seconds
         updateTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { [weak self] _ in
@@ -368,11 +390,14 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
     
     //when a new recipe is selcted, we update new value to 4 buttons
     private func updateButtons() {
+        isUpdatingButtons = true
+        defer { isUpdatingButtons = false }
         // Implemented currenValue as get set, so angle rotation titles will also be changed
-        circularSliderTest.currentValue = CGFloat(appLanguage == "en" ? Int(selectedRecipe.ovenTemp) : toCelsius(Int(selectedRecipe.ovenTemp)))
+        circularSliderTest.currentValue = CGFloat(usesFahrenheit ? Int(selectedRecipe.ovenTemp) : toCelsius(Int(selectedRecipe.ovenTemp)))
         //steakTemperature.currentValue = selectedRecipe.initialTemp
-        steakTemperature.currentValue = CGFloat(appLanguage == "en" ? Int(selectedRecipe.initialTemp) : toCelsius(Int(selectedRecipe.initialTemp)))
-        lengthLabel.text = String(selectedRecipe.thickness)
+        steakTemperature.currentValue = CGFloat(usesFahrenheit ? Int(selectedRecipe.initialTemp) : toCelsius(Int(selectedRecipe.initialTemp)))
+        let displayedThickness = usesFahrenheit ? selectedRecipe.thickness : selectedRecipe.thickness * 2.54
+        lengthLabel.text = String(format: "%.1f", displayedThickness)
         donenessSlider.currentDoneness = SteakDoneness.fromTemperature(selectedRecipe.desiredCenterTemp)
         
     }
@@ -384,9 +409,10 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         
         let newId = UUID()
         //print("length label when save: \(lengthLabel.text)")
-        let newThickness = Double(lengthLabel.text?.replacingOccurrences(of: " inches", with: "") ?? "0") ?? 0
-        let newInitialTemp = steakTemperature.currentValue
-        let newOvenTemp = circularSliderTest.currentValue
+        let displayedThickness = Double(lengthLabel.text ?? "0") ?? 0
+        let newThickness = usesFahrenheit ? displayedThickness : displayedThickness * 0.393701
+        let newInitialTemp = Double(usesFahrenheit ? Int(steakTemperature.currentValue) : toFahrenheit(Int(steakTemperature.currentValue)))
+        let newOvenTemp = Double(usesFahrenheit ? Int(circularSliderTest.currentValue) : toFahrenheit(Int(circularSliderTest.currentValue)))
         let newDesiredCenterTemp = SteakDoneness.temperatureFromDoneness(donenessSlider.currentDoneness)
         
         cdSteakRecipe.id = newId
@@ -531,20 +557,15 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         
         var newThickness: Double = 0
 
-        if appLanguage == "en" {
-            // If the language is English, directly use the value assuming it's in inches
-            newThickness = Double(lengthLabel.text?.replacingOccurrences(of: " inches", with: "") ?? "0") ?? 0
-        } else {
-            // If the language is not English, convert from cm to inches
-            if let text = lengthLabel.text?.replacingOccurrences(of: " cm", with: ""),
-               let thicknessInCm = Double(text) {
-                newThickness = thicknessInCm * 0.393701
-            }
+        if usesFahrenheit {
+            newThickness = Double(lengthLabel.text ?? "0") ?? 0
+        } else if let thicknessInCm = Double(lengthLabel.text ?? "0") {
+            newThickness = thicknessInCm * 0.393701
         }
 
         print("Selected thickness: \(selectedRecipe.thickness)")
-        let newInitialTemp = appLanguage == "en" ? Int(steakTemperature.currentValue) : toFahrenheit(Int(steakTemperature.currentValue))
-        let newOvenTemp = appLanguage == "en" ? Int(circularSliderTest.currentValue): toFahrenheit(Int(circularSliderTest.currentValue))
+        let newInitialTemp = usesFahrenheit ? Int(steakTemperature.currentValue) : toFahrenheit(Int(steakTemperature.currentValue))
+        let newOvenTemp = usesFahrenheit ? Int(circularSliderTest.currentValue) : toFahrenheit(Int(circularSliderTest.currentValue))
         let newDesiredCenterTemp = SteakDoneness.temperatureFromDoneness(donenessSlider.currentDoneness)
         let taskId = UUID()
         task = taskId

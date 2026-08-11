@@ -26,15 +26,13 @@ extension MainViewController: RulerViewControllerDelegate {
         updateTimer?.invalidate()
 
         // Update the countDownLabel immediately
-        if appLanguage == "en" {
-            // If the language is English, display in inches
-            countDownLabel.text = "Meat thickness: \n \(lengthRounded)\""
+        if usesFahrenheit {
+            countDownLabel.text = appLanguage == "en" ? "Meat thickness: \n \(lengthRounded)\"" : "厚度: \(lengthRounded)\""
             lengthLabel.text = "\(lengthRounded)"
         } else {
-            // If the language is not English, convert to cm and display
             let lengthInCm = lengthRounded * 2.54
             let lengthInCmRounded = round(lengthInCm * 10) / 10
-            countDownLabel.text = "厚度: \(lengthInCmRounded) cm"
+            countDownLabel.text = appLanguage == "en" ? "Meat thickness: \n \(lengthInCmRounded) cm" : "厚度: \(lengthInCmRounded) cm"
             lengthLabel.text = "\(lengthInCmRounded)"
         }
         // Create a new timer to reset the countDownLabel after 1 seconds

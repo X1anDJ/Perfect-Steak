@@ -13,6 +13,7 @@
 		62014DE62A72776400387D82 /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62014DE52A72776400387D82 /* UIWindow+Extension.swift */; };
 		62014DE82A72D64800387D82 /* HomeGideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62014DE72A72D64700387D82 /* HomeGideView.swift */; };
 		DC27A5D329FDF5A900226F25 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC27A5D229FDF5A900226F25 /* NetworkService.swift */; };
+		DC3AD77B302AEE9C00049489 /* InstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3AD77A302AEE9C00049489 /* InstructionsViewController.swift */; };
 		DC42F7E02B0D1EA80071EEA9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC42F7E22B0D1EA80071EEA9 /* Localizable.strings */; };
 		DC42F7E62B0D34E60071EEA9 /* LocalizableBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC42F7E52B0D34E60071EEA9 /* LocalizableBundle.swift */; };
 		DC53355929FF47B800E3078C /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC53355829FF47B800E3078C /* RecipeTableViewCell.swift */; };
@@ -74,6 +75,7 @@
 		62014DE52A72776400387D82 /* UIWindow+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
 		62014DE72A72D64700387D82 /* HomeGideView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeGideView.swift; sourceTree = "<group>"; };
 		DC27A5D229FDF5A900226F25 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		DC3AD77A302AEE9C00049489 /* InstructionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsViewController.swift; sourceTree = "<group>"; };
 		DC42F7DA2B0D1D700071EEA9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		DC42F7DB2B0D1D700071EEA9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		DC42F7DE2B0D1DDB0071EEA9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
@@ -273,6 +275,7 @@
 			children = (
 				DC6DDCE029F8385300C0DF9D /* NavigationBar */,
 				DC6DDCE329F83E2400C0DF9D /* MainViewController.swift */,
+				DC3AD77A302AEE9C00049489 /* InstructionsViewController.swift */,
 			);
 			path = MainView;
 			sourceTree = "<group>";
@@ -486,9 +489,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-PerfectSteak/Pods-PerfectSteak-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-PerfectSteak/Pods-PerfectSteak-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -550,6 +557,7 @@
 				DC27A5D329FDF5A900226F25 /* NetworkService.swift in Sources */,
 				DC6DDCDC29F7938500C0DF9D /* OnboardingSlide.swift in Sources */,
 				DC6DDCD829F75B6C00C0DF9D /* CoreDataStack.swift in Sources */,
+				DC3AD77B302AEE9C00049489 /* InstructionsViewController.swift in Sources */,
 				DC997A6D29FCF66400CBFD10 /* ConcaveButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -740,7 +748,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -777,7 +785,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

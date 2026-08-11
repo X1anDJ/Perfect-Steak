@@ -6,9 +6,9 @@
 //
 
 import UIKit
-
-
-import UIKit
+#if DEBUG
+import SwiftUI
+#endif
 
 class OnboardingViewController: UIViewController {
 
@@ -38,7 +38,7 @@ class OnboardingViewController: UIViewController {
         
         
         slides = [
-            OnboardingSlide(title: "No measurement while baking", description: "No need to open the oven again and again to measure the temperature. Bake time will be calculated before baking. ", image: #imageLiteral(resourceName: "P2")),
+            OnboardingSlide(title: "No measurement while baking", description: "No need to open the oven repeatedly to measure the temperature. Bake time will be calculated before baking. ", image: #imageLiteral(resourceName: "P2")),
             OnboardingSlide(title: "No extra tool needed", description: "Setup parameters without extra tools: Defrost the steak to room temperature, then measure the thickness with built-in ruler. ", image: #imageLiteral(resourceName: "P1"))
         ]
         
@@ -86,3 +86,21 @@ extension OnboardingViewController: UICollectionViewDelegate, UICollectionViewDa
         pageControl.currentPage = currentPage
     }
 }
+
+#if DEBUG
+private struct OnboardingViewControllerPreview: UIViewControllerRepresentable {
+    func makeUIViewController(context: Context) -> OnboardingViewController {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        return storyboard.instantiateViewController(withIdentifier: "OnboardingViewController") as! OnboardingViewController
+    }
+
+    func updateUIViewController(_ uiViewController: OnboardingViewController, context: Context) {}
+}
+
+struct OnboardingViewController_Previews: PreviewProvider {
+    static var previews: some View {
+        OnboardingViewControllerPreview()
+            .ignoresSafeArea()
+    }
+}
+#endif

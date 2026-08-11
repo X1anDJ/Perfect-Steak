@@ -29,7 +29,7 @@ class NetworkService {
         print("Thickness in mm: \(steakThicknessMillimeters)")
         //print("Current Doneness: \(steakDoneness)")
         
-        let urlString = "https://ezdyaanizk.execute-api.us-west-1.amazonaws.com/getSteakCookingTime?initialTemperature=\(steakTemperatureCelsius)&ovenTemperature=\(ovenTemperatureCelsius)&steakThickness=\(steakThicknessMillimeters)&desiredCenterTemperature=\(steakDonenessCelsius)"
+        let urlString = "https://n6ogo05zu2.execute-api.us-west-1.amazonaws.com/getSteakCookingTime?initialTemperature=\(steakTemperatureCelsius)&ovenTemperature=\(ovenTemperatureCelsius)&steakThickness=\(steakThicknessMillimeters)&desiredCenterTemperature=\(steakDonenessCelsius)"
 
         /*
          https://ezdyaanizk.execute-api.us-west-1.amazonaws.com/getSteakCookingTime?initialTemperature=\(steakTemperatureCelsius)&ovenTemperature=\(ovenTemperatureCelsius)&steakThickness=\(steakThicknessMillimeters)&desiredCenterTemperature=\(steakDonenessCelsius)

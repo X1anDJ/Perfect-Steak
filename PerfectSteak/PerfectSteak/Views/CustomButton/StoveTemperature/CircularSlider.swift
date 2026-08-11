@@ -18,6 +18,10 @@ protocol CircularSliderNumberPadDelegate: AnyObject {
 class CircularSlider: UIView, NumberPadViewDelegate {
     
     var appLanguage = UserDefaults.standard.string(forKey: "AppLanguage") ?? "en"
+    private var temperatureUnit = UserDefaults.standard.string(forKey: "TemperatureUnit") ?? "F"
+    private var usesFahrenheit: Bool {
+        temperatureUnit == "F"
+    }
     
     @IBOutlet weak var parameterTitle: UILabel!
     @IBOutlet weak var parameterNumber: UILabel!
@@ -86,6 +90,7 @@ class CircularSlider: UIView, NumberPadViewDelegate {
     
     func updateLanguage() {
         appLanguage = UserDefaults.standard.string(forKey: "AppLanguage") ?? "en"
+        temperatureUnit = UserDefaults.standard.string(forKey: "TemperatureUnit") ?? "F"
         configureViews()
     }
     
@@ -94,14 +99,14 @@ class CircularSlider: UIView, NumberPadViewDelegate {
     }
     
     private func configureViews() {
-        minValue = (appLanguage == "en") ? CGFloat(200) : CGFloat(toCelsius(200))
-        maxValue = (appLanguage == "en") ? CGFloat(500) : CGFloat(toCelsius(500))
+        minValue = usesFahrenheit ? CGFloat(200) : CGFloat(toCelsius(200))
+        maxValue = usesFahrenheit ? CGFloat(500) : CGFloat(toCelsius(500))
         parameterTitle.text = (appLanguage == "en") ? "Stove Temperature" : "烤箱温度"
         //print("Stove temperature appLanguage: \(appLanguage)")
-        parameterUnit.text =  (appLanguage == "en") ? "°F" : "°C"
-        parameterNumber.text = (appLanguage == "en") ? "350" : String(toCelsius(350))
-        rangeBegin.text = (appLanguage == "en") ? "200" : String(toCelsius(200))
-        rangeEnd.text = (appLanguage == "en") ? "500" : String(toCelsius(500))
+        parameterUnit.text = usesFahrenheit ? "°F" : "°C"
+        parameterNumber.text = usesFahrenheit ? "350" : String(toCelsius(350))
+        rangeBegin.text = usesFahrenheit ? "200" : String(toCelsius(200))
+        rangeEnd.text = usesFahrenheit ? "500" : String(toCelsius(500))
         //currentNumber = CGFloat(Double(parameterNumber.text ?? "0.0") ?? 0.0)
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(didTapPointerView))
         pointerView.addGestureRecognizer(tapGestureRecognizer)

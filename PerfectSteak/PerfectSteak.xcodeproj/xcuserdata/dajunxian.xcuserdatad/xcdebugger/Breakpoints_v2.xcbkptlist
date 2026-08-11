@@ -18,38 +18,6 @@
             endingLineNumber = "13"
             landmarkName = "Recipes"
             landmarkType = "3">
-            <Locations>
-               <Location
-                  uuid = "F4389F0D-417D-47C1-B8C0-4546A4488536 - e4a141bcba694704"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PerfectSteak.Recipes.__allocating_init() -&gt; PerfectSteak.Recipes"
-                  moduleName = "PerfectSteak"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/PerfectSteak/Models/Recipes.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "20">
-               </Location>
-               <Location
-                  uuid = "F4389F0D-417D-47C1-B8C0-4546A4488536 - e20fc64040499497"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PerfectSteak.Recipes.init() -&gt; PerfectSteak.Recipes"
-                  moduleName = "PerfectSteak"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/PerfectSteak/Models/Recipes.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "12"
-                  endingLineNumber = "12"
-                  offsetFromSymbolStart = "30">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -82,38 +50,6 @@
             endingLineNumber = "38"
             landmarkName = "init?(coder:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "0555262C-6AAC-4655-BA41-7319C718DF35 - 572b04fb1c0eebf"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PerfectSteak.CircularSlider.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;PerfectSteak.CircularSlider&gt;"
-                  moduleName = "PerfectSteak"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/PerfectSteak/Views/CustomButton/CircularSlider.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "23">
-               </Location>
-               <Location
-                  uuid = "0555262C-6AAC-4655-BA41-7319C718DF35 - 5d92fa93186825bf"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PerfectSteak.CircularSlider.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;PerfectSteak.CircularSlider&gt;"
-                  moduleName = "PerfectSteak"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/PerfectSteak/Views/CustomButton/CircularSlider.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "12"
-                  endingLineNumber = "12"
-                  offsetFromSymbolStart = "146">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -130,38 +66,6 @@
             endingLineNumber = "33"
             landmarkName = "init(frame:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "D3C37DD5-0790-4192-895E-3AD390ABBE2F - ba8e439549839edf"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PerfectSteak.CircularSlider.__allocating_init(frame: __C.CGRect) -&gt; PerfectSteak.CircularSlider"
-                  moduleName = "PerfectSteak"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/PerfectSteak/Views/CustomButton/CircularSlider.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "31">
-               </Location>
-               <Location
-                  uuid = "D3C37DD5-0790-4192-895E-3AD390ABBE2F - e129a0b801c8e28b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PerfectSteak.CircularSlider.init(frame: __C.CGRect) -&gt; PerfectSteak.CircularSlider"
-                  moduleName = "PerfectSteak"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dajunxian/Developer/PerfectSteak/Perfect-Steak/PerfectSteak/PerfectSteak/Views/CustomButton/CircularSlider.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "12"
-                  endingLineNumber = "12"
-                  offsetFromSymbolStart = "206">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

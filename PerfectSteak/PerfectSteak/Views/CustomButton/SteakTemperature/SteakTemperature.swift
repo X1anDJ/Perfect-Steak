@@ -20,6 +20,10 @@ protocol SteakTemperatureNumberPadDelegate: AnyObject {
 class SteakTemperature: UIView, NumberPadViewDelegate {
     
     var appLanguage = UserDefaults.standard.string(forKey: "AppLanguage") ?? "en"
+    private var temperatureUnit = UserDefaults.standard.string(forKey: "TemperatureUnit") ?? "F"
+    private var usesFahrenheit: Bool {
+        temperatureUnit == "F"
+    }
 
     @IBOutlet weak var parameterTitle: UILabel!
     @IBOutlet weak var parameterNumber: UILabel!
@@ -90,6 +94,7 @@ class SteakTemperature: UIView, NumberPadViewDelegate {
     
     func updateLanguage() {
         appLanguage = UserDefaults.standard.string(forKey: "AppLanguage") ?? "en"
+        temperatureUnit = UserDefaults.standard.string(forKey: "TemperatureUnit") ?? "F"
         configureViews()
     }
     
@@ -99,13 +104,13 @@ class SteakTemperature: UIView, NumberPadViewDelegate {
     
     
     private func configureViews() {
-        minValue = (appLanguage == "en") ? CGFloat(0) : CGFloat(toCelsius(0))
-        maxValue = (appLanguage == "en") ? CGFloat(120) : CGFloat(toCelsius(120))
+        minValue = usesFahrenheit ? CGFloat(0) : CGFloat(toCelsius(0))
+        maxValue = usesFahrenheit ? CGFloat(120) : CGFloat(toCelsius(120))
         parameterTitle.text = (appLanguage == "en") ? "Meat Temperature" : "起始中心温度"
-        parameterUnit.text = (appLanguage == "en") ? "°F" : "°C"
-        parameterNumber.text =  (appLanguage == "en") ? "75" : String(toCelsius(75))
-        rangeBegin.text = (appLanguage == "en") ? "0" : String(toCelsius(0))
-        rangeEnd.text = (appLanguage == "en") ? "120" : String(toCelsius(120))
+        parameterUnit.text = usesFahrenheit ? "°F" : "°C"
+        parameterNumber.text = usesFahrenheit ? "75" : String(toCelsius(75))
+        rangeBegin.text = usesFahrenheit ? "0" : String(toCelsius(0))
+        rangeEnd.text = usesFahrenheit ? "120" : String(toCelsius(120))
         //currentNumber = CGFloat(Double(parameterNumber.text ?? "0.0") ?? 0.0)
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(didTapPointerView))
         pointerView.addGestureRecognizer(tapGestureRecognizer)
