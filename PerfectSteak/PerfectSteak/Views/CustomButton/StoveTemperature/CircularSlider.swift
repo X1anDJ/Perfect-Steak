@@ -17,7 +17,7 @@ protocol CircularSliderNumberPadDelegate: AnyObject {
 
 class CircularSlider: UIView, NumberPadViewDelegate {
     
-    var appLanguage = UserDefaults.standard.string(forKey: "AppLanguage") ?? "en"
+    var appLanguage = AppLocalization.currentLanguage
     private var temperatureUnit = UserDefaults.standard.string(forKey: "TemperatureUnit") ?? "F"
     private var usesFahrenheit: Bool {
         temperatureUnit == "F"
@@ -89,7 +89,7 @@ class CircularSlider: UIView, NumberPadViewDelegate {
     }
     
     func updateLanguage() {
-        appLanguage = UserDefaults.standard.string(forKey: "AppLanguage") ?? "en"
+        appLanguage = AppLocalization.currentLanguage
         temperatureUnit = UserDefaults.standard.string(forKey: "TemperatureUnit") ?? "F"
         configureViews()
     }

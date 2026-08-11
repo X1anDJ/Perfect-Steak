@@ -10,7 +10,7 @@ import UIKit
 
 class RecipeTableViewCell: UITableViewCell {
     
-    var appLanguage = UserDefaults.standard.string(forKey: "AppLanguage") ?? "en"
+    var appLanguage = AppLocalization.currentLanguage
     
     let titleLabel: UILabel = {
         let label = UILabel()

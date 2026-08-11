@@ -1,51 +1,51 @@
 
 /* Class = "UILabel"; text = "Save"; ObjectID = "4pj-e8-OkN"; */
-"4pj-e8-OkN.text" = "Save";
+"4pj-e8-OkN.text" = "保存菜谱";
 
 /* Class = "UILabel"; text = "Info"; ObjectID = "Dyo-b6-t84"; */
-"Dyo-b6-t84.text" = "Info";
+"Dyo-b6-t84.text" = "信息";
 
 /* Class = "UIButton"; configuration.title = "Next"; ObjectID = "NXb-Y3-kY2"; */
-"NXb-Y3-kY2.configuration.title" = "Next";
+"NXb-Y3-kY2.configuration.title" = "下一页";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "NXb-Y3-kY2"; */
-"NXb-Y3-kY2.normalTitle" = "Button";
+"NXb-Y3-kY2.normalTitle" = "下一页";
 
 /* Class = "UILabel"; text = "“"; ObjectID = "Su5-TY-5yg"; */
-"Su5-TY-5yg.text" = "“";
+"Su5-TY-5yg.text" = "\"";
 
 /* Class = "UILabel"; text = "Cook"; ObjectID = "USv-oi-f5G"; */
-"USv-oi-f5G.text" = "Cook";
+"USv-oi-f5G.text" = "计算时间";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "X3v-gD-PiI"; */
-"X3v-gD-PiI.normalTitle" = "Button";
+"X3v-gD-PiI.normalTitle" = "按钮";
 
 /* Class = "UIButton"; configuration.title = "My Recipes"; ObjectID = "frP-Fg-GnL"; */
-"frP-Fg-GnL.configuration.title" = "My Recipes";
+"frP-Fg-GnL.configuration.title" = "历史菜谱";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "frP-Fg-GnL"; */
-"frP-Fg-GnL.normalTitle" = "Button";
+"frP-Fg-GnL.normalTitle" = "历史菜谱";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "gBz-QZ-8l3"; */
-"gBz-QZ-8l3.normalTitle" = "Button";
+"gBz-QZ-8l3.normalTitle" = "按钮";
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "haZ-Na-UgF"; */
-"haZ-Na-UgF.text" = "Label";
+"haZ-Na-UgF.text" = "标签";
 
 /* Class = "UISegmentedControl"; jTn-Cs-VDS.segmentTitles[0] = "Eng"; ObjectID = "jTn-Cs-VDS"; */
-"jTn-Cs-VDS.segmentTitles[0]" = "Eng";
+"jTn-Cs-VDS.segmentTitles[0]" = "°F";
 
 /* Class = "UISegmentedControl"; jTn-Cs-VDS.segmentTitles[1] = "中"; ObjectID = "jTn-Cs-VDS"; */
-"jTn-Cs-VDS.segmentTitles[1]" = "中";
+"jTn-Cs-VDS.segmentTitles[1]" = "°C";
 
 /* Class = "UILabel"; text = "Cook Like a Scientist"; ObjectID = "l15-YU-7uI"; */
-"l15-YU-7uI.text" = "Cook Like a Scientist";
+"l15-YU-7uI.text" = "像科学家一样烹饪";
 
 /* Class = "UILabel"; text = "Ready to cook"; ObjectID = "onw-Wi-76f"; */
-"onw-Wi-76f.text" = "Ready to cook";
+"onw-Wi-76f.text" = "准备开整";
 
 /* Class = "UILabel"; text = "Cook steak by solving the 1D heat equation with the Crank-Nicolson method"; ObjectID = "s00-Xz-MX0"; */
-"s00-Xz-MX0.text" = "Cook steak by solving the 1D heat equation with the Crank-Nicolson method";
+"s00-Xz-MX0.text" = "使用 Crank-Nicolson 方法求解一维热方程来烹饪牛排";
 
 /* Class = "UILabel"; text = "Thickness"; ObjectID = "zuW-bU-VaQ"; */
-"zuW-bU-VaQ.text" = "Thickness";
+"zuW-bU-VaQ.text" = "牛排厚度";

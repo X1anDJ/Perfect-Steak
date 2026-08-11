@@ -39,7 +39,7 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
     
     
     ///unit selection
-    var appLanguage = UserDefaults.standard.string(forKey: "AppLanguage") ?? "en"
+    var appLanguage = AppLocalization.currentLanguage
     private var temperatureUnit = UserDefaults.standard.string(forKey: "TemperatureUnit") ?? "F"
     var usesFahrenheit: Bool {
         temperatureUnit == "F"

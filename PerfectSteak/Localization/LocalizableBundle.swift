@@ -15,6 +15,12 @@ func LF(_ key: String, _ arguments: CVarArg...) -> String {
     String(format: L(key), arguments: arguments)
 }
 
+enum AppLocalization {
+    static var currentLanguage: String {
+        Locale.preferredLanguages.first?.hasPrefix("zh") == true ? "zh-Hans" : "en"
+    }
+}
+
 class LocalizableBundle: Bundle, @unchecked Sendable {
     static var bundle: Bundle!
 

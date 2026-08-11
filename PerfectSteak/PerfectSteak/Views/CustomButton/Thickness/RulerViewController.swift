@@ -15,7 +15,7 @@ protocol RulerViewControllerDelegate: AnyObject {
 class RulerViewController: UIViewController {
     
     weak var delegate: RulerViewControllerDelegate?
-    var appLanguage = UserDefaults.standard.string(forKey: "AppLanguage") ?? "en"
+    var appLanguage = AppLocalization.currentLanguage
     var initialLengthInInches: CGFloat = 1
     
     private var rulerView: RulerView!
@@ -119,8 +119,8 @@ class RulerViewController: UIViewController {
         updateSelectionDisplay()
 
         // Close button
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: L("Save"), style: .done, target: self, action: #selector(closeButtonTapped))
-        navigationItem.rightBarButtonItem?.tintColor = UIColor(white: 0.18, alpha: 1)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: L("Done"), style: .done, target: self, action: #selector(closeButtonTapped))
+        navigationItem.rightBarButtonItem?.tintColor = appOrange
 
         // Add pan gesture recognizer
         let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture(_:)))

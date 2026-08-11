@@ -15,7 +15,7 @@ protocol NumberPadViewDelegate: AnyObject {
 
 class NumberPadView: UIView {
     
-    var appLanguage = UserDefaults.standard.string(forKey: "AppLanguage") ?? "en"
+    var appLanguage = AppLocalization.currentLanguage
     private var firstButtonPress = true
     
     @IBOutlet weak var textField: UITextField!
