@@ -45,6 +45,9 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         temperatureUnit == "F"
     }
     @IBOutlet weak var languageSegmentedControl: UISegmentedControl!
+    private let temperatureUnitSwitcherView = UIView()
+    private let fahrenheitButton = UIButton(type: .system)
+    private let celsiusButton = UIButton(type: .system)
     private let myRecipesButton = UIButton(type: .system)
     private let instructionsButton = UIButton(type: .system)
     private let saveActionButton = UIButton(type: .system)
@@ -56,6 +59,7 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         circularSliderTest.updateLanguage()
         steakTemperature.updateLanguage()
         thicknessUpdateLanguage()
+        updateTemperatureUnitSwitcherSelection()
         updateButtons()
     }
     
@@ -145,6 +149,7 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         languageSegmentedControl.setTitle("°C", forSegmentAt: 1)
         temperatureUnit = UserDefaults.standard.string(forKey: "TemperatureUnit") ?? "F"
         languageSegmentedControl.selectedSegmentIndex = usesFahrenheit ? 0 : 1
+        updateTemperatureUnitSwitcherSelection()
         donenessSlider.updateLanguage()
         circularSliderTest.updateLanguage()
         steakTemperature.updateLanguage()
@@ -164,8 +169,8 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         }
         NSLayoutConstraint.deactivate(segmentedConstraints)
 
-        languageSegmentedControl.translatesAutoresizingMaskIntoConstraints = false
-        languageSegmentedControl.setContentHuggingPriority(.required, for: .horizontal)
+        languageSegmentedControl.isHidden = true
+        setupTemperatureUnitSwitcher()
 
         configureTopRowButton(myRecipesButton, title: L("My Recipes"))
         myRecipesButton.accessibilityLabel = L("My Recipes")
@@ -182,21 +187,71 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         screenView.layer.masksToBounds = true
 
         NSLayoutConstraint.activate([
-            languageSegmentedControl.topAnchor.constraint(equalTo: screenView.bottomAnchor, constant: 10),
-            languageSegmentedControl.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 27),
-            languageSegmentedControl.widthAnchor.constraint(equalToConstant: 92),
+            temperatureUnitSwitcherView.topAnchor.constraint(equalTo: screenView.bottomAnchor, constant: 10),
+            temperatureUnitSwitcherView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 27),
+            temperatureUnitSwitcherView.widthAnchor.constraint(equalToConstant: 92),
+            temperatureUnitSwitcherView.heightAnchor.constraint(equalToConstant: 32),
 
-            instructionsButton.centerYAnchor.constraint(equalTo: languageSegmentedControl.centerYAnchor),
+            instructionsButton.centerYAnchor.constraint(equalTo: temperatureUnitSwitcherView.centerYAnchor),
             instructionsButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -27),
             instructionsButton.widthAnchor.constraint(equalToConstant: 104),
             instructionsButton.heightAnchor.constraint(equalToConstant: 32),
 
-            myRecipesButton.centerYAnchor.constraint(equalTo: languageSegmentedControl.centerYAnchor),
+            myRecipesButton.centerYAnchor.constraint(equalTo: temperatureUnitSwitcherView.centerYAnchor),
             myRecipesButton.trailingAnchor.constraint(equalTo: instructionsButton.leadingAnchor, constant: -8),
-            myRecipesButton.leadingAnchor.constraint(greaterThanOrEqualTo: languageSegmentedControl.trailingAnchor, constant: 8),
+            myRecipesButton.leadingAnchor.constraint(greaterThanOrEqualTo: temperatureUnitSwitcherView.trailingAnchor, constant: 8),
             myRecipesButton.widthAnchor.constraint(equalToConstant: 104),
             myRecipesButton.heightAnchor.constraint(equalToConstant: 32)
         ])
+    }
+
+    private func setupTemperatureUnitSwitcher() {
+        temperatureUnitSwitcherView.translatesAutoresizingMaskIntoConstraints = false
+        temperatureUnitSwitcherView.backgroundColor = UIColor(white: 0.18, alpha: 1)
+        temperatureUnitSwitcherView.layer.cornerRadius = 16
+        temperatureUnitSwitcherView.layer.masksToBounds = true
+        view.addSubview(temperatureUnitSwitcherView)
+
+        configureTemperatureUnitButton(fahrenheitButton, title: "°F")
+        configureTemperatureUnitButton(celsiusButton, title: "°C")
+        fahrenheitButton.addTarget(self, action: #selector(temperatureUnitButtonTapped(_:)), for: .touchUpInside)
+        celsiusButton.addTarget(self, action: #selector(temperatureUnitButtonTapped(_:)), for: .touchUpInside)
+        temperatureUnitSwitcherView.addSubview(fahrenheitButton)
+        temperatureUnitSwitcherView.addSubview(celsiusButton)
+
+        NSLayoutConstraint.activate([
+            fahrenheitButton.leadingAnchor.constraint(equalTo: temperatureUnitSwitcherView.leadingAnchor),
+            fahrenheitButton.topAnchor.constraint(equalTo: temperatureUnitSwitcherView.topAnchor),
+            fahrenheitButton.bottomAnchor.constraint(equalTo: temperatureUnitSwitcherView.bottomAnchor),
+            fahrenheitButton.widthAnchor.constraint(equalTo: temperatureUnitSwitcherView.widthAnchor, multiplier: 0.5),
+
+            celsiusButton.trailingAnchor.constraint(equalTo: temperatureUnitSwitcherView.trailingAnchor),
+            celsiusButton.topAnchor.constraint(equalTo: temperatureUnitSwitcherView.topAnchor),
+            celsiusButton.bottomAnchor.constraint(equalTo: temperatureUnitSwitcherView.bottomAnchor),
+            celsiusButton.widthAnchor.constraint(equalTo: fahrenheitButton.widthAnchor)
+        ])
+    }
+
+    private func configureTemperatureUnitButton(_ button: UIButton, title: String) {
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setTitle(title, for: .normal)
+        button.titleLabel?.font = .systemFont(ofSize: 13, weight: .semibold)
+        button.setTitleColor(.white, for: .normal)
+        button.layer.cornerRadius = 16
+        button.layer.masksToBounds = true
+    }
+
+    private func updateTemperatureUnitSwitcherSelection() {
+        fahrenheitButton.backgroundColor = usesFahrenheit ? UIColor(white: 0.333, alpha: 1) : .clear
+        celsiusButton.backgroundColor = usesFahrenheit ? .clear : UIColor(white: 0.333, alpha: 1)
+        fahrenheitButton.accessibilityTraits = usesFahrenheit ? [.button, .selected] : .button
+        celsiusButton.accessibilityTraits = usesFahrenheit ? .button : [.button, .selected]
+    }
+
+    @objc private func temperatureUnitButtonTapped(_ sender: UIButton) {
+        languageSegmentedControl.selectedSegmentIndex = sender === fahrenheitButton ? 0 : 1
+        languageChanged(languageSegmentedControl)
+        updateTemperatureUnitSwitcherSelection()
     }
 
     private func configureTopRowButton(_ button: UIButton, title: String) {
