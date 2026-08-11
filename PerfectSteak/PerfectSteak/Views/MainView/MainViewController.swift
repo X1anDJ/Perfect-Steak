@@ -127,9 +127,9 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         thicknessButton.layer.cornerRadius = 50
         thicknessButton.backgroundColor = UIColor(red: 66/255, green: 66/255, blue: 66/255, alpha: 1)
         languageSegmentedControl.overrideUserInterfaceStyle = .dark
-        setupParameterGridPosition()
         setupTopActionRow()
         setupPrimaryActionButtons()
+        setupParameterGridPosition()
 
         //setupNavigationBar()
         
@@ -160,7 +160,33 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
     }
 
     private func setupParameterGridPosition() {
-        steakTemperature.superview?.superview?.transform = CGAffineTransform(translationX: 0, y: 0)
+        guard let parameterGridView = steakTemperature.superview?.superview,
+              let screenView = countDownLabel.superview else { return }
+
+        parameterGridView.translatesAutoresizingMaskIntoConstraints = false
+
+        let screenHeightConstraints = view.constraints.filter { constraint in
+            (constraint.firstItem === screenView || constraint.secondItem === screenView) && constraint.firstAttribute == .height
+        }
+        NSLayoutConstraint.deactivate(screenHeightConstraints)
+
+        let availableGridArea = UILayoutGuide()
+        let customYPadding: CGFloat = 20
+        view.addLayoutGuide(availableGridArea)
+
+        NSLayoutConstraint.activate([
+            screenView.heightAnchor.constraint(equalToConstant: 233),
+
+            availableGridArea.topAnchor.constraint(equalTo: temperatureUnitSwitcherView.bottomAnchor),
+            availableGridArea.bottomAnchor.constraint(equalTo: cookActionButton.topAnchor),
+            availableGridArea.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            availableGridArea.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+
+            parameterGridView.centerYAnchor.constraint(equalTo: availableGridArea.centerYAnchor, constant: customYPadding / 2),
+            parameterGridView.centerXAnchor.constraint(equalTo: availableGridArea.centerXAnchor),
+            parameterGridView.widthAnchor.constraint(equalToConstant: 400),
+            parameterGridView.heightAnchor.constraint(equalTo: parameterGridView.widthAnchor)
+        ])
     }
 
     private func setupTopActionRow() {
