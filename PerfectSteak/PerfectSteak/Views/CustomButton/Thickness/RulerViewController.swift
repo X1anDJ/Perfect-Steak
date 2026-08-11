@@ -29,6 +29,7 @@ class RulerViewController: UIViewController {
     private let rulerLengthInch: CGFloat = 3
     private var horizontalLine: UIView!
     private var backgroundEffectView: UIVisualEffectView?
+    private let appOrange = UIColor(red: 1, green: 0.365, blue: 0.196, alpha: 1)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,13 +58,12 @@ class RulerViewController: UIViewController {
         appearance.backgroundEffect = UIBlurEffect(style: .systemThinMaterialDark)
         appearance.backgroundColor = UIColor.black.withAlphaComponent(0.12)
         appearance.shadowColor = .clear
-        appearance.titleTextAttributes = [.foregroundColor: UIColor(hex: 0xFF5D32)]
+        appearance.titleTextAttributes = [.foregroundColor: appOrange]
 
         navigationBar.standardAppearance = appearance
         navigationBar.scrollEdgeAppearance = appearance
         navigationBar.compactAppearance = appearance
         navigationBar.isTranslucent = true
-        navigationBar.tintColor = .white
         navigationController?.view.backgroundColor = .clear
     }
     
@@ -114,21 +114,19 @@ class RulerViewController: UIViewController {
         
         //orange indicator line
         horizontalLine = UIView(frame: .zero)
-        horizontalLine.backgroundColor = UIColor(hex: 0xFF5D32).withAlphaComponent(0.5)
+        horizontalLine.backgroundColor = appOrange.withAlphaComponent(0.5)
         view.addSubview(horizontalLine)
         updateSelectionDisplay()
 
         // Close button
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(closeButtonTapped))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: L("Save"), style: .done, target: self, action: #selector(closeButtonTapped))
+        navigationItem.rightBarButtonItem?.tintColor = UIColor(white: 0.18, alpha: 1)
 
         // Add pan gesture recognizer
         let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture(_:)))
         pointerView.addGestureRecognizer(panGestureRecognizer)
     }
 
-
-
-    
     @objc private func handlePanGesture(_ gestureRecognizer: UIPanGestureRecognizer) {
         let translation = gestureRecognizer.translation(in: view)
         pointerView.center = CGPoint(x: pointerView.center.x, y: min(max(pointerView.center.y + translation.y, topPadding), rulerHeight + topPadding))
@@ -149,7 +147,7 @@ class RulerViewController: UIViewController {
     private func updateSelectionDisplay() {
         let length = round(selectedLengthInInches() * 10) / 10
         let lengthInCmRounded = round(length * 2.54 * 10) / 10
-        title = appLanguage == "en" ? "\(length) inches (\(lengthInCmRounded) cm)" : "\(length) 英寸 (\(lengthInCmRounded) cm)"
+        title = LF("Ruler Title Format", length, lengthInCmRounded)
         horizontalLine.frame = CGRect(x: 0, y: pointerView.center.y, width: 180, height: -(pointerView.center.y - (topPadding + rulerHeight)))
     }
 

@@ -12,7 +12,9 @@ import UserNotifications
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    private static var defaultLanguage: String {
+        Locale.preferredLanguages.first?.hasPrefix("zh") == true ? "zh-Hans" : "en"
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -25,6 +27,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         object_setClass(Bundle.main, LocalizableBundle.self)
+        let language = UserDefaults.standard.string(forKey: "AppLanguage") ?? AppDelegate.defaultLanguage
+        UserDefaults.standard.set(language, forKey: "AppLanguage")
+        LocalizableBundle.setLanguage(language)
         
         return true
     }

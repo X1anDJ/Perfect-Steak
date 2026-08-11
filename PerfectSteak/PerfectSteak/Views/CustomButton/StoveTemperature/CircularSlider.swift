@@ -101,7 +101,7 @@ class CircularSlider: UIView, NumberPadViewDelegate {
     private func configureViews() {
         minValue = usesFahrenheit ? CGFloat(200) : CGFloat(toCelsius(200))
         maxValue = usesFahrenheit ? CGFloat(500) : CGFloat(toCelsius(500))
-        parameterTitle.text = (appLanguage == "en") ? "Stove Temperature" : "烤箱温度"
+        parameterTitle.text = L("Stove Temperature")
         //print("Stove temperature appLanguage: \(appLanguage)")
         parameterUnit.text = usesFahrenheit ? "°F" : "°C"
         parameterNumber.text = usesFahrenheit ? "350" : String(toCelsius(350))

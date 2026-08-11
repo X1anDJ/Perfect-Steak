@@ -106,7 +106,7 @@ class SteakTemperature: UIView, NumberPadViewDelegate {
     private func configureViews() {
         minValue = usesFahrenheit ? CGFloat(0) : CGFloat(toCelsius(0))
         maxValue = usesFahrenheit ? CGFloat(120) : CGFloat(toCelsius(120))
-        parameterTitle.text = (appLanguage == "en") ? "Meat Temperature" : "起始中心温度"
+        parameterTitle.text = L("Meat Temperature")
         parameterUnit.text = usesFahrenheit ? "°F" : "°C"
         parameterNumber.text = usesFahrenheit ? "75" : String(toCelsius(75))
         rangeBegin.text = usesFahrenheit ? "0" : String(toCelsius(0))

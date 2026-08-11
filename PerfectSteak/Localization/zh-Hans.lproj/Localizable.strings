@@ -12,3 +12,65 @@
 "Medium Well" = "七分熟";
 "Well Done" = "熟透了";
 "Stove Temperature" = "烤箱温度";
+"Meat Temperature" = "起始中心温度";
+"Doneness" = "期望熟度";
+"Thickness" = "牛排厚度";
+
+"Save" = "保存菜谱";
+"Cook" = "计算时间";
+"Cancel" = "取消";
+"Stop" = "停止";
+"Start" = "开始";
+"Done" = "完成";
+"Next" = "下一页";
+"Get Started!" = "开始使用";
+"CANCEL" = "取消";
+"ENTER" = "确认";
+"MY RECIPES" = "历史菜谱";
+"My Recipes" = "历史菜谱";
+"Instructions" = "使用说明";
+"Default Recipe Title" = "- - 历史菜谱 - -";
+
+"Room temperature recommended" = "推荐使用室温";
+"Time's Up" = "时间到";
+"Ready to Cook" = "准备开整";
+"Doneness Status" = "熟度:\n %@";
+"Meat Current Status" = "起始中心温度:\n %d %@";
+"Stove Status" = "烤箱温度:\n %d %@";
+"Parameter Summary" = "烤箱: %@, 厚度: %.1f,\n 熟度: %@, 起始温度: %@";
+"Saved to My Recipes" = "已保存至历史菜谱";
+"Cooking cancelled" = "先不整了";
+"Calculating..." = "我算一下…";
+"Thicker meat calculates longer" = "烘培时间越长，计算时间越久！";
+"Ready to countdown" = "预备倒计时";
+"Error Format" = "错误：%@";
+"Time's up!" = "时间到！";
+"Your steak is ready" = "牛排好了";
+"Meat Thickness Inches Status" = "厚度: %.1f\"";
+"Meat Thickness Cm Status" = "厚度: %.1f cm";
+"Ruler Title Format" = "%.1f 英寸 (%.1f cm)";
+
+"Recipe Row Fahrenheit Format" = "%.1f\" 牛排, %d °F 烤箱,\n %d °F -> %@";
+"Recipe Row Celsius Format" = "%.1f cm 牛排, %d °C 烤箱,\n %d °C -> %@";
+
+"Onboarding No Measurement Title" = "烘培时无需测温";
+"Onboarding No Measurement Description" = "无需反复打开烤箱测量温度。烘培时间会在入炉前计算完成。";
+"Onboarding No Extra Tool Title" = "无需额外工具";
+"Onboarding No Extra Tool Description" = "无需额外工具即可设置参数：将牛排解冻至室温，然后用内置尺测量厚度。";
+
+"Instructions Title" = "使用说明";
+"Instructions Intro" = "这是一款牛排烘培时间计算器。使用先煎后烤的方法时，可以计算烤箱所需烘培时间，制作内部熟度均匀一致的牛排。";
+"Instructions Principle Title" = "先煎后烤的原理：";
+"Instructions Principle Body" = "煎：快速加热过程。牛排外壳快速升温，同时不影响内部熟度。\n\n烤：缓慢加热过程。牛排内部缓慢升温至目标温度（熟度），达到内部熟度分布均匀，低温慢煮的效果。";
+"Instructions Principle Emphasis" = "煎：|烤：";
+"Instructions Steps Title" = "使用步骤：";
+"Instructions Steps Body" = "1. 350°F/176°C 预热烤箱¹。\n2. 用最大火²热锅，将牛排煎至上色。\n3. 将牛排从锅中取出，测量牛排的中心温度³/厚度。\n4. 将目标熟度/烤箱温度/牛排的中心温度/牛排厚度输入 App，计算所需烘培时间。\n5. 享用⁴。";
+"Instructions Steps Emphasis" = "1.|2.|3.|4.|5.|350°F/176°C|目标熟度|烤箱温度|中心温度|牛排厚度";
+"Instructions Notes Title" = "注释：";
+"Instructions Notes Body" = "1. 烤箱预热可以使用更低的温度。烤箱温度越低，升温过程约缓慢，肉质熟度越均匀。\n\n2. 煎制时的火越大越好。专业流程甚至让明火直接接触牛排。\n\n3. 如果没有测温针：如果没有解冻，就输入冰箱的温度。如果有解冻，就输入室温。\n\n4. 此流程无需 rest，因为烤的时候内外温差小，肌肉纤维收缩柔和。最终效果很大取决于烤箱温度是否准确。";
+"Instructions Notes Emphasis" = "1.|2.|3.|4.|没有测温针|无需 rest";
+
+"Invalid URL" = "URL 无效";
+"HTTP Error Format" = "%d：换个正常点的参数";
+"Try different parameters" = "请尝试不同参数";
+"Unknown error" = "未知错误";

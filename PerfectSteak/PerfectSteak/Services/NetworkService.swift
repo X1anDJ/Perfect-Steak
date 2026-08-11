@@ -36,7 +36,7 @@ class NetworkService {
          */
         
         guard let url = URL(string: urlString) else {
-            completion(.failure(NSError(domain: "com.example.steakapp", code: -1, userInfo: [NSLocalizedDescriptionKey: "Invalid URL"])))
+            completion(.failure(NSError(domain: "com.example.steakapp", code: -1, userInfo: [NSLocalizedDescriptionKey: L("Invalid URL")])))
             return nil
         }
 
@@ -44,16 +44,16 @@ class NetworkService {
             if let error = error { 
                 completion(.failure(error))
             } else if let httpResponse = response as? HTTPURLResponse, !(200...299).contains(httpResponse.statusCode) {
-                completion(.failure(NSError(domain: "com.example.steakapp", code: httpResponse.statusCode, userInfo: [NSLocalizedDescriptionKey: "\(httpResponse.statusCode): Cook something normal"])))
+                completion(.failure(NSError(domain: "com.example.steakapp", code: httpResponse.statusCode, userInfo: [NSLocalizedDescriptionKey: LF("HTTP Error Format", httpResponse.statusCode)])))
             } else if let data = data {
                 // Parse the integer response
                 if let cookingTime = String(data: data, encoding: .utf8), let cookingTimeInt = Double(cookingTime) {
                     completion(.success(cookingTimeInt))
                 } else {
-                    completion(.failure(NSError(domain: "com.example.steakapp", code: -1, userInfo: [NSLocalizedDescriptionKey: "Try different parameters"])))
+                    completion(.failure(NSError(domain: "com.example.steakapp", code: -1, userInfo: [NSLocalizedDescriptionKey: L("Try different parameters")])))
                 }
             } else {
-                completion(.failure(NSError(domain: "com.example.steakapp", code: -1, userInfo: [NSLocalizedDescriptionKey: "Unknown error"])))
+                completion(.failure(NSError(domain: "com.example.steakapp", code: -1, userInfo: [NSLocalizedDescriptionKey: L("Unknown error")])))
             }
         }
         task.resume()

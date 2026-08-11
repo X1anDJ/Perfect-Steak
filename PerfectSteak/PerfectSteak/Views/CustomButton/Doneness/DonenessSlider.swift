@@ -19,62 +19,7 @@ enum SteakDoneness: String {
     case wellDone = "Well Done"
     
     var localized: String {
-        /*
-        let localizedString = NSLocalizedString(self.rawValue, comment: "")
-        print("Localization Key: '\(self.rawValue)', Localized String: '\(localizedString)'")
-        return localizedString
-         */
-        
-        return self.manualLocalization(for: self.rawValue)
-    }
-    
-    private func manualLocalization(for key: String) -> String {
-           let language = UserDefaults.standard.string(forKey: "AppLanguage") ?? "en"
-        if language == "en" {
-            return self.englishLocalization(forKey: key)
-        } else {
-            return self.chineseLocalization(forKey: key)
-        }
-        
-        
-        
-
-       }
-
-    private func englishLocalization(forKey key: String) -> String {
-        switch key {
-        case "Rare":
-            return "Rare"
-        case "Medium Rare":
-            return "Medium Rare"
-        case "Medium":
-            return "Medium"
-        case "Medium Well":
-            return "Medium Well"
-        case "Well Done":
-            return "Well Done"
-        // Add other English translations here if necessary
-        default:
-            return key
-        }
-    }
-
-    private func chineseLocalization(forKey key: String) -> String {
-        switch key {
-        case "Rare":
-            return "一分熟"
-        case "Medium Rare":
-            return "三分熟"
-        case "Medium":
-            return "五分熟"
-        case "Medium Well":
-            return "七分熟"
-        case "Well Done":
-            return "熟透了"
-        // Add other Chinese translations here if necessary
-        default:
-            return key
-        }
+        L(rawValue)
     }
     
     static func temperatureFromDoneness(_ doneness: SteakDoneness) -> Double {
@@ -172,10 +117,8 @@ class DonenessSlider: UIView {
     }
     
     func updateLanguage() {
-        let appLanguage = UserDefaults.standard.string(forKey: "AppLanguage") ?? "en"
-        print("Updating language in DonenessSlider to: \(appLanguage)")
         updateSteakDonenessTitle()
-        parameterTitle.text = appLanguage == "en" ? "Doneness" : "期望熟度"
+        parameterTitle.text = L("Doneness")
         steakDonenessTitle.text = currentDoneness.localized
         
     }

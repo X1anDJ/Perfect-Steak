@@ -47,16 +47,12 @@ class RecipeTableViewCell: UITableViewCell {
         let doneness = SteakDoneness.fromTemperature(recipe.desiredCenterTemp).localized
 
         if appLanguage == "en" {
-            titleLabel.text = String(format: "%.1f\" steak, %d °F stove, \n %d °F -> %@", recipe.thickness, Int(recipe.ovenTemp), Int(recipe.initialTemp), doneness)
+            titleLabel.text = LF("Recipe Row Fahrenheit Format", recipe.thickness, Int(recipe.ovenTemp), Int(recipe.initialTemp), doneness)
         } else {
-            // Convert thickness to cm
             let thicknessInCm = recipe.thickness * 2.54
-
-            // Convert temperatures to Celsius
             let ovenTempC = (recipe.ovenTemp - 32) * 5 / 9
             let initialTempC = (recipe.initialTemp - 32) * 5 / 9
-
-            titleLabel.text = String(format: "%.1f cm 牛排, %d °C 烤箱, \n %d °C -> %@", thicknessInCm, Int(ovenTempC), Int(initialTempC), doneness)
+            titleLabel.text = LF("Recipe Row Celsius Format", thicknessInCm, Int(ovenTempC), Int(initialTempC), doneness)
         }
     }
 

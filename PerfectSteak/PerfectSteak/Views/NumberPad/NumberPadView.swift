@@ -59,13 +59,8 @@ class NumberPadView: UIView {
         textField.layer.masksToBounds = false
         textField.clipsToBounds = false
         removeRoundedCorners(in: view)
-        if appLanguage == "en" {
-            cancelLabel.titleLabel?.text = "CANCEL"
-            enterLabel.titleLabel?.text = "ENTER"
-        } else {
-            cancelLabel.titleLabel?.text = "取消"
-            enterLabel.titleLabel?.text = "确认"
-        }
+        cancelLabel.setTitle(L("CANCEL"), for: .normal)
+        enterLabel.setTitle(L("ENTER"), for: .normal)
         self.addSubview(view)
     }
 

@@ -27,12 +27,12 @@ extension MainViewController: RulerViewControllerDelegate {
 
         // Update the countDownLabel immediately
         if usesFahrenheit {
-            countDownLabel.text = appLanguage == "en" ? "Meat thickness: \n \(lengthRounded)\"" : "厚度: \(lengthRounded)\""
+            countDownLabel.text = LF("Meat Thickness Inches Status", lengthRounded)
             lengthLabel.text = "\(lengthRounded)"
         } else {
             let lengthInCm = lengthRounded * 2.54
             let lengthInCmRounded = round(lengthInCm * 10) / 10
-            countDownLabel.text = appLanguage == "en" ? "Meat thickness: \n \(lengthInCmRounded) cm" : "厚度: \(lengthInCmRounded) cm"
+            countDownLabel.text = LF("Meat Thickness Cm Status", lengthInCmRounded)
             lengthLabel.text = "\(lengthInCmRounded)"
         }
         // Create a new timer to reset the countDownLabel after 1 seconds

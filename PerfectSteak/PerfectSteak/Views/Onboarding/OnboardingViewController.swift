@@ -21,9 +21,9 @@ class OnboardingViewController: UIViewController {
         didSet {
             pageControl.currentPage = currentPage
             if currentPage == slides.count - 1 {
-                nextButton.setTitle("Get Started!", for: .normal)
+                nextButton.setTitle(L("Get Started!"), for: .normal)
             } else {
-                nextButton.setTitle("Next", for: .normal)
+                nextButton.setTitle(L("Next"), for: .normal)
             }
         }
     }
@@ -38,8 +38,8 @@ class OnboardingViewController: UIViewController {
         
         
         slides = [
-            OnboardingSlide(title: "No measurement while baking", description: "No need to open the oven repeatedly to measure the temperature. Bake time will be calculated before baking. ", image: #imageLiteral(resourceName: "P2")),
-            OnboardingSlide(title: "No extra tool needed", description: "Setup parameters without extra tools: Defrost the steak to room temperature, then measure the thickness with built-in ruler. ", image: #imageLiteral(resourceName: "P1"))
+            OnboardingSlide(title: L("Onboarding No Measurement Title"), description: L("Onboarding No Measurement Description"), image: #imageLiteral(resourceName: "P2")),
+            OnboardingSlide(title: L("Onboarding No Extra Tool Title"), description: L("Onboarding No Extra Tool Description"), image: #imageLiteral(resourceName: "P1"))
         ]
         
         pageControl.numberOfPages = slides.count

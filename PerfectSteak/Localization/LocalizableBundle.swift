@@ -7,7 +7,15 @@
 
 import Foundation
 
-class LocalizableBundle: Bundle {
+func L(_ key: String) -> String {
+    NSLocalizedString(key, comment: "")
+}
+
+func LF(_ key: String, _ arguments: CVarArg...) -> String {
+    String(format: L(key), arguments: arguments)
+}
+
+class LocalizableBundle: Bundle, @unchecked Sendable {
     static var bundle: Bundle!
 
     override func localizedString(forKey key: String, value: String?, table tableName: String?) -> String {
