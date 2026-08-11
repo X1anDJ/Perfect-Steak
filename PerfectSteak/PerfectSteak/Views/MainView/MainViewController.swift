@@ -45,7 +45,10 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         temperatureUnit == "F"
     }
     @IBOutlet weak var languageSegmentedControl: UISegmentedControl!
+    private let myRecipesButton = UIButton(type: .system)
     private let instructionsButton = UIButton(type: .system)
+    private let saveActionButton = UIButton(type: .system)
+    private let cookActionButton = UIButton(type: .system)
     @IBAction func languageChanged(_ sender: UISegmentedControl) {
         temperatureUnit = sender.selectedSegmentIndex == 0 ? "F" : "C"
         UserDefaults.standard.set(temperatureUnit, forKey: "TemperatureUnit")
@@ -81,17 +84,25 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         if appLanguage == "en" {
             saveLabel.text = "Save"
             cookLabel.text = "Cook"
+            saveActionButton.setTitle("Save", for: .normal)
+            cookActionButton.setTitle("Cook", for: .normal)
         } else {
             saveLabel.text = "保存菜谱"
             cookLabel.text = "计算时间"
+            saveActionButton.setTitle("保存菜谱", for: .normal)
+            cookActionButton.setTitle("计算时间", for: .normal)
         }
     }
     
     private func titleButtonUpdateLanguage() {
         if appLanguage == "en" {
             titleButton.titleLabel?.text = "MY RECIPES"
+            myRecipesButton.setTitle("My Recipes", for: .normal)
+            myRecipesButton.accessibilityLabel = "My Recipes"
         } else {
             titleButton.titleLabel?.text = "历史菜谱"
+            myRecipesButton.setTitle("历史菜谱", for: .normal)
+            myRecipesButton.accessibilityLabel = "历史菜谱"
         }
     }
     ///User guide
@@ -123,7 +134,8 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         thicknessButton.layer.cornerRadius = 50
         thicknessButton.backgroundColor = UIColor(red: 66/255, green: 66/255, blue: 66/255, alpha: 1)
         languageSegmentedControl.overrideUserInterfaceStyle = .dark
-        setupInstructionsButton()
+        setupTopActionRow()
+        setupPrimaryActionButtons()
 
         //setupNavigationBar()
         
@@ -152,20 +164,101 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         updateButtons()
     }
 
-    private func setupInstructionsButton() {
-        instructionsButton.translatesAutoresizingMaskIntoConstraints = false
-        instructionsButton.setImage(UIImage(systemName: "questionmark.circle"), for: .normal)
-        instructionsButton.tintColor = .white
-        instructionsButton.accessibilityLabel = "使用说明"
+    private func setupTopActionRow() {
+        let segmentedConstraints = view.constraints.filter { constraint in
+            constraint.firstItem === languageSegmentedControl || constraint.secondItem === languageSegmentedControl
+        }
+        NSLayoutConstraint.deactivate(segmentedConstraints)
+
+        languageSegmentedControl.translatesAutoresizingMaskIntoConstraints = false
+        languageSegmentedControl.setContentHuggingPriority(.required, for: .horizontal)
+
+        configureTopRowButton(myRecipesButton, title: appLanguage == "en" ? "My Recipes" : "历史菜谱")
+        myRecipesButton.accessibilityLabel = appLanguage == "en" ? "My Recipes" : "历史菜谱"
+        myRecipesButton.addTarget(self, action: #selector(showRecipesFromTopRow), for: .touchUpInside)
+        view.addSubview(myRecipesButton)
+
+        configureTopRowButton(instructionsButton, title: "Instructions")
+        instructionsButton.accessibilityLabel = "Instructions"
         instructionsButton.addTarget(self, action: #selector(showInstructions), for: .touchUpInside)
         view.addSubview(instructionsButton)
 
+        guard let screenView = countDownLabel.superview else { return }
+
         NSLayoutConstraint.activate([
+            languageSegmentedControl.topAnchor.constraint(equalTo: screenView.bottomAnchor, constant: 10),
+            languageSegmentedControl.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 27),
+            languageSegmentedControl.widthAnchor.constraint(equalToConstant: 92),
+
             instructionsButton.centerYAnchor.constraint(equalTo: languageSegmentedControl.centerYAnchor),
-            instructionsButton.leadingAnchor.constraint(equalTo: languageSegmentedControl.trailingAnchor, constant: 12),
-            instructionsButton.widthAnchor.constraint(equalToConstant: 32),
-            instructionsButton.heightAnchor.constraint(equalToConstant: 32)
+            instructionsButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -27),
+            instructionsButton.widthAnchor.constraint(equalToConstant: 104),
+            instructionsButton.heightAnchor.constraint(equalToConstant: 32),
+
+            myRecipesButton.centerYAnchor.constraint(equalTo: languageSegmentedControl.centerYAnchor),
+            myRecipesButton.trailingAnchor.constraint(equalTo: instructionsButton.leadingAnchor, constant: -8),
+            myRecipesButton.leadingAnchor.constraint(greaterThanOrEqualTo: languageSegmentedControl.trailingAnchor, constant: 8),
+            myRecipesButton.widthAnchor.constraint(equalToConstant: 104),
+            myRecipesButton.heightAnchor.constraint(equalToConstant: 32)
         ])
+    }
+
+    private func configureTopRowButton(_ button: UIButton, title: String) {
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setTitle(title, for: .normal)
+        button.titleLabel?.font = .systemFont(ofSize: 13, weight: .semibold)
+        button.setTitleColor(.white, for: .normal)
+        button.backgroundColor = UIColor(white: 0.18, alpha: 1)
+        button.layer.borderWidth = 0
+        button.layer.cornerRadius = 16
+        button.layer.masksToBounds = true
+        button.contentEdgeInsets = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
+    }
+
+    private func setupPrimaryActionButtons() {
+        // Storyboard save/cook controls remain connected for existing logic, but are replaced visually by capsule buttons.
+        saveButton.isHidden = true
+        startButton.isHidden = true
+        saveLabel.isHidden = true
+        cookLabel.isHidden = true
+
+        configureCapsuleButton(saveActionButton, title: appLanguage == "en" ? "Save" : "保存菜谱", backgroundColor: UIColor(white: 0.333, alpha: 1))
+        configureCapsuleButton(cookActionButton, title: appLanguage == "en" ? "Cook" : "计算时间", backgroundColor: UIColor(red: 1, green: 0.365, blue: 0.196, alpha: 1))
+        saveActionButton.addTarget(self, action: #selector(saveRecipe(_:)), for: .touchUpInside)
+        cookActionButton.addTarget(self, action: #selector(startButtonTapped(_:)), for: .touchUpInside)
+        view.addSubview(saveActionButton)
+        view.addSubview(cookActionButton)
+
+        NSLayoutConstraint.activate([
+            cookActionButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -27),
+            cookActionButton.centerXAnchor.constraint(equalTo: thicknessButton.centerXAnchor),
+            cookActionButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -28),
+            cookActionButton.heightAnchor.constraint(equalToConstant: 44),
+
+            saveActionButton.centerXAnchor.constraint(equalTo: steakTemperature.centerXAnchor),
+            saveActionButton.widthAnchor.constraint(equalTo: cookActionButton.widthAnchor),
+            saveActionButton.centerYAnchor.constraint(equalTo: cookActionButton.centerYAnchor),
+            saveActionButton.heightAnchor.constraint(equalTo: cookActionButton.heightAnchor)
+        ])
+    }
+
+    private func configureCapsuleButton(_ button: UIButton, title: String, backgroundColor: UIColor) {
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setTitle(title, for: .normal)
+        button.titleLabel?.font = .systemFont(ofSize: 16, weight: .semibold)
+        button.setTitleColor(.white, for: .normal)
+        button.backgroundColor = backgroundColor
+        button.layer.cornerRadius = 22
+        button.layer.masksToBounds = true
+        button.contentEdgeInsets = UIEdgeInsets(top: 0, left: 18, bottom: 0, right: 18)
+    }
+
+    private func setCookActionTitle(english: String, chinese: String) {
+        cookActionButton.setTitle(appLanguage == "en" ? english : chinese, for: .normal)
+    }
+
+    @objc private func showRecipesFromTopRow() {
+        showRecipeDropdownMenu(from: myRecipesButton)
     }
 
     @objc private func showInstructions() {
@@ -190,7 +283,7 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         taptoEnterModel.isShowDashed = false
         hollowOutModels.append(taptoEnterModel)
 
-        let calculateModel = HollowOutModel(type: .view(startButton)) { _ in
+        let calculateModel = HollowOutModel(type: .view(cookActionButton)) { _ in
             let style = HomeGideView.Style.calculate
             let view = HomeGideView(style)
             view.frame = CGRect(x: 0, y: 0, width: LayoutConstants.deviceWidth, height: style.imageViewSize.height)
@@ -225,6 +318,7 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         self.infoLabel.text = " "
         
         startButton.setImage(UIImage(systemName: "oven"), for: .normal)
+        setCookActionTitle(english: "Cook", chinese: "计算时间")
 
         // Clear the label and reset the seconds value after 1 second
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
@@ -336,11 +430,11 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
 
     
     @IBAction func recipesDropDownMenuClicked(_ sender: Any) {
-        showRecipeDropdownMenu()
+        showRecipeDropdownMenu(from: titleButton)
         //print("Herere")
     }
     
-    private func showRecipeDropdownMenu() {
+    private func showRecipeDropdownMenu(from sourceView: UIView) {
         let menu = RecipeDropdownTableViewController()
         menu.modalPresentationStyle = .popover
         menu.preferredContentSize = CGSize(width: 310, height: 130)
@@ -354,8 +448,8 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         titleButtonUpdateLanguage()
         popoverController = menu.popoverPresentationController
         popoverController?.delegate = self
-        popoverController?.sourceView = titleButton
-        popoverController?.sourceRect = titleButton.bounds
+        popoverController?.sourceView = sourceView
+        popoverController?.sourceRect = sourceView.bounds
         popoverController?.permittedArrowDirections = .any
             
         present(menu, animated: true, completion: nil)
@@ -481,6 +575,7 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
             startButtonClicked = true
             //startButton.isEnabled = false // Disable the button
             startButton.setImage(UIImage(systemName: "xmark"), for: .normal)
+            setCookActionTitle(english: "Cancel", chinese: "取消")
             startCalculation()
             
             if let scene = view.window?.windowScene {
@@ -493,10 +588,12 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
             } else if timer == nil { // Button tapped to start the countdown
                 startTimer()
                 startButton.setImage(UIImage(systemName: "stop"), for: .normal)
+                setCookActionTitle(english: "Stop", chinese: "停止")
             } else { // Button tapped to stop the countdown
                 //cancel the timer
                 cancelCooking()
                 startButton.setImage(UIImage(systemName: "oven"), for: .normal)
+                setCookActionTitle(english: "Cook", chinese: "计算时间")
             }
         }
     }
@@ -510,6 +607,7 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
             self.infoLabel.text = " "
         }
         startButton.setImage(UIImage(systemName: "oven"), for: .normal)
+        setCookActionTitle(english: "Cook", chinese: "计算时间")
         startButtonClicked = false
     }
 
@@ -591,6 +689,7 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
                     self.startButton.isEnabled = true
                     self.updateCountDownLabel()
                     self.startButton.setImage(UIImage(systemName: "play"), for: .normal)
+                    self.setCookActionTitle(english: "Start", chinese: "开始")
                     self.infoLabel.text = self.appLanguage == "en" ? "Ready to countdown" : "预备倒计时"
                 }
                 self.task = nil
@@ -600,6 +699,7 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
                     self.infoLabel.text = " "
                     self.startButton.isEnabled = true // Enable the button in case of failure
                     self.startButton.setImage(UIImage(systemName: "oven"), for: .normal) // Reset the button image
+                    self.setCookActionTitle(english: "Cook", chinese: "计算时间")
                     self.startButtonClicked = false // Reset the startButtonClicked flag
                 }
                 self.task = nil
