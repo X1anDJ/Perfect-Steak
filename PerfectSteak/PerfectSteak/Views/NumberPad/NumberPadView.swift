@@ -54,6 +54,11 @@ class NumberPadView: UIView {
         }
         
         view.frame = self.bounds
+        textField.borderStyle = .none
+        textField.layer.cornerRadius = 0
+        textField.layer.masksToBounds = false
+        textField.clipsToBounds = false
+        removeRoundedCorners(in: view)
         if appLanguage == "en" {
             cancelLabel.titleLabel?.text = "CANCEL"
             enterLabel.titleLabel?.text = "ENTER"
@@ -62,6 +67,23 @@ class NumberPadView: UIView {
             enterLabel.titleLabel?.text = "确认"
         }
         self.addSubview(view)
+    }
+
+    private func removeRoundedCorners(in view: UIView) {
+        for subview in view.subviews {
+            if let button = subview as? UIButton {
+                button.layer.cornerRadius = 0
+                button.layer.masksToBounds = false
+                button.clipsToBounds = false
+                if #available(iOS 15.0, *) {
+                    var configuration = button.configuration
+                    configuration?.cornerStyle = .fixed
+                    configuration?.background.cornerRadius = 0
+                    button.configuration = configuration
+                }
+            }
+            removeRoundedCorners(in: subview)
+        }
     }
     
     @IBAction func numberButonTapped(_ sender: UIButton) {

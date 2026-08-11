@@ -16,6 +16,7 @@ class RulerViewController: UIViewController {
     
     weak var delegate: RulerViewControllerDelegate?
     var appLanguage = UserDefaults.standard.string(forKey: "AppLanguage") ?? "en"
+    var initialLengthInInches: CGFloat = 1
     
     private var rulerView: RulerView!
     private var pointerView: UIView!
@@ -27,17 +28,43 @@ class RulerViewController: UIViewController {
     private var rulerHeight: CGFloat!
     private let rulerLengthInch: CGFloat = 3
     private var horizontalLine: UIView!
+    private var backgroundEffectView: UIVisualEffectView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.black.withAlphaComponent(0.8)
+        view.backgroundColor = .clear
+        setupBackgroundMaterial()
+        setupNavigationBarAppearance()
         setupUI()
-        
-        self.title = appLanguage == "en" ? "_._ inches (_._ cm)" : "_._ 英寸 (_._ cm)"
-        self.navigationController?.navigationBar.titleTextAttributes = [
-            NSAttributedString.Key.foregroundColor: UIColor(hex: 0xFF5D32)
-        ]
-        self.navigationController?.navigationBar.backgroundColor = UIColor.black
+    }
+
+    private func setupBackgroundMaterial() {
+        if #available(iOS 13.0, *) {
+            let effectView = UIVisualEffectView(effect: UIBlurEffect(style: .systemThinMaterialDark))
+            effectView.frame = view.bounds
+            effectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+            view.addSubview(effectView)
+            backgroundEffectView = effectView
+        } else {
+            view.backgroundColor = UIColor.black.withAlphaComponent(0.55)
+        }
+    }
+
+    private func setupNavigationBarAppearance() {
+        guard let navigationBar = navigationController?.navigationBar else { return }
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithTransparentBackground()
+        appearance.backgroundEffect = UIBlurEffect(style: .systemThinMaterialDark)
+        appearance.backgroundColor = UIColor.black.withAlphaComponent(0.12)
+        appearance.shadowColor = .clear
+        appearance.titleTextAttributes = [.foregroundColor: UIColor(hex: 0xFF5D32)]
+
+        navigationBar.standardAppearance = appearance
+        navigationBar.scrollEdgeAppearance = appearance
+        navigationBar.compactAppearance = appearance
+        navigationBar.isTranslucent = true
+        navigationBar.tintColor = .white
+        navigationController?.view.backgroundColor = .clear
     }
     
     private func setupUI() {
@@ -71,9 +98,10 @@ class RulerViewController: UIViewController {
         
         
         // Arrow-shaped pointer view
-        pointerView = ArrowView(frame: CGRect(x: rulerWidth, y: topPadding+300, width: 120, height: 80))
+        pointerView = ArrowView(frame: CGRect(x: rulerWidth, y: 0, width: 120, height: 80))
         pointerView.backgroundColor = .clear
         view.addSubview(pointerView)
+        updatePointerPosition(for: initialLengthInInches)
 
         /*
         // Length label
@@ -85,19 +113,13 @@ class RulerViewController: UIViewController {
         */
         
         //orange indicator line
-        let horizontalLineWidth: CGFloat = 180 // Same width as the rulerView
-        let horizontalLineHeight: CGFloat = pointerView.center.y - (topPadding + rulerHeight)
-        horizontalLine = UIView(frame: CGRect(x: 0, y: pointerView.center.y, width: horizontalLineWidth, height: -horizontalLineHeight))
+        horizontalLine = UIView(frame: .zero)
         horizontalLine.backgroundColor = UIColor(hex: 0xFF5D32).withAlphaComponent(0.5)
         view.addSubview(horizontalLine)
+        updateSelectionDisplay()
 
         // Close button
-        let closeButton = UIButton(type: .system)
-        closeButton.setTitle("Save", for: .normal)
-        closeButton.addTarget(self, action: #selector(closeButtonTapped), for: .touchUpInside)
-        closeButton.tintColor = UIColor.white
-        let closeBarButtonItem = UIBarButtonItem(customView: closeButton)
-        self.navigationItem.rightBarButtonItem = closeBarButtonItem
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(closeButtonTapped))
 
         // Add pan gesture recognizer
         let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture(_:)))
@@ -109,24 +131,30 @@ class RulerViewController: UIViewController {
     
     @objc private func handlePanGesture(_ gestureRecognizer: UIPanGestureRecognizer) {
         let translation = gestureRecognizer.translation(in: view)
-
         pointerView.center = CGPoint(x: pointerView.center.x, y: min(max(pointerView.center.y + translation.y, topPadding), rulerHeight + topPadding))
-
-        var length = rulerLengthInch - ((pointerView.center.y - topPadding) / pointsPerInch)
-        length = round(length * 10) / 10
-        let lengthInCm = length * 2.54
-        let lengthInCmRounded = round(lengthInCm * 10) / 10
-        self.title = appLanguage == "en" ? "\(length) inches (\(lengthInCmRounded) cm)" : "\(length) 英寸 (\(lengthInCmRounded) cm)"
-        horizontalLine.frame = CGRect(x: 0, y: pointerView.center.y, width: horizontalLine.frame.width, height: -(pointerView.center.y - (topPadding + rulerHeight)))
-
+        updateSelectionDisplay()
         gestureRecognizer.setTranslation(.zero, in: view)
     }
 
+    private func updatePointerPosition(for length: CGFloat) {
+        let clampedLength = min(max(length, 0), rulerLengthInch)
+        let pointerY = topPadding + ((rulerLengthInch - clampedLength) * pointsPerInch)
+        pointerView.center = CGPoint(x: pointerView.center.x, y: pointerY)
+    }
 
-    
-    
+    private func selectedLengthInInches() -> CGFloat {
+        rulerLengthInch - ((pointerView.center.y - topPadding) / pointsPerInch)
+    }
+
+    private func updateSelectionDisplay() {
+        let length = round(selectedLengthInInches() * 10) / 10
+        let lengthInCmRounded = round(length * 2.54 * 10) / 10
+        title = appLanguage == "en" ? "\(length) inches (\(lengthInCmRounded) cm)" : "\(length) 英寸 (\(lengthInCmRounded) cm)"
+        horizontalLine.frame = CGRect(x: 0, y: pointerView.center.y, width: 180, height: -(pointerView.center.y - (topPadding + rulerHeight)))
+    }
+
     @objc private func closeButtonTapped() {
-        delegate?.didSelectLength(length: rulerLengthInch - ((pointerView.center.y - topPadding) / pointsPerInch))
+        delegate?.didSelectLength(length: selectedLengthInInches())
         dismiss(animated: true, completion: nil)
     }
 
@@ -202,6 +230,88 @@ class ArrowView: UIView {
         let fillColor = UIColor(hex: 0xFF5D32)
         fillColor.setFill()
         path.fill()
+    }
+}
+
+final class RulerTransitioningDelegate: NSObject, UIViewControllerTransitioningDelegate {
+    private weak var sourceView: UIView?
+
+    init(sourceView: UIView) {
+        self.sourceView = sourceView
+        super.init()
+    }
+
+    func animationController(forPresented presented: UIViewController,
+                             presenting: UIViewController,
+                             source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        RulerPresentationAnimator(isPresenting: true, sourceView: sourceView)
+    }
+
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        RulerPresentationAnimator(isPresenting: false, sourceView: sourceView)
+    }
+}
+
+private final class RulerPresentationAnimator: NSObject, UIViewControllerAnimatedTransitioning {
+    private let isPresenting: Bool
+    private weak var sourceView: UIView?
+
+    init(isPresenting: Bool, sourceView: UIView?) {
+        self.isPresenting = isPresenting
+        self.sourceView = sourceView
+        super.init()
+    }
+
+    func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
+        0.32
+    }
+
+    func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
+        let containerView = transitionContext.containerView
+        let duration = transitionDuration(using: transitionContext)
+        let verticalOffset = transitionOffset(in: containerView)
+
+        if isPresenting {
+            guard let toView = transitionContext.view(forKey: .to) else {
+                transitionContext.completeTransition(false)
+                return
+            }
+
+            toView.frame = transitionContext.finalFrame(for: transitionContext.viewController(forKey: .to)!)
+            toView.transform = CGAffineTransform(translationX: 0, y: verticalOffset)
+            toView.alpha = 0
+            containerView.addSubview(toView)
+
+            UIView.animate(withDuration: duration, delay: 0, usingSpringWithDamping: 0.9, initialSpringVelocity: 0.7, options: [.curveEaseOut]) {
+                toView.transform = .identity
+                toView.alpha = 1
+            } completion: { finished in
+                transitionContext.completeTransition(finished)
+            }
+        } else {
+            guard let fromView = transitionContext.view(forKey: .from) else {
+                transitionContext.completeTransition(false)
+                return
+            }
+
+            UIView.animate(withDuration: duration * 0.8, delay: 0, options: [.curveEaseIn]) {
+                fromView.transform = CGAffineTransform(translationX: 0, y: verticalOffset)
+                fromView.alpha = 0
+            } completion: { finished in
+                fromView.removeFromSuperview()
+                transitionContext.completeTransition(finished)
+            }
+        }
+    }
+
+    private func transitionOffset(in containerView: UIView) -> CGFloat {
+        guard let sourceView,
+              let sourceSuperview = sourceView.superview else {
+            return containerView.bounds.height
+        }
+
+        let sourceFrame = sourceSuperview.convert(sourceView.frame, to: containerView)
+        return max(120, containerView.bounds.height - sourceFrame.midY)
     }
 }
 

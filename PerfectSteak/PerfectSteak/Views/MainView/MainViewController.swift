@@ -112,6 +112,8 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
     @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var startButton: UIButton!
     private var startButtonClicked = false
+    private var rulerTransitioningDelegate: RulerTransitioningDelegate?
+    private var debouncedActionTimestamps: [String: Date] = [:]
     
     
     override func viewDidLoad() {
@@ -134,6 +136,7 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         thicknessButton.layer.cornerRadius = 50
         thicknessButton.backgroundColor = UIColor(red: 66/255, green: 66/255, blue: 66/255, alpha: 1)
         languageSegmentedControl.overrideUserInterfaceStyle = .dark
+        setupParameterGridPosition()
         setupTopActionRow()
         setupPrimaryActionButtons()
 
@@ -162,6 +165,10 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         saveCookUpdateLanguage()
         titleButtonUpdateLanguage()
         updateButtons()
+    }
+
+    private func setupParameterGridPosition() {
+        steakTemperature.superview?.superview?.transform = CGAffineTransform(translationX: 0, y: -12)
     }
 
     private func setupTopActionRow() {
@@ -257,11 +264,22 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         cookActionButton.setTitle(appLanguage == "en" ? english : chinese, for: .normal)
     }
 
+    private func shouldRunDebouncedAction(_ key: String, interval: TimeInterval = 0.45) -> Bool {
+        let now = Date()
+        if let lastRun = debouncedActionTimestamps[key], now.timeIntervalSince(lastRun) < interval {
+            return false
+        }
+        debouncedActionTimestamps[key] = now
+        return true
+    }
+
     @objc private func showRecipesFromTopRow() {
-        showRecipeDropdownMenu(from: myRecipesButton)
+        guard shouldRunDebouncedAction("recipesMenu") else { return }
+        showRecipeDropdownMenu(from: titleButton)
     }
 
     @objc private func showInstructions() {
+        guard shouldRunDebouncedAction("instructions"), presentedViewController == nil else { return }
         let instructionsViewController = InstructionsViewController()
         let navigationController = UINavigationController(rootViewController: instructionsViewController)
         navigationController.modalPresentationStyle = .pageSheet
@@ -430,6 +448,7 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
 
     
     @IBAction func recipesDropDownMenuClicked(_ sender: Any) {
+        guard shouldRunDebouncedAction("recipesMenu") else { return }
         showRecipeDropdownMenu(from: titleButton)
         //print("Herere")
     }
@@ -480,6 +499,12 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
                            initialTemp: cdSteakRecipe.initialTemp,
                            ovenTemp: cdSteakRecipe.ovenTemp,
                            desiredCenterTemp: cdSteakRecipe.desiredCenterTemp)
+    }
+
+    private func currentThicknessInInches() -> CGFloat {
+        let displayedThickness = Double(lengthLabel.text ?? "") ?? 1
+        let thicknessInInches = usesFahrenheit ? displayedThickness : displayedThickness * 0.393701
+        return CGFloat(max(thicknessInInches, 0.1))
     }
     
     //when a new recipe is selcted, we update new value to 4 buttons
@@ -539,6 +564,7 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
     
     
     @IBAction func saveRecipe(_ sender: Any) {
+        guard shouldRunDebouncedAction("saveRecipe", interval: 0.8) else { return }
         saveUpdatedRecipeToCoreData()
         contentSaved()
     }
@@ -562,15 +588,21 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
     
     
     @IBAction func showRuler(_ sender: UIButton) {
+        guard shouldRunDebouncedAction("showRuler"), presentedViewController == nil else { return }
         let rulerVC = RulerViewController()
         rulerVC.delegate = self
+        rulerVC.initialLengthInInches = currentThicknessInInches()
         let navigationController = UINavigationController(rootViewController: rulerVC)
-        navigationController.modalPresentationStyle = .formSheet
+        let transition = RulerTransitioningDelegate(sourceView: sender)
+        rulerTransitioningDelegate = transition
+        navigationController.transitioningDelegate = transition
+        navigationController.modalPresentationStyle = .custom
         present(navigationController, animated: true, completion: nil)
     }
 
     
     @IBAction func startButtonTapped(_ sender: UIButton) {
+        guard shouldRunDebouncedAction("startButton", interval: 0.35) else { return }
         if !startButtonClicked {     // not cooking now
             startButtonClicked = true
             //startButton.isEnabled = false // Disable the button

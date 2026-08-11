@@ -42,11 +42,6 @@
                                             <color key="textColor" red="0.24357612737329914" green="0.24307233149156546" blue="0.25187239066633593" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <fontDescription key="fontDescription" name="LiquidCrystal-Bold" family="Liquid Crystal" pointSize="24"/>
                                             <textInputTraits key="textInputTraits"/>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                    <real key="value" value="0.0"/>
-                                                </userDefinedRuntimeAttribute>
-                                            </userDefinedRuntimeAttributes>
                                         </textField>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JG1-Lv-F04" userLabel="BackButton">
                                             <rect key="frame" x="294.66666666666669" y="0.0" width="98.333333333333314" height="59"/>
