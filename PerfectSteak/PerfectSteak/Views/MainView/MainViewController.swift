@@ -108,6 +108,7 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.isNavigationBarHidden = true
+        countDownLabel.text = L("Ready to Cook")
         infoLabel.text = ""
         // add observer for the absolute timer
         NotificationCenter.default.addObserver(self, selector: #selector(didEnterBackground), name: UIApplication.didEnterBackgroundNotification, object: nil)

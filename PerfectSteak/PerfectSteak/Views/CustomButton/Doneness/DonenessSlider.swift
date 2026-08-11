@@ -155,6 +155,7 @@ class DonenessSlider: UIView {
             currentAngle = stepAngleChange
             
             updateSteakDonenessTitle()
+            delegate?.steakDonenessValueChanged(to: currentDoneness)
             
             //print("doneness title: \(String(describing: steakDonenessTitle.text))")
             //print("current doneness: \(String(describing: currentDoneness))")
@@ -203,29 +204,6 @@ class DonenessSlider: UIView {
     
     private func updateSteakDonenessTitle() {
         steakDonenessTitle.text = currentDoneness.localized
-        print("steak doneness: \(steakDonenessTitle.text)")
-        let stepCount = Int(round((currentAngle - minAngle) / stepAngle))
-        switch stepCount {
-        case 0:
-            //steakDonenessTitle.text = SteakDoneness.rare.rawValue
-            currentDoneness = .rare
-        case 1:
-            //steakDonenessTitle.text = SteakDoneness.mediumRare.rawValue
-            currentDoneness = .mediumRare
-        case 2:
-            //steakDonenessTitle.text = SteakDoneness.medium.rawValue
-            currentDoneness = .medium
-        case 3:
-            //steakDonenessTitle.text = SteakDoneness.mediumWell.rawValue
-            currentDoneness = .mediumWell
-        case 4:
-            //steakDonenessTitle.text = SteakDoneness.wellDone.rawValue
-            currentDoneness = .wellDone
-            
-        default:
-            break
-        }
-        
     }
     
 }
