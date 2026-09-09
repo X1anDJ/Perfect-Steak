@@ -18,6 +18,7 @@
 
 "Save" = "Save";
 "Cook" = "Cook";
+"Calculate" = "Calculate";
 "Cancel" = "Cancel";
 "Stop" = "Stop";
 "Start" = "Start";
@@ -64,7 +65,7 @@
 "Instructions Principle Body" = "Sear: a fast heating process. The steak crust heats quickly without changing the internal doneness much.\nBake: a slow heating process. The steak center slowly rises to the target temperature (doneness), creating a more even internal doneness, similar to Sous Vide.";
 "Instructions Principle Emphasis" = "Sear:|Bake:";
 "Instructions Steps Title" = "Steps:";
-"Instructions Steps Body" = "1. Preheat the oven to 350°F/176°C¹.\n2. Heat the pan on the highest heat², then sear the steak until browned.\n3. Remove the steak from the pan, then measure the center temperature³ and thickness.\n4. Enter target doneness, oven temperature, steak center temperature, and steak thickness in the app to calculate the required baking time.\n5. Enjoy⁴.";
+"Instructions Steps Body" = "1. Preheat the oven to 350°F/176°C¹.\n2. Preheat the pan on the highest heat² for about 1 minute, then sear the steak until browned.\n3. Remove the steak from the pan, then measure the center temperature³ and thickness.\n4. Enter target doneness, oven temperature, steak center temperature, and steak thickness in the app to calculate the required baking time.\n5. Enjoy⁴.";
 "Instructions Steps Emphasis" = "1.|2.|3.|4.|5.|350°F/176°C|target doneness|oven temperature|center temperature|steak thickness";
 "Instructions Notes Title" = "Notes:";
 "Instructions Notes Body" = "1. You can preheat the oven to a lower temperature. A lower oven temperature makes the heating process slower and the doneness more even.\n2. Use as much heat as possible when searing. Professional workflows may even let open flame touch the steak directly.\n3. If you do not have a thermometer: if the steak is not thawed, enter refrigerator temperature. If it is thawed, enter room temperature.\n4. This workflow does not need resting because the internal and external temperature difference is small during baking, so muscle fibers contract more gently. The final result depends heavily on oven temperature accuracy.";

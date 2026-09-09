@@ -84,9 +84,9 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
     
     private func saveCookUpdateLanguage() {
         saveLabel.text = L("Save")
-        cookLabel.text = L("Cook")
+        cookLabel.text = L("Calculate")
         saveActionButton.setTitle(L("Save"), for: .normal)
-        cookActionButton.setTitle(L("Cook"), for: .normal)
+        cookActionButton.setTitle(L("Calculate"), for: .normal)
     }
     
     private func titleButtonUpdateLanguage() {
@@ -291,7 +291,7 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         cookLabel.isHidden = true
 
         configureCapsuleButton(saveActionButton, title: L("Save"), backgroundColor: UIColor(white: 0.18, alpha: 1))
-        configureCapsuleButton(cookActionButton, title: L("Cook"), backgroundColor: UIColor(red: 1, green: 0.365, blue: 0.196, alpha: 1))
+        configureCapsuleButton(cookActionButton, title: L("Calculate"), backgroundColor: UIColor(red: 1, green: 0.365, blue: 0.196, alpha: 1))
         saveActionButton.addTarget(self, action: #selector(saveRecipe(_:)), for: .touchUpInside)
         cookActionButton.addTarget(self, action: #selector(startButtonTapped(_:)), for: .touchUpInside)
         view.addSubview(saveActionButton)
@@ -397,7 +397,7 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
         self.infoLabel.text = " "
         
         startButton.setImage(UIImage(systemName: "oven"), for: .normal)
-        setCookActionTitle("Cook")
+        setCookActionTitle("Calculate")
 
         // Clear the label and reset the seconds value after 1 second
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
@@ -699,7 +699,7 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
                 //cancel the timer
                 cancelCooking()
                 startButton.setImage(UIImage(systemName: "oven"), for: .normal)
-                setCookActionTitle("Cook")
+                setCookActionTitle("Calculate")
             }
         }
     }
@@ -713,7 +713,7 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
             self.infoLabel.text = " "
         }
         startButton.setImage(UIImage(systemName: "oven"), for: .normal)
-        setCookActionTitle("Cook")
+        setCookActionTitle("Calculate")
         startButtonClicked = false
     }
 
@@ -805,7 +805,7 @@ class MainViewController: UIViewController, SteakTemperatureDelegate, CircularSl
                     self.infoLabel.text = " "
                     self.startButton.isEnabled = true // Enable the button in case of failure
                     self.startButton.setImage(UIImage(systemName: "oven"), for: .normal) // Reset the button image
-                    self.setCookActionTitle("Cook")
+                    self.setCookActionTitle("Calculate")
                     self.startButtonClicked = false // Reset the startButtonClicked flag
                 }
                 self.task = nil

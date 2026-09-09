@@ -14,7 +14,7 @@
 /* Class = "UILabel"; text = "“"; ObjectID = "Su5-TY-5yg"; */
 "Su5-TY-5yg.text" = "\"";
 
-/* Class = "UILabel"; text = "Cook"; ObjectID = "USv-oi-f5G"; */
+/* Class = "UILabel"; text = "Calculate"; ObjectID = "USv-oi-f5G"; */
 "USv-oi-f5G.text" = "计算时间";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "X3v-gD-PiI"; */

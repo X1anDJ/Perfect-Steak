@@ -17,7 +17,8 @@
 "Thickness" = "牛排厚度";
 
 "Save" = "保存菜谱";
-"Cook" = "计算时间";
+"Cook" = "烹饪";
+"Calculate" = "计算时间";
 "Cancel" = "取消";
 "Stop" = "停止";
 "Start" = "开始";
